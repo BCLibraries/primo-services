@@ -1,0 +1,5 @@
+nbproject
+www/index.php
+www/.htaccess
+application/logs
+application/cache
