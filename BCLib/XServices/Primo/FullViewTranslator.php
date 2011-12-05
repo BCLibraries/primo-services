@@ -16,22 +16,34 @@ class FullViewTranslator implements \BCLib\XServices\Translator
             $result['abstract'] = (string) $doc->PrimoNMBib->record->addata->abstract;
             $result['id'] = (string) $doc->PrimoNMBib->record->control->sourcerecordid;
             $result['call-number'] = (string) $doc->PrimoNMBib->record->display->lds07;
-            $result['largethumb'] = $this->_getLargeImage($doc);
+            $result['largethumb'] = $this->_getImage($doc, 'large');
+            $result['mediumthumb'] = $this->_getImage($doc, 'medium');
         }
 
         return $result;
     }
 
-    private function _getLargeImage($doc)
+    private function _getImage($doc, $size)
     {
+        switch ($size)
+        {
+            case 'large':
+                $thumb_class = 'LC';
+                break;
+            case 'medium':
+                $thumb_class = 'MC';
+                break;
+            default:
+                $thumb_class = 'SC';
+        }
         if (isset($doc->PrimoNMBib->record->search->isbn))
         {
             $image_url = 'http://lib.syndetics.com/index.aspx?client=bostonh&amp;isbn=';
-            $image_url .= (string) $doc->PrimoNMBib->record->search->isbn . '/LC.JPG';
+            $image_url .= (string) $doc->PrimoNMBib->record->search->isbn . '/' . $thumb_class . '.JPG';
         }
         else
         {
-            $image_url = '/video-search/_SupportFiles/_Images/physical-video-large.png';
+            $image_url = '/video-search/_SupportFiles/_Images/physical-video-'.$size.'.png';
         }
         return $image_url;
     }
