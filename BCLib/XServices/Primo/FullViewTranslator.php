@@ -29,17 +29,17 @@ class FullViewTranslator implements \BCLib\XServices\Translator
         switch ($size)
         {
             case 'large':
-                $thumb_class = 'LC';
+                $thumb_class = 'lc';
                 break;
             case 'medium':
-                $thumb_class = 'MC';
+                $thumb_class = 'mc';
                 break;
             default:
-                $thumb_class = 'SC';
+                $thumb_class = 'sc';
         }
         if (isset($doc->PrimoNMBib->record->search->isbn))
         {
-            $image_url = 'http://lib.syndetics.com/index.aspx?client=bostonh&amp;isbn=';
+            $image_url = 'http://lib.syndetics.com/index.aspx?client=bccls&amp;isbn=';
             $image_url .= (string) $doc->PrimoNMBib->record->search->isbn . '/' . $thumb_class . '.JPG';
         } else
         {
