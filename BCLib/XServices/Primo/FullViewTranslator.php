@@ -18,6 +18,7 @@ class FullViewTranslator implements \BCLib\XServices\Translator
             $result['call-number'] = (string) $doc->PrimoNMBib->record->display->lds07;
             $result['largethumb'] = $this->_getImage($doc, 'large');
             $result['mediumthumb'] = $this->_getImage($doc, 'medium');
+            $result['availability'] = (string) $doc->PrimoNMBib->record->display->availpnx;
         }
 
         return $result;
@@ -40,10 +41,9 @@ class FullViewTranslator implements \BCLib\XServices\Translator
         {
             $image_url = 'http://lib.syndetics.com/index.aspx?client=bostonh&amp;isbn=';
             $image_url .= (string) $doc->PrimoNMBib->record->search->isbn . '/' . $thumb_class . '.JPG';
-        }
-        else
+        } else
         {
-            $image_url = '/video-search/_SupportFiles/_Images/physical-video-'.$size.'.png';
+            $image_url = FALSE;
         }
         return $image_url;
     }
