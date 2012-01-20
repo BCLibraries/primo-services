@@ -1,4 +1,8 @@
 <?php
 
-require_once("bclib/autoload.php");
-$autoloader = new \edu\bc\library\Autoload(__DIR__ . '/');
+require 'SplClassLoader/SplClassLoader.php';
+$x_services_loader = new SplClassLoader('BCLib\DigitalMeasures', __DIR__.'/..');
+$x_services_loader->register();
+
+$general_loader = new SplClassLoader();
+$general_loader->register();
