@@ -4,7 +4,7 @@ namespace BCLib\XServices\Primo;
 
 use BCLib\XServices;
 
-class PrimoRequest extends XServices\XServiceRequest
+class PrimoRequest extends XServices\Request
 {
     protected function _setServiceUrl($url)
     {

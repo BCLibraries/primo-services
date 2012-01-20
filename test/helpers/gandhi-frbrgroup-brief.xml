@@ -1,0 +1,1236 @@
+<sear:SEGMENTS xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib" xmlns:sear="http://www.exlibrisgroup.com/xsd/jaguar/search">
+  <sear:JAGROOT>
+    <sear:RESULT>
+      <sear:QUERYTRANSFORMS/>
+      <sear:FACETLIST ACCURATE_COUNTERS="true">
+        <sear:FACET COUNT="20" NAME="creator">
+          <sear:FACET_VALUES VALUE="3" KEY="Fox, Edward, 1937-"/>
+          <sear:FACET_VALUES VALUE="4" KEY="Briley, John"/>
+          <sear:FACET_VALUES VALUE="2" KEY="National Film Development Corporation of India"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Carolina Bank Limited (London, England)"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Goldcrest Films International"/>
+          <sear:FACET_VALUES VALUE="4" KEY="Kingsley, Ben, 1943-"/>
+          <sear:FACET_VALUES VALUE="3" KEY="Williams, Billy"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Gielgud, John, 1904-2000"/>
+          <sear:FACET_VALUES VALUE="3" KEY="Shankar, Ravi, 1920-"/>
+          <sear:FACET_VALUES VALUE="4" KEY="Attenborough, Richard"/>
+          <sear:FACET_VALUES VALUE="4" KEY="Bergen, Candice, 1946-"/>
+          <sear:FACET_VALUES VALUE="3" KEY="International Film Investors (Firm)"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Charleson, Ian"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Fugard, Athol"/>
+          <sear:FACET_VALUES VALUE="3" KEY="Sheen, Martin"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Indo-British Films, Ltd"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Athaiya, Bhanu"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Sony Pictures Home Entertainment (Firm)"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Halmer, Gunther Maria"/>
+          <sear:FACET_VALUES VALUE="3" KEY="Mills, John, 1908-2005"/>
+        </sear:FACET>
+        <sear:FACET COUNT="1" NAME="lcc">
+          <sear:FACET_VALUES VALUE="4" KEY="P - Language and literature."/>
+        </sear:FACET>
+        <sear:FACET COUNT="7" NAME="lang">
+          <sear:FACET_VALUES VALUE="3" KEY="kor"/>
+          <sear:FACET_VALUES VALUE="1" KEY="tha"/>
+          <sear:FACET_VALUES VALUE="1" KEY="chi"/>
+          <sear:FACET_VALUES VALUE="3" KEY="por"/>
+          <sear:FACET_VALUES VALUE="4" KEY="eng"/>
+          <sear:FACET_VALUES VALUE="3" KEY="fre"/>
+          <sear:FACET_VALUES VALUE="3" KEY="spa"/>
+        </sear:FACET>
+        <sear:FACET COUNT="1" NAME="rtype">
+          <sear:FACET_VALUES VALUE="4" KEY="video"/>
+        </sear:FACET>
+        <sear:FACET COUNT="6" NAME="topic">
+          <sear:FACET_VALUES VALUE="2" KEY="Religious leaders"/>
+          <sear:FACET_VALUES VALUE="4" KEY="Gandhi, Mahatma, 1869-1948"/>
+          <sear:FACET_VALUES VALUE="1" KEY="South Africa"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Great Britain"/>
+          <sear:FACET_VALUES VALUE="3" KEY="Nonviolence"/>
+          <sear:FACET_VALUES VALUE="3" KEY="India"/>
+        </sear:FACET>
+        <sear:FACET COUNT="1" NAME="tlevel">
+          <sear:FACET_VALUES VALUE="3" KEY="available"/>
+        </sear:FACET>
+        <sear:FACET COUNT="1" NAME="pfilter">
+          <sear:FACET_VALUES VALUE="4" KEY="audio_video"/>
+        </sear:FACET>
+        <sear:FACET COUNT="3" NAME="creationdate">
+          <sear:FACET_VALUES VALUE="2" KEY="2007"/>
+          <sear:FACET_VALUES VALUE="1" KEY="1990"/>
+          <sear:FACET_VALUES VALUE="1" KEY="2001"/>
+        </sear:FACET>
+        <sear:FACET COUNT="2" NAME="domain">
+          <sear:FACET_VALUES VALUE="1" KEY="LAW"/>
+          <sear:FACET_VALUES VALUE="3" KEY="MEDIA"/>
+        </sear:FACET>
+        <sear:FACET COUNT="13" NAME="genre">
+          <sear:FACET_VALUES VALUE="1" KEY="Crime"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Historical -- Feature"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Historical"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Biographical films."/>
+          <sear:FACET_VALUES VALUE="1" KEY="Ethnic"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Epic films"/>
+          <sear:FACET_VALUES VALUE="2" KEY="Historical films."/>
+          <sear:FACET_VALUES VALUE="1" KEY="Biographical"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Crime -- Feature"/>
+          <sear:FACET_VALUES VALUE="4" KEY="Video recordings for the hearing impaired."/>
+          <sear:FACET_VALUES VALUE="6" KEY="Feature films"/>
+          <sear:FACET_VALUES VALUE="1" KEY="Ethnic -- Feature"/>
+          <sear:FACET_VALUES VALUE="3" KEY="Drama"/>
+        </sear:FACET>
+      </sear:FACETLIST>
+      <sear:DOCSET IS_LOCAL="true" TOTAL_TIME="118" LASTHIT="4" FIRSTHIT="1" TOTALHITS="4" HIT_TIME="5">
+        <sear:DOC SEARCH_ENGINE_TYPE="Local Search Engine" SEARCH_ENGINE="Local Search Engine" NO="1" RANK="1.0" ID="3392093">
+          <PrimoNMBib>
+            <record>
+              <control>
+                <sourcerecordid>002272784</sourcerecordid>
+                <sourceid>bc_aleph</sourceid>
+                <recordid>bc_aleph002272784</recordid>
+                <originalsourceid>BCL01</originalsourceid>
+                <ilsapiid>BCL01002272784</ilsapiid>
+                <addsrcrecordid>BC_CATALOG</addsrcrecordid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>video</type>
+                <title>Gandhi Carolina Bank ; Goldcrest Films International ; Indo-British ; International Film Investors ; National Film Development Corporation of India ; produced by Richard Attenborough ; written by John Briley ; directed by Richard Attenborough.</title>
+                <contributor>Richard Attenborough; John Briley; Ben Kingsley; 1943-; Candice Bergen; 1946-.; Edward Fox; 1937-.; John Gielgud; 1904-2000.; Trevor Howard; 1916-1988.; John Mills; 1908-2005.; Martin Sheen; Ian Charleson; Athol Fugard; Gunther Maria Halmer; Saeed Jaffrey; 1929-.; Ronnie Taylor; 1924-; Billy Williams; John Bloom; Ravi Shankar; 1920-; Bhanu Athaiya; John Mollo; Stuart Craig; Michael Seirton</contributor>
+                <contributor>Carolina Bank Limited (London, England)</contributor>
+                <contributor>Goldcrest Films International.</contributor>
+                <contributor>Indo-British Films, Ltd.</contributor>
+                <contributor>International Film Investors (Firm)</contributor>
+                <contributor>National Film Development Corporation of India.</contributor>
+                <contributor>Sony Pictures Home Entertainment (Firm)</contributor>
+                <edition>25th anniversary ; [Collector's ed.]..</edition>
+                <publisher>Culver City, Calif. : Sony Pictures Home Entertainment</publisher>
+                <creationdate>2007</creationdate>
+                <format>2 videodiscs (190 min.) : sd., col. ; 4 3/4 in.</format>
+                <identifier>1424840945; 9781424840946</identifier>
+                <subject>Gandhi, Mahatma, 1869-1948 -- Drama; Gandhi, Mahatma, 1869-1948 -- Assassination -- Drama; Nonviolence -- Drama; Religious leaders -- India Drama; Great Britain -- Colonies -- India -- Drama; India -- History -- British occupation, 1765-1947 -- Drama; India -- History -- 1947- -- Drama; India -- Drama; Feature films; Biographical</subject>
+                <description>Follows the life of Mahatma Gandhi from his days as a lawyer in South Africa to his role as India's spiritual leader by using his philosophy of non-violent but direct-action protest that helped end British rule. Centers on the extraordinary man who fought for a nonviolent, peaceful existence and set an entire nation free.</description>
+                <language>und;und</language>
+                <source>bc_aleph</source>
+                <availlibrary>$$IBCL$$LLAW$$1Reference Area$$2(Feature Film Collection )$$Savailable$$31$$40$$5Y$$616$$XBCL50$$YLAW$$ZRFA</availlibrary>
+                <lds03>DVD, widescreen (2.35:1) presentation; Dolby Digital 5.1 surround, Dolby Digital 2.0 stereo., surround.</lds03>
+                <lds07>Law Library Reference Area Feature Film Collection</lds07>
+                <availinstitution>$$IBCL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+                <version>4</version>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <thumbnail>$$Tamazon_thumb</thumbnail>
+                <thumbnail>$$Tsyndetics_thumb</thumbnail>
+                <linktotoc>$$Tsyndetics_index$$DCheck Here for Additional Information</linktotoc>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktouc>$$Tamazon_uc$$DThis item in Amazon.com</linktouc>
+                <linktouc>$$Tworldcat_isbn$$DThis item in WorldCat®</linktouc>
+              </links>
+              <search>
+                <creatorcontrib>Carolina Bank ; Goldcrest Films International ; Indo-British ; International Film Investors ; National Film Development Corporation of India ; produced by Richard Attenborough ; written by John Briley ; directed by Richard Attenborough.</creatorcontrib>
+                <creatorcontrib>Directors of photography, Ronnie Taylor, Billy Williams ; editor, John Bloom ; music, Ravi Shankar ; costume designers, Bhanu Athaiya, John Mollo ; production designer, Stuart Craig.</creatorcontrib>
+                <creatorcontrib>Ben Kingsley, Candice Bergen, Edward Fox, John Gielgud, Trevor Howard, John Mills, Martin Sheen, Ian Charleson, Athol Fugard, Gunter Maria Halmer, Saeed Jaffrey.; Richard Attenborough; John Briley; Ben Kingsley; Candice Bergen; Edward Fox; John Gielgud; Trevor Howard; John Mills; Martin Sheen; Ian Charleson; Athol Fugard; Gunther Maria Halmer; Saeed Jaffrey; Ronnie Taylor; Billy Williams; John Bloom; Ravi Shankar; Bhanu Athaiya; John Mollo; Stuart Craig; Michael Seirton</creatorcontrib>
+                <creatorcontrib>Attenborough, Richard.</creatorcontrib>
+                <creatorcontrib>Briley, John.</creatorcontrib>
+                <creatorcontrib>Kingsley, Ben, 1943-</creatorcontrib>
+                <creatorcontrib>Bergen, Candice, 1946-.</creatorcontrib>
+                <creatorcontrib>Fox, Edward, 1937-.</creatorcontrib>
+                <creatorcontrib>Gielgud, John, 1904-2000.</creatorcontrib>
+                <creatorcontrib>Howard, Trevor, 1916-1988.</creatorcontrib>
+                <creatorcontrib>Mills, John, 1908-2005.</creatorcontrib>
+                <creatorcontrib>Sheen, Martin.</creatorcontrib>
+                <creatorcontrib>Charleson, Ian.</creatorcontrib>
+                <creatorcontrib>Fugard, Athol.</creatorcontrib>
+                <creatorcontrib>Halmer, Gunther Maria.</creatorcontrib>
+                <creatorcontrib>Jaffrey, Saeed, 1929-.</creatorcontrib>
+                <creatorcontrib>Taylor, Ronnie, 1924-</creatorcontrib>
+                <creatorcontrib>Williams, Billy.</creatorcontrib>
+                <creatorcontrib>Bloom, John.</creatorcontrib>
+                <creatorcontrib>Shankar, Ravi, 1920-</creatorcontrib>
+                <creatorcontrib>Athaiya, Bhanu.</creatorcontrib>
+                <creatorcontrib>Mollo, John.</creatorcontrib>
+                <creatorcontrib>Craig, Stuart.</creatorcontrib>
+                <creatorcontrib>Seirton, Michael.</creatorcontrib>
+                <creatorcontrib>Attenborough, R</creatorcontrib>
+                <creatorcontrib>Briley, J</creatorcontrib>
+                <creatorcontrib>Kingsley, B</creatorcontrib>
+                <creatorcontrib>Bergen, C</creatorcontrib>
+                <creatorcontrib>Fox, E</creatorcontrib>
+                <creatorcontrib>Gielgud, J</creatorcontrib>
+                <creatorcontrib>Howard, T</creatorcontrib>
+                <creatorcontrib>Mills, J</creatorcontrib>
+                <creatorcontrib>Sheen, M</creatorcontrib>
+                <creatorcontrib>Charleson, I</creatorcontrib>
+                <creatorcontrib>Fugard, A</creatorcontrib>
+                <creatorcontrib>Halmer, G</creatorcontrib>
+                <creatorcontrib>Jaffrey, S</creatorcontrib>
+                <creatorcontrib>Taylor, R</creatorcontrib>
+                <creatorcontrib>Williams, B</creatorcontrib>
+                <creatorcontrib>Bloom, J</creatorcontrib>
+                <creatorcontrib>Shankar, R</creatorcontrib>
+                <creatorcontrib>Athaiya, B</creatorcontrib>
+                <creatorcontrib>Mollo, J</creatorcontrib>
+                <creatorcontrib>Craig, S</creatorcontrib>
+                <creatorcontrib>Seirton, M</creatorcontrib>
+                <creatorcontrib>Carolina Bank Limited (London, England)</creatorcontrib>
+                <creatorcontrib>Goldcrest Films International.</creatorcontrib>
+                <creatorcontrib>Indo-British Films, Ltd.</creatorcontrib>
+                <creatorcontrib>International Film Investors (Firm)</creatorcontrib>
+                <creatorcontrib>National Film Development Corporation of India.</creatorcontrib>
+                <creatorcontrib>Sony Pictures Home Entertainment (Firm)</creatorcontrib>
+                <title>Gandhi</title>
+                <description>Follows the life of Mahatma Gandhi from his days as a lawyer in South Africa to his role as India's spiritual leader by using his philosophy of non-violent but direct-action protest that helped end British rule. Centers on the extraordinary man who fought for a nonviolent, peaceful existence and set an entire nation free.</description>
+                <subject>Gandhi, Mahatma, 1869-1948 Drama.</subject>
+                <subject>Gandhi, Mahatma, 1869-1948 Assassination Drama.</subject>
+                <subject>Nonviolence Drama.</subject>
+                <subject>Religious leaders India Drama.</subject>
+                <subject>Great Britain Colonies India Drama.</subject>
+                <subject>India History British occupation, 1765-1947 Drama.</subject>
+                <subject>India History 1947- Drama.</subject>
+                <subject>India Drama.</subject>
+                <subject>Feature films.</subject>
+                <subject>Biographical</subject>
+                <general>[videorecording] /</general>
+                <general>Sony Pictures Home Entertainment,</general>
+                <general>Directors of photography, Ronnie Taylor, Billy Williams ; editor, John Bloom ; music, Ravi Shankar ; costume designers, Bhanu Athaiya, John Mollo ; production designer, Stuart Craig.</general>
+                <general>MPAA rating: PG.</general>
+                <general>Academy Awards, USA, 1983: Oscars for Best Actor in a Leading Role (Ben Kingsley) ; Best Art Direction - Set Decoration (Stuart Craig, Robert W. Laing, Michael Seirton) ; Best Cinematography (Billy Williams, Ronnie Taylor) ; Best Costume Design (John Mollo, Bhanu Athaiya) ; Best Director (Richard Attenborough) ; Best Film Editing (John Bloom) ; Best Picture ; Best Writing, Screenplay Written Directly for the Screen (John Briley).</general>
+                <general>043396174375</general>
+                <general>17437</general>
+                <sourceid>bc_aleph</sourceid>
+                <recordid>bc_aleph002272784</recordid>
+                <isbn>1424840945</isbn>
+                <isbn>9781424840946</isbn>
+                <rsrctype>video</rsrctype>
+                <creationdate>2007</creationdate>
+                <searchscope>LAW</searchscope>
+                <searchscope>bc_aleph</searchscope>
+                <searchscope>BCL</searchscope>
+                <scope>BCL</scope>
+                <lsr05>77523787</lsr05>
+                <lsr05>(OCoLC)ocm77523787</lsr05>
+                <lsr06>featurefilmcollection</lsr06>
+                <lsr06>FEATUREFILMCOLLECTION</lsr06>
+              </search>
+              <sort>
+                <title>gandhi</title>
+                <creationdate>2007</creationdate>
+                <author>carolina bank goldcrest films international indo british international film investors national film development corporation of india produced by richard attenborough written by john briley directed by richard attenborough</author>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <language>fre</language>
+                <language>por</language>
+                <language>spa</language>
+                <language>kor</language>
+                <creationdate>2007</creationdate>
+                <topic>Gandhi, Mahatma, 1869-1948–Drama</topic>
+                <topic>Gandhi, Mahatma, 1869-1948–Assassination–Drama</topic>
+                <topic>Nonviolence–Drama</topic>
+                <topic>Religious leaders–India–Drama</topic>
+                <topic>Great Britain–Colonies–India–Drama</topic>
+                <topic>India–History–British occupation, 1765-1947–Drama</topic>
+                <topic>India–History–1947-–Drama</topic>
+                <topic>India–Drama</topic>
+                <collection>LAW</collection>
+                <toplevel>available</toplevel>
+                <prefilter>audio_video</prefilter>
+                <rsrctype>video</rsrctype>
+                <creatorcontrib>Attenborough, Richard</creatorcontrib>
+                <creatorcontrib>Briley, John</creatorcontrib>
+                <creatorcontrib>Kingsley, Ben, 1943-</creatorcontrib>
+                <creatorcontrib>Bergen, Candice, 1946-</creatorcontrib>
+                <creatorcontrib>Fox, Edward, 1937-</creatorcontrib>
+                <creatorcontrib>Gielgud, John, 1904-2000</creatorcontrib>
+                <creatorcontrib>Howard, Trevor, 1916-1988</creatorcontrib>
+                <creatorcontrib>Mills, John, 1908-2005</creatorcontrib>
+                <creatorcontrib>Sheen, Martin</creatorcontrib>
+                <creatorcontrib>Charleson, Ian</creatorcontrib>
+                <creatorcontrib>Fugard, Athol</creatorcontrib>
+                <creatorcontrib>Halmer, Gunther Maria</creatorcontrib>
+                <creatorcontrib>Jaffrey, Saeed, 1929-</creatorcontrib>
+                <creatorcontrib>Taylor, Ronnie, 1924-</creatorcontrib>
+                <creatorcontrib>Williams, Billy</creatorcontrib>
+                <creatorcontrib>Bloom, John</creatorcontrib>
+                <creatorcontrib>Shankar, Ravi, 1920-</creatorcontrib>
+                <creatorcontrib>Athaiya, Bhanu</creatorcontrib>
+                <creatorcontrib>Mollo, John</creatorcontrib>
+                <creatorcontrib>Craig, Stuart</creatorcontrib>
+                <creatorcontrib>Seirton, Michael</creatorcontrib>
+                <creatorcontrib>Carolina Bank Limited (London, England)</creatorcontrib>
+                <creatorcontrib>Goldcrest Films International</creatorcontrib>
+                <creatorcontrib>Indo-British Films, Ltd</creatorcontrib>
+                <creatorcontrib>International Film Investors (Firm)</creatorcontrib>
+                <creatorcontrib>National Film Development Corporation of India</creatorcontrib>
+                <creatorcontrib>Sony Pictures Home Entertainment (Firm)</creatorcontrib>
+                <genre>Feature films</genre>
+                <genre>Biographical</genre>
+                <genre>Drama</genre>
+                <genre>Feature films.</genre>
+                <classificationlcc>P - Language and literature.–Literature (General)</classificationlcc>
+                <frbrgroupid>42018079</frbrgroupid>
+                <frbrtype>5</frbrtype>
+              </facets>
+              <dedup>
+                <t>1</t>
+                <c2>1424840945;9781424840946</c2>
+                <c3>gandhi</c3>
+                <c4>2007</c4>
+                <f3>1424840945;9781424840946</f3>
+                <f5>gandhi</f5>
+                <f6>2007</f6>
+                <f7>gandhi</f7>
+                <f8>enk</f8>
+                <f9>2 videodiscs (190 min.) :</f9>
+                <f10>sony pictures home entertainment</f10>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kattenborough richard$$AA</k1>
+                <k1>$$Kbriley john$$AA</k1>
+                <k1>$$Kkingsley ben 1943$$AA</k1>
+                <k1>$$Kbergen candice 1946$$AA</k1>
+                <k1>$$Kfox edward 1937$$AA</k1>
+                <k1>$$Kgielgud john 1904 2000$$AA</k1>
+                <k1>$$Khoward trevor 1916 1988$$AA</k1>
+                <k1>$$Kmills john 1908 2005$$AA</k1>
+                <k1>$$Ksheen martin$$AA</k1>
+                <k1>$$Kcharleson ian$$AA</k1>
+                <k1>$$Kfugard athol$$AA</k1>
+                <k1>$$Khalmer gunther maria$$AA</k1>
+                <k1>$$Kjaffrey saeed 1929$$AA</k1>
+                <k1>$$Ktaylor ronnie 1924$$AA</k1>
+                <k1>$$Kwilliams billy$$AA</k1>
+                <k1>$$Kbloom john$$AA</k1>
+                <k1>$$Kshankar ravi 1920$$AA</k1>
+                <k1>$$Kathaiya bhanu$$AA</k1>
+                <k1>$$Kmollo john$$AA</k1>
+                <k1>$$Kcraig stuart$$AA</k1>
+                <k1>$$Kseirton michael$$AA</k1>
+                <k1>$$Kcarolina bank limited london england$$AA</k1>
+                <k1>$$Kgoldcrest films international$$AA</k1>
+                <k1>$$Kindo british films ltd$$AA</k1>
+                <k1>$$Kinternational film investors firm$$AA</k1>
+                <k1>$$Knational film development corporation of india$$AA</k1>
+                <k1>$$Ksony pictures home entertainment firm$$AA</k1>
+                <k3>$$Kgandhi$$AT</k3>
+              </frbr>
+              <delivery>
+                <institution>BCL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <enrichment>
+                <classificationlcc>PN1995.9.E79</classificationlcc>
+              </enrichment>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Attenborough</aulast>
+                <aufirst>Richard</aufirst>
+                <addau>Attenborough, Richard</addau>
+                <addau>Briley, John</addau>
+                <addau>Kingsley, Ben, 1943-</addau>
+                <addau>Bergen, Candice, 1946-</addau>
+                <addau>Fox, Edward, 1937-</addau>
+                <addau>Gielgud, John, 1904-2000</addau>
+                <addau>Howard, Trevor, 1916-1988</addau>
+                <addau>Mills, John, 1908-2005</addau>
+                <addau>Sheen, Martin</addau>
+                <addau>Charleson, Ian</addau>
+                <addau>Fugard, Athol</addau>
+                <addau>Halmer, Gunther Maria</addau>
+                <addau>Jaffrey, Saeed, 1929-</addau>
+                <addau>Taylor, Ronnie, 1924-</addau>
+                <addau>Williams, Billy</addau>
+                <addau>Bloom, John</addau>
+                <addau>Shankar, Ravi, 1920-</addau>
+                <addau>Athaiya, Bhanu</addau>
+                <addau>Mollo, John</addau>
+                <addau>Craig, Stuart</addau>
+                <addau>Seirton, Michael</addau>
+                <addau>Carolina Bank Limited (London, England)</addau>
+                <addau>Goldcrest Films International</addau>
+                <addau>Indo-British Films, Ltd</addau>
+                <addau>International Film Investors (Firm)</addau>
+                <addau>National Film Development Corporation of India</addau>
+                <addau>Sony Pictures Home Entertainment (Firm)</addau>
+                <btitle>Gandhi Carolina Bank ; Goldcrest Films International ; Indo-British ; International Film Investors ; National Film Development Corporation of India ; produced by Richard Attenborough ; written by John Briley ; directed by Richard Attenborough.</btitle>
+                <date>2007</date>
+                <risdate>[2007]</risdate>
+                <isbn>1424840945</isbn>
+                <isbn>9781424840946</isbn>
+                <format>book</format>
+                <genre>unknown</genre>
+                <ristype>VIDEO</ristype>
+                <abstract>Follows the life of Mahatma Gandhi from his days as a lawyer in South Africa to his role as India's spiritual leader by using his philosophy of non-violent but direct-action protest that helped end British rule. Centers on the extraordinary man who fought for a nonviolent, peaceful existence and set an entire nation free.</abstract>
+                <cop>Culver City, Calif.</cop>
+                <pub>Sony Pictures Home Entertainment</pub>
+                <oclcid>77523787</oclcid>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt2="http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2012-01-20T12%3A26%3A55IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&amp;rft.object_id=&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=unknown&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Gandhi%20Carolina%20Bank%20%3B%20Goldcrest%20Films%20International%20%3B%20Indo-British%20%3B%20International%20Film%20Investors%20%3B%20National%20Film%20Development%20Corporation%20of%20India%20%3B%20produced%20by%20Richard%20Attenborough%20%3B%20written%20by%20John%20Briley%20%3B%20directed%20by%20Richard%20Attenborough.&amp;rft.aulast=Attenborough&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=1424840945&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft_dat=&lt;bc_aleph>002272784&lt;/bc_aleph>&amp;rft.eisbn=&amp;rft_id=info:oai/>" GetIt1="OVP" deliveryCategory="Physical Item"/>
+          <sear:LIBRARIES>
+            <sear:LIBRARY>
+              <sear:institution>BCL</sear:institution>
+              <sear:library>LAW</sear:library>
+              <sear:status>available</sear:status>
+              <sear:collection>Reference Area</sear:collection>
+              <sear:callNumber>(Feature Film Collection )</sear:callNumber>
+              <sear:url>OVP</sear:url>
+            </sear:LIBRARY>
+          </sear:LIBRARIES>
+          <sear:LINKS>
+            <sear:openurl><![CDATA[http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&ctx_tim=2012-01-20T12%3A26%3A55IST&url_ver=Z39.88-2004&url_ctx_fmt=infofi/fmt:kev:mtx:ctx&rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&rft.object_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Gandhi%20Carolina%20Bank%20%3B%20Goldcrest%20Films%20International%20%3B%20Indo-British%20%3B%20International%20Film%20Investors%20%3B%20National%20Film%20Development%20Corporation%20of%20India%20%3B%20produced%20by%20Richard%20Attenborough%20%3B%20written%20by%20John%20Briley%20%3B%20directed%20by%20Richard%20Attenborough.&rft.aulast=Attenborough&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=1424840945&rft.sici=&rft.coden=&rft_id=info:doi/&rft_dat=<bc_aleph>002272784</bc_aleph>&rft.eisbn=&rft_id=info:oai/>]]></sear:openurl>
+            <sear:backlink>http://library.bc.edu/F?func=direct&amp;local_base=BC_CATALOG&amp;doc_number=002272784</sear:backlink>
+            <sear:thumbnail>http://images.amazon.com/images/P/1424840945.01._SSTHUM_.jpg</sear:thumbnail>
+            <sear:thumbnail>http://lib.syndetics.com/index.aspx?isbn=1424840945/SC.JPG&amp;client=bostonh</sear:thumbnail>
+            <sear:linktotoc>http://lib.syndetics.com/index.aspx?isbn=1424840945/index.html&amp;client=bccls&amp;type=xw12</sear:linktotoc>
+            <sear:openurlfulltext><![CDATA[http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&ctx_tim=2012-01-20T12%3A26%3A55IST&url_ver=Z39.88-2004&url_ctx_fmt=infofi/fmt:kev:mtx:ctx&rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&rft.object_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Gandhi%20Carolina%20Bank%20%3B%20Goldcrest%20Films%20International%20%3B%20Indo-British%20%3B%20International%20Film%20Investors%20%3B%20National%20Film%20Development%20Corporation%20of%20India%20%3B%20produced%20by%20Richard%20Attenborough%20%3B%20written%20by%20John%20Briley%20%3B%20directed%20by%20Richard%20Attenborough.&rft.aulast=Attenborough&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=1424840945&rft.sici=&rft.coden=&rft_id=info:doi/&svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&svc.fulltext=yes&rft_dat=<bc_aleph>002272784</bc_aleph>&rft.eisbn=&rft_id=info:oai/>]]></sear:openurlfulltext>
+            <sear:linktoholdings>OVP</sear:linktoholdings>
+            <sear:linktouc>http://www.amazon.com/gp/product/1424840945</sear:linktouc>
+            <sear:linktouc>http://www.worldcat.org/search?q=isbn%3A1424840945</sear:linktouc>
+          </sear:LINKS>
+        </sear:DOC>
+        <sear:DOC SEARCH_ENGINE_TYPE="Local Search Engine" SEARCH_ENGINE="Local Search Engine" NO="2" RANK="1.0" ID="3392926">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>000751010</sourcerecordid>
+                <sourceid>bc_aleph</sourceid>
+                <recordid>bc_aleph000751010</recordid>
+                <originalsourceid>BCL01</originalsourceid>
+                <ilsapiid>BCL01000751010</ilsapiid>
+                <addsrcrecordid>BC_CATALOG</addsrcrecordid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>video</type>
+                <title>Gandhi Columbia Pictures.</title>
+                <contributor>Richard Attenborough; John Briley; Ben Kingsley; 1943-; Candice Bergen; 1946-.; Edward Fox</contributor>
+                <contributor>Columbia TriStar Home Video (Firm)</contributor>
+                <publisher>Burbank, CA : Columbia TriStar Home Video</publisher>
+                <creationdate>c1990.</creationdate>
+                <format>2 videocassettes (187 min.) : sd., col. ; 1/2 in.</format>
+                <identifier>0800105141</identifier>
+                <subject>Gandhi, Mahatma, 1869-1948</subject>
+                <description>In stirring detail, Ghandi's life, principles and power explode on the screen ...</description>
+                <language>eng</language>
+                <source>bc_aleph</source>
+                <availlibrary>$$IBCL$$LMEDIA$$1Course Reserve$$2(PN1997 G363 1990 )$$Savailable$$32$$40$$5Y$$6206$$XBCL50$$YMEDIA$$ZRES</availlibrary>
+                <lds07>O'Neill Media Center Course Reserve PN1997 G363 1990</lds07>
+                <lds08>Streaming video</lds08>
+                <availinstitution>$$IBCL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+                <version>4</version>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <thumbnail>$$Tamazon_thumb</thumbnail>
+                <thumbnail>$$Tsyndetics_thumb</thumbnail>
+                <linktotoc>$$Tsyndetics_index$$DCheck Here for Additional Information</linktotoc>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktouc>$$Tamazon_uc$$DThis item in Amazon.com</linktouc>
+                <linktouc>$$Tworldcat_isbn$$DThis item in WorldCat®</linktouc>
+              </links>
+              <search>
+                <creatorcontrib>Columbia Pictures.</creatorcontrib>
+                <creatorcontrib>Directed and produced by Richard Attenborough ; written by John Briley.</creatorcontrib>
+                <creatorcontrib>Ben Kingsley, Candice Bergen, Edward Fox, John Gielgud, Trevor Howard, John Mills, Martin Sheen.; Richard Attenborough; John Briley; Ben Kingsley; Candice Bergen; Edward Fox</creatorcontrib>
+                <creatorcontrib>Attenborough, Richard.</creatorcontrib>
+                <creatorcontrib>Briley, John.</creatorcontrib>
+                <creatorcontrib>Kingsley, Ben, 1943-</creatorcontrib>
+                <creatorcontrib>Bergen, Candice, 1946-.</creatorcontrib>
+                <creatorcontrib>Fox, Edward.</creatorcontrib>
+                <creatorcontrib>Attenborough, R</creatorcontrib>
+                <creatorcontrib>Briley, J</creatorcontrib>
+                <creatorcontrib>Kingsley, B</creatorcontrib>
+                <creatorcontrib>Bergen, C</creatorcontrib>
+                <creatorcontrib>Fox, E</creatorcontrib>
+                <creatorcontrib>Columbia TriStar Home Video (Firm)</creatorcontrib>
+                <title>Gandhi</title>
+                <description>In stirring detail, Ghandi's life, principles and power explode on the screen ...</description>
+                <subject>Gandhi, Mahatma, 1869-1948.</subject>
+                <subject>Aṇṇal Kānti, 1869-1948</subject>
+                <subject>Kānti, Aṇṇal, 1869-1948</subject>
+                <subject>Kāntiyaṭikaḷ, 1869-1948</subject>
+                <subject>Mōkaṉtās Karamcant Kānti, 1869-1948</subject>
+                <subject>Kānti, Mōkaṉtās Karamcant, 1869-1948</subject>
+                <subject>גאנדי, מ.ק</subject>
+                <subject>גאנדי, מאהאטמא</subject>
+                <subject>גאנדי, מאהאטמא, 1869־1948</subject>
+                <subject>גנדהי, מהטמה, 1869-1948</subject>
+                <subject>Gāndī, Mahātamā, 1869-1948</subject>
+                <subject>Gandī, Muhandās Kāramchānd, 1869-1948</subject>
+                <subject>�اندى، مهاتما</subject>
+                <subject>�اندى، مهنداس �ارم�اند</subject>
+                <subject>Gāndhi, Em. Ke., 1869-1948</subject>
+                <subject>Ghāndi, Mahātamā, 1869-1948</subject>
+                <subject>Gandi, 1869-1948</subject>
+                <subject>Kandi, 1869-1948</subject>
+                <subject>Gāndhī, Mōhanadāsa Karamacanda, 1869-1948</subject>
+                <subject>Gandi, Mahattŭma, 1869-1948</subject>
+                <subject>Makātmā Kānti, 1869-1948</subject>
+                <subject>Gāndhī, Ma. Ka., 1869-1948</subject>
+                <subject>Ganji, Mahatoma, 1869-1948</subject>
+                <subject>Gāndhījī, Mahātmā, 1869-1948</subject>
+                <subject>Gandi, Makhatma, 1869-1948</subject>
+                <subject>Gandhi, M. K. (Mohandas Karamchand), 1869-1948</subject>
+                <subject>Ghāndī, Mūhāndās Karamshānd, 1869-1948</subject>
+                <subject>Gkanti, Machatma, 1869-1948</subject>
+                <subject>Gandhi, Mohandas, 1869-1948</subject>
+                <subject>Gandhi, Mohandas K. (Mohandas Karamchand), 1869-1948</subject>
+                <subject>Mahātmājī, 1869-1948</subject>
+                <subject>Gandi, Mokhandas Karamchand, 1869-1948</subject>
+                <subject>Kan-ti, 1869-1948</subject>
+                <subject>Mahātmā Gāndhījī, 1869-1948</subject>
+                <subject>Gandhi, 1869-1948</subject>
+                <subject>Kānti, Makātmā, 1869-1948</subject>
+                <subject>Gandhi, Mohandas Karamchand, 1869-1948</subject>
+                <subject>Mōhanadāsa Karamacanda Gāndhī, 1869-1948</subject>
+                <subject>Gandi, M. K. (Mokhandas Karamchand), 1869-1948</subject>
+                <subject>�اندهى، مهاتما</subject>
+                <subject>مهاتما �اندهى</subject>
+                <general>[videorecording] /</general>
+                <general>Columbia TriStar Home Video,</general>
+                <general>Directed and produced by Richard Attenborough ; written by John Briley.</general>
+                <sourceid>bc_aleph</sourceid>
+                <recordid>bc_aleph000751010</recordid>
+                <isbn>0800105141</isbn>
+                <rsrctype>video</rsrctype>
+                <creationdate>1990</creationdate>
+                <searchscope>MEDIA</searchscope>
+                <searchscope>bc_aleph</searchscope>
+                <searchscope>BCL</searchscope>
+                <scope>BCL</scope>
+                <lsr05>31856679</lsr05>
+                <lsr05>(OCoLC)ocm31856679</lsr05>
+                <lsr06>pn1997g3631990</lsr06>
+                <lsr06>PN1997G3631990</lsr06>
+                <lsr06>pn1997</lsr06>
+                <lsr06>PN1997</lsr06>
+                <lsr07>Streaming video</lsr07>
+              </search>
+              <sort>
+                <title>gandhi</title>
+                <creationdate>1990</creationdate>
+                <author>columbia pictures</author>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <creationdate>1990</creationdate>
+                <topic>Gandhi, Mahatma, 1869-1948</topic>
+                <collection>MEDIA</collection>
+                <toplevel>available</toplevel>
+                <prefilter>audio_video</prefilter>
+                <rsrctype>video</rsrctype>
+                <creatorcontrib>Attenborough, Richard</creatorcontrib>
+                <creatorcontrib>Briley, John</creatorcontrib>
+                <creatorcontrib>Kingsley, Ben, 1943-</creatorcontrib>
+                <creatorcontrib>Bergen, Candice, 1946-</creatorcontrib>
+                <creatorcontrib>Fox, Edward</creatorcontrib>
+                <creatorcontrib>Columbia TriStar Home Video (Firm)</creatorcontrib>
+                <classificationlcc>P - Language and literature.–Literature (General)</classificationlcc>
+                <frbrgroupid>42018079</frbrgroupid>
+                <frbrtype>5</frbrtype>
+              </facets>
+              <dedup>
+                <t>1</t>
+                <c2>0800105141</c2>
+                <c3>gandhi</c3>
+                <c4>1990</c4>
+                <f3>0800105141</f3>
+                <f5>gandhi</f5>
+                <f6>1990</f6>
+                <f7>gandhi</f7>
+                <f8>cau</f8>
+                <f9>2 videocassettes (187 min.) :</f9>
+                <f10>columbia tristar home video</f10>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kattenborough richard$$AA</k1>
+                <k1>$$Kbriley john$$AA</k1>
+                <k1>$$Kkingsley ben 1943$$AA</k1>
+                <k1>$$Kbergen candice 1946$$AA</k1>
+                <k1>$$Kfox edward$$AA</k1>
+                <k1>$$Kcolumbia tristar home video firm$$AA</k1>
+                <k3>$$Kgandhi$$AT</k3>
+              </frbr>
+              <delivery>
+                <institution>BCL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <enrichment>
+                <classificationlcc>PN1997</classificationlcc>
+              </enrichment>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Attenborough</aulast>
+                <aufirst>Richard</aufirst>
+                <addau>Attenborough, Richard</addau>
+                <addau>Briley, John</addau>
+                <addau>Kingsley, Ben, 1943-</addau>
+                <addau>Bergen, Candice, 1946-</addau>
+                <addau>Fox, Edward</addau>
+                <addau>Columbia TriStar Home Video (Firm)</addau>
+                <btitle>Gandhi Columbia Pictures.</btitle>
+                <date>1990</date>
+                <risdate>c1990.</risdate>
+                <isbn>0800105141</isbn>
+                <format>book</format>
+                <genre>unknown</genre>
+                <ristype>VIDEO</ristype>
+                <abstract>In stirring detail, Ghandi's life, principles and power explode on the screen ...</abstract>
+                <cop>Burbank, CA</cop>
+                <pub>Columbia TriStar Home Video</pub>
+                <oclcid>31856679</oclcid>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt2="http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2012-01-20T12%3A26%3A55IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&amp;rft.object_id=&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=unknown&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Gandhi%20Carolina%20Bank%20%3B%20Goldcrest%20Films%20International%20%3B%20Indo-British%20%3B%20International%20Film%20Investors%20%3B%20National%20Film%20Development%20Corporation%20of%20India%20%3B%20produced%20by%20Richard%20Attenborough%20%3B%20written%20by%20John%20Briley%20%3B%20directed%20by%20Richard%20Attenborough.&amp;rft.aulast=Attenborough&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=1424840945&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft_dat=&lt;bc_aleph>002272784&lt;/bc_aleph>&amp;rft.eisbn=&amp;rft_id=info:oai/>" GetIt1="OVP" deliveryCategory="Physical Item"/>
+          <sear:LIBRARIES>
+            <sear:LIBRARY>
+              <sear:institution>BCL</sear:institution>
+              <sear:library>MEDIA</sear:library>
+              <sear:status>available</sear:status>
+              <sear:collection>Course Reserve</sear:collection>
+              <sear:callNumber>(PN1997 G363 1990 )</sear:callNumber>
+              <sear:url>OVP</sear:url>
+            </sear:LIBRARY>
+          </sear:LIBRARIES>
+          <sear:LINKS>
+            <sear:openurl><![CDATA[http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&ctx_tim=2012-01-20T12%3A26%3A55IST&url_ver=Z39.88-2004&url_ctx_fmt=infofi/fmt:kev:mtx:ctx&rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&rft.object_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Gandhi%20Columbia%20Pictures.&rft.aulast=Attenborough&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0800105141&rft.sici=&rft.coden=&rft_id=info:doi/&rft_dat=<bc_aleph>000751010</bc_aleph>&rft.eisbn=&rft_id=info:oai/>]]></sear:openurl>
+            <sear:backlink>http://library.bc.edu/F?func=direct&amp;local_base=BC_CATALOG&amp;doc_number=000751010</sear:backlink>
+            <sear:thumbnail>http://images.amazon.com/images/P/0800105141.01._SSTHUM_.jpg</sear:thumbnail>
+            <sear:thumbnail>http://lib.syndetics.com/index.aspx?isbn=0800105141/SC.JPG&amp;client=bostonh</sear:thumbnail>
+            <sear:linktotoc>http://lib.syndetics.com/index.aspx?isbn=0800105141/index.html&amp;client=bccls&amp;type=xw12</sear:linktotoc>
+            <sear:openurlfulltext><![CDATA[http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&ctx_tim=2012-01-20T12%3A26%3A55IST&url_ver=Z39.88-2004&url_ctx_fmt=infofi/fmt:kev:mtx:ctx&rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&rft.object_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Gandhi%20Columbia%20Pictures.&rft.aulast=Attenborough&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0800105141&rft.sici=&rft.coden=&rft_id=info:doi/&svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&svc.fulltext=yes&rft_dat=<bc_aleph>000751010</bc_aleph>&rft.eisbn=&rft_id=info:oai/>]]></sear:openurlfulltext>
+            <sear:linktoholdings>OVP</sear:linktoholdings>
+            <sear:linktouc>http://www.amazon.com/gp/product/0800105141</sear:linktouc>
+            <sear:linktouc>http://www.worldcat.org/search?q=isbn%3A0800105141</sear:linktouc>
+          </sear:LINKS>
+        </sear:DOC>
+        <sear:DOC SEARCH_ENGINE_TYPE="Local Search Engine" SEARCH_ENGINE="Local Search Engine" NO="3" RANK="1.0" ID="3396495">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>002106495</sourcerecordid>
+                <sourceid>bc_aleph</sourceid>
+                <recordid>bc_aleph002106495</recordid>
+                <originalsourceid>BCL01</originalsourceid>
+                <ilsapiid>BCL01002106495</ilsapiid>
+                <sourceformat>MARC21</sourceformat>
+                <addsrcrecordid>BC_CATALOG</addsrcrecordid>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>video</type>
+                <title>Gandhi (Motion picture).</title>
+                <title>Gandhi Columbia Pictures ; International Film Investors ... [et al.] present Richard Attenborough's film ; produced by Richard Attenborough ; written by John Briley ; directed by Richard Attenborough.</title>
+                <contributor>Richard Attenborough; John Briley; Ben Kingsley; 1943-; Candice Bergen; 1946-.; Edward Fox; 1937-.; John Gielgud; Sir 1904-; Trevor Howard; 1916-; John Mills; 1908-2005; Martin Sheen; Billy Williams; Ronnie Taylor; Ravi Shankar; 1920-; George Fenton</contributor>
+                <contributor>Columbia Pictures.</contributor>
+                <contributor>International Film Investors (Firm)</contributor>
+                <contributor>Columbia TriStar Home Video (Firm)</contributor>
+                <publisher>Burbank, CA : Columbia TriStar Home Video</publisher>
+                <creationdate>c2001.</creationdate>
+                <format>1 videodisc (190 min.) : sd., col. ; 4 3/4 in.</format>
+                <identifier>0767828070</identifier>
+                <subject>Gandhi, Mahatma, 1869-1948 -- Drama; Gandhi, Mahatma, 1869-1948 -- Teatro; Nonviolence -- Drama; India -- Politics and government -- 1919-1947 -- Drama; South Africa -- Race relations -- Drama; India -- Gobierno -- 1919-1947 -- Teatro; India -- Política -- 1919-1947 -- Teatro; Feature films; Biographical films; Video recordings for the hearing impaired</subject>
+                <description>Tells the story of Gandhi's adult life, when he led an entire country to freedom, using non-violent methods.</description>
+                <language>und;und</language>
+                <source>bc_aleph</source>
+                <availlibrary>$$IBCL$$LMEDIA$$1Stacks$$2(PN1997 .G363 2001 )$$Savailable$$31$$40$$5N$$676$$XBCL50$$YMEDIA$$ZSTACK</availlibrary>
+                <unititle>Gandhi (Motion picture).</unititle>
+                <lds03>DVD.</lds03>
+                <lds07>O'Neill Media Center Stacks PN1997 .G363 2001</lds07>
+                <availinstitution>$$IBCL$$Savailable</availinstitution>
+                <availpnx>available</availpnx>
+                <version>4</version>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <thumbnail>$$Tamazon_thumb</thumbnail>
+                <thumbnail>$$Tsyndetics_thumb</thumbnail>
+                <linktotoc>$$Tsyndetics_index$$DCheck Here for Additional Information</linktotoc>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktouc>$$Tamazon_uc$$DThis item in Amazon.com</linktouc>
+                <linktouc>$$Tworldcat_isbn$$DThis item in WorldCat®</linktouc>
+              </links>
+              <search>
+                <creatorcontrib>Columbia Pictures ; International Film Investors ... [et al.] present Richard Attenborough's film ; produced by Richard Attenborough ; written by John Briley ; directed by Richard Attenborough.</creatorcontrib>
+                <creatorcontrib>Directors of photography, Billy Williams, Ronnie Taylor ; editor, John Bloom ; music, Ravi Shankar, George Fenton.</creatorcontrib>
+                <creatorcontrib>Ben Kingsley, Candice Bergen, Edward Fox, John Gielgud, Trevor Howard, John Mills, Martin Sheen.; Richard Attenborough; John Briley; Ben Kingsley; Candice Bergen; Edward Fox; John Gielgud; Trevor Howard; John Mills; Martin Sheen; Billy Williams; Ronnie Taylor; Ravi Shankar; George Fenton</creatorcontrib>
+                <creatorcontrib>Attenborough, Richard.</creatorcontrib>
+                <creatorcontrib>Briley, John.</creatorcontrib>
+                <creatorcontrib>Kingsley, Ben, 1943-</creatorcontrib>
+                <creatorcontrib>Bergen, Candice, 1946-.</creatorcontrib>
+                <creatorcontrib>Fox, Edward, 1937-.</creatorcontrib>
+                <creatorcontrib>Gielgud, John, Sir, 1904-</creatorcontrib>
+                <creatorcontrib>Howard, Trevor, 1916-</creatorcontrib>
+                <creatorcontrib>Mills, John, 1908-2005</creatorcontrib>
+                <creatorcontrib>Sheen, Martin.</creatorcontrib>
+                <creatorcontrib>Williams, Billy.</creatorcontrib>
+                <creatorcontrib>Taylor, Ronnie.</creatorcontrib>
+                <creatorcontrib>Shankar, Ravi, 1920-</creatorcontrib>
+                <creatorcontrib>Fenton, George.</creatorcontrib>
+                <creatorcontrib>Attenborough, R</creatorcontrib>
+                <creatorcontrib>Briley, J</creatorcontrib>
+                <creatorcontrib>Kingsley, B</creatorcontrib>
+                <creatorcontrib>Bergen, C</creatorcontrib>
+                <creatorcontrib>Fox, E</creatorcontrib>
+                <creatorcontrib>Gielgud, J</creatorcontrib>
+                <creatorcontrib>Howard, T</creatorcontrib>
+                <creatorcontrib>Mills, J</creatorcontrib>
+                <creatorcontrib>Sheen, M</creatorcontrib>
+                <creatorcontrib>Williams, B</creatorcontrib>
+                <creatorcontrib>Taylor, R</creatorcontrib>
+                <creatorcontrib>Shankar, R</creatorcontrib>
+                <creatorcontrib>Fenton, G</creatorcontrib>
+                <creatorcontrib>Columbia Pictures.</creatorcontrib>
+                <creatorcontrib>International Film Investors (Firm)</creatorcontrib>
+                <creatorcontrib>Columbia TriStar Home Video (Firm)</creatorcontrib>
+                <title>Gandhi (Motion picture).</title>
+                <title>Gandhi</title>
+                <description>Tells the story of Gandhi's adult life, when he led an entire country to freedom, using non-violent methods.</description>
+                <subject>Gandhi, Mahatma, 1869-1948 Drama.</subject>
+                <subject>Gandhi, Mahatma, 1869-1948 Teatro.</subject>
+                <subject>Nonviolence Drama.</subject>
+                <subject>India Politics and government 1919-1947 Drama.</subject>
+                <subject>South Africa Race relations Drama.</subject>
+                <subject>India Gobierno 1919-1947 Teatro.</subject>
+                <subject>India Política 1919-1947 Teatro.</subject>
+                <subject>Feature films.</subject>
+                <subject>Biographical films.</subject>
+                <subject>Video recordings for the hearing impaired.</subject>
+                <general>[videorecording] /</general>
+                <general>Columbia TriStar Home Video,</general>
+                <general>Directors of photography, Billy Williams, Ronnie Taylor ; editor, John Bloom ; music, Ravi Shankar, George Fenton.</general>
+                <general>MPAA rating: PG.</general>
+                <general>Academy Awards for Best Picture: Richard Attenborough; Best Actor in a Leading Role: Ben Kingsley; Best Art Direction-Set Decoration: Robert W. Laing, Michael Seirton, Craig, Stuart; Best Cinematography: Ronnie Taylor, Billy Williams; Best Costume Design: Bhanu Athaiya, John Mollo; Best Director: Richard Attenborough; Best Film Editing: John Bloom; Best Writing, Screenplay Written Directly for the Screen: John Briley.</general>
+                <general>043396032972</general>
+                <general>03297</general>
+                <sourceid>bc_aleph</sourceid>
+                <recordid>bc_aleph002106495</recordid>
+                <isbn>0767828070</isbn>
+                <rsrctype>video</rsrctype>
+                <creationdate>2001</creationdate>
+                <creationdate>1982</creationdate>
+                <searchscope>MEDIA</searchscope>
+                <searchscope>bc_aleph</searchscope>
+                <searchscope>BCL</searchscope>
+                <scope>BCL</scope>
+                <lsr05>47890745</lsr05>
+                <lsr05>(OCoLC)ocm47890745</lsr05>
+                <lsr06>pn1997.g3632001</lsr06>
+                <lsr06>PN1997.G3632001</lsr06>
+                <lsr06>pn1997</lsr06>
+                <lsr06>PN1997</lsr06>
+              </search>
+              <sort>
+                <title>gandhi</title>
+                <creationdate>2001</creationdate>
+                <author>columbia pictures international film investors et al present richard attenborough s film produced by richard attenborough written by john briley directed by richard attenborough</author>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <language>fre</language>
+                <language>spa</language>
+                <language>chi</language>
+                <language>kor</language>
+                <language>por</language>
+                <language>tha</language>
+                <creationdate>2001</creationdate>
+                <topic>Gandhi, Mahatma, 1869-1948–Drama</topic>
+                <topic>Nonviolence–Drama</topic>
+                <topic>India–Politics and government–1919-1947–Drama</topic>
+                <topic>South Africa–Race relations–Drama</topic>
+                <collection>MEDIA</collection>
+                <toplevel>available</toplevel>
+                <prefilter>audio_video</prefilter>
+                <rsrctype>video</rsrctype>
+                <creatorcontrib>Attenborough, Richard</creatorcontrib>
+                <creatorcontrib>Briley, John</creatorcontrib>
+                <creatorcontrib>Kingsley, Ben, 1943-</creatorcontrib>
+                <creatorcontrib>Bergen, Candice, 1946-</creatorcontrib>
+                <creatorcontrib>Fox, Edward, 1937-</creatorcontrib>
+                <creatorcontrib>Gielgud, John, Sir, 1904-</creatorcontrib>
+                <creatorcontrib>Howard, Trevor, 1916-</creatorcontrib>
+                <creatorcontrib>Mills, John, 1908-2005</creatorcontrib>
+                <creatorcontrib>Sheen, Martin</creatorcontrib>
+                <creatorcontrib>Williams, Billy</creatorcontrib>
+                <creatorcontrib>Taylor, Ronnie</creatorcontrib>
+                <creatorcontrib>Shankar, Ravi, 1920-</creatorcontrib>
+                <creatorcontrib>Fenton, George</creatorcontrib>
+                <creatorcontrib>Columbia Pictures</creatorcontrib>
+                <creatorcontrib>International Film Investors (Firm)</creatorcontrib>
+                <creatorcontrib>Columbia TriStar Home Video (Firm)</creatorcontrib>
+                <genre>Feature films</genre>
+                <genre>Biographical films</genre>
+                <genre>Video recordings for the hearing impaired</genre>
+                <genre>Drama</genre>
+                <genre>Feature films.</genre>
+                <genre>Biographical films.</genre>
+                <genre>Video recordings for the hearing impaired.</genre>
+                <classificationlcc>P - Language and literature.–Literature (General)</classificationlcc>
+                <frbrgroupid>42018079</frbrgroupid>
+                <frbrtype>5</frbrtype>
+              </facets>
+              <dedup>
+                <t>1</t>
+                <c2>0767828070</c2>
+                <c3>gandhi</c3>
+                <c4>2001</c4>
+                <f3>0767828070</f3>
+                <f5>gandhi</f5>
+                <f6>2001</f6>
+                <f7>gandhi</f7>
+                <f8>cau</f8>
+                <f9>1 videodisc (190 min.) :</f9>
+                <f10>columbia tristar home video</f10>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kattenborough richard$$AA</k1>
+                <k1>$$Kbriley john$$AA</k1>
+                <k1>$$Kkingsley ben 1943$$AA</k1>
+                <k1>$$Kbergen candice 1946$$AA</k1>
+                <k1>$$Kfox edward 1937$$AA</k1>
+                <k1>$$Kgielgud john sir 1904$$AA</k1>
+                <k1>$$Khoward trevor 1916$$AA</k1>
+                <k1>$$Kmills john 1908 2005$$AA</k1>
+                <k1>$$Ksheen martin$$AA</k1>
+                <k1>$$Kwilliams billy$$AA</k1>
+                <k1>$$Ktaylor ronnie$$AA</k1>
+                <k1>$$Kshankar ravi 1920$$AA</k1>
+                <k1>$$Kfenton george$$AA</k1>
+                <k1>$$Kcolumbia pictures$$AA</k1>
+                <k1>$$Kinternational film investors firm$$AA</k1>
+                <k1>$$Kcolumbia tristar home video firm$$AA</k1>
+                <k2>$$Kgandhi motion picture$$ATO</k2>
+                <k3>$$Kgandhi$$AT</k3>
+              </frbr>
+              <delivery>
+                <institution>BCL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <enrichment>
+                <classificationlcc>PN1997</classificationlcc>
+              </enrichment>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Attenborough</aulast>
+                <aufirst>Richard</aufirst>
+                <addau>Attenborough, Richard</addau>
+                <addau>Briley, John</addau>
+                <addau>Kingsley, Ben, 1943-</addau>
+                <addau>Bergen, Candice, 1946-</addau>
+                <addau>Fox, Edward, 1937-</addau>
+                <addau>Gielgud, John, Sir, 1904-</addau>
+                <addau>Howard, Trevor, 1916-</addau>
+                <addau>Mills, John, 1908-2005</addau>
+                <addau>Sheen, Martin</addau>
+                <addau>Williams, Billy</addau>
+                <addau>Taylor, Ronnie</addau>
+                <addau>Shankar, Ravi, 1920-</addau>
+                <addau>Fenton, George</addau>
+                <addau>Columbia Pictures</addau>
+                <addau>International Film Investors (Firm)</addau>
+                <addau>Columbia TriStar Home Video (Firm)</addau>
+                <btitle>Gandhi (Motion picture).</btitle>
+                <btitle>Gandhi Columbia Pictures ; International Film Investors ... [et al.] present Richard Attenborough's film ; produced by Richard Attenborough ; written by John Briley ; directed by Richard Attenborough.</btitle>
+                <date>2001</date>
+                <risdate>c2001.</risdate>
+                <isbn>0767828070</isbn>
+                <format>book</format>
+                <genre>unknown</genre>
+                <ristype>VIDEO</ristype>
+                <abstract>Tells the story of Gandhi's adult life, when he led an entire country to freedom, using non-violent methods.</abstract>
+                <cop>Burbank, CA</cop>
+                <pub>Columbia TriStar Home Video</pub>
+                <oclcid>47890745</oclcid>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt2="http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2012-01-20T12%3A26%3A55IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&amp;rft.object_id=&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=unknown&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Gandhi%20Carolina%20Bank%20%3B%20Goldcrest%20Films%20International%20%3B%20Indo-British%20%3B%20International%20Film%20Investors%20%3B%20National%20Film%20Development%20Corporation%20of%20India%20%3B%20produced%20by%20Richard%20Attenborough%20%3B%20written%20by%20John%20Briley%20%3B%20directed%20by%20Richard%20Attenborough.&amp;rft.aulast=Attenborough&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=1424840945&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft_dat=&lt;bc_aleph>002272784&lt;/bc_aleph>&amp;rft.eisbn=&amp;rft_id=info:oai/>" GetIt1="OVP" deliveryCategory="Physical Item"/>
+          <sear:LIBRARIES>
+            <sear:LIBRARY>
+              <sear:institution>BCL</sear:institution>
+              <sear:library>MEDIA</sear:library>
+              <sear:status>available</sear:status>
+              <sear:collection>Stacks</sear:collection>
+              <sear:callNumber>(PN1997 .G363 2001 )</sear:callNumber>
+              <sear:url>OVP</sear:url>
+            </sear:LIBRARY>
+          </sear:LIBRARIES>
+          <sear:LINKS>
+            <sear:openurl><![CDATA[http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&ctx_tim=2012-01-20T12%3A26%3A55IST&url_ver=Z39.88-2004&url_ctx_fmt=infofi/fmt:kev:mtx:ctx&rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&rft.object_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Gandhi%20(Motion%20picture).&rft.aulast=Attenborough&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0767828070&rft.sici=&rft.coden=&rft_id=info:doi/&rft_dat=<bc_aleph>002106495</bc_aleph>&rft.eisbn=&rft_id=info:oai/>]]></sear:openurl>
+            <sear:backlink>http://library.bc.edu/F?func=direct&amp;local_base=BC_CATALOG&amp;doc_number=002106495</sear:backlink>
+            <sear:thumbnail>http://images.amazon.com/images/P/0767828070.01._SSTHUM_.jpg</sear:thumbnail>
+            <sear:thumbnail>http://lib.syndetics.com/index.aspx?isbn=0767828070/SC.JPG&amp;client=bostonh</sear:thumbnail>
+            <sear:linktotoc>http://lib.syndetics.com/index.aspx?isbn=0767828070/index.html&amp;client=bccls&amp;type=xw12</sear:linktotoc>
+            <sear:openurlfulltext><![CDATA[http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&ctx_tim=2012-01-20T12%3A26%3A55IST&url_ver=Z39.88-2004&url_ctx_fmt=infofi/fmt:kev:mtx:ctx&rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&rft.object_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Gandhi%20(Motion%20picture).&rft.aulast=Attenborough&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0767828070&rft.sici=&rft.coden=&rft_id=info:doi/&svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&svc.fulltext=yes&rft_dat=<bc_aleph>002106495</bc_aleph>&rft.eisbn=&rft_id=info:oai/>]]></sear:openurlfulltext>
+            <sear:linktoholdings>OVP</sear:linktoholdings>
+            <sear:linktouc>http://www.amazon.com/gp/product/0767828070</sear:linktouc>
+            <sear:linktouc>http://www.worldcat.org/search?q=isbn%3A0767828070</sear:linktouc>
+          </sear:LINKS>
+        </sear:DOC>
+        <sear:DOC SEARCH_ENGINE_TYPE="Local Search Engine" SEARCH_ENGINE="Local Search Engine" NO="4" RANK="0.3" ID="3392349">
+          <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+            <record>
+              <control>
+                <sourcerecordid>002274620</sourcerecordid>
+                <sourceid>bc_aleph</sourceid>
+                <recordid>bc_aleph002274620</recordid>
+                <originalsourceid>BCL01</originalsourceid>
+                <ilsapiid>BCL01002274620</ilsapiid>
+                <addsrcrecordid>BC_CATALOG</addsrcrecordid>
+                <sourceformat>MARC21</sourceformat>
+                <sourcesystem>Aleph</sourcesystem>
+              </control>
+              <display>
+                <type>video</type>
+                <title>Gandhi Carolina Bank ; Goldcrest Films International ; Indo-British ; International Film Investors ; National Film Development Corporation of India ; produced by Richard Attenborough ; written by John Briley ; directed by Richard Attenborough.</title>
+                <contributor>Richard Attenborough; John Briley; Ben Kingsley; 1943-; Candice Bergen; 1946-.; Edward Fox; 1937-.; John Gielgud; 1904-2000.; Trevor Howard; 1916-1988.; John Mills; 1908-2005.; Martin Sheen; Ian Charleson; Athol Fugard; Gunther Maria Halmer; Saeed Jaffrey; 1929-.; Ronnie Taylor; 1924-; Billy Williams; John Bloom; Ravi Shankar; 1920-; Bhanu Athaiya; John Mollo; Stuart Craig; Michael Seirton</contributor>
+                <contributor>Carolina Bank Limited (London, England)</contributor>
+                <contributor>Goldcrest Films International.</contributor>
+                <contributor>Indo-British Films, Ltd.</contributor>
+                <contributor>International Film Investors (Firm)</contributor>
+                <contributor>National Film Development Corporation of India.</contributor>
+                <contributor>Sony Pictures Home Entertainment (Firm)</contributor>
+                <edition>25th anniversary ; [Collector's ed.]..</edition>
+                <publisher>Culver City, Calif. : Sony Pictures Home Entertainment</publisher>
+                <creationdate>2007</creationdate>
+                <format>2 videodiscs (191 min.) : sd., col. ; 4 3/4 in.</format>
+                <identifier>1424840945; 9781424840946</identifier>
+                <subject>Gandhi, Mahatma, 1869-1948 -- Drama; Gandhi, Mahatma, 1869-1948 -- Assassination -- Drama; Nonviolence -- Drama; Religious leaders -- India Drama; Paz -- Aspectos religiosos Budismo, Cristianismo, etc. Teatro; Gran Bretaña -- Historia Siglo XX Teatro; Great Britain -- Colonies -- India -- Drama; India -- History -- British occupation, 1765-1947 -- Drama; India -- History -- 1947- -- Drama; India -- Drama; Feature films; Epic films; Historical films; Video recordings for the hearing impaired; Historical -- Feature; Ethnic -- Feature; Crime -- Feature; Feature films; Epic films; Historical films</subject>
+                <description>Follows the life of Mahatma Gandhi from his days as a lawyer in South Africa to his role as India's spiritual leader by using his philosophy of non-violent but direct-action protest that helped end British rule. Centers on the extraordinary man who fought for a nonviolent, peaceful existence and set an entire nation free.</description>
+                <language>und;und</language>
+                <source>bc_aleph</source>
+                <availlibrary>$$IBCL$$LMEDIA$$1Stacks$$2(PN1997 .G363 2007 )$$Sunavailable$$31$$41$$5N$$618$$XBCL50$$YMEDIA$$ZSTACK</availlibrary>
+                <lds03>DVD, widescreen (2.35:1) presentation; Dolby Digital 5.1 surround, Dolby Digital 2.0 stereo., surround.</lds03>
+                <lds07>O'Neill Media Center Stacks PN1997 .G363 2007</lds07>
+                <availinstitution>$$IBCL$$Sunavailable</availinstitution>
+                <availpnx>unavailable</availpnx>
+                <version>4</version>
+              </display>
+              <links>
+                <openurl>$$Topenurl_journal</openurl>
+                <backlink>$$Taleph_backlink$$DThis item in the Library Catalog</backlink>
+                <thumbnail>$$Tamazon_thumb</thumbnail>
+                <thumbnail>$$Tsyndetics_thumb</thumbnail>
+                <linktotoc>$$Tsyndetics_index$$DCheck Here for Additional Information</linktotoc>
+                <openurlfulltext>$$Topenurlfull_journal</openurlfulltext>
+                <linktoholdings>$$Taleph_holdings</linktoholdings>
+                <linktouc>$$Tamazon_uc$$DThis item in Amazon.com</linktouc>
+                <linktouc>$$Tworldcat_isbn$$DThis item in WorldCat®</linktouc>
+              </links>
+              <search>
+                <creatorcontrib>Carolina Bank ; Goldcrest Films International ; Indo-British ; International Film Investors ; National Film Development Corporation of India ; produced by Richard Attenborough ; written by John Briley ; directed by Richard Attenborough.</creatorcontrib>
+                <creatorcontrib>Directors of photography, Ronnie Taylor, Billy Williams ; editor, John Bloom ; music, Ravi Shankar ; costume designers, Bhanu Athaiya, John Mollo ; production designer, Stuart Craig.</creatorcontrib>
+                <creatorcontrib>Ben Kingsley, Candice Bergen, Edward Fox, John Gielgud, Trevor Howard, John Mills, Martin Sheen, Ian Charleson, Athol Fugard, Gunter Maria Halmer, Saeed Jaffrey.; Richard Attenborough; John Briley; Ben Kingsley; Candice Bergen; Edward Fox; John Gielgud; Trevor Howard; John Mills; Martin Sheen; Ian Charleson; Athol Fugard; Gunther Maria Halmer; Saeed Jaffrey; Ronnie Taylor; Billy Williams; John Bloom; Ravi Shankar; Bhanu Athaiya; John Mollo; Stuart Craig; Michael Seirton</creatorcontrib>
+                <creatorcontrib>Attenborough, Richard.</creatorcontrib>
+                <creatorcontrib>Briley, John.</creatorcontrib>
+                <creatorcontrib>Kingsley, Ben, 1943-</creatorcontrib>
+                <creatorcontrib>Bergen, Candice, 1946-.</creatorcontrib>
+                <creatorcontrib>Fox, Edward, 1937-.</creatorcontrib>
+                <creatorcontrib>Gielgud, John, 1904-2000.</creatorcontrib>
+                <creatorcontrib>Howard, Trevor, 1916-1988.</creatorcontrib>
+                <creatorcontrib>Mills, John, 1908-2005.</creatorcontrib>
+                <creatorcontrib>Sheen, Martin.</creatorcontrib>
+                <creatorcontrib>Charleson, Ian.</creatorcontrib>
+                <creatorcontrib>Fugard, Athol.</creatorcontrib>
+                <creatorcontrib>Halmer, Gunther Maria.</creatorcontrib>
+                <creatorcontrib>Jaffrey, Saeed, 1929-.</creatorcontrib>
+                <creatorcontrib>Taylor, Ronnie, 1924-</creatorcontrib>
+                <creatorcontrib>Williams, Billy.</creatorcontrib>
+                <creatorcontrib>Bloom, John.</creatorcontrib>
+                <creatorcontrib>Shankar, Ravi, 1920-</creatorcontrib>
+                <creatorcontrib>Athaiya, Bhanu.</creatorcontrib>
+                <creatorcontrib>Mollo, John.</creatorcontrib>
+                <creatorcontrib>Craig, Stuart.</creatorcontrib>
+                <creatorcontrib>Seirton, Michael.</creatorcontrib>
+                <creatorcontrib>Attenborough, R</creatorcontrib>
+                <creatorcontrib>Briley, J</creatorcontrib>
+                <creatorcontrib>Kingsley, B</creatorcontrib>
+                <creatorcontrib>Bergen, C</creatorcontrib>
+                <creatorcontrib>Fox, E</creatorcontrib>
+                <creatorcontrib>Gielgud, J</creatorcontrib>
+                <creatorcontrib>Howard, T</creatorcontrib>
+                <creatorcontrib>Mills, J</creatorcontrib>
+                <creatorcontrib>Sheen, M</creatorcontrib>
+                <creatorcontrib>Charleson, I</creatorcontrib>
+                <creatorcontrib>Fugard, A</creatorcontrib>
+                <creatorcontrib>Halmer, G</creatorcontrib>
+                <creatorcontrib>Jaffrey, S</creatorcontrib>
+                <creatorcontrib>Taylor, R</creatorcontrib>
+                <creatorcontrib>Williams, B</creatorcontrib>
+                <creatorcontrib>Bloom, J</creatorcontrib>
+                <creatorcontrib>Shankar, R</creatorcontrib>
+                <creatorcontrib>Athaiya, B</creatorcontrib>
+                <creatorcontrib>Mollo, J</creatorcontrib>
+                <creatorcontrib>Craig, S</creatorcontrib>
+                <creatorcontrib>Seirton, M</creatorcontrib>
+                <creatorcontrib>Carolina Bank Limited (London, England)</creatorcontrib>
+                <creatorcontrib>Goldcrest Films International.</creatorcontrib>
+                <creatorcontrib>Indo-British Films, Ltd.</creatorcontrib>
+                <creatorcontrib>International Film Investors (Firm)</creatorcontrib>
+                <creatorcontrib>National Film Development Corporation of India.</creatorcontrib>
+                <creatorcontrib>Sony Pictures Home Entertainment (Firm)</creatorcontrib>
+                <title>Gandhi</title>
+                <description>Follows the life of Mahatma Gandhi from his days as a lawyer in South Africa to his role as India's spiritual leader by using his philosophy of non-violent but direct-action protest that helped end British rule. Centers on the extraordinary man who fought for a nonviolent, peaceful existence and set an entire nation free.</description>
+                <subject>Gandhi, Mahatma, 1869-1948 Drama.</subject>
+                <subject>Gandhi, Mahatma, 1869-1948 Assassination Drama.</subject>
+                <subject>Nonviolence Drama.</subject>
+                <subject>Religious leaders India Drama.</subject>
+                <subject>Paz Aspectos religiosos Budismo, Cristianismo, etc. Teatro.</subject>
+                <subject>Gran Bretaña Historia Siglo XX Teatro.</subject>
+                <subject>Great Britain Colonies India Drama.</subject>
+                <subject>India History British occupation, 1765-1947 Drama.</subject>
+                <subject>India History 1947- Drama.</subject>
+                <subject>India Drama.</subject>
+                <subject>Feature films.</subject>
+                <subject>Epic films.</subject>
+                <subject>Historical films.</subject>
+                <subject>Video recordings for the hearing impaired.</subject>
+                <subject>Historical Feature.</subject>
+                <subject>Ethnic Feature.</subject>
+                <subject>Crime Feature.</subject>
+                <general>[videorecording] /</general>
+                <general>Sony Pictures Home Entertainment,</general>
+                <general>Directors of photography, Ronnie Taylor, Billy Williams ; editor, John Bloom ; music, Ravi Shankar ; costume designers, Bhanu Athaiya, John Mollo ; production designer, Stuart Craig.</general>
+                <general>MPAA rating: PG.</general>
+                <general>Academy Awards, USA, 1983: Oscars for Best Actor in a Leading Role (Ben Kingsley) ; Best Art Direction - Set Decoration (Stuart Craig, Robert W. Laing, Michael Seirton) ; Best Cinematography (Billy Williams, Ronnie Taylor) ; Best Costume Design (John Mollo, Bhanu Athaiya) ; Best Director (Richard Attenborough) ; Best Film Editing (John Bloom) ; Best Picture ; Best Writing, Screenplay Written Directly for the Screen (John Briley).</general>
+                <general>043396174375</general>
+                <general>17437</general>
+                <sourceid>bc_aleph</sourceid>
+                <recordid>bc_aleph002274620</recordid>
+                <isbn>1424840945</isbn>
+                <isbn>9781424840946</isbn>
+                <rsrctype>video</rsrctype>
+                <creationdate>2007</creationdate>
+                <searchscope>MEDIA</searchscope>
+                <searchscope>bc_aleph</searchscope>
+                <searchscope>BCL</searchscope>
+                <scope>BCL</scope>
+                <lsr05>77523787</lsr05>
+                <lsr05>(OCoLC)ocm77523787</lsr05>
+                <lsr06>pn1997.g3632007</lsr06>
+                <lsr06>PN1997.G3632007</lsr06>
+                <lsr06>pn1997</lsr06>
+                <lsr06>PN1997</lsr06>
+              </search>
+              <sort>
+                <title>gandhi</title>
+                <creationdate>2007</creationdate>
+                <author>carolina bank goldcrest films international indo british international film investors national film development corporation of india produced by richard attenborough written by john briley directed by richard attenborough</author>
+              </sort>
+              <facets>
+                <language>eng</language>
+                <language>fre</language>
+                <language>por</language>
+                <language>spa</language>
+                <language>kor</language>
+                <creationdate>2007</creationdate>
+                <topic>Gandhi, Mahatma, 1869-1948–Drama</topic>
+                <topic>Gandhi, Mahatma, 1869-1948–Assassination–Drama</topic>
+                <topic>Nonviolence–Drama</topic>
+                <topic>Religious leaders–India–Drama</topic>
+                <topic>Great Britain–Colonies–India–Drama</topic>
+                <topic>India–History–British occupation, 1765-1947–Drama</topic>
+                <topic>India–History–1947-–Drama</topic>
+                <topic>India–Drama</topic>
+                <collection>MEDIA</collection>
+                <prefilter>audio_video</prefilter>
+                <rsrctype>video</rsrctype>
+                <creatorcontrib>Attenborough, Richard</creatorcontrib>
+                <creatorcontrib>Briley, John</creatorcontrib>
+                <creatorcontrib>Kingsley, Ben, 1943-</creatorcontrib>
+                <creatorcontrib>Bergen, Candice, 1946-</creatorcontrib>
+                <creatorcontrib>Fox, Edward, 1937-</creatorcontrib>
+                <creatorcontrib>Gielgud, John, 1904-2000</creatorcontrib>
+                <creatorcontrib>Howard, Trevor, 1916-1988</creatorcontrib>
+                <creatorcontrib>Mills, John, 1908-2005</creatorcontrib>
+                <creatorcontrib>Sheen, Martin</creatorcontrib>
+                <creatorcontrib>Charleson, Ian</creatorcontrib>
+                <creatorcontrib>Fugard, Athol</creatorcontrib>
+                <creatorcontrib>Halmer, Gunther Maria</creatorcontrib>
+                <creatorcontrib>Jaffrey, Saeed, 1929-</creatorcontrib>
+                <creatorcontrib>Taylor, Ronnie, 1924-</creatorcontrib>
+                <creatorcontrib>Williams, Billy</creatorcontrib>
+                <creatorcontrib>Bloom, John</creatorcontrib>
+                <creatorcontrib>Shankar, Ravi, 1920-</creatorcontrib>
+                <creatorcontrib>Athaiya, Bhanu</creatorcontrib>
+                <creatorcontrib>Mollo, John</creatorcontrib>
+                <creatorcontrib>Craig, Stuart</creatorcontrib>
+                <creatorcontrib>Seirton, Michael</creatorcontrib>
+                <creatorcontrib>Carolina Bank Limited (London, England)</creatorcontrib>
+                <creatorcontrib>Goldcrest Films International</creatorcontrib>
+                <creatorcontrib>Indo-British Films, Ltd</creatorcontrib>
+                <creatorcontrib>International Film Investors (Firm)</creatorcontrib>
+                <creatorcontrib>National Film Development Corporation of India</creatorcontrib>
+                <creatorcontrib>Sony Pictures Home Entertainment (Firm)</creatorcontrib>
+                <genre>Feature films</genre>
+                <genre>Epic films</genre>
+                <genre>Historical films</genre>
+                <genre>Video recordings for the hearing impaired</genre>
+                <genre>Historical -- Feature</genre>
+                <genre>Ethnic -- Feature</genre>
+                <genre>Crime -- Feature</genre>
+                <genre>Drama</genre>
+                <genre>Feature films.</genre>
+                <genre>Epic films.</genre>
+                <genre>Historical films.</genre>
+                <genre>Video recordings for the hearing impaired.</genre>
+                <genre>Historical</genre>
+                <genre>Ethnic</genre>
+                <genre>Crime</genre>
+                <classificationlcc>P - Language and literature.–Literature (General)</classificationlcc>
+                <frbrgroupid>42018079</frbrgroupid>
+                <frbrtype>5</frbrtype>
+              </facets>
+              <dedup>
+                <t>1</t>
+                <c2>1424840945;9781424840946</c2>
+                <c3>gandhi</c3>
+                <c4>2007</c4>
+                <f3>1424840945;9781424840946</f3>
+                <f5>gandhi</f5>
+                <f6>2007</f6>
+                <f7>gandhi</f7>
+                <f8>enk</f8>
+                <f9>2 videodiscs (191 min.) :</f9>
+                <f10>sony pictures home entertainment</f10>
+              </dedup>
+              <frbr>
+                <t>1</t>
+                <k1>$$Kattenborough richard$$AA</k1>
+                <k1>$$Kbriley john$$AA</k1>
+                <k1>$$Kkingsley ben 1943$$AA</k1>
+                <k1>$$Kbergen candice 1946$$AA</k1>
+                <k1>$$Kfox edward 1937$$AA</k1>
+                <k1>$$Kgielgud john 1904 2000$$AA</k1>
+                <k1>$$Khoward trevor 1916 1988$$AA</k1>
+                <k1>$$Kmills john 1908 2005$$AA</k1>
+                <k1>$$Ksheen martin$$AA</k1>
+                <k1>$$Kcharleson ian$$AA</k1>
+                <k1>$$Kfugard athol$$AA</k1>
+                <k1>$$Khalmer gunther maria$$AA</k1>
+                <k1>$$Kjaffrey saeed 1929$$AA</k1>
+                <k1>$$Ktaylor ronnie 1924$$AA</k1>
+                <k1>$$Kwilliams billy$$AA</k1>
+                <k1>$$Kbloom john$$AA</k1>
+                <k1>$$Kshankar ravi 1920$$AA</k1>
+                <k1>$$Kathaiya bhanu$$AA</k1>
+                <k1>$$Kmollo john$$AA</k1>
+                <k1>$$Kcraig stuart$$AA</k1>
+                <k1>$$Kseirton michael$$AA</k1>
+                <k1>$$Kcarolina bank limited london england$$AA</k1>
+                <k1>$$Kgoldcrest films international$$AA</k1>
+                <k1>$$Kindo british films ltd$$AA</k1>
+                <k1>$$Kinternational film investors firm$$AA</k1>
+                <k1>$$Knational film development corporation of india$$AA</k1>
+                <k1>$$Ksony pictures home entertainment firm$$AA</k1>
+                <k3>$$Kgandhi$$AT</k3>
+              </frbr>
+              <delivery>
+                <institution>BCL</institution>
+                <delcategory>Physical Item</delcategory>
+              </delivery>
+              <enrichment>
+                <classificationlcc>PN1997</classificationlcc>
+              </enrichment>
+              <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+              </ranking>
+              <addata>
+                <aulast>Attenborough</aulast>
+                <aufirst>Richard</aufirst>
+                <addau>Attenborough, Richard</addau>
+                <addau>Briley, John</addau>
+                <addau>Kingsley, Ben, 1943-</addau>
+                <addau>Bergen, Candice, 1946-</addau>
+                <addau>Fox, Edward, 1937-</addau>
+                <addau>Gielgud, John, 1904-2000</addau>
+                <addau>Howard, Trevor, 1916-1988</addau>
+                <addau>Mills, John, 1908-2005</addau>
+                <addau>Sheen, Martin</addau>
+                <addau>Charleson, Ian</addau>
+                <addau>Fugard, Athol</addau>
+                <addau>Halmer, Gunther Maria</addau>
+                <addau>Jaffrey, Saeed, 1929-</addau>
+                <addau>Taylor, Ronnie, 1924-</addau>
+                <addau>Williams, Billy</addau>
+                <addau>Bloom, John</addau>
+                <addau>Shankar, Ravi, 1920-</addau>
+                <addau>Athaiya, Bhanu</addau>
+                <addau>Mollo, John</addau>
+                <addau>Craig, Stuart</addau>
+                <addau>Seirton, Michael</addau>
+                <addau>Carolina Bank Limited (London, England)</addau>
+                <addau>Goldcrest Films International</addau>
+                <addau>Indo-British Films, Ltd</addau>
+                <addau>International Film Investors (Firm)</addau>
+                <addau>National Film Development Corporation of India</addau>
+                <addau>Sony Pictures Home Entertainment (Firm)</addau>
+                <btitle>Gandhi Carolina Bank ; Goldcrest Films International ; Indo-British ; International Film Investors ; National Film Development Corporation of India ; produced by Richard Attenborough ; written by John Briley ; directed by Richard Attenborough.</btitle>
+                <date>2007</date>
+                <risdate>[2007]</risdate>
+                <isbn>1424840945</isbn>
+                <isbn>9781424840946</isbn>
+                <format>book</format>
+                <genre>unknown</genre>
+                <ristype>VIDEO</ristype>
+                <abstract>Follows the life of Mahatma Gandhi from his days as a lawyer in South Africa to his role as India's spiritual leader by using his philosophy of non-violent but direct-action protest that helped end British rule. Centers on the extraordinary man who fought for a nonviolent, peaceful existence and set an entire nation free.</abstract>
+                <cop>Culver City, Calif.</cop>
+                <pub>Sony Pictures Home Entertainment</pub>
+                <oclcid>77523787</oclcid>
+              </addata>
+            </record>
+          </PrimoNMBib>
+          <sear:GETIT GetIt2="http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&amp;ctx_enc=info:ofi/enc:UTF-8&amp;ctx_tim=2012-01-20T12%3A26%3A55IST&amp;url_ver=Z39.88-2004&amp;url_ctx_fmt=infofi/fmt:kev:mtx:ctx&amp;rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&amp;rft.object_id=&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:book&amp;rft.genre=unknown&amp;rft.atitle=&amp;rft.jtitle=&amp;rft.btitle=Gandhi%20Carolina%20Bank%20%3B%20Goldcrest%20Films%20International%20%3B%20Indo-British%20%3B%20International%20Film%20Investors%20%3B%20National%20Film%20Development%20Corporation%20of%20India%20%3B%20produced%20by%20Richard%20Attenborough%20%3B%20written%20by%20John%20Briley%20%3B%20directed%20by%20Richard%20Attenborough.&amp;rft.aulast=Attenborough&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.volume=&amp;rft.issue=&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=&amp;rft.epage=&amp;rft.pages=&amp;rft.artnum=&amp;rft.issn=&amp;rft.eissn=&amp;rft.isbn=1424840945&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/&amp;rft_dat=&lt;bc_aleph>002272784&lt;/bc_aleph>&amp;rft.eisbn=&amp;rft_id=info:oai/>" GetIt1="OVP" deliveryCategory="Physical Item"/>
+          <sear:LIBRARIES>
+            <sear:LIBRARY>
+              <sear:institution>BCL</sear:institution>
+              <sear:library>MEDIA</sear:library>
+              <sear:status>unavailable</sear:status>
+              <sear:collection>Stacks</sear:collection>
+              <sear:callNumber>(PN1997 .G363 2007 )</sear:callNumber>
+              <sear:url>OVP</sear:url>
+            </sear:LIBRARY>
+          </sear:LIBRARIES>
+          <sear:LINKS>
+            <sear:openurl><![CDATA[http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&ctx_tim=2012-01-20T12%3A26%3A55IST&url_ver=Z39.88-2004&url_ctx_fmt=infofi/fmt:kev:mtx:ctx&rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&rft.object_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Gandhi%20Carolina%20Bank%20%3B%20Goldcrest%20Films%20International%20%3B%20Indo-British%20%3B%20International%20Film%20Investors%20%3B%20National%20Film%20Development%20Corporation%20of%20India%20%3B%20produced%20by%20Richard%20Attenborough%20%3B%20written%20by%20John%20Briley%20%3B%20directed%20by%20Richard%20Attenborough.&rft.aulast=Attenborough&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=1424840945&rft.sici=&rft.coden=&rft_id=info:doi/&rft_dat=<bc_aleph>002274620</bc_aleph>&rft.eisbn=&rft_id=info:oai/>]]></sear:openurl>
+            <sear:backlink>http://library.bc.edu/F?func=direct&amp;local_base=BC_CATALOG&amp;doc_number=002274620</sear:backlink>
+            <sear:thumbnail>http://images.amazon.com/images/P/1424840945.01._SSTHUM_.jpg</sear:thumbnail>
+            <sear:thumbnail>http://lib.syndetics.com/index.aspx?isbn=1424840945/SC.JPG&amp;client=bostonh</sear:thumbnail>
+            <sear:linktotoc>http://lib.syndetics.com/index.aspx?isbn=1424840945/index.html&amp;client=bccls&amp;type=xw12</sear:linktotoc>
+            <sear:openurlfulltext><![CDATA[http://metaquest.bc.edu:4000/sfx_local?ctx_ver=Z39.88-2004&ctx_enc=info:ofi/enc:UTF-8&ctx_tim=2012-01-20T12%3A26%3A55IST&url_ver=Z39.88-2004&url_ctx_fmt=infofi/fmt:kev:mtx:ctx&rfr_id=info:sid/primo.exlibrisgroup.com:primo3-Journal-bc_aleph&rft.object_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Gandhi%20Carolina%20Bank%20%3B%20Goldcrest%20Films%20International%20%3B%20Indo-British%20%3B%20International%20Film%20Investors%20%3B%20National%20Film%20Development%20Corporation%20of%20India%20%3B%20produced%20by%20Richard%20Attenborough%20%3B%20written%20by%20John%20Briley%20%3B%20directed%20by%20Richard%20Attenborough.&rft.aulast=Attenborough&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=1424840945&rft.sici=&rft.coden=&rft_id=info:doi/&svc_val_fmt=info:ofi/fmt:kev:mtx:sch_svc&svc.fulltext=yes&rft_dat=<bc_aleph>002274620</bc_aleph>&rft.eisbn=&rft_id=info:oai/>]]></sear:openurlfulltext>
+            <sear:linktoholdings>OVP</sear:linktoholdings>
+            <sear:linktouc>http://www.amazon.com/gp/product/1424840945</sear:linktouc>
+            <sear:linktouc>http://www.worldcat.org/search?q=isbn%3A1424840945</sear:linktouc>
+          </sear:LINKS>
+        </sear:DOC>
+      </sear:DOCSET>
+    </sear:RESULT>
+    <sear:searchToken>0</sear:searchToken>
+  </sear:JAGROOT>
+</sear:SEGMENTS>

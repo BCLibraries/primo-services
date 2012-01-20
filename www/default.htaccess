@@ -1,0 +1,10 @@
+RewriteEngine on
+
+# Don't rewrite for files that exist (images, css, javascript, etc).
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirect everything else to index.php
+RewriteBase /xservices
+RewriteCond $1 !^(index\.php|images|robots\.txt)
+RewriteRule ^(.*)$ /xservices/index.php/$1 [L]
