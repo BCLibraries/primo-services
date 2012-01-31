@@ -22,6 +22,9 @@ abstract class Request
     public function send(\HTTP_Request2 $request)
     {
         $this->_url .= '?' . implode('&', $this->_arguments);
+        
+        echo "sending $this->_url\n";
+        
         $request->setUrl($this->_url);
         $response = $request->send()->getBody();
         $xml = simplexml_load_string($response);

@@ -7,7 +7,7 @@ class Primo extends XServiceRequest
 {
      public function full_view($id)
      {
-         $primo = new BCLib\XServices\Primo\FullView(new BCLib\XServices\Primo\FullViewTranslator());
+         $primo = new BCLib\XServices\Primo\FullView(new BCLib\XServices\Primo\FullViewArrayTranslator());
          $primo->docId($id);
          $output = $primo->send(new HTTP_Request2());
          print_r($output);

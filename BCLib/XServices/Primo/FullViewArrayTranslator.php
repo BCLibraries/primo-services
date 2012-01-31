@@ -2,7 +2,7 @@
 
 namespace BCLib\XServices\Primo;
 
-class FullViewTranslator implements \BCLib\XServices\Translator
+class FullViewArrayTranslator implements \BCLib\XServices\Translator
 {
 
     public function translate(\SimpleXMLElement $xml)
