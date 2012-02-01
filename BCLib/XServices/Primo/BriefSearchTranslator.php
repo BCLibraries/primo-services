@@ -4,16 +4,32 @@ namespace BCLib\XServices\Primo;
 
 class BriefSearchTranslator implements \BCLib\XServices\Translator
 {
-    
+
+    /** @var \BCLib\XServices\Primo\PNXTranslator * */
+    private $_pnx_translator;
+
+    public function __construct(PNXTranslator $pnx_translator = NULL)
+    {
+        if (is_null($pnx_translator))
+        {
+            $this->_pnx_translator = new PNXTranslator();
+        }
+        else
+        {
+            $this->_pnx_translator = $pnx_translator;
+        }
+    }
+
     public function translate(\SimpleXMLElement $xml)
     {
         $result = new \stdClass();
+
+        $result->items = $this->_pnx_translator->translate($xml);
+
         $xml->registerXPathNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
         $facets_xml = $xml->xpath('/sear:SEGMENTS/sear:JAGROOT/sear:RESULT/sear:FACETLIST/sear:FACET');
         $result->facets = \array_map(array($this, '_extractFacet'), $facets_xml);
 
-        $docs_xml = $xml->xpath('/sear:SEGMENTS/sear:JAGROOT/sear:RESULT/sear:DOCSET/sear:DOC');
-        $result->docs = \array_map(array($this, '_extractDoc'), $docs_xml);
         return $result;
     }
 
@@ -55,35 +71,6 @@ class BriefSearchTranslator implements \BCLib\XServices\Translator
             }
         }
         return $facet_value;
-    }
-
-    /**
-     * Extrancts a single document
-     * 
-     * @param \SimpleXMLElement $doc_xml
-     * @return \stdClass 
-     */
-    private function _extractDoc(\SimpleXMLElement $doc_xml)
-    {
-        $document = new \stdClass();
-        $document->id = (string) $doc_xml->PrimoNMBib->record->control->sourcerecordid;
-        $document->title = (string) $doc_xml->PrimoNMBib->record->search->title;
-        $document->abstract = (string) $doc_xml->PrimoNMBib->record->addata->abstract;
-        $document->call_number = (string) $doc_xml->PrimoNMBib->record->display->lds07;
-        $document->digitized = $this->_isDigitized($doc_xml);
-        $document->availability = (string) $doc_xml->PrimoNMBib->record->display->availpnx;
-        return $document;
-    }
-
-    /**
-     * Returns true if the items has been digitized
-     * 
-     * @param \SimpleXMLElement $xml_document
-     * @return boolean 
-     */
-    private function _isDigitized(\SimpleXMLElement $xml_document)
-    {
-        return $xml_document->PrimoNMBib->record->display->lds08 == 'Streaming video';
     }
 
 }
