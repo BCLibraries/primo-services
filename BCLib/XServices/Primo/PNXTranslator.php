@@ -103,9 +103,8 @@ class PNXTranslator
     private function _extractLinkToResource($resource_link_macro)
     {
         $extract_url_regex = '/\$\$U(.*)\$\$D/';
-        $matches = array();
         preg_match($extract_url_regex, $resource_link_macro, $matches);
-        return $matches[1];
+        return isset($matches[1]) ? $matches[1] : '';
     }
     
     private function _extractRecordID($record_id_string)
