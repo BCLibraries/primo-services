@@ -24,7 +24,7 @@ class PNXTranslator
         $search_terms_xml = $record_xml->search;
 
         $document = new \stdClass;
-        $document->id = (string) $record_xml->control->sourcerecordid;
+        $document->id = $this->_extractRecordID((string) $record_xml->control->recordid);
         $document->title = (string) $search_terms_xml->title;
         $document->creator = $this->_getCreator($record_xml);
         $document->contributors = $this->_getElementRange($facets_xml->creatorcontrib);
@@ -36,6 +36,7 @@ class PNXTranslator
         $document->availability = (string) $display_data_xml->availpnx;
         $document->cover_images = $this->_getCoverImages($record_xml);
         $document->isbn = (string) $search_terms_xml->isbn;
+        $document->oclcid = (string) $additional_data_xml->oclcid;
         $document->subjects = $this->_getElementRange($search_terms_xml->subject);
         $document->genres = $this->_getElementRange($facets_xml->genre);
         $document->languages = $this->_getElementRange($facets_xml->language);
@@ -105,6 +106,11 @@ class PNXTranslator
         $matches = array();
         preg_match($extract_url_regex, $resource_link_macro, $matches);
         return $matches[1];
+    }
+    
+    private function _extractRecordID($record_id_string)
+    {
+        return str_replace('bc_aleph', '', $record_id_string);
     }
 
 }
