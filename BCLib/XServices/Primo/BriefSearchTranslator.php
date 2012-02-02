@@ -22,9 +22,7 @@ class BriefSearchTranslator implements \BCLib\XServices\Translator
 
     public function translate(\SimpleXMLElement $xml)
     {
-        $result = new \stdClass();
-
-        $result->items = $this->_pnx_translator->translate($xml);
+        $result = $this->_pnx_translator->translate($xml);
 
         $xml->registerXPathNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
         $facets_xml = $xml->xpath('/sear:SEGMENTS/sear:JAGROOT/sear:RESULT/sear:FACETLIST/sear:FACET');
