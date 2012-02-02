@@ -17,13 +17,12 @@ class PNXTranslator
     private function _extractDoc(\SimpleXMLElement $record_xml)
     {
         $record_xml = $record_xml->PrimoNMBib->record;
-        
+
         $facets_xml = $record_xml->facets;
         $display_data_xml = $record_xml->display;
         $additional_data_xml = $record_xml->addata;
         $search_terms_xml = $record_xml->search;
-        
-        
+
         $document = new \stdClass;
         $document->id = (string) $record_xml->control->sourcerecordid;
         $document->title = (string) $search_terms_xml->title;
@@ -32,7 +31,8 @@ class PNXTranslator
         $document->date = (string) $additional_data_xml->date;
         $document->abstract = (string) $additional_data_xml->abstract;
         $document->call_number = (string) $display_data_xml->lds07;
-        $document->digitized = $this->_isDigitized($record_xml);
+        $document->type = (string) $display_data_xml->type;
+        $document->url = $this->_getURL($record_xml);
         $document->availability = (string) $display_data_xml->availpnx;
         $document->cover_images = $this->_getCoverImages($record_xml);
         $document->isbn = (string) $search_terms_xml->isbn;
@@ -40,7 +40,7 @@ class PNXTranslator
         $document->genres = $this->_getElementRange($facets_xml->genre);
         $document->languages = $this->_getElementRange($facets_xml->language);
         $document->table_of_contents = $this->_getTableOfContents($search_terms_xml->toc);
-        
+
         return $document;
     }
 
@@ -72,21 +72,21 @@ class PNXTranslator
         return $result;
     }
 
-    /**
-     * Returns true if the items has been digitized
-     * 
-     * @param \SimpleXMLElement $record_xml
-     * @return boolean 
-     */
-    private function _isDigitized(\SimpleXMLElement $record_xml)
+    private function _getURL(\SimpleXMLElement $record_xml)
     {
-        return  $record_xml->display->lds08 == 'Streaming video'
-                || isset($record_xml->links->linktorsrc);
+        if ((string) $record_xml->display->lds08 == 'Streaming video')
+        {
+            return 'http://mlib.bc.edu/media/clip/' . (string) $record_xml->control->sourcerecordid;
+        }
+        else if (isset($record_xml->links->linktorsrc))
+        {
+            return $this->_extractLinkToResource((string) $record_xml->links->linktorsrc);
+        }
     }
-    
+
     private function _getTableOfContents(\SimpleXMLElement $toc_xml)
     {
-        return split(' -- ', (string) $toc_xml);
+        return explode(' -- ', (string) $toc_xml);
     }
 
     private function _getElementRange(\SimpleXMLElement $range_xml)
@@ -97,6 +97,14 @@ class PNXTranslator
             $result[] = (string) $xml;
         }
         return $result;
+    }
+
+    private function _extractLinkToResource($resource_link_macro)
+    {
+        $extract_url_regex = '/\$\$U(.*)\$\$D/';
+        $matches = array();
+        preg_match($extract_url_regex, $resource_link_macro, $matches);
+        return $matches[1];
     }
 
 }
