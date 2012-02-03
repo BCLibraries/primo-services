@@ -9,58 +9,87 @@ class BriefSearch extends PrimoRequest
     {
         parent::__construct($translator);
         $this->_setServiceUrl('search/brief');
+        return $this;
     }
 
     public function setFrbrGroupFacet($frbr_group_id)
     {
         $this->_setFacet('frbrgroupid', $frbr_group_id);
+        return $this;
     }
 
     public function setResourceTypeFacet($resource_type)
     {
         $this->_setFacet('rtype', $resource_type);
+        return $this;
     }
 
     public function setCreationDateFacet($start_year, $end_year)
     {
         $date_string = '[' . $start_year . '+TO+' . $end_year . ']';
         $this->_setFacet('creationdate', $date_string);
+        return $this;
     }
 
     public function setCreatorFacet($creator)
     {
         $this->_setFacet('creator', $creator);
+        return $this;
     }
 
     public function setTopicFacet($topic)
     {
         $this->_setFacet('topic', $topic);
+        return $this;
     }
 
     public function setDomainFacet($domain)
     {
         $this->_setFacet('domain', $domain);
+        return $this;
     }
 
     public function setAvailabilityFacet($availability)
     {
         $this->_setFacet('tlevel', $availability);
+        return $this;
     }
 
     public function setLCCFacet($lcc)
     {
         $this->_setFacet('lcc', $lcc);
+        return $this;
     }
 
     public function setLanguageFacet($language)
     {
         $this->_setFacet('lang', $language);
+        return $this;
     }
 
+    public function setKeyword($keyword)
+    {
+        $this->_addQuery('any', 'contains', $keyword);
+        return $this;
+    }
+    
+    public function setSubject($subject)
+    {
+        $this->_addQuery('sub', 'contains', $subject);
+        return $this;
+    }
+    
+    public function setISBN($isbn)
+    {
+        $this->_addQuery('isbn','exact',$isbn);
+        return $this;
+    }
+    
     public function setPaging($bulk_size, $start_index)
     {
         $this->_addArgument('bulkSize', $bulk_size);
         $this->_addArgument('indx', $start_index);
+        return $this;
     }
 
     /**

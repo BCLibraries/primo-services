@@ -20,6 +20,7 @@ class FullView extends PrimoRequest
             $document_id = 'bc_aleph' . $document_id;
         }
         $this->_addArgument('docId', $document_id);
+        return $this;
     }
 
     private function _IDIsAlephNumber($document_id)

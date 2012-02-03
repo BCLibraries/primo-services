@@ -39,5 +39,10 @@ abstract class Request
     {
         $this->_addArgument('institution', $institution);
     }
+    
+    public function __toString()
+    {
+        return $this->_url;
+    }
 
 }
