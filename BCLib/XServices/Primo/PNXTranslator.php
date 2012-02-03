@@ -31,6 +31,7 @@ class PNXTranslator
         $document->date = (string) $additional_data_xml->date;
         $document->abstract = (string) $additional_data_xml->abstract;
         $document->call_number = (string) $display_data_xml->lds07;
+        $document->frbr_group_id = (string) $facets_xml->frbrgroupid;
         $document->type = (string) $display_data_xml->type;
         $document->url = $this->_getURL($record_xml);
         $document->availability = (string) $display_data_xml->availpnx;
