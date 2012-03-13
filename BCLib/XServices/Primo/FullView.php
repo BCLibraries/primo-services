@@ -7,10 +7,10 @@ use BCLib\XServices;
 class FullView extends PrimoRequest
 {
 
-    public function __construct(XServices\Translator $translator)
+    public function __construct(XServices\Translator $translator, $host='agama.bc.edu', $port = '1701')
     {
         parent::__construct($translator);
-        $this->_setServiceUrl('search/full');
+        $this->_setServiceUrl('search/full', $host, $port);
     }
 
     public function setDocumentID($document_id)

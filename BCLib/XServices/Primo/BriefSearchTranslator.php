@@ -28,6 +28,10 @@ class BriefSearchTranslator implements \BCLib\XServices\Translator
         $facets_xml = $xml->xpath('/sear:SEGMENTS/sear:JAGROOT/sear:RESULT/sear:FACETLIST/sear:FACET');
         $result->facets = \array_map(array($this, '_extractFacet'), $facets_xml);
 
+        $docset_xml = $xml->xpath('/sear:SEGMENTS/sear:JAGROOT/sear:RESULT/sear:DOCSET');
+        $result->total_hits = (string) $docset_xml[0]['TOTALHITS'];
+        $result->total_time = (string) $docset_xml[0]['TOTAL_TIME'];
+
         return $result;
     }
 

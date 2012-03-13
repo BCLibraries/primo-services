@@ -5,10 +5,10 @@ namespace BCLib\XServices\Primo;
 class BriefSearch extends PrimoRequest
 {
 
-    public function __construct(BriefSearchTranslator $translator)
+    public function __construct(BriefSearchTranslator $translator, $host='agama.bc.edu', $port = '1701')
     {
         parent::__construct($translator);
-        $this->_setServiceUrl('search/brief');
+        $this->_setServiceUrl('search/brief',$host, $port);
         return $this;
     }
 
