@@ -1,4 +1,5 @@
 nbproject
+.idea
 www/index.php
 www/.htaccess
 application/logs
