@@ -43,6 +43,10 @@ class PNXTranslator
         $document->languages = $this->_getElementRange($facets_xml->language);
         $document->table_of_contents = $this->_getTableOfContents($search_terms_xml->toc);
 
+        $availability = new AvailabilityTranslator();
+        $availability->translate($record_xml);
+
+
         return $document;
     }
 

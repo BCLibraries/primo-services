@@ -26,7 +26,6 @@ abstract class Request
         $request->setUrl($this->_url);
         $response = $request->send()->getBody();
         $xml = simplexml_load_string($response);
-
         return $this->_translator->translate($xml);
     }
 

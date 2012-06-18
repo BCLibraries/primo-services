@@ -5,12 +5,13 @@ namespace BCLib\XServices\Primo;
 class PrimoRequestFactory
 {
 
-    static function buildFullViewRequest($document_id, $host = 'agama.bc.edu', $port = '1701')
+    static function buildFullViewRequest($document_id, $host = 'primo2.prod.alma.hosted.exlibrisgroup.com', $port = '1701')
     {
         $pnx_transaltor = new PNXTranslator();
         $full_view_translator = new FullViewObjectTranslator($pnx_transaltor);
         $request = new FullView($full_view_translator, $host, $port);
         $request->setDocumentID($document_id);
+        $request->setInstitution('BCL');
         return $request;
     }
 
