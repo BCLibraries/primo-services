@@ -4,8 +4,12 @@ namespace BCLib\XServices\Primo;
 
 class PrimoRequestFactory
 {
+    const HOST = 'primo2.prod.alma.hosted.exlibrisgroup.com';
+    const PORT = '1701';
 
-    static function buildFullViewRequest($document_id, $host = 'primo2.prod.alma.hosted.exlibrisgroup.com', $port = '1701')
+    static function buildFullViewRequest($document_id,
+                                         $host = PrimoRequestFactory::HOST,
+                                         $port = PrimoRequestFactory::PORT)
     {
         $pnx_transaltor = new PNXTranslator();
         $full_view_translator = new FullViewObjectTranslator($pnx_transaltor);
@@ -15,8 +19,11 @@ class PrimoRequestFactory
         return $request;
     }
 
-    static function buildBriefSearchRequest($institution = 'BCL', $bulk_size = 10, $start_index = 1,
-            $host = 'agama.bc.edu', $port = '1701')
+    static function buildBriefSearchRequest($institution = 'BCL',
+                                            $bulk_size = 10,
+                                            $start_index = 1,
+                                            $host = PrimoRequestFactory::HOST,
+                                            $port = PrimoRequestFactory::PORT)
     {
         $pnx_transaltor = new PNXTranslator();
         $brief_view_translator = new BriefSearchTranslator($pnx_transaltor);
