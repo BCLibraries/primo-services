@@ -6,6 +6,8 @@ use BCLib\XServices;
 
 abstract class PrimoRequest extends XServices\Request
 {
+    private $_scopes = array();
+
     protected function _setServiceUrl($url, $host = 'agama.bc.edu', $port = '1701' )
     {
         $this->_setUrl('http://'.$host.':'.$port.'/PrimoWebServices/xservice/' . $url);
@@ -16,5 +18,20 @@ abstract class PrimoRequest extends XServices\Request
         $parameter = 'query';
         $value = urlencode("$type,$operator,$term");
         $this->_addArgument($parameter, $value);
+    }
+
+    public function addScope($scope)
+    {
+        $this->_scopes[] = $scope;
+    }
+
+    public function send(\HTTP_Request2 $request)
+    {
+        if (count($this->_scopes))
+        {
+            $scopes = join(',',$this->_scopes);
+            $this->_addArgument('loc','local,scope:('.$scopes.')');
+        }
+        return parent::send($request);
     }
 }

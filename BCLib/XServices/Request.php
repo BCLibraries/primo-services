@@ -2,12 +2,15 @@
 
 namespace BCLib\XServices;
 
+require_once('HTTP/Request2.php');
+
 abstract class Request
 {
 
     private $_url = 'http://agama.bc.edu:1701/PrimoWebServices/xservice/';
     private $_arguments = array();
     private $_translator;
+    private $_xml;
 
     public function __construct(Translator $translator)
     {
@@ -24,8 +27,8 @@ abstract class Request
         $this->_url .= '?' . implode('&', $this->_arguments);
 
         $request->setUrl($this->_url);
-        $response = $request->send()->getBody();
-        $xml = simplexml_load_string($response);
+        $this->_xml = $request->send()->getBody();
+        $xml = simplexml_load_string($this->_xml);
         return $this->_translator->translate($xml);
     }
 
@@ -37,6 +40,11 @@ abstract class Request
     public function setInstitution($institution)
     {
         $this->_addArgument('institution', $institution);
+    }
+
+    public function getXML()
+    {
+        return $this->_xml;
     }
     
     public function __toString()
