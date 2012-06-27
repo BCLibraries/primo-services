@@ -37,6 +37,7 @@ class PNXTranslator
         $document->availability = (string) $display_data_xml->availpnx;
         $document->cover_images = $this->_getCoverImages($record_xml);
         $document->isbn = (string) $search_terms_xml->isbn;
+        $document->issn = (string) $search_terms_xml->issn;
         $document->oclcid = (string) $additional_data_xml->oclcid;
         $document->subjects = $this->_getElementRange($search_terms_xml->subject);
         $document->genres = $this->_getElementRange($facets_xml->genre);
