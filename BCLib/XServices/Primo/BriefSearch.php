@@ -97,9 +97,9 @@ class BriefSearch extends PrimoRequest
         return $this;
     }
 
-    public function send(HTTP_Request2 $request)
+    public function setSection($section)
     {
-        $this->_
+        $this->_addQuery('lsr15','exact',$section);
     }
 
     /**
