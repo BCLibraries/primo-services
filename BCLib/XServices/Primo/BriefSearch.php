@@ -5,6 +5,9 @@ namespace BCLib\XServices\Primo;
 class BriefSearch extends PrimoRequest
 {
 
+    private $_bulk_size;
+    private $_start_index;
+
     public function __construct(BriefSearchTranslator $translator, $host='agama.bc.edu', $port = '1701')
     {
         parent::__construct($translator);
@@ -89,7 +92,14 @@ class BriefSearch extends PrimoRequest
     {
         $this->_addArgument('bulkSize', $bulk_size);
         $this->_addArgument('indx', $start_index);
+        $this->_bulk_size = $bulk_size;
+        $this->_start_index = $start_index;
         return $this;
+    }
+
+    public function send(HTTP_Request2 $request)
+    {
+        $this->_
     }
 
     /**
