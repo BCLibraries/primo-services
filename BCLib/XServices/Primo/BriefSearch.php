@@ -87,6 +87,12 @@ class BriefSearch extends PrimoRequest
         $this->_addQuery('isbn','exact',$isbn);
         return $this;
     }
+
+    public function setAlephNumber($aleph_number)
+    {
+        $this->_addQuery('lsr20','exact',$aleph_number);
+        return $this;
+    }
     
     public function setPaging($bulk_size, $start_index)
     {
