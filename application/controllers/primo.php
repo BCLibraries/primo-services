@@ -17,7 +17,7 @@ class Primo extends XServiceRequest
     public function brief_view($query)
     {
         $primo = XServices\Primo\PrimoRequestFactory::buildBriefSearchRequest('BCL',10,1,'libsearch.bc.edu','80');
-        $primo->setKeyword('cambridge+history+of+the+book+in+britain');
+        $primo->setKeyword($query);
         $output = $primo->send(new HTTP_Request2());
         $this->output->set_output(json_encode($output));
     }

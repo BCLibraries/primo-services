@@ -30,7 +30,6 @@ class PNXTranslator
         $document->contributors = $this->_getElementRange($facets_xml->creatorcontrib);
         $document->date = (string) $additional_data_xml->date;
         $document->abstract = (string) $additional_data_xml->abstract;
-        $document->call_number = (string) $display_data_xml->lds07;
         $document->frbr_group_id = (string) $facets_xml->frbrgroupid;
         $document->type = (string) $display_data_xml->type;
         $document->url = $this->_getURL($record_xml);
@@ -45,8 +44,12 @@ class PNXTranslator
         $document->languages = $this->_getElementRange($facets_xml->language);
         $document->table_of_contents = $this->_getTableOfContents($search_terms_xml->toc);
 
-        $availability = new AvailabilityTranslator();
-        $availability->translate($record_xml);
+        $document->holdings = array();
+
+        foreach ($display_data_xml->availlibrary as $available_library)
+        {
+            $document->holdings[] = $this->_extractHolding($available_library);
+        }
 
 
         return $document;
@@ -86,9 +89,12 @@ class PNXTranslator
         {
             return 'http://mlib.bc.edu/media/clip/' . (string) $record_xml->control->sourcerecordid;
         }
-        else if (isset($record_xml->links->linktorsrc))
+        else
         {
-            return $this->_extractLinkToResource((string) $record_xml->links->linktorsrc);
+            if (isset($record_xml->links->linktorsrc))
+            {
+                return $this->_extractLinkToResource((string) $record_xml->links->linktorsrc);
+            }
         }
     }
 
@@ -113,10 +119,20 @@ class PNXTranslator
         preg_match($extract_url_regex, $resource_link_macro, $matches);
         return isset($matches[1]) ? $matches[1] : '';
     }
-    
+
     private function _extractRecordID($record_id_string)
     {
         return str_replace('bc_aleph', '', $record_id_string);
+    }
+
+    private function _extractHolding(\SimpleXMLElement $available_library)
+    {
+        list(, $institution, $library, $location, $call_number, $availability) = preg_split('/\$\$./', (string) $available_library);
+        return array('library' => $library,
+            'location' => $location,
+            'call_number' => substr($call_number, 1, -1),
+            'availability' => $availability
+        );
     }
 
 }
