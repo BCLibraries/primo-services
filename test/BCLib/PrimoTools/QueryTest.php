@@ -50,8 +50,13 @@ class QueryTest extends \PHPUnit_Framework_TestCase
     public function testMultipleISBNsConcatenatedWithOr()
     {
         $expected = 'query=isbn,contains,1234567890+OR+1234567890123';
-        $this->object->isbn('1234567890');
-        $this->object->isbn('1234567890123');
+        $this->object->isbn('1234567890')->isbn('1234567890123');
         $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testChainingWorks()
+    {
+        $returned = $this->object->isbn('1234567890');
+        $this->assertSame($this->object, $returned);
     }
 }

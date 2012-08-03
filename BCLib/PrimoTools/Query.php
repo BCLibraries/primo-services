@@ -14,6 +14,7 @@ class Query
         $isbn = str_replace('%20', '', $isbn);
         $isbn = preg_replace('/( |\-)/', '', $isbn);
         $this->_addQuery('isbn', 'contains', $isbn);
+        return $this;
     }
 
     private function _addQuery($field, $delimiter, $value)
@@ -39,12 +40,12 @@ class Query
             $queries[] = $this->_buildQuery($name, $parameters->delimiter, $parameters->values);
         }
 
-        return implode('&',$queries);
+        return implode('&', $queries);
     }
 
     private function _buildQuery($name, $delimiter, array $values)
     {
-        return 'query=' . $name . ',' . $delimiter . ',' . implode('+OR+',$values);
+        return 'query=' . $name . ',' . $delimiter . ',' . implode('+OR+', $values);
     }
 
     public function __toString()
