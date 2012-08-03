@@ -59,4 +59,32 @@ class QueryTest extends \PHPUnit_Framework_TestCase
         $returned = $this->object->isbn('1234567890');
         $this->assertSame($this->object, $returned);
     }
+
+    public function testAddingSingleKeywordWorks()
+    {
+        $expected = 'query=any,contains,foobar';
+        $this->object->keyword('foobar');
+        $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testAddingKeywordAndISBNWorks()
+    {
+        $expected = 'query=any,contains,foobar&query=isbn,contains,1234567890';
+        $this->object->keyword('foobar')->isbn('1234567890');
+        $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testAddingSingleISSNWorks()
+    {
+        $expected = 'query=issn,contains,1234+5678';
+        $this->object->issn('1234+5678');
+        $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testISSNsAreNormalized()
+    {
+        $expected = 'query=issn,contains,1234+5678+OR+8765+4321+OR+1235+5321';
+        $this->object->issn('1234-5678')->issn('8765 4321')->issn('12355321');
+        $this->assertEquals($expected, (string) $this->object);
+    }
 }

@@ -13,8 +13,19 @@ class Query
     {
         $isbn = str_replace('%20', '', $isbn);
         $isbn = preg_replace('/( |\-)/', '', $isbn);
-        $this->_addQuery('isbn', 'contains', $isbn);
-        return $this;
+        return $this->_addQuery('isbn', 'contains', $isbn);
+    }
+
+    public function issn($issn = '')
+    {
+        $issn = str_replace('%20', ' ', $issn);
+        $issn = preg_replace('/(\d\d\d\d)(.|)(\d\d\d\d)/', "$1+$3", $issn);
+        return $this->_addQuery('issn', 'contains', $issn);
+    }
+
+    public function keyword($keyword)
+    {
+        return $this->_addQuery('any', 'contains', $keyword);
     }
 
     private function _addQuery($field, $delimiter, $value)
@@ -29,6 +40,8 @@ class Query
             $this->_fields[$field]->delimiter = $delimiter;
             $this->_fields[$field]->values = array($value);
         }
+
+        return $this;
     }
 
     private function _queryString()
