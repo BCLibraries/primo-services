@@ -87,4 +87,53 @@ class QueryTest extends \PHPUnit_Framework_TestCase
         $this->object->issn('1234-5678')->issn('8765 4321')->issn('12355321');
         $this->assertEquals($expected, (string) $this->object);
     }
+
+    public function testAddingSinglePhraseWorks()
+    {
+        $expected = 'query=any,exact,foobar';
+        $this->object->phrase('foobar');
+        $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testAddingSingleSubjectWorks()
+    {
+        $expected = 'query=sub,contains,foobar';
+        $this->object->subject('foobar');
+        $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testAddingSingleTitleWorks()
+    {
+        $expected = 'query=title,contains,foobar';
+        $this->object->title('foobar');
+        $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testAddingSingleOCLCIDWorks()
+    {
+        $expected = 'query=lsr05,contains,foobar';
+        $this->object->oclcid('foobar');
+        $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testAddingSingleCollectionWorks()
+    {
+        $expected = 'query=lsr10,contains,foobar';
+        $this->object->collection('foobar');
+        $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testCommasScrubbedOutOfTerm()
+    {
+        $expected = 'query=any,contains,foo+bar';
+        $this->object->keyword('foo,bar');
+        $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testSpacesScrubbedOutOfTerm()
+    {
+        $expected = 'query=any,contains,foo+bar';
+        $this->object->keyword('foo bar');
+        $this->assertEquals($expected, (string) $this->object);
+    }
 }

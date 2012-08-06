@@ -28,8 +28,36 @@ class Query
         return $this->_addQuery('any', 'contains', $keyword);
     }
 
+    public function phrase($phrase)
+    {
+        return $this->_addQuery('any', 'exact', $phrase);
+    }
+
+    public function subject($subject)
+    {
+        return $this->_addQuery('sub', 'contains', $subject);
+    }
+
+    public function title($title)
+    {
+        return $this->_addQuery('title', 'contains', $title);
+    }
+
+    public function oclcid($oclc_id)
+    {
+        return $this->_addQuery('lsr05', 'contains', $oclc_id);
+    }
+
+    public function collection($collection)
+    {
+        return $this->_addQuery('lsr10', 'contains', $collection);
+    }
+
     private function _addQuery($field, $delimiter, $value)
     {
+
+        $value = $this->_scrubTerm($value);
+
         if (isset ($this->_fields[$field]))
         {
             $this->_fields[$field]->values[] = $value;
@@ -59,6 +87,11 @@ class Query
     private function _buildQuery($name, $delimiter, array $values)
     {
         return 'query=' . $name . ',' . $delimiter . ',' . implode('+OR+', $values);
+    }
+
+    private function _scrubTerm($term)
+    {
+        return str_replace(array('%2C', ',', ' '), '+', $term);
     }
 
     public function __toString()
