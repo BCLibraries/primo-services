@@ -8,7 +8,7 @@ abstract class DeepLink
     private $_port;
     private $_command;
 
-    private $_query_string_fields = array();
+    protected $_query_string_fields = array();
 
     protected function _setURL($command, $host = 'bc-primo.hosted.exlibrisgroup.com', $port = '0')
     {
@@ -20,8 +20,8 @@ abstract class DeepLink
     public function __toString()
     {
         $port_string = $this->_port ? ':' . $this->_port : '';
-        $base_url = 'http://' . $this->_host . $port_string . '/primo_library/libweb/action' . $this->_command;
-        $query_string = '';
+        $base_url = 'http://' . $this->_host . $port_string . '/primo_library/libweb/action/' . $this->_command;
+        $query_string = implode('&', $this->_query_string_fields);
         return $base_url . '?' . $query_string;
     }
 }

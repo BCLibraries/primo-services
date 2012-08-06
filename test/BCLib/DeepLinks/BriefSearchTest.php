@@ -11,12 +11,19 @@ class BriefSearchTest extends \PHPUnit_Framework_TestCase
      */
     protected $object;
 
-    /**
-     * @covers BCLib\DeepLinks\BriefSearch::ISBN
-     * @todo   Implement testISBN().
-     */
-    public function testISBN()
+    public function setUp()
     {
-        $this->isTrue(true);
+        $this->object = new BriefSearch();
+    }
+
+    public function testEmptySearchRequestReturnsCorrectly()
+    {
+        $expected = 'http://bc-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do?institution=BCL&vid=bclib&onCampus=true&group=GUEST';
+        $this->assertEquals($expected, (string) $this->object);
+    }
+
+    public function testScopeSetCorrectly()
+    {
+
     }
 }
