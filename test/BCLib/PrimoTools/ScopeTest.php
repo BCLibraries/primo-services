@@ -13,11 +13,17 @@ class ScopeTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->object = new Scope('ONL','onl');
+        $this->object = new Scope('ONL');
     }
 
-    public function testGetPrimoIDGetsID()
+    public function testLocalScopeWorks()
     {
-        $this->assertEquals('ONL',$this->object->getPrimoID());
+        $this->assertEquals('loc=local,scope:(ONL)', (string) $this->object);
+    }
+
+    public function testRemoteScopeWorks()
+    {
+        $this->object = new Scope('primo_central_multiple_fe', false);
+        $this->assertEquals('loc=adaptor,primo_central_multiple_fe&tab=pci_only', (string) $this->object);
     }
 }

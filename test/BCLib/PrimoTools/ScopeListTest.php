@@ -27,26 +27,27 @@ class ScopeListTest extends \PHPUnit_Framework_TestCase
 
     public function testGetScopeReturnsCorrectScopes()
     {
-        $expected_scopes = array();
+        $expected_scopes = array(
+            'bc' => 'loc=local,scope:(BCL)',
+            'archive' => 'loc=local,scope:(ARCH)',
+            'burns' => 'loc=local,scope:(BURNS)',
+            'bapst' => 'loc=local,scope:(BAPST)',
+            'gov' => 'loc=local,scope:(GOV)',
+            'weston' => 'loc=local,scope:(GEO)',
+            'media' => 'loc=local,scope:(MEDIA)',
+            'onl' => 'loc=local,scope:(ONL)',
+            'nedl' => 'loc=local,scope:(NEDL)',
+            'law' => 'loc=local,scope:(LAW)',
+            'pci' => 'loc=adaptor,primo_central_multiple_fe&tab=pci_only',
+            'swk' => 'loc=local,scope:(SWK)',
+            'tml' => 'loc=local,scope:(TML)',
+            'icpsr' => 'loc=local,scope:(bc_icpsr)',
+            'erc' => 'loc=local,scope:(ERC)',
+            'stjc' => 'loc=local,scope:(STJN)',
+        );
 
-        $expected_scopes['bc'] = new Scope('BCL');
-        $expected_scopes['archive'] = new Scope('ARCH');
-        $expected_scopes['burns'] = new Scope('BURNS');
-        $expected_scopes['bapst'] = new Scope('BAPST');
-        $expected_scopes['gov'] = new Scope('GOV');
-        $expected_scopes['weston'] = new Scope('GEO');
-        $expected_scopes['media'] = new Scope('MEDIA');
-        $expected_scopes['onl'] = new Scope('ONL');
-        $expected_scopes['nedl'] = new Scope('NEDL');
-        $expected_scopes['law'] = new Scope('LAW');
-        $expected_scopes['pci'] = new Scope('pci');
-        $expected_scopes['swk'] = new Scope('SWK');
-        $expected_scopes['tml'] = new Scope('TML');
-        $expected_scopes['icpsr'] = new Scope('bc_icpsr');
-        $expected_scopes['erc'] = new Scope('ERC');
-        $expected_scopes['stjc'] = new Scope('STJN');
 
-        foreach ($expected_scopes as $name=>$expected_scope)
+        foreach ($expected_scopes as $name => $expected_scope)
         {
             $this->assertEquals($expected_scope, $this->object->getScope($name));
         }

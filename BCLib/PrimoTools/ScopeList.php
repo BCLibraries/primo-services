@@ -24,7 +24,7 @@ class ScopeList
         $this->_scopes['onl'] = new Scope('ONL');
         $this->_scopes['nedl'] = new Scope('NEDL');
         $this->_scopes['law'] = new Scope('LAW');
-        $this->_scopes['pci'] = new Scope('pci');
+        $this->_scopes['pci'] = new Scope('pci', false);
         $this->_scopes['swk'] = new Scope('SWK');
         $this->_scopes['tml'] = new Scope('TML');
         $this->_scopes['icpsr'] = new Scope('bc_icpsr');
@@ -35,7 +35,7 @@ class ScopeList
 
     public function getScope($path_id)
     {
-        return $this->_scopes[$path_id];
+        return $this->_scopes[$path_id]->__toString();
     }
 
     public function getValidPathIDs()
