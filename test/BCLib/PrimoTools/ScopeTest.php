@@ -20,9 +20,4 @@ class ScopeTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals('ONL',$this->object->getPrimoID());
     }
-
-    public function testGetPathID()
-    {
-        $this->assertEquals('onl',$this->object->getPathID());
-    }
 }
