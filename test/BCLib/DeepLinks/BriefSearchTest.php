@@ -6,24 +6,17 @@ namespace BCLib\DeepLinks;
  */
 class BriefSearchTest extends \PHPUnit_Framework_TestCase
 {
-    /**
-     * @var BriefSearch
-     */
-    protected $object;
 
-    public function setUp()
+    public function testStringSetCorrectlygi()
     {
-        $this->object = new BriefSearch();
-    }
+        $query = new \BCLib\PrimoTools\Query();
+        $query->keyword('foobar');
 
-    public function testEmptySearchRequestReturnsCorrectly()
-    {
-        $expected = 'http://bc-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do?institution=BCL&vid=bclib&onCampus=true&group=GUEST';
-        $this->assertEquals($expected, (string) $this->object);
-    }
+        $scope = new \BCLib\PrimoTools\Scope('ONL');
 
-    public function testScopeSetCorrectly()
-    {
+        $object = new BriefSearch($query, $scope);
 
+        $expected = 'http://bc-primo.hosted.exlibrisgroup.com/primo_library/libweb/action/dlSearch.do?institution=BCL&vid=bclib&onCampus=true&group=GUEST&loc=local,scope:(ONL)&query=any,contains,foobar';
+        $this->assertEquals($expected, (string) $object);
     }
 }
