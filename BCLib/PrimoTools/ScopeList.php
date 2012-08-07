@@ -35,7 +35,7 @@ class ScopeList
 
     public function getScope($path_id)
     {
-        return $this->_scopes[$path_id]->__toString();
+        return $this->_scopes[$path_id];
     }
 
     public function getValidPathIDs()

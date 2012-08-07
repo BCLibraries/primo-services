@@ -24,32 +24,4 @@ class ScopeListTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertInstanceOf('\BCLib\PrimoTools\ScopeList', $this->object);
     }
-
-    public function testGetScopeReturnsCorrectScopes()
-    {
-        $expected_scopes = array(
-            'bc' => 'loc=local,scope:(BCL)',
-            'archive' => 'loc=local,scope:(ARCH)',
-            'burns' => 'loc=local,scope:(BURNS)',
-            'bapst' => 'loc=local,scope:(BAPST)',
-            'gov' => 'loc=local,scope:(GOV)',
-            'weston' => 'loc=local,scope:(GEO)',
-            'media' => 'loc=local,scope:(MEDIA)',
-            'onl' => 'loc=local,scope:(ONL)',
-            'nedl' => 'loc=local,scope:(NEDL)',
-            'law' => 'loc=local,scope:(LAW)',
-            'pci' => 'loc=adaptor,primo_central_multiple_fe&tab=pci_only',
-            'swk' => 'loc=local,scope:(SWK)',
-            'tml' => 'loc=local,scope:(TML)',
-            'icpsr' => 'loc=local,scope:(bc_icpsr)',
-            'erc' => 'loc=local,scope:(ERC)',
-            'stjc' => 'loc=local,scope:(STJN)',
-        );
-
-
-        foreach ($expected_scopes as $name => $expected_scope)
-        {
-            $this->assertEquals($expected_scope, $this->object->getScope($name));
-        }
-    }
 }
