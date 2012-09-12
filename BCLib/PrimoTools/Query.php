@@ -43,6 +43,11 @@ class Query
         return $this->_addQuery('title', 'contains', $title);
     }
 
+    public function author($author)
+    {
+        return $this->_addQuery('creator','contains',$author);
+    }
+
     public function oclcid($oclc_id)
     {
         return $this->_addQuery('lsr05', 'contains', $oclc_id);
