@@ -22,6 +22,7 @@ class PNXTranslator
         $display_data_xml = $record_xml->display;
         $additional_data_xml = $record_xml->addata;
         $search_terms_xml = $record_xml->search;
+        $delivery_xml = $record_xml->delivery;
 
         $document = new \stdClass;
         $document->id = $this->_extractRecordID((string) $record_xml->control->recordid);
@@ -44,11 +45,21 @@ class PNXTranslator
         $document->languages = $this->_getElementRange($facets_xml->language);
         $document->table_of_contents = $this->_getTableOfContents($search_terms_xml->toc);
 
+        foreach ($display_data_xml->lds11 as $mms_id)
+        {
+            $document->mms = $mms_id;
+        }
+
         $document->holdings = array();
 
         foreach ($display_data_xml->availlibrary as $available_library)
         {
             $document->holdings[] = $this->_extractHolding($available_library);
+        }
+
+        foreach ($delivery_xml->delcategory as $delcategory)
+        {
+            $document->delivery_category[] = $delcategory;
         }
 
 
