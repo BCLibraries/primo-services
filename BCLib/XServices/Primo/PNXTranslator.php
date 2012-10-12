@@ -50,12 +50,7 @@ class PNXTranslator
             $document->mms = $mms_id;
         }
 
-        $document->holdings = array();
-
-        foreach ($display_data_xml->availlibrary as $available_library)
-        {
-            $document->holdings[] = $this->_extractHolding($available_library);
-        }
+        $document->holdings = $this->_extractHoldings($record_xml);
 
         foreach ($delivery_xml->delcategory as $delcategory)
         {
@@ -64,6 +59,18 @@ class PNXTranslator
 
 
         return $document;
+    }
+
+    private function _extractHoldings(\SimpleXMLElement $record_xml)
+    {
+        $holdings = array();
+
+        foreach ($record_xml->display->availlibrary as $available_library)
+        {
+            $holdings[] = $this->_extractHolding($available_library);
+        }
+
+        return $holdings;
     }
 
     private function _getCoverImages(\SimpleXMLElement $record_xml)
