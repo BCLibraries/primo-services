@@ -8,7 +8,7 @@ class BriefSearch extends PrimoRequest
     private $_bulk_size;
     private $_start_index;
 
-    public function __construct(BriefSearchTranslator $translator, $host='agama.bc.edu', $port = '1701')
+    public function __construct(BriefSearchTranslator $translator, $host='bc-primo.hosted.exlibrisgroup.com', $port = '1701')
     {
         parent::__construct($translator);
         $this->_setServiceUrl('search/brief',$host, $port);

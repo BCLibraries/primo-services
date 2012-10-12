@@ -7,7 +7,7 @@ require_once('HTTP/Request2.php');
 abstract class Request
 {
 
-    private $_url = 'http://agama.bc.edu:1701/PrimoWebServices/xservice/';
+    private $_url = 'http://bc-primo.hosted.exlibrisgroup.com/PrimoWebServices/xservice/';
     private $_arguments = array();
     private $_translator;
     private $_xml;

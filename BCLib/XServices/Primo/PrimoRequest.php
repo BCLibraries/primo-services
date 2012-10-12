@@ -8,7 +8,7 @@ abstract class PrimoRequest extends XServices\Request
 {
     private $_scopes = array();
 
-    protected function _setServiceUrl($url, $host = 'agama.bc.edu', $port = '1701')
+    protected function _setServiceUrl($url, $host = 'bc-primo.hosted.exlibrisgroup.com', $port = '1701')
     {
         $this->_setUrl('http://' . $host . ':' . $port . '/PrimoWebServices/xservice/' . $url);
     }
