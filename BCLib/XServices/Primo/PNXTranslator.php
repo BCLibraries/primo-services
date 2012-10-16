@@ -81,7 +81,7 @@ class PNXTranslator
 
         if (isset($record_xml->links->thumbnail) && isset($record_xml->search->isbn))
         {
-            $image_base_url = 'http://lib.syndetics.com/index.aspx?client=bccls&isbn=';
+            $image_base_url = 'http://lib.syndetics.com/index.aspx?client=bostonh&isbn=';
             $isbn = (string) $record_xml->search->isbn;
 
             foreach ($sizes as $size => $abbreviation)
