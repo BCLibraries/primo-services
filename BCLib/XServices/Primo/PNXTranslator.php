@@ -45,6 +45,8 @@ class PNXTranslator
         $document->languages = $this->_getElementRange($facets_xml->language);
         $document->table_of_contents = $this->_getTableOfContents($search_terms_xml->toc);
 
+        $document->description = $this->_getElementRange($display_data_xml->description);
+
         $deep_link = new \BCLib\DeepLinks\FullView($document->id);
         $document->permalink = (string) $deep_link;
 
