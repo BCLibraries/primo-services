@@ -45,6 +45,9 @@ class PNXTranslator
         $document->languages = $this->_getElementRange($facets_xml->language);
         $document->table_of_contents = $this->_getTableOfContents($search_terms_xml->toc);
 
+        $deep_link = new \BCLib\DeepLinks\FullView($document->id);
+        $document->permalink = (string) $deep_link;
+
         foreach ($display_data_xml->lds11 as $mms_id)
         {
             $document->mms = $mms_id;
