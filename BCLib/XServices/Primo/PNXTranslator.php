@@ -44,7 +44,7 @@ class PNXTranslator
         $document->genres = $this->_getElementRange($facets_xml->genre);
         $document->languages = $this->_getElementRange($facets_xml->language);
         $document->table_of_contents = $this->_getTableOfContents($search_terms_xml->toc);
-
+        $document->format = (string) $display_data_xml->format;
         $document->description = $this->_getElementRange($display_data_xml->description);
 
         $deep_link = new \BCLib\DeepLinks\FullView($document->id);
@@ -100,6 +100,7 @@ class PNXTranslator
     private function _getCreator(\SimpleXMLElement $record_xml)
     {
         $result = new \stdClass;
+        $result->display_name = (string) $record_xml->display->creator;
         $result->authority_name = (string) $record_xml->addata->addau;
         $result->last_name = (string) $record_xml->addata->aulast;
         $result->first_name = (string) $record_xml->addata->aufirst;
