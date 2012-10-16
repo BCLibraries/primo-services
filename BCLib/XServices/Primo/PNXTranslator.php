@@ -26,10 +26,10 @@ class PNXTranslator
 
         $document = new \stdClass;
         $document->id = $this->_extractRecordID((string) $record_xml->control->recordid);
-        $document->title = (string) $search_terms_xml->title;
+        $document->title = (string) $display_data_xml->title;
         $document->creator = $this->_getCreator($record_xml);
-        $document->contributors = $this->_getElementRange($facets_xml->creatorcontrib);
-        $document->date = (string) $additional_data_xml->date;
+        $document->contributors = $this->_getElementRange($display_data_xml->contributor);
+        $document->date = (string) $display_data_xml->creationdate;
         $document->abstract = (string) $additional_data_xml->abstract;
         $document->frbr_group_id = (string) $facets_xml->frbrgroupid;
         $document->type = (string) $display_data_xml->type;
@@ -41,8 +41,9 @@ class PNXTranslator
         $document->oclcid = (string) $additional_data_xml->oclcid;
         $document->reserves_info = (string) $additional_data_xml->lad05;
         $document->subjects = $this->_getElementRange($search_terms_xml->subject);
+        $document->subjects['display'] = (string) $display_data_xml->subject;
         $document->genres = $this->_getElementRange($facets_xml->genre);
-        $document->languages = $this->_getElementRange($facets_xml->language);
+        $document->languages = $this->_getElementRange($display_data_xml->language);
         $document->table_of_contents = $this->_getTableOfContents($search_terms_xml->toc);
         $document->format = (string) $display_data_xml->format;
         $document->description = $this->_getElementRange($display_data_xml->description);
