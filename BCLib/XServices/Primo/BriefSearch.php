@@ -8,6 +8,11 @@ class BriefSearch extends PrimoRequest
     private $_bulk_size;
     private $_start_index;
 
+    private $_sort_orders = array('title' => 'stitle',
+        'date' => 'scdate',
+        'author' => 'screator',
+        'popularity' => 'popularity');
+
     public function __construct(BriefSearchTranslator $translator, $host='bc-primo.hosted.exlibrisgroup.com', $port = '1701')
     {
         parent::__construct($translator);
@@ -106,6 +111,17 @@ class BriefSearch extends PrimoRequest
     public function setSection($section)
     {
         $this->_addQuery('lsr15','exact',$section);
+    }
+
+    public function sortBy($field)
+    {
+        if (! isset($this->_sort_orders[$field]))
+        {
+            throw new \InvalidArgumentException("$field is not a valid sort field");
+        }
+
+        $this->_addArgument('sortField', $this->_sort_orders[$field]);
+        return $this;
     }
 
     /**
