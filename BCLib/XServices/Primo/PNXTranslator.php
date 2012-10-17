@@ -152,7 +152,12 @@ class PNXTranslator
 
     private function _extractHolding(\SimpleXMLElement $available_library)
     {
-        list(, $institution, $library, $location, $call_number, $availability) = preg_split('/\$\$./', (string) $available_library);
+        $availability = preg_split('/\$\$./', (string) $available_library);
+        $library = isset($availability[2]) ? $availability[1] : '';
+        $location = isset($availability[3]) ? $availability[2] : '';
+        $call_number = isset($availability[4]) ? $availability[3] : '';
+        $availability = isset($availability[5]) ? $availability[4] : '';
+
         return array('library' => $library,
             'location' => $location,
             'call_number' => substr($call_number, 1, -1),
