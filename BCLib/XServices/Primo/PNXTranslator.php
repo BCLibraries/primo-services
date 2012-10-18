@@ -53,14 +53,14 @@ class PNXTranslator
 
         foreach ($display_data_xml->lds11 as $mms_id)
         {
-            $document->mms = $mms_id;
+            $document->mms = (string) $mms_id;
         }
 
         $document->holdings = $this->_extractHoldings($record_xml);
 
         foreach ($delivery_xml->delcategory as $delcategory)
         {
-            $document->delivery_category[] = $delcategory;
+            $document->delivery_category[] = (string) $delcategory;
         }
 
 
