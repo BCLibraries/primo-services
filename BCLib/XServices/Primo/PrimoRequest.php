@@ -7,6 +7,7 @@ use BCLib\XServices;
 abstract class PrimoRequest extends XServices\Request
 {
     private $_scopes = array();
+    private $_isPCI = FALSE;
 
     protected function _setServiceUrl($url, $host = 'bc-primo.hosted.exlibrisgroup.com', $port = '1701')
     {
@@ -38,5 +39,11 @@ abstract class PrimoRequest extends XServices\Request
             $this->_addArgument('loc', 'local,scope:(' . $scopes . ')');
         }
         return parent::send($request);
+    }
+
+    public function primoCentralScope()
+    {
+        $this->_addArgument('loc', 'adaptor,primo_central_multiple_fe');
+        $this->_isPCI = TRUE;
     }
 }
