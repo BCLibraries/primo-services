@@ -40,11 +40,19 @@ abstract class Request
     public function setInstitution($institution)
     {
         $this->_addArgument('institution', $institution);
+        return $this;
     }
 
     public function getXML()
     {
         return $this->_xml;
+    }
+
+    public function setOnCampus($status = true)
+    {
+        $on_campus = $status ? 'true' : 'false';
+        $this->_addArgument('onCampus',$on_campus);
+        return $this;
     }
 
     public function __toString()
