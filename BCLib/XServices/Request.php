@@ -46,10 +46,11 @@ abstract class Request
     {
         return $this->_xml;
     }
-    
+
     public function __toString()
     {
-        return $this->_url;
+        return $this->_url .= '?' . implode('&', $this->_arguments);
+
     }
 
 }
