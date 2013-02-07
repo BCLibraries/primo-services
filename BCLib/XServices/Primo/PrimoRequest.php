@@ -9,9 +9,10 @@ abstract class PrimoRequest extends XServices\Request
     private $_scopes = array();
     private $_isPCI = FALSE;
 
-    protected function _setServiceUrl($url, $host = 'bc-primo.hosted.exlibrisgroup.com', $port = '1701')
+    protected function _setServiceUrl($url, $host = 'bc-primo.hosted.exlibrisgroup.com', $port = '')
     {
-        $this->_setUrl('http://' . $host . ':' . $port . '/PrimoWebServices/xservice/' . $url);
+        $portstring = $port ? ':' . $port : '';
+        $this->_setUrl('http://' . $host . $portstring . '/PrimoWebServices/xservice/' . $url);
     }
 
     protected function _addQuery($type, $operator, $term)

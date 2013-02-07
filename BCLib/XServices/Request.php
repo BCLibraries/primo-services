@@ -24,9 +24,7 @@ abstract class Request
 
     public function send(\HTTP_Request2 $request)
     {
-        $this->_url .= '?' . implode('&', $this->_arguments);
-
-        $request->setUrl($this->_url);
+        $request->setUrl($this->_url . '?' . implode('&', $this->_arguments));
         $this->_xml = $request->send()->getBody();
         $xml = simplexml_load_string($this->_xml);
         return $this->_translator->translate($xml);
@@ -57,7 +55,7 @@ abstract class Request
 
     public function __toString()
     {
-        return $this->_url .= '?' . implode('&', $this->_arguments);
+        return $this->_url . '?' . implode('&', $this->_arguments);
 
     }
 

@@ -5,7 +5,7 @@ namespace BCLib\XServices\Primo;
 class PrimoRequestFactory
 {
     const HOST = 'bc-primo.hosted.exlibrisgroup.com';
-    const PORT = '1701';
+    const PORT = '';
 
     static function buildFullViewRequest($document_id,
                                          $host = PrimoRequestFactory::HOST,
