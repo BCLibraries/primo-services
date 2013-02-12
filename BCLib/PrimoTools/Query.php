@@ -55,7 +55,7 @@ class Query
 
     public function collection($collection)
     {
-        return $this->_addQuery('lsr10', 'contains', $collection);
+        return $this->_addQuery('lsr30', 'contains', $collection);
     }
 
     private function _addQuery($field, $delimiter, $value)

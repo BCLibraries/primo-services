@@ -118,7 +118,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase
 
     public function testAddingSingleCollectionWorks()
     {
-        $expected = 'query=lsr10,contains,foobar';
+        $expected = 'query=lsr30,contains,foobar';
         $this->object->collection('foobar');
         $this->assertEquals($expected, (string) $this->object);
     }
