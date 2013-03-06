@@ -48,9 +48,7 @@ class PNXTranslator
         $document->table_of_contents = $this->_getTableOfContents($search_terms_xml->toc);
         $document->format = (string) $display_data_xml->format;
         $document->description = $this->_getElementRange($display_data_xml->description);
-
-        $deep_link = new \BCLib\DeepLinks\FullView($document->id);
-        $document->permalink = (string) $deep_link;
+        $document->permalink = $this->_setPermalink($document->type, $document->id);
 
         foreach ($display_data_xml->lds11 as $mms_id)
         {
@@ -165,6 +163,24 @@ class PNXTranslator
             'call_number' => substr($call_number, 1, -1),
             'availability' => $availability
         );
+    }
+
+    private function _setPermalink($type, $id)
+    {
+        if (substr($id, 0, 2) == 'TN')
+        {
+            $is_local = false;
+            $id = substr($id,3);
+        }
+        else
+        {
+            $is_local = true;
+        }
+
+        $query = new \BCLib\PrimoTools\Query();
+        $query->keyword($id);
+        $deep_link = new \BCLib\DeepLinks\BriefSearch($query, new \BCLib\PrimoTools\Scope('', $is_local));
+        return (string) $deep_link;
     }
 
 }

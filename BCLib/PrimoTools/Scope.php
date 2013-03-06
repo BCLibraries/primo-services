@@ -7,7 +7,7 @@ class Scope
     private $_primo_id;
     private $_is_local;
 
-    public function __construct($primo_id, $is_local = TRUE)
+    public function __construct($primo_id = '', $is_local = TRUE)
     {
         $this->_primo_id = $primo_id;
         $this->_is_local = $is_local;

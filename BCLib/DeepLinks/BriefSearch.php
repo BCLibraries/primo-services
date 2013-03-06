@@ -16,4 +16,9 @@ class BriefSearch extends DeepLink
         $this->_query_string_fields[] = (string) $scope;
         $this->_query_string_fields[] = (string) $query;
     }
+
+    public function tab($tab)
+    {
+        $this->_query_string_fields[] = 'tab=' . $tab;
+    }
 }
