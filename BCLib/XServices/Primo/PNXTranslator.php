@@ -9,14 +9,15 @@ class PNXTranslator
     {
         $result = new \stdClass;
         $doc_xml->registerXPathNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
-        $docs_xml = $doc_xml->xpath('//sear:DOC');
+        $doc_xml->registerXPathNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
+        $docs_xml = $doc_xml->xpath('//sear:DOC/PrimoNMBib/record|//sear:DOC/prim:PrimoNMBib/prim:record');
         $result->items = \array_map(array($this, '_extractDoc'), $docs_xml);
         return $result;
     }
 
     private function _extractDoc(\SimpleXMLElement $record_xml)
     {
-        $record_xml = $record_xml->PrimoNMBib->record;
+        $record_xml = $record_xml->children('http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
 
         $facets_xml = $record_xml->facets;
         $display_data_xml = $record_xml->display;
