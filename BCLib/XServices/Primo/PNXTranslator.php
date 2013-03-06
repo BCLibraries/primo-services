@@ -115,12 +115,13 @@ class PNXTranslator
         {
             return 'http://mlib.bc.edu/media/clip/' . (string) $record_xml->control->sourcerecordid;
         }
+        elseif (isset($record_xml->links->linktorsrc))
+        {
+                return $this->_extractLinkToResource((string) $record_xml->links->linktorsrc);
+        }
         else
         {
-            if (isset($record_xml->links->linktorsrc))
-            {
-                return $this->_extractLinkToResource((string) $record_xml->links->linktorsrc);
-            }
+            return '';
         }
     }
 
