@@ -1,0 +1,21 @@
+{
+    "name": "bclibraries/primo-services",
+    "description": "Access to Primo Web services",
+    "type": "library",
+    "minimum-stability": "dev",
+    "license":"proprietary",
+    "authors": [
+        {
+            "name": "Ben Florin",
+            "email": "benjamin.florin@bc.edu"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "BCLib\\XServices": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.0"
+    }
+}
