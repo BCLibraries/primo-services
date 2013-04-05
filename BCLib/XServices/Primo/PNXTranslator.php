@@ -28,6 +28,14 @@ class PNXTranslator
         $document = new \stdClass;
         $document->id = $this->_extractRecordID((string) $record_xml->control->recordid);
         $document->alma_ids = $this->_extractAlmaIDs($record_xml);
+        if ($this->_isAlmaE($delivery_xml))
+        {
+            $document->view_online = $this->_getAlmaOpenURL($document->alma_ids, 'viewit');
+        }
+        if ($this->_isAlmaP($delivery_xml))
+        {
+            $document->find_it = $this->_getAlmaOpenURL($document->alma_ids, 'getit');
+        }
         $document->title = (string) $display_data_xml->title;
         $document->creator = $this->_getCreator($record_xml);
         $document->contributors = $this->_getElementRange($display_data_xml->contributor);
@@ -172,7 +180,7 @@ class PNXTranslator
         $alma_ids = array();
         foreach ($control_xml->control->almaid as $alma_id)
         {
-            $alma_ids[] = substr($alma_id, -17);
+            $alma_ids[] = '01BC_INST:' . substr($alma_id, -17);
         }
         return $alma_ids;
     }
@@ -193,6 +201,40 @@ class PNXTranslator
         $query->keyword($id);
         $deep_link = new \BCLib\DeepLinks\BriefSearch($query, new \BCLib\PrimoTools\Scope('', $is_local));
         return (string) $deep_link;
+    }
+
+    private function _getAlmaOpenURL($alma_ids, $type)
+    {
+        if (($type != 'viewit') && ($type != 'getit'))
+        {
+            throw new \Exception("$type is not a valid service type");
+        }
+        array_walk($alma_ids, function (&$value, &$key) { $value = 'ie=' . $value; });
+        $rft_data = join(',', $alma_ids);
+        $timestamp = urlencode(date('c'));
+        return 'http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=' . $timestamp . '&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=' . $rft_data . ',language=eng,view=bclib&svc_dat=' . $type . '&u.ignore_date_coverage=true&req.skin=BC%20skin';
+    }
+
+    private function _isAlmaE($delivery_xml)
+    {
+        foreach ($delivery_xml->delcategory as $category)
+        {
+            if (strpos($category, 'Alma-E') !== false)
+            {
+                return true;
+            }
+        }
+    }
+
+    private function _isAlmaP($delivery_xml)
+    {
+        foreach ($delivery_xml->delcategory as $category)
+        {
+            if (strpos($category, 'Alma-P') !== false)
+            {
+                return true;
+            }
+        }
     }
 
 }
