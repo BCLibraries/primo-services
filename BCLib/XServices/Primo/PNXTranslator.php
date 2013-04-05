@@ -27,6 +27,7 @@ class PNXTranslator
 
         $document = new \stdClass;
         $document->id = $this->_extractRecordID((string) $record_xml->control->recordid);
+        $document->alma_ids = $this->_extractAlmaIDs($record_xml);
         $document->title = (string) $display_data_xml->title;
         $document->creator = $this->_getCreator($record_xml);
         $document->contributors = $this->_getElementRange($display_data_xml->contributor);
@@ -115,7 +116,7 @@ class PNXTranslator
         }
         elseif (isset($record_xml->links->linktorsrc))
         {
-                return $this->_extractLinkToResource((string) $record_xml->links->linktorsrc);
+            return $this->_extractLinkToResource((string) $record_xml->links->linktorsrc);
         }
         else
         {
@@ -158,11 +159,21 @@ class PNXTranslator
         $call_number = isset($availability[4]) ? $availability[3] : '';
         $availability = isset($availability[5]) ? $availability[4] : '';
 
-        return array('library' => $library,
-            'location' => $location,
-            'call_number' => substr($call_number, 1, -1),
-            'availability' => $availability
+        return array('library'      => $library,
+                     'location'     => $location,
+                     'call_number'  => substr($call_number, 1, -1),
+                     'availability' => $availability
         );
+    }
+
+    private function _extractAlmaIDs(\SimpleXMLElement $control_xml)
+    {
+        $alma_ids = array();
+        foreach ($control_xml->control->almaid as $alma_id)
+        {
+            $alma_ids[] = substr($alma_id, -17);
+        }
+        return $alma_ids;
     }
 
     private function _setPermalink($type, $id)
@@ -170,7 +181,7 @@ class PNXTranslator
         if (substr($id, 0, 2) == 'TN')
         {
             $is_local = false;
-            $id = substr($id,3);
+            $id = substr($id, 3);
         }
         else
         {
