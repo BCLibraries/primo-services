@@ -32,6 +32,7 @@ class PNXTranslator
         $document->creator = $this->_getCreator($record_xml);
         $document->contributors = $this->_getElementRange($display_data_xml->contributor);
         $document->date = (string) $display_data_xml->creationdate;
+        $document->publisher = (string) $display_data_xml->publisher;
         $document->abstract = (string) $additional_data_xml->abstract;
         $document->frbr_group_id = (string) $facets_xml->frbrgroupid;
         $document->type = (string) $display_data_xml->type;
