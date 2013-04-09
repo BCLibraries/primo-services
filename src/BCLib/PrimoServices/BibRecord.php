@@ -6,32 +6,33 @@ namespace BCLib\PrimoServices;
  * Class BibRecord
  * @package BCLib\PrimoServices
  *
- * @property string    $title
- * @property Person    $creator
- * @property Person[]  $contributors
- * @property string    $date
- * @property string    $publisher
- * @property string    $abstract
- * @property string    $frbr_group_id
- * @property string    $type
- * @property string    $url
- * @property string    $availability
- * @property object    $cover_images
- * @property string    $isbn
- * @property string    $issn
- * @property string    $oclcid
- * @property string    $reserves_info
- * @property string[]  $subjects
- * @property string    $display_subject
- * @property string[]  $genres
- * @property string[]  $languages
- * @property string    $table_of_contents
- * @property string    $format
- * @property string    $description
- * @property string    $permalink
- * @property Holding[] $holdings
- * @property string    $find_it_url
- * @property string    $available_online_url
+ * @property string               $title
+ * @property Person               $creator
+ * @property Person[]             $contributors
+ * @property string               $date
+ * @property string               $publisher
+ * @property string               $abstract
+ * @property string               $frbr_group_id
+ * @property string               $type
+ * @property string               $url
+ * @property string               $availability
+ * @property object               $cover_images
+ * @property string               $isbn
+ * @property string               $issn
+ * @property string               $oclcid
+ * @property string               $reserves_info
+ * @property string[]             $subjects
+ * @property string               $display_subject
+ * @property string[]             $genres
+ * @property string[]             $languages
+ * @property string               $table_of_contents
+ * @property string               $format
+ * @property string               $description
+ * @property string               $permalink
+ * @property Holding[]            $holdings
+ * @property string               $find_it_url
+ * @property string               $available_online_url
+ * @property BibRecordComponent[] $components
  */
 class BibRecord implements \JsonSerializable
 {
@@ -40,6 +41,7 @@ class BibRecord implements \JsonSerializable
     private $_title;
     private $_creator;
     private $_contributors = array();
+    private $_components = array();
     private $_date;
     private $_publisher;
     private $_abstract;
@@ -99,6 +101,11 @@ class BibRecord implements \JsonSerializable
     public function addHoldings(Holding $holding)
     {
         $this->_holdings[] = $holding;
+    }
+
+    public function addComponent(BibRecordComponent $component)
+    {
+        $this->_components[] = $component;
     }
 
     private function _set_creator(Person $creator)
