@@ -29,8 +29,6 @@ class PNXTranslator
         $xpath_to_primo_record = '//sear:DOC/PrimoNMBib/record';
         $xpath_to_pci_record = '//sear:DOC/prim:PrimoNMBib/prim:record';
 
-        $doc_xml->registerXPathNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
-        $doc_xml->registerXPathNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
         $docs_xml = $doc_xml->xpath($xpath_to_primo_record . '|' . $xpath_to_pci_record);
         return \array_map(array($this, '_extractDoc'), $docs_xml);
     }

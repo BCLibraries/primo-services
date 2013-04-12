@@ -5,6 +5,7 @@ namespace BCLib\PrimoServices;
 /**
  * @property Facet[]       $facets
  * @property BibRecord[]   $results
+ * @property int           $total_results
  */
 class BriefSearchResult implements \JsonSerializable
 {
@@ -12,4 +13,5 @@ class BriefSearchResult implements \JsonSerializable
 
     private $_facets = array();
     private $_results = array();
+    private $_total_results;
 }

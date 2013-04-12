@@ -112,10 +112,17 @@ class PrimoServices extends \Pimple
         curl_setopt_array($curl, $curl_options);
         $xml = curl_exec($curl);
 
+        $xml_result = simplexml_load_string($xml);
+        $xml_result->registerXPathNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
+        $xml_result->registerXPathNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
+
         /* @var $result BriefSearchResult */
         $result = $this['search_result'];
-        $result->facets = $this['facet_translator']->translate(simplexml_load_string($xml));
-        $result->results = $this['pnx_translator']->translate(simplexml_load_string($xml));
+        $result->facets = $this['facet_translator']->translate($xml_result);
+        $result->results = $this['pnx_translator']->translate($xml_result);
+
+        $docset = $xml_result->xpath('/sear:SEGMENTS/sear:JAGROOT/sear:RESULT/sear:DOCSET');
+        $result->total_results = (string) $docset[0]['TOTALHITS'];
         return $result;
     }
 }
