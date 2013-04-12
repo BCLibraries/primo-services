@@ -40,6 +40,7 @@ class PNXTranslator
         /** @var $record BibRecord */
         $record = $this->_bib_record_factory->__invoke();
 
+        $record->id = (string) $record_xml->control->recordid;
         $record->title = (string) $record_xml->display->title;
         $record->date = (string) $record_xml->display->creationdate;
         $record->publisher = (string) $record_xml->display->publisher;

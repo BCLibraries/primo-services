@@ -6,6 +6,7 @@ namespace BCLib\PrimoServices;
  * Class BibRecord
  * @package BCLib\PrimoServices
  *
+ * @property sring                $id
  * @property string               $title
  * @property Person               $creator
  * @property Person[]             $contributors
@@ -38,6 +39,7 @@ class BibRecord implements \JsonSerializable
 {
     use Accessor, EncodeJson;
 
+    private $_id;
     private $_title;
     private $_creator;
     private $_contributors = array();
