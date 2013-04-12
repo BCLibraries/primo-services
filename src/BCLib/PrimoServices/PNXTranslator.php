@@ -53,7 +53,20 @@ class PNXTranslator
         $record->display_subject = (string) $record_xml->display->subject;
         $record->format = (string) $record_xml->display->format;
 
+        $record->subjects = $this->_extractFieldArray($record_xml, 'facets', 'topic');
+        $record->genres = $this->_extractFieldArray($record_xml, 'facets', 'genre');
+        $record->languages = $this->_extractFieldArray($record_xml, 'facets', 'language');
+
         return $record;
     }
 
+    private function _extractFieldArray(\SimpleXMLElement $xml, $section, $field)
+    {
+        $result = [];
+        foreach ($xml->$section->$field as $item)
+        {
+            $result[] = (string) $item;
+        }
+        return $result;
+    }
 }
