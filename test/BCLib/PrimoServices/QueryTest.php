@@ -9,18 +9,18 @@ class QueryTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->_query = new Query('primo2.staging.hosted.exlibrisgroup.com', 'BCL');
+        $this->_query = new Query('BCL');
     }
 
     public function testGeneratesCorrectURLWithoutAnyTerms()
     {
-        $expected = 'http://primo2.staging.hosted.exlibrisgroup.com/PrimoWebServices/xservice/search/brief?institution=BCL&indx=0&bulkSize=10';
+        $expected = 'institution=BCL&indx=0&bulkSize=10';
         $this->assertEquals($expected, (string) $this->_query);
     }
 
     public function testGeneratesCorrectURLWithOneQueryTerm()
     {
-        $expected = 'http://primo2.staging.hosted.exlibrisgroup.com/PrimoWebServices/xservice/search/brief?institution=BCL&indx=0&bulkSize=10&query=any%2Ccontains%2Cotters';
+        $expected = 'institution=BCL&indx=0&bulkSize=10&query=any%2Ccontains%2Cotters';
         $query_term = $this->getMock('\BCLib\PrimoServices\QueryTerm');
         $query_term->expects($this->once())
             ->method('queryString')
@@ -32,7 +32,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase
     public function testGeneratesCorrectURLWithMultipleQueryTerms()
     {
 
-        $expected = 'http://primo2.staging.hosted.exlibrisgroup.com/PrimoWebServices/xservice/search/brief?institution=BCL&indx=0&bulkSize=10&query=any%2Ccontains%2Cotters&query=any%2Ccontains%2Cbears&query=any%2Ccontains%2Crabbits';
+        $expected = 'institution=BCL&indx=0&bulkSize=10&query=any%2Ccontains%2Cotters&query=any%2Ccontains%2Cbears&query=any%2Ccontains%2Crabbits';
 
         $term_1 = $this->getMock('\BCLib\PrimoServices\QueryTerm');
         $term_2 = $this->getMock('\BCLib\PrimoServices\QueryTerm');

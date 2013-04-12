@@ -4,8 +4,12 @@ namespace BCLib\PrimoServices;
 
 class PrimoServices extends \Pimple
 {
-    public function __construct()
+    private $_host;
+
+    public function __construct($host)
     {
+        $this->_host = $host;
+
         parent::__construct();
 
         $this['holding'] = function ()
@@ -55,10 +59,31 @@ class PrimoServices extends \Pimple
                 $this['person_factory'],
                 $this['bib_record_component_factory']);
         };
+
+        $this['query'] = function ()
+        {
+            return new Query($this->_institution);
+        };
+
+        $this['query_term'] = function ()
+        {
+            return new QueryTerm();
+        };
     }
 
-    public function ask()
+    public function ask(Query $query)
     {
-        return $this['bib_record'];
+        $url = 'http://' . $this->_host . '/PrimoWebServices/xservice/search/brief?' . $query;
+        $curl_options = [
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_URL            => $url,
+        ];
+        $curl = curl_init();
+        curl_setopt_array($curl, $curl_options);
+        $result = curl_exec($curl);
+
+        /** @var $translator PNXTranslator */
+        $translator = $this['translator'];
+        return $translator->translate(simplexml_load_string($result));
     }
 }

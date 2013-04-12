@@ -10,9 +10,8 @@ class Query
 
     const BRIEF_SEARCH_PATH = '/PrimoWebServices/xservice/search/brief';
 
-    public function __construct($host, $institution, $start_idx = 0, $bulk_size = 10)
+    public function __construct($institution, $start_idx = 0, $bulk_size = 10)
     {
-        $this->_host = $host;
         $this->_parameters['institution'] = $institution;
         $this->_parameters['indx'] = $start_idx;
         $this->_parameters['bulkSize'] = $bulk_size;
@@ -25,8 +24,7 @@ class Query
 
     public function __toString()
     {
-        $url = 'http://' . $this->_host . Query::BRIEF_SEARCH_PATH .
-            '?' . http_build_query($this->_parameters);
+        $url = http_build_query($this->_parameters);
         $url .= (count($this->_terms) > 0) ? '&' . join('&', $this->_terms) : '';
 
         return $url;
