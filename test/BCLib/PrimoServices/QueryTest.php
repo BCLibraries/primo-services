@@ -52,4 +52,49 @@ class QueryTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($expected, (string) $this->_query);
     }
 
+    public function testSortFieldAddsCorrectly()
+    {
+        $expected = 'institution=BCL&indx=0&bulkSize=10&sortField=stitle';
+        $this->_query->sortField('title');
+        $this->assertEquals($expected, (string) $this->_query);
+
+        $expected = 'institution=BCL&indx=0&bulkSize=10&sortField=scdate';
+        $this->_query->sortField('date');
+        $this->assertEquals($expected, (string) $this->_query);
+
+        $expected = 'institution=BCL&indx=0&bulkSize=10&sortField=screator';
+        $this->_query->sortField('author');
+        $this->assertEquals($expected, (string) $this->_query);
+
+        $expected = 'institution=BCL&indx=0&bulkSize=10&sortField=popularity';
+        $this->_query->sortField('popularity');
+        $this->assertEquals($expected, (string) $this->_query);
+    }
+
+    /**
+     * @expectedException \Exception
+     */
+    public function testBadSortFieldThrowsException()
+    {
+        $this->_query->sortField('not-a-sort');
+    }
+
+    public function testOnCampusAddedCorrectly()
+    {
+        $expected = 'institution=BCL&indx=0&bulkSize=10&onCampus=true';
+        $this->_query->onCampus();
+        $this->assertEquals($expected, (string) $this->_query);
+
+        $expected = 'institution=BCL&indx=0&bulkSize=10&onCampus=false';
+        $this->_query->onCampus(false);
+        $this->assertEquals($expected, (string) $this->_query);
+    }
+
+    /**
+     * @expectedException \Exception
+     */
+    public function testBadOnCampusInputThrowsException()
+    {
+        $this->_query->onCampus('true');
+    }
 }
