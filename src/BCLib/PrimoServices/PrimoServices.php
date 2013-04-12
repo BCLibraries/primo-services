@@ -52,13 +52,38 @@ class PrimoServices extends \Pimple
             return $this['bib_record'];
         });
 
-        $this['translator'] = function ()
+        $this['pnx_translator'] = function ()
         {
             return new PNXTranslator($this['bib_record_factory'],
                 $this['holding_factory'],
                 $this['person_factory'],
                 $this['bib_record_component_factory']);
         };
+
+        $this['facet_translator'] = function ()
+        {
+            return new FacetTranslator($this['facet_factory'], $this['facet_value_factory']);
+        };
+
+        $this['facet'] = function ()
+        {
+            return new Facet();
+        };
+
+        $this['facet_factory'] = $this->protect(function ()
+        {
+            return $this['facet'];
+        });
+
+        $this['facet_value'] = function ()
+        {
+            return new FacetValue();
+        };
+
+        $this['facet_value_factory'] = $this->protect(function ()
+        {
+            return $this['facet_value'];
+        });
 
         $this['query'] = function ()
         {
@@ -68,6 +93,11 @@ class PrimoServices extends \Pimple
         $this['query_term'] = function ()
         {
             return new QueryTerm();
+        };
+
+        $this['search_result'] = function ()
+        {
+            return new BriefSearchResult();
         };
     }
 
@@ -80,10 +110,12 @@ class PrimoServices extends \Pimple
         ];
         $curl = curl_init();
         curl_setopt_array($curl, $curl_options);
-        $result = curl_exec($curl);
+        $xml = curl_exec($curl);
 
-        /** @var $translator PNXTranslator */
-        $translator = $this['translator'];
-        return $translator->translate(simplexml_load_string($result));
+        /* @var $result BriefSearchResult */
+        $result = $this['search_result'];
+        $result->facets = $this['facet_translator']->translate(simplexml_load_string($xml));
+        $result->results = $this['pnx_translator']->translate(simplexml_load_string($xml));
+        return $result;
     }
 }
