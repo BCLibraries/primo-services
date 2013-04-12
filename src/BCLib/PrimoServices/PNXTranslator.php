@@ -63,6 +63,8 @@ class PNXTranslator
         $record->genres = $this->_extractFieldArray($record_xml, 'facets', 'genre');
         $record->languages = $this->_extractFieldArray($record_xml, 'facets', 'language');
 
+        $this->_cache->save($record->id, $record, 1200);
+
         return $record;
     }
 
