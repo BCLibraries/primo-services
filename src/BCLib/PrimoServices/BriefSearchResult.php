@@ -3,8 +3,8 @@
 namespace BCLib\PrimoServices;
 
 /**
- * @property Facet[]       facets
- * @property BibRecord[]   results
+ * @property Facet[]       $facets
+ * @property BibRecord[]   $results
  */
 class BriefSearchResult implements \JsonSerializable
 {
