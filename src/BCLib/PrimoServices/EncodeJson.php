@@ -18,7 +18,7 @@ trait EncodeJson
         foreach ($this as $key => $value)
         {
             $key = substr($key, 1);
-            if (!is_null($value) && (!(is_array($value) && count($value) == 0)))
+            if (isset($value) && $value != '' && count($value) > 0)
             {
                 $data->$key = $value;
             }
