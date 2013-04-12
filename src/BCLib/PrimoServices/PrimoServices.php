@@ -57,7 +57,13 @@ class PrimoServices extends \Pimple
             return new PNXTranslator($this['bib_record_factory'],
                 $this['holding_factory'],
                 $this['person_factory'],
-                $this['bib_record_component_factory']);
+                $this['bib_record_component_factory'],
+                $this['cache']);
+        };
+
+        $this['cache'] = function()
+        {
+
         };
 
         $this['facet_translator'] = function ()

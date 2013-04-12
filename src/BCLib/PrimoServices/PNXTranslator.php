@@ -11,7 +11,8 @@ class PNXTranslator
     private $_bib_record_component_factory;
 
     public function __construct($bib_record_factory, $holding_factory,
-                                $person_factory, $bib_record_component_factory)
+                                $person_factory, $bib_record_component_factory,
+                                $cache)
     {
         $this->_bib_record_factory = $bib_record_factory;
         $this->_holding_factory = $holding_factory;
