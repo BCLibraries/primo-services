@@ -2,6 +2,8 @@
 
 namespace BCLib\PrimoServices;
 
+use Doctrine\Common\Cache\Cache;
+
 class PNXTranslator
 {
 
@@ -10,14 +12,18 @@ class PNXTranslator
     private $_person_factory;
     private $_bib_record_component_factory;
 
+    /** @var \Doctrine\Common\Cache\Cache **/
+    private $_cache;
+
     public function __construct($bib_record_factory, $holding_factory,
                                 $person_factory, $bib_record_component_factory,
-                                $cache)
+                                Cache $cache)
     {
         $this->_bib_record_factory = $bib_record_factory;
         $this->_holding_factory = $holding_factory;
         $this->_person_factory = $person_factory;
         $this->_bib_record_component_factory = $bib_record_component_factory;
+        $this->_cache = $cache;
     }
 
     /**

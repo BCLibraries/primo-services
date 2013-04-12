@@ -2,6 +2,9 @@
 
 namespace BCLib\PrimoServices;
 
+use Doctrine\Common\Cache\ApcCache;
+use Doctrine\Common\Cache\Cache;
+
 class PrimoServices extends \Pimple
 {
     private $_host;
@@ -58,12 +61,12 @@ class PrimoServices extends \Pimple
                 $this['holding_factory'],
                 $this['person_factory'],
                 $this['bib_record_component_factory'],
-                $this['cache']);
+                $this['apc_cache']);
         };
 
-        $this['cache'] = function()
+        $this['apc_cache'] = function()
         {
-
+            return new ApcCache();
         };
 
         $this['facet_translator'] = function ()
@@ -109,6 +112,16 @@ class PrimoServices extends \Pimple
 
     public function ask(Query $query)
     {
+        /**
+         * @var Cache $cache
+         */
+        $cache = $this['apc_cache'];
+        $cache_key = sha1($query);
+        if ($cache->contains($cache_key))
+        {
+            return $cache->fetch($cache_key);
+        }
+
         $url = 'http://' . $this->_host . '/PrimoWebServices/xservice/search/brief?' . $query;
         $curl_options = [
             CURLOPT_RETURNTRANSFER => 1,
@@ -129,6 +142,9 @@ class PrimoServices extends \Pimple
 
         $docset = $xml_result->xpath('/sear:SEGMENTS/sear:JAGROOT/sear:RESULT/sear:DOCSET');
         $result->total_results = (string) $docset[0]['TOTALHITS'];
+
+        $cache->save($cache_key, $result, 120);
+
         return $result;
     }
 }
