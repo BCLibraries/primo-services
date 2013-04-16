@@ -67,6 +67,7 @@ class PNXTranslator
         $this->_record->genres = $this->_extractFieldArray($record_xml, 'facets', 'genre');
         $this->_record->languages = $this->_extractFieldArray($record_xml, 'facets', 'language');
         $this->_record->components = $this->_extractComponents($record_xml);
+        $this->_record->cover_images = $this->_extractCoverImage($this->_record->isbn);
 
         $this->_cache->save($this->_record->id, $this->_record, 1200);
 
@@ -105,7 +106,7 @@ class PNXTranslator
             $component->delivery_category = $delcategory;
             $component->source_record_id = $helper['sourcerecordid'][$id];
 
-            $alma_id_key = str_replace('ALMA-BC','01BC_INST:', $id);
+            $alma_id_key = str_replace('ALMA-BC', '01BC_INST:', $id);
             $component->alma_id = $helper['alma_id'][$alma_id_key];
             $components[] = $component;
         }
@@ -136,6 +137,20 @@ class PNXTranslator
     private function _linkToWorldCat($oclc_id)
     {
         return $oclc_id ? 'http://bc.worldcat.org/search?q=no:' . $oclc_id : '';
+    }
+
+    private function _extractCoverImage($isbn)
+    {
+        $cover_images = new \stdClass();
+        if ($isbn)
+        {
+            $image_base_url = 'http://lib.syndetics.com/index.aspx?client=bostonh&isbn=';
+            $cover_images->small = $image_base_url . $isbn . '/' . 'sc' . '.JPG';
+            $cover_images->medium = $image_base_url . $isbn . '/' . 'mc' . '.JPG';
+            $cover_images->large = $image_base_url . $isbn . '/' . 'lc' . '.JPG';
+        }
+
+        return $cover_images;
     }
 
 }
