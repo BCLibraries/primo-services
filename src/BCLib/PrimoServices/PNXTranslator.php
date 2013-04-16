@@ -67,7 +67,13 @@ class PNXTranslator
         $this->_record->genres = $this->_extractFieldArray($record_xml, 'facets', 'genre');
         $this->_record->languages = $this->_extractFieldArray($record_xml, 'facets', 'language');
         $this->_record->components = $this->_extractComponents($record_xml);
-        $this->_record->cover_images = $this->_extractCoverImage($this->_record->isbn);
+
+        $this->_record->table_of_contents = $this->_extractTableOfContents($record_xml);
+
+        if ($this->_record->isbn)
+        {
+            $this->_record->cover_images = $this->_extractCoverImage($this->_record->isbn);
+        }
 
         $this->_cache->save($this->_record->id, $this->_record, 1200);
 
@@ -141,9 +147,10 @@ class PNXTranslator
 
     private function _extractCoverImage($isbn)
     {
-        $cover_images = new \stdClass();
+        $cover_images = null;
         if ($isbn)
         {
+            $cover_images = new \stdClass();
             $image_base_url = 'http://lib.syndetics.com/index.aspx?client=bostonh&isbn=';
             $cover_images->small = $image_base_url . $isbn . '/' . 'sc' . '.JPG';
             $cover_images->medium = $image_base_url . $isbn . '/' . 'mc' . '.JPG';
@@ -151,6 +158,18 @@ class PNXTranslator
         }
 
         return $cover_images;
+    }
+
+    private function _extractTableOfContents(\SimpleXMLElement $record_xml)
+    {
+        if ((string) $record_xml->display->lds13)
+        {
+            return preg_split('/\s*\-\-\s*/', $record_xml->display->lds13);
+        }
+        else
+        {
+            return [];
+        }
     }
 
 }
