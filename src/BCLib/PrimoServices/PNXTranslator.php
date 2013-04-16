@@ -95,6 +95,7 @@ class PNXTranslator
         $helper['sourcerecordid'] = $this->_extractMultiPartField($record_xml->control->sourcerecordid);
         $helper['institution'] = $this->_extractMultiPartField($record_xml->delivery->institution);
         $helper['delcategory'] = $this->_extractMultiPartField($record_xml->delivery->delcategory);
+        $helper['alma_id'] = $this->_extractMultiPartField($record_xml->control->almaid);
 
         /** @var $component BibRecordComponent */
         foreach ($helper['delcategory'] as $id => $delcategory)
@@ -103,6 +104,9 @@ class PNXTranslator
 
             $component->delivery_category = $delcategory;
             $component->source_record_id = $helper['sourcerecordid'][$id];
+
+            $alma_id_key = str_replace('ALMA-BC','01BC_INST:', $id);
+            $component->alma_id = $helper['alma_id'][$alma_id_key];
             $components[] = $component;
         }
 
