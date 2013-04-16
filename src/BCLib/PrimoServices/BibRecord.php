@@ -33,6 +33,7 @@ namespace BCLib\PrimoServices;
  * @property Holding[]            $holdings
  * @property string               $find_it_url
  * @property string               $available_online_url
+ * @property string               $link_to_worldcat
  * @property BibRecordComponent[] $components
  */
 class BibRecord implements \JsonSerializable
@@ -67,6 +68,7 @@ class BibRecord implements \JsonSerializable
     private $_holdings = array();
     private $_find_it_url;
     private $_available_online_url;
+    private $_link_to_worldcat;
 
     public function addContributor(Person $contributor)
     {
