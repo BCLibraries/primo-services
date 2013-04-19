@@ -111,9 +111,13 @@ class PNXTranslator
 
             $component->delivery_category = $delcategory;
             $component->source_record_id = $helper['sourcerecordid'][$id];
+            $component->source = $helper['sourceid'][$id];
 
-            $alma_id_key = str_replace('ALMA-BC', '01BC_INST:', $id);
-            $component->alma_id = $helper['alma_id'][$alma_id_key];
+            if ((string) $component->source == 'ALMA-BC')
+            {
+                $alma_id_key = str_replace('ALMA-BC', '01BC_INST:', $id);
+                $component->alma_id = $helper['alma_id'][$alma_id_key];
+            }
             $components[] = $component;
         }
 
@@ -134,7 +138,8 @@ class PNXTranslator
         }
         else
         {
-            $result[$record->id] = (string) $element_xml;
+            $id = $element_xml->getName() == 'almaid' ? (string) $element_xml : $this->_record->id;
+            $result[$id] = (string) $element_xml;
         }
 
         return $result;
