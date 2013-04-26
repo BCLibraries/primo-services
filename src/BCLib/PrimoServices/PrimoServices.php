@@ -9,6 +9,19 @@ class PrimoServices extends \Pimple
 {
     private $_host;
 
+    private $_facet_names = [
+        'creator'      => 'Creator',
+        'lang'         => 'Language',
+        'rtype'        => 'Type',
+        'topic'        => 'Topic',
+        'tlevel'       => 'Availablility',
+        'pfilter'      => 'Prefilter?',
+        'creationdate' => 'Date',
+        'genre'        => 'Genre',
+        'library'      => 'Library',
+        'local1'       => 'Collection',
+    ];
+
     public function __construct($host)
     {
         $this->_host = $host;
@@ -64,14 +77,14 @@ class PrimoServices extends \Pimple
                 $this['apc_cache']);
         };
 
-        $this['apc_cache'] = function()
+        $this['apc_cache'] = function ()
         {
             return new ApcCache();
         };
 
         $this['facet_translator'] = function ()
         {
-            return new FacetTranslator($this['facet_factory'], $this['facet_value_factory']);
+            return new FacetTranslator($this['facet_factory'], $this['facet_value_factory'], $this->_facet_names);
         };
 
         $this['facet'] = function ()

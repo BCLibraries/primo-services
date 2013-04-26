@@ -6,11 +6,13 @@ class FacetTranslator
 {
     private $_facet_factory;
     private $_facet_value_factory;
+    private $_facet_names = array();
 
-    public function __construct($facet_factory, $facet_value_factory)
+    public function __construct($facet_factory, $facet_value_factory, array $facet_names)
     {
         $this->_facet_factory = $facet_factory;
         $this->_facet_value_factory = $facet_value_factory;
+        $this->_facet_names = $facet_names;
     }
 
     /**
@@ -33,7 +35,8 @@ class FacetTranslator
     private function _extractFacet(\SimpleXMLElement $facet_xml)
     {
         $facet = $this->_facet_factory->__invoke();
-        $facet->name = (string) $facet_xml['NAME'];
+        $facet->id = (string) $facet_xml['NAME'];
+        $facet->name = (isset($this->_facet_names[$facet->id])) ? $this->_facet_names[$facet->id] : $facet->id;
         $facet->count = (string) $facet_xml['COUNT'];
         $facet_values_xml = $facet_xml->xpath('sear:FACET_VALUES');
         $facet->values = \array_map([$this, '_extractFacetValue'], $facet_values_xml);
