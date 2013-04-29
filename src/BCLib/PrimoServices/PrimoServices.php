@@ -8,6 +8,7 @@ use Doctrine\Common\Cache\Cache;
 class PrimoServices extends \Pimple
 {
     private $_host;
+    private $_institution;
 
     private $_facet_names = [
         'creator'      => 'Creator',
@@ -22,9 +23,10 @@ class PrimoServices extends \Pimple
         'local1'       => 'Collection',
     ];
 
-    public function __construct($host)
+    public function __construct($host, $institution = 'BCL')
     {
         $this->_host = $host;
+        $this->_institution = $institution;
 
         parent::__construct();
 
@@ -33,36 +35,21 @@ class PrimoServices extends \Pimple
             return new Person();
         };
 
-        $this['person_factory'] = $this->protect(function ()
-        {
-            return $this['person'];
-        });
-
         $this['bib_record_component'] = function ()
         {
             return new BibRecordComponent();
         };
-
-        $this['bib_record_component_factory'] = $this->protect(function ()
-        {
-            return $this['bib_record_component'];
-        });
 
         $this['bib_record'] = function ()
         {
             return new BibRecord();
         };
 
-        $this['bib_record_factory'] = $this->protect(function ()
-        {
-            return $this['bib_record'];
-        });
-
         $this['pnx_translator'] = function ()
         {
-            return new PNXTranslator($this['bib_record_factory'],
-                $this['person_factory'],
-                $this['bib_record_component_factory'],
+            return new PNXTranslator($this['bib_record'],
+                $this['person'],
+                $this['bib_record_component'],
                 $this['apc_cache']);
         };
 

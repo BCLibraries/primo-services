@@ -7,20 +7,20 @@ use Doctrine\Common\Cache\Cache;
 class PNXTranslator
 {
 
-    private $_bib_record_factory;
-    private $_person_factory;
-    private $_bib_record_component_factory;
+    private $_bib_record_template;
+    private $_person_template;
+    private $_bib_record_component_template;
     private $_record;
 
     /** @var \Doctrine\Common\Cache\Cache * */
     private $_cache;
 
-    public function __construct($bib_record_factory, $person_factory,
-                                $bib_record_component_factory, Cache $cache)
+    public function __construct(BibRecord $bib_record_template, Person $person_template,
+                                BibRecordComponent $bib_record_component_template, Cache $cache)
     {
-        $this->_bib_record_factory = $bib_record_factory;
-        $this->_person_factory = $person_factory;
-        $this->_bib_record_component_factory = $bib_record_component_factory;
+        $this->_bib_record_template = $bib_record_template;
+        $this->_person_template = $person_template;
+        $this->_bib_record_component_template = $bib_record_component_template;
         $this->_cache = $cache;
     }
 
@@ -41,9 +41,8 @@ class PNXTranslator
     private function _extractDoc(\SimpleXMLElement $record_xml)
     {
         /** @var $record BibRecord */
-        $this->_record = $record = $this->_bib_record_factory->__invoke();
+        $this->_record = clone $this->_bib_record_template;
 
-        $this->_record = $record;
         $this->_record->id = (string) $record_xml->control->recordid;
         $this->_record->title = (string) $record_xml->display->title;
         $this->_record->date = (string) $record_xml->display->creationdate;
@@ -104,7 +103,7 @@ class PNXTranslator
         /** @var $component BibRecordComponent */
         foreach ($helper['delcategory'] as $id => $delcategory)
         {
-            $component = $this->_bib_record_component_factory->__invoke();
+            $component = clone $this->_bib_record_component_template;
 
             $component->delivery_category = $delcategory;
             $component->source_record_id = $helper['sourcerecordid'][$id];
