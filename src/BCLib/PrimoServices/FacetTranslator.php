@@ -4,14 +4,15 @@ namespace BCLib\PrimoServices;
 
 class FacetTranslator
 {
-    private $_facet_factory;
-    private $_facet_value_factory;
+    private $_facet_template;
+    private $_facet_value_template;
     private $_facet_names = array();
 
-    public function __construct($facet_factory, $facet_value_factory, array $facet_names)
+    public function __construct(Facet $facet_template, FacetValue $facet_value_template,
+                                array $facet_names)
     {
-        $this->_facet_factory = $facet_factory;
-        $this->_facet_value_factory = $facet_value_factory;
+        $this->_facet_template = $facet_template;
+        $this->_facet_value_template = $facet_value_template;
         $this->_facet_names = $facet_names;
     }
 
@@ -34,7 +35,7 @@ class FacetTranslator
      */
     private function _extractFacet(\SimpleXMLElement $facet_xml)
     {
-        $facet = $this->_facet_factory->__invoke();
+        $facet = clone $this->_facet_template;
         $facet->id = (string) $facet_xml['NAME'];
         $facet->name = (isset($this->_facet_names[$facet->id])) ? $this->_facet_names[$facet->id] : $facet->id;
         $facet->count = (string) $facet_xml['COUNT'];
@@ -52,7 +53,7 @@ class FacetTranslator
      */
     private function _extractFacetValue(\SimpleXMLElement $facet_value_xml)
     {
-        $facet_value = $this->_facet_value_factory->__invoke();
+        $facet_value = clone $this->_facet_value_template;
 
         foreach ($facet_value_xml->attributes() as $key => $value)
         {

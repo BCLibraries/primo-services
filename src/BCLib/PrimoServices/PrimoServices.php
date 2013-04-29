@@ -73,7 +73,7 @@ class PrimoServices extends \Pimple
 
         $this['facet_translator'] = function ()
         {
-            return new FacetTranslator($this['facet_factory'], $this['facet_value_factory'], $this->_facet_names);
+            return new FacetTranslator($this['facet'], $this['facet_value'], $this->_facet_names);
         };
 
         $this['facet'] = function ()
@@ -81,20 +81,10 @@ class PrimoServices extends \Pimple
             return new Facet();
         };
 
-        $this['facet_factory'] = $this->protect(function ()
-        {
-            return $this['facet'];
-        });
-
         $this['facet_value'] = function ()
         {
             return new FacetValue();
         };
-
-        $this['facet_value_factory'] = $this->protect(function ()
-        {
-            return $this['facet_value'];
-        });
 
         $this['query'] = function ()
         {
