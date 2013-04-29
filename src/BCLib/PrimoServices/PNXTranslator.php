@@ -8,7 +8,6 @@ class PNXTranslator
 {
 
     private $_bib_record_factory;
-    private $_holding_factory;
     private $_person_factory;
     private $_bib_record_component_factory;
     private $_record;
@@ -16,12 +15,10 @@ class PNXTranslator
     /** @var \Doctrine\Common\Cache\Cache * */
     private $_cache;
 
-    public function __construct($bib_record_factory, $holding_factory,
-                                $person_factory, $bib_record_component_factory,
-                                Cache $cache)
+    public function __construct($bib_record_factory, $person_factory,
+                                $bib_record_component_factory, Cache $cache)
     {
         $this->_bib_record_factory = $bib_record_factory;
-        $this->_holding_factory = $holding_factory;
         $this->_person_factory = $person_factory;
         $this->_bib_record_component_factory = $bib_record_component_factory;
         $this->_cache = $cache;

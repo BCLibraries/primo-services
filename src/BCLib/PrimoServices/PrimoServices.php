@@ -28,16 +28,6 @@ class PrimoServices extends \Pimple
 
         parent::__construct();
 
-        $this['holding'] = function ()
-        {
-            return new PhysicalHolding();
-        };
-
-        $this['holding_factory'] = $this->protect(function ()
-        {
-            return $this['holding'];
-        });
-
         $this['person'] = function ()
         {
             return new Person();
@@ -71,7 +61,6 @@ class PrimoServices extends \Pimple
         $this['pnx_translator'] = function ()
         {
             return new PNXTranslator($this['bib_record_factory'],
-                $this['holding_factory'],
                 $this['person_factory'],
                 $this['bib_record_component_factory'],
                 $this['apc_cache']);
