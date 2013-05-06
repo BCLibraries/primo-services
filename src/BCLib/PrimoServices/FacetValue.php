@@ -15,5 +15,12 @@ class FacetValue implements \JsonSerializable
     use Accessor, EncodeJson;
 
     private $_value;
+    private $_display_name;
     private $_count;
+
+    private function _set_value($value)
+    {
+        $this->_value = $value;
+        $this->_display_name = $value;
+    }
 }

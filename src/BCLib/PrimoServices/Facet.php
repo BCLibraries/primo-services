@@ -40,4 +40,17 @@ class Facet implements \JsonSerializable
     {
         $this->_values = array_slice($this->_values, 0, $max_values);
     }
+
+    public function remap(array $mapping_array)
+    {
+        for ($i = 0; $i < count($this->_values); $i++)
+        {
+            $current = $this->_values[$i]->value;
+
+            if (isset($mapping_array[$current]))
+            {
+                $this->_values[$i]->display_name = $mapping_array[$current];
+            }
+        }
+    }
 }
