@@ -22,17 +22,22 @@ class Facet implements \JsonSerializable
 
     public function sortByFrequency()
     {
-        usort($this->_values, function($a, $b)
+        usort($this->_values, function ($a, $b)
         {
-           return $b->count - $a->count;
+            return $b->count - $a->count;
         });
     }
 
     public function sortAlphabetically()
     {
-        usort($this->_values, function($a, $b)
+        usort($this->_values, function ($a, $b)
         {
             return strcasecmp($a->value, $b->value);
         });
+    }
+
+    public function limit($max_values)
+    {
+        $this->_values = array_slice($this->_values, 0, $max_values);
     }
 }
