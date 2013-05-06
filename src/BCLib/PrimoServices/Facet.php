@@ -19,4 +19,20 @@ class Facet implements \JsonSerializable
     private $_id;
     private $_count;
     private $_values = array();
+
+    public function sortByFrequency()
+    {
+        usort($this->_values, function($a, $b)
+        {
+           return $b->count - $a->count;
+        });
+    }
+
+    public function sortAlphabetically()
+    {
+        usort($this->_values, function($a, $b)
+        {
+            return strcasecmp($a->value, $b->value);
+        });
+    }
 }
