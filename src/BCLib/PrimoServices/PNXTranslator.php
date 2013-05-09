@@ -35,10 +35,10 @@ class PNXTranslator
         $xpath_to_pci_record = '//sear:DOC/prim:PrimoNMBib/prim:record';
 
         $docs_xml = $doc_xml->xpath($xpath_to_primo_record . '|' . $xpath_to_pci_record);
-        return \array_map(array($this, '_extractDoc'), $docs_xml);
+        return \array_map(array($this, 'extractDoc'), $docs_xml);
     }
 
-    private function _extractDoc(\SimpleXMLElement $record_xml)
+    public function extractDoc(\SimpleXMLElement $record_xml)
     {
         /** @var $record BibRecord */
         $this->_record = clone $this->_bib_record_template;
@@ -71,7 +71,9 @@ class PNXTranslator
             $this->_record->cover_images = $this->_extractCoverImage($this->_record->isbn);
         }
 
-        $this->_cache->save($this->_record->id, $this->_record, 1200);
+        $cache_key = 'full-record-' . sha1($this->_record->id);;
+
+        $this->_cache->save($cache_key, $this->_record, 1200);
 
         return $this->_record;
     }

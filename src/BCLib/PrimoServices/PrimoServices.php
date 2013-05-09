@@ -89,7 +89,7 @@ class PrimoServices extends \Pimple
         };
     }
 
-    public function ask(Query $query)
+    public function search(Query $query)
     {
         /**
          * @var Cache $cache
@@ -121,6 +121,40 @@ class PrimoServices extends \Pimple
 
         $docset = $xml_result->xpath('/sear:SEGMENTS/sear:JAGROOT/sear:RESULT/sear:DOCSET');
         $result->total_results = (string) $docset[0]['TOTALHITS'];
+
+        $cache->save($cache_key, $result, 120);
+
+        return $result;
+    }
+
+    public function request($record_id)
+    {
+        $cache = $this['apc_cache'];
+        $cache_key = 'full-record-'.sha1($record_id);
+        if ($cache->contains($cache_key))
+        {
+            return $cache->fetch($cache_key);
+        }
+
+        $url = 'http://' . $this->_host . '/PrimoWebServices/xservice/search/full?docId=' . $record_id . '&institution=01_BCL';
+
+        $curl_options = [
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_URL            => $url,
+        ];
+
+        $curl = curl_init();
+        curl_setopt_array($curl, $curl_options);
+        $xml = curl_exec($curl);
+
+        $xml_result = simplexml_load_string($xml);
+        $xml_result->registerXPathNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
+        $xml_result->registerXPathNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
+
+        $item_xml = $xml_result->JAGROOT->RESULT->DOCSET->DOC->PrimoNMBib->record;
+
+        /* @var $result BibRecord */
+        $result = $this['pnx_translator']->extractDoc($item_xml);
 
         $cache->save($cache_key, $result, 120);
 
