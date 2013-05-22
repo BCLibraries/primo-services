@@ -59,10 +59,16 @@ class PNXTranslator
         $this->_record->oclcid = (string) $record_xml->addata->oclcid;
         $this->_record->link_to_worldcat = $this->_linkToWorldCat($this->_record->oclcid);
 
+        $this->_record->contributors = $this->_extractContributors($record_xml);
         $this->_record->subjects = $this->_extractFieldArray($record_xml, 'facets', 'topic');
         $this->_record->genres = $this->_extractFieldArray($record_xml, 'facets', 'genre');
         $this->_record->languages = $this->_extractFieldArray($record_xml, 'facets', 'language');
         $this->_record->components = $this->_extractComponents($record_xml);
+
+        $this->_record->creator = clone $this->_person_template;
+        $this->_record->creator->display_name = (string) $record_xml->display->creator;
+        $this->_record->creator->first_name = (string) $record_xml->addata->aufirst;
+        $this->_record->creator->last_name = (string) $record_xml->addata->aulast;
 
         $this->_record->table_of_contents = $this->_extractTableOfContents($record_xml);
 
@@ -175,4 +181,15 @@ class PNXTranslator
         }
     }
 
+    private function _extractContributors(\SimpleXMLElement $record_xml)
+    {
+        $contrib_list = [];
+        foreach ($record_xml->display->contributor as $contributor)
+        {
+            $person = clone $this->_person_template;
+            $person->display_name = (string) $contributor;
+            $contrib_list[] = $person;
+        }
+        return $contrib_list;
+    }
 }
