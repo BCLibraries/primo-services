@@ -35,7 +35,7 @@ class Query
 
     public function onCampus($on_campus = true)
     {
-        if (! is_bool($on_campus))
+        if (!is_bool($on_campus))
         {
             throw new \Exception('onCampus() must take a boolean argument');
         }
@@ -47,5 +47,15 @@ class Query
         $url = http_build_query($this->_parameters);
         $url .= (count($this->_terms) > 0) ? '&' . join('&', $this->_terms) : '';
         return $url;
+    }
+
+    public function next($bulk_size = null)
+    {
+        $this->_parameters['indx'] += $this->_parameters['bulkSize'];
+
+        if (isset($bulk_size))
+        {
+            $this->_parameters['bulkSize'] = $bulk_size;
+        }
     }
 }
