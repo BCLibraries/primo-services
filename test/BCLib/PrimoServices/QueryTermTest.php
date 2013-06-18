@@ -32,7 +32,14 @@ class QueryTermTest extends \PHPUnit_Framework_TestCase
      */
     public function testBadPrecisionThrowsException()
     {
-        $this->_query_term->set('title','not-a-precision','Otters');
+        $this->_query_term->set('title', 'not-a-precision', 'Otters');
+    }
+
+    public function testValidPrecisionTermsWork()
+    {
+        $this->_query_term->set('title', 'contains', 'Otters');
+        $this->_query_term->set('title', 'exact', 'otters');
+        $this->assertTrue(true);
     }
 
     public function testAddingKeywordSucceeds()
