@@ -93,8 +93,7 @@ class BibRecord implements \JsonSerializable
     public function addCoverImage($image_url, $size = 'small')
     {
         $sizes = array('small', 'medium', 'large');
-        if (!in_array($size, $sizes))
-        {
+        if (!in_array($size, $sizes)) {
             throw new \Exception($size . ' is not a valid image size');
         }
 

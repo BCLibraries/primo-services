@@ -15,9 +15,12 @@ class PNXTranslator
     /** @var \Doctrine\Common\Cache\Cache * */
     private $_cache;
 
-    public function __construct(BibRecord $bib_record_template, Person $person_template,
-                                BibRecordComponent $bib_record_component_template, Cache $cache)
-    {
+    public function __construct(
+        BibRecord $bib_record_template,
+        Person $person_template,
+        BibRecordComponent $bib_record_component_template,
+        Cache $cache
+    ) {
         $this->_bib_record_template = $bib_record_template;
         $this->_person_template = $person_template;
         $this->_bib_record_component_template = $bib_record_component_template;
@@ -72,8 +75,7 @@ class PNXTranslator
 
         $this->_record->table_of_contents = $this->_extractTableOfContents($record_xml);
 
-        if ($this->_record->isbn)
-        {
+        if ($this->_record->isbn) {
             $this->_record->cover_images = $this->_extractCoverImage($this->_record->isbn);
         }
 
@@ -87,8 +89,7 @@ class PNXTranslator
     private function _extractFieldArray(\SimpleXMLElement $xml, $section, $field)
     {
         $result = [];
-        foreach ($xml->$section->$field as $item)
-        {
+        foreach ($xml->$section->$field as $item) {
             $result[] = (string) $item;
         }
         return $result;
@@ -109,16 +110,14 @@ class PNXTranslator
         $helper['alma_id'] = $this->_extractMultiPartField($record_xml->control->almaid);
 
         /** @var $component BibRecordComponent */
-        foreach ($helper['delcategory'] as $id => $delcategory)
-        {
+        foreach ($helper['delcategory'] as $id => $delcategory) {
             $component = clone $this->_bib_record_component_template;
 
             $component->delivery_category = $delcategory;
             $component->source_record_id = $helper['sourcerecordid'][$id];
             $component->source = $helper['sourceid'][$id];
 
-            if ((string) $component->source == 'ALMA-BC')
-            {
+            if ((string) $component->source == 'ALMA-BC') {
                 $alma_id_key = str_replace('ALMA-BC', '01BC_INST:', $id);
                 $component->alma_id = $helper['alma_id'][$alma_id_key];
             }
@@ -132,16 +131,12 @@ class PNXTranslator
     {
         $result = [];
 
-        if (strpos($this->_record->id, 'dedup') > -1)
-        {
-            foreach ($element_xml as $element)
-            {
+        if (strpos($this->_record->id, 'dedup') > -1) {
+            foreach ($element_xml as $element) {
                 $element_parts = preg_split('/\$\$\w/', (string) $element);
                 $result[$element_parts[2]] = $element_parts[1];
             }
-        }
-        else
-        {
+        } else {
             $id = $element_xml->getName() == 'almaid' ? (string) $element_xml : $this->_record->id;
             $result[$id] = (string) $element_xml;
         }
@@ -157,8 +152,7 @@ class PNXTranslator
     private function _extractCoverImage($isbn)
     {
         $cover_images = null;
-        if ($isbn)
-        {
+        if ($isbn) {
             $cover_images = new \stdClass();
             $image_base_url = 'http://lib.syndetics.com/index.aspx?client=bostonh&isbn=';
             $cover_images->small = $image_base_url . $isbn . '/' . 'sc' . '.JPG';
@@ -171,12 +165,9 @@ class PNXTranslator
 
     private function _extractTableOfContents(\SimpleXMLElement $record_xml)
     {
-        if ((string) $record_xml->display->lds13)
-        {
+        if ((string) $record_xml->display->lds13) {
             return preg_split('/\s*\-\-\s*/', $record_xml->display->lds13);
-        }
-        else
-        {
+        } else {
             return [];
         }
     }
@@ -184,8 +175,7 @@ class PNXTranslator
     private function _extractContributors(\SimpleXMLElement $record_xml)
     {
         $contrib_list = [];
-        foreach ($record_xml->display->contributor as $contributor)
-        {
+        foreach ($record_xml->display->contributor as $contributor) {
             $person = clone $this->_person_template;
             $person->display_name = (string) $contributor;
             $contrib_list[] = $person;

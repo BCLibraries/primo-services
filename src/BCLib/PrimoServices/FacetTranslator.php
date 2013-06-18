@@ -8,9 +8,11 @@ class FacetTranslator
     private $_facet_value_template;
     private $_facet_names = array();
 
-    public function __construct(Facet $facet_template, FacetValue $facet_value_template,
-                                array $facet_names)
-    {
+    public function __construct(
+        Facet $facet_template,
+        FacetValue $facet_value_template,
+        array $facet_names
+    ) {
         $this->_facet_template = $facet_template;
         $this->_facet_value_template = $facet_value_template;
         $this->_facet_names = $facet_names;
@@ -55,10 +57,8 @@ class FacetTranslator
     {
         $facet_value = clone $this->_facet_value_template;
 
-        foreach ($facet_value_xml->attributes() as $key => $value)
-        {
-            switch ($key)
-            {
+        foreach ($facet_value_xml->attributes() as $key => $value) {
+            switch ($key) {
                 case 'KEY':
                     $facet_value->value = (string) $value;
                     break;

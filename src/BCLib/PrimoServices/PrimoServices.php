@@ -30,61 +30,50 @@ class PrimoServices extends \Pimple
 
         parent::__construct();
 
-        $this['person'] = function ()
-        {
+        $this['person'] = function () {
             return new Person();
         };
 
-        $this['bib_record_component'] = function ()
-        {
+        $this['bib_record_component'] = function () {
             return new BibRecordComponent();
         };
 
-        $this['bib_record'] = function ()
-        {
+        $this['bib_record'] = function () {
             return new BibRecord();
         };
 
-        $this['pnx_translator'] = function ()
-        {
+        $this['pnx_translator'] = function () {
             return new PNXTranslator($this['bib_record'],
                 $this['person'],
                 $this['bib_record_component'],
                 $this['apc_cache']);
         };
 
-        $this['apc_cache'] = function ()
-        {
+        $this['apc_cache'] = function () {
             return new ApcCache();
         };
 
-        $this['facet_translator'] = function ()
-        {
+        $this['facet_translator'] = function () {
             return new FacetTranslator($this['facet'], $this['facet_value'], $this->_facet_names);
         };
 
-        $this['facet'] = function ()
-        {
+        $this['facet'] = function () {
             return new Facet();
         };
 
-        $this['facet_value'] = function ()
-        {
+        $this['facet_value'] = function () {
             return new FacetValue();
         };
 
-        $this['query'] = function ()
-        {
+        $this['query'] = function () {
             return new Query($this->_institution);
         };
 
-        $this['query_term'] = function ()
-        {
+        $this['query_term'] = function () {
             return new QueryTerm();
         };
 
-        $this['search_result'] = function ()
-        {
+        $this['search_result'] = function () {
             return new BriefSearchResult();
         };
     }
@@ -96,8 +85,7 @@ class PrimoServices extends \Pimple
          */
         $cache = $this['apc_cache'];
         $cache_key = sha1($query);
-        if ($cache->contains($cache_key))
-        {
+        if ($cache->contains($cache_key)) {
             return $cache->fetch($cache_key);
         }
 
@@ -130,9 +118,8 @@ class PrimoServices extends \Pimple
     public function request($record_id)
     {
         $cache = $this['apc_cache'];
-        $cache_key = 'full-record-'.sha1($record_id);
-        if ($cache->contains($cache_key))
-        {
+        $cache_key = 'full-record-' . sha1($record_id);
+        if ($cache->contains($cache_key)) {
             return $cache->fetch($cache_key);
         }
 

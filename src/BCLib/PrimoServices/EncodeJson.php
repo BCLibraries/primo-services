@@ -15,11 +15,9 @@ trait EncodeJson
     {
         $data = new \stdClass;
 
-        foreach ($this as $key => $value)
-        {
+        foreach ($this as $key => $value) {
             $key = substr($key, 1);
-            if (isset($value) && $value != '' && count($value) > 0)
-            {
+            if (isset($value) && $value != '' && count($value) > 0) {
                 $data->$key = $value;
             }
         }

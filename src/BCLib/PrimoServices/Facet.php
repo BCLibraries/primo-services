@@ -22,18 +22,22 @@ class Facet implements \JsonSerializable
 
     public function sortByFrequency()
     {
-        usort($this->_values, function ($a, $b)
-        {
-            return $b->count - $a->count;
-        });
+        usort(
+            $this->_values,
+            function ($a, $b) {
+                return $b->count - $a->count;
+            }
+        );
     }
 
     public function sortAlphabetically()
     {
-        usort($this->_values, function ($a, $b)
-        {
-            return strcasecmp($a->value, $b->value);
-        });
+        usort(
+            $this->_values,
+            function ($a, $b) {
+                return strcasecmp($a->value, $b->value);
+            }
+        );
     }
 
     public function limit($max_values)
@@ -43,12 +47,10 @@ class Facet implements \JsonSerializable
 
     public function remap(array $mapping_array)
     {
-        for ($i = 0; $i < count($this->_values); $i++)
-        {
+        for ($i = 0; $i < count($this->_values); $i++) {
             $current = $this->_values[$i]->value;
 
-            if (isset($mapping_array[$current]))
-            {
+            if (isset($mapping_array[$current])) {
                 $this->_values[$i]->display_name = $mapping_array[$current];
             }
         }

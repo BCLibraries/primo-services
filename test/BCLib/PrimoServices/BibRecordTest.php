@@ -24,8 +24,7 @@ class BibRecordTest extends \PHPUnit_Framework_TestCase
     public function testValidCoverImageSizesDontThrowException()
     {
         $valid_sizes = array('small', 'medium', 'large');
-        foreach ($valid_sizes as $valid_size)
-        {
+        foreach ($valid_sizes as $valid_size) {
             $this->_bib_record->addCoverImage('http://www.example.com/foo.png', $valid_size);
         }
         $this->assertTrue(true);

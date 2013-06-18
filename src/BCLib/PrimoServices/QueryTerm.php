@@ -34,8 +34,7 @@ class QueryTerm
 
     public function set($index, $precision, $term)
     {
-        if ($precision != QueryTerm::CONTAINS && $precision != QueryTerm::EXACT)
-        {
+        if ($precision != QueryTerm::CONTAINS && $precision != QueryTerm::EXACT) {
             throw new \Exception($precision . ' is not a valid query relation');
         }
 

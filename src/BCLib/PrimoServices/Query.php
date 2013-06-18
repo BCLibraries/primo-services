@@ -21,12 +21,13 @@ class Query
 
     public function sortField($sort_order)
     {
-        $valid_sort_orders = ['title'      => 'stitle',
-                              'date'       => 'scdate',
-                              'author'     => 'screator',
-                              'popularity' => 'popularity'];
-        if (!array_key_exists($sort_order, $valid_sort_orders))
-        {
+        $valid_sort_orders = [
+            'title'      => 'stitle',
+            'date'       => 'scdate',
+            'author'     => 'screator',
+            'popularity' => 'popularity'
+        ];
+        if (!array_key_exists($sort_order, $valid_sort_orders)) {
             throw new \Exception($sort_order . ' is not a valid result sort');
         }
 
@@ -35,8 +36,7 @@ class Query
 
     public function onCampus($on_campus = true)
     {
-        if (!is_bool($on_campus))
-        {
+        if (!is_bool($on_campus)) {
             throw new \Exception('onCampus() must take a boolean argument');
         }
         $this->_parameters['onCampus'] = $on_campus ? 'true' : 'false';
@@ -53,8 +53,7 @@ class Query
     {
         $this->_parameters['indx'] += $this->_parameters['bulkSize'];
 
-        if (isset($bulk_size))
-        {
+        if (isset($bulk_size)) {
             $this->_parameters['bulkSize'] = $bulk_size;
         }
     }
