@@ -9,6 +9,7 @@ class PrimoServices extends \Pimple
 {
     private $_host;
     private $_institution;
+    private $_cache_enabled = TRUE;
 
     private $_facet_names = [
         'creator'      => 'Creator',
@@ -78,14 +79,14 @@ class PrimoServices extends \Pimple
         };
     }
 
-    public function search(Query $query)
+    public function search(Query $query, $facet_whitelist = array())
     {
         /**
          * @var Cache $cache
          */
         $cache = $this['apc_cache'];
         $cache_key = sha1($query);
-        if ($cache->contains($cache_key)) {
+        if ($this->_cache_enabled && $cache->contains($cache_key)) {
             return $cache->fetch($cache_key);
         }
 
@@ -110,6 +111,10 @@ class PrimoServices extends \Pimple
         $docset = $xml_result->xpath('/sear:SEGMENTS/sear:JAGROOT/sear:RESULT/sear:DOCSET');
         $result->total_results = (string) $docset[0]['TOTALHITS'];
 
+        if (count($facet_whitelist) > 0) {
+            $result->filterFacets($facet_whitelist);
+        }
+
         $cache->save($cache_key, $result, 120);
 
         return $result;
@@ -119,7 +124,7 @@ class PrimoServices extends \Pimple
     {
         $cache = $this['apc_cache'];
         $cache_key = 'full-record-' . sha1($record_id);
-        if ($cache->contains($cache_key)) {
+        if ($this->_cache_enabled && $cache->contains($cache_key)) {
             return $cache->fetch($cache_key);
         }
 
@@ -146,5 +151,10 @@ class PrimoServices extends \Pimple
         $cache->save($cache_key, $result, 120);
 
         return $result;
+    }
+
+    public function cache($cache_enabled)
+    {
+        $this->_cache_enabled = $cache_enabled;
     }
 }
