@@ -41,4 +41,16 @@ class InputTest extends \PHPUnit_Framework_TestCase
         $_SERVER['QUERY_STRING'] = 'foo=1&bar=2&foo=3';
         $this->assertEquals(array('1', '3'), Input::get('foo'));
     }
+
+    public function testHasFindsName()
+    {
+        $_SERVER['QUERY_STRING'] = 'foo=1&bar=2&foo=3';
+        $this->assertTrue(Input::has('foo'));
+    }
+
+    public function testHasReturnsFalseWhenNotPresent()
+    {
+        $_SERVER['QUERY_STRING'] = 'foo=1&bar=2&foo=3';
+        $this->assertFalse(Input::has('baz'));
+    }
 }

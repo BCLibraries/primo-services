@@ -15,13 +15,24 @@ class Input
 
     public static function get($name)
     {
-        if (is_null(Input::$_contents)) {
-            Input::loadContents();
-        }
+        Input::_lazyLoad();
         return Input::$_contents[$name];
     }
 
-    private static function loadContents()
+    public static function has($name)
+    {
+        Input::_lazyLoad();
+        return isset(Input::$_contents[$name]);
+    }
+
+    private static function _lazyLoad()
+    {
+        if (is_null(Input::$_contents)) {
+            Input::_loadContents();
+        }
+    }
+
+    private static function _loadContents()
     {
         $query = explode('&', $_SERVER['QUERY_STRING']);
         Input::$_contents = array();
