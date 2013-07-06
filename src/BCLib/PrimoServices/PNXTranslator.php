@@ -66,6 +66,8 @@ class PNXTranslator
         $this->_record->subjects = $this->_extractFieldArray($record_xml, 'facets', 'topic');
         $this->_record->genres = $this->_extractFieldArray($record_xml, 'facets', 'genre');
         $this->_record->languages = $this->_extractFieldArray($record_xml, 'facets', 'language');
+        $this->_record->creator_facet = $this->_extractFieldArray($record_xml, 'facets', 'creatorcontrib');
+        $this->_record->collection_facet = $this->_extractFieldArray($record_xml, 'facets', 'lfc01');
         $this->_record->components = $this->_extractComponents($record_xml);
 
         $this->_record->creator = clone $this->_person_template;
