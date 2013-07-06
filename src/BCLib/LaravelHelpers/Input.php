@@ -25,6 +25,35 @@ class Input
         return isset(Input::$_contents[$name]);
     }
 
+    public static function all()
+    {
+        Input::_lazyLoad();
+        return Input::$_contents;
+    }
+
+    public static function only()
+    {
+        $result = [];
+        Input::_lazyLoad();
+        foreach (func_get_args() as $arg) {
+            $result[$arg] = Input::get($arg);
+        }
+        return $result;
+    }
+
+    public static function except()
+    {
+        $result = [];
+        Input::_lazyLoad();
+        $ignore = func_get_args();
+        foreach (Input::$_contents as $key => $value) {
+            if (!in_array($key, $ignore)) {
+                $result[$key] = $value;
+            }
+        }
+        return $result;
+    }
+
     private static function _lazyLoad()
     {
         if (is_null(Input::$_contents)) {

@@ -29,7 +29,7 @@ class InputTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetSingleParamsCorrectly()
     {
-        $_SERVER['QUERY_STRING'] = 'foo=1&bar=2&foo=3';
+        $_SERVER['QUERY_STRING'] = 'foo=1&bar=2&foo=3&baz=4';
         $this->assertEquals(array('2'), Input::get('bar'));
     }
 
@@ -38,19 +38,46 @@ class InputTest extends \PHPUnit_Framework_TestCase
      */
     public function testGetMultipleParamsCorrectly()
     {
-        $_SERVER['QUERY_STRING'] = 'foo=1&bar=2&foo=3';
         $this->assertEquals(array('1', '3'), Input::get('foo'));
     }
 
+    /**
+     * @covers BCLib\LaravelHelpers\Input::has
+     */
     public function testHasFindsName()
     {
-        $_SERVER['QUERY_STRING'] = 'foo=1&bar=2&foo=3';
         $this->assertTrue(Input::has('foo'));
     }
 
+    /**
+     * @covers BCLib\LaravelHelpers\Input::has
+     */
     public function testHasReturnsFalseWhenNotPresent()
     {
-        $_SERVER['QUERY_STRING'] = 'foo=1&bar=2&foo=3';
-        $this->assertFalse(Input::has('baz'));
+        $this->assertFalse(Input::has('foobar'));
+    }
+
+    /**
+     * @covers BCLib\LaravelHelpers\Input::all
+     */
+    public function testAllReturnsAll()
+    {
+        $this->assertEquals(['foo' => ['1', '3'], 'bar' => ['2'], 'baz' => ['4']], Input::all());
+    }
+
+    /**
+     * @covers BCLib\LaravelHelpers\Input::only
+     */
+    public function testOnly()
+    {
+        $this->assertEquals(['foo' => ['1', '3'], 'bar' => ['2']], Input::only('foo', 'bar'));
+    }
+
+    /**
+     * @covers BCLib\LaravelHelpers\Input::except
+     */
+    public function testExcept()
+    {
+        $this->assertEquals(['foo' => ['1', '3']], Input::except('bar', 'baz'));
     }
 }
