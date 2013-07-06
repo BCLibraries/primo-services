@@ -25,6 +25,8 @@ namespace BCLib\PrimoServices;
  * @property string[]             $subjects
  * @property string               $display_subject
  * @property string[]             $genres
+ * @property string[]             $creator_facet
+ * @property string[]             $collection_facet
  * @property string[]             $languages
  * @property string               $table_of_contents
  * @property string               $format
@@ -60,6 +62,8 @@ class BibRecord implements \JsonSerializable
     private $_subjects = array();
     private $_display_subject;
     private $_genres = array();
+    private $_creator_facet = array();
+    private $_collection_facet = array();
     private $_languages;
     private $_table_of_contents;
     private $_format;
