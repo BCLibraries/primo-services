@@ -35,7 +35,7 @@ class Facet implements \JsonSerializable
         usort(
             $this->_values,
             function ($a, $b) {
-                return strcasecmp($a->value, $b->value);
+                return strcasecmp($a->display_name, $b->display_name);
             }
         );
     }
