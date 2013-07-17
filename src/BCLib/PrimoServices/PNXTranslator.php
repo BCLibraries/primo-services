@@ -43,6 +43,8 @@ class PNXTranslator
 
     public function extractDoc(\SimpleXMLElement $record_xml)
     {
+        $record_xml = $record_xml->children('http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
+
         /** @var $record BibRecord */
         $this->_record = clone $this->_bib_record_template;
 
