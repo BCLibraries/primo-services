@@ -42,6 +42,11 @@ class Query
         $this->_parameters['onCampus'] = $on_campus ? 'true' : 'false';
     }
 
+    public function articles()
+    {
+        $this->_parameters['loc'] = 'adaptor,primo_central_multiple_fe';
+    }
+
     public function __toString()
     {
         $url = http_build_query($this->_parameters);
