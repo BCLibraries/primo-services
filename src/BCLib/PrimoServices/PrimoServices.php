@@ -9,7 +9,7 @@ class PrimoServices extends \Pimple
 {
     private $_host;
     private $_institution;
-    private $_cache_enabled = TRUE;
+    private $_cache_enabled = true;
 
     private $_facet_names = [
         'creator'      => 'Creator',
@@ -105,6 +105,9 @@ class PrimoServices extends \Pimple
 
         /* @var $result BriefSearchResult */
         $result = $this['search_result'];
+        $result->facets = [];
+        $result->results = [];
+
         $result->facets = $this['facet_translator']->translate($xml_result);
         $result->results = $this['pnx_translator']->translate($xml_result);
 
