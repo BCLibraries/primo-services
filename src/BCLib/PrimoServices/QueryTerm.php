@@ -27,6 +27,26 @@ class QueryTerm
         $this->set('creator', $precision, $creator);
     }
 
+    public function subject($subject, $precision = QueryTerm::CONTAINS)
+    {
+        $this->set('sub', $precision, $subject);
+    }
+
+    public function date($date)
+    {
+        $this->set('cdate', QueryTerm::EXACT, $date);
+    }
+
+    public function isbn($isbn)
+    {
+        $this->set('isbn', QueryTerm::EXACT, $isbn);
+    }
+
+    public function issn($issn)
+    {
+        $this->set('issn', QueryTerm::EXACT, $issn);
+    }
+
     public function queryString()
     {
         return $this->_index . ',' . $this->_precision . ',' . $this->_term;
