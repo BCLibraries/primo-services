@@ -146,6 +146,22 @@ foreach ($result->contributors as $contributor) {
 }
 ```
 
+### Deep Links
+
+You can also use the services to generate [Deep Links](http://www.exlibrisgroup.org/display/PrimoOI/Deep+Links):
+
+```PHP
+$primo_services = new BCLib\PrimoServices\PrimoServices('bc-primo.hosted.exlibrisgroup.com', 'BCL');
+$query_term = new PrimoServices\QueryTerm();
+$query_term->keyword('otters');
+
+$deep_link = $primo_services->createDeepLink();
+$deep_link->view('bclib')->onCampus('true')->group('GUEST')->language('eng');
+
+echo $deep_link->search($query_term) . "\n";
+echo $deep_link->link('ALMA-BC21421261320001021') . "\n";
+```
+
 ## Testing
 
 This module uses the Composer-installed PHPUnit. From the main project directory:

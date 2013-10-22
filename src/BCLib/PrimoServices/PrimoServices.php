@@ -77,6 +77,10 @@ class PrimoServices extends \Pimple
         $this['search_result'] = function () {
             return new BriefSearchResult();
         };
+
+        $this['deep_link'] = function() {
+            return new DeepLink($this->_host, $this->_institution);
+        };
     }
 
     public function search(Query $query, $facet_whitelist = array())
@@ -154,6 +158,14 @@ class PrimoServices extends \Pimple
         $cache->save($cache_key, $result, 120);
 
         return $result;
+    }
+
+    /**
+     * @return DeepLink
+     */
+    public function createDeepLink()
+    {
+        return $this['deep_link'];
     }
 
     public function cache($cache_enabled)
