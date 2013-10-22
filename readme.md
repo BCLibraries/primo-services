@@ -146,4 +146,10 @@ foreach ($result->contributors as $contributor) {
 }
 ```
 
+## Testing
+
+This module uses the Composer-installed PHPUnit. From the main project directory:
+
+    ./vendor/bin/phpunit test/BCLib/
+
 
