@@ -59,4 +59,91 @@ $primo_result = $primo->search($query);
 
 ### Results
 
-The result will be a *BriefSearchResult* object containing seach result and facet information.
+The result will be a *BriefSearchResult* object containing seach result and facet information. The BriefSearchResult object gives access to a list of *Facets*, a list of *BibRecords* for the retrieved full results, and a count of the total results of the query.
+
+```PHP
+$facets = $primo_result->facets;
+$full_results = $primo_result->results;
+$total = $primo_result->total_results;
+```
+
+#### Facets
+
+To see a list of al facets, with facet values 
+
+```PHP
+echo "Facets\n";
+foreach ($primo_result->facets as $facet) {
+    echo "\tId:" . $facet->id . "\n";
+    echo "\t\tName:" . $facet->name . "\n";
+    echo "\t\tCount: " . $facet->count . "\n";
+
+    echo "\t\tValues:\n";
+    foreach ($facet->values as $value) {
+        echo "\t\t\t" . $value->display_name . " (" . $facet->id . ") - " . $facet->count . "\n";
+    }
+}
+```
+
+#### Full results
+
+Full results are stored in BibRecord objects. A BibRecord contains the following `string` and `string[]` components:
+
+```PHP
+foreach ($primo_result->results as $result) {
+
+    // Accessible string and string [] properties of a result
+    $result->id;
+    $result->abstract;
+    $result->availability;
+    $result->available_online_url;
+    $result->collection_facet;
+    $result->cover_images->small;
+    $result->cover_images->medium;
+    $result->cover_images->large;
+    $result->creator;
+    $result->creator_facet;
+    $result->date;
+    $result->description;
+    $result->display_subject;
+    $result->find_it_url;
+    $result->format;
+    $result->frbr_group_id;
+    $result->genres; // string[]
+    $result->isbn;
+    $result->issn;
+    $result->languages; // string[]
+    $result->link_to_worldcat;
+    $result->oclcid;
+    $result->permalink;
+    $result->publisher;
+    $result->reserves_info;
+    $result->subjects; // string[]
+    $result->table_of_contents;
+    $result->title;
+    $result->type;
+}
+```
+
+Each record is composed of *BibRecordComponent* objects that indicate the source record used to create the Primo record. Most Primo records will have 1 component. De-duplicated records will have multiple components:
+
+```PHP
+foreach ($result->components as $component) {
+    $component->alma_id;
+    $component->delivery_category;
+    $component->source;
+    $component->source_record_id;
+}
+```
+
+Contributors are listed as an array of *Persons*:
+
+```PHP
+foreach ($result->contributors as $contributor) {
+    $contributor->display_name;
+    $contributor->first_name;
+    $contributor->last_name;
+}
+```
+
+

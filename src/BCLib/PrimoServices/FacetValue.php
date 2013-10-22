@@ -9,7 +9,14 @@
 
 namespace BCLib\PrimoServices;
 
-
+/**
+ * Class FacetValue
+ * @package BCLib\PrimoServices
+ *
+ * @property string $value
+ * @property string $display_name
+ * @property string $count
+ */
 class FacetValue implements \JsonSerializable
 {
     use Accessor, EncodeJson;
