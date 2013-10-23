@@ -19,6 +19,7 @@
         "php": ">=5.4.0",
         "pimple/pimple": "v1.0.2",
         "phpunit/phpunit": "3.7.19",
-        "doctrine/cache": "v1.0"
+        "doctrine/cache": "v1.0",
+        "guzzle/http": "3.7.4"
     }
 }

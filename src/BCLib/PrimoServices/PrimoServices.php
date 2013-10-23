@@ -4,6 +4,7 @@ namespace BCLib\PrimoServices;
 
 use Doctrine\Common\Cache\ApcCache;
 use Doctrine\Common\Cache\Cache;
+use Guzzle\Http\Client;
 
 class PrimoServices extends \Pimple
 {
@@ -78,7 +79,7 @@ class PrimoServices extends \Pimple
             return new BriefSearchResult();
         };
 
-        $this['deep_link'] = function() {
+        $this['deep_link'] = function () {
             return new DeepLink($this->_host, $this->_institution);
         };
     }
@@ -94,18 +95,7 @@ class PrimoServices extends \Pimple
             return $cache->fetch($cache_key);
         }
 
-        $url = 'http://' . $this->_host . '/PrimoWebServices/xservice/search/brief?' . $query;
-        $curl_options = [
-            CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL            => $url,
-        ];
-        $curl = curl_init();
-        curl_setopt_array($curl, $curl_options);
-        $xml = curl_exec($curl);
-
-        $xml_result = simplexml_load_string($xml);
-        $xml_result->registerXPathNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
-        $xml_result->registerXPathNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
+        $xml_result = $this->_send('brief', $query);
 
         /* @var $result BriefSearchResult */
         $result = $this['search_result'];
@@ -135,20 +125,7 @@ class PrimoServices extends \Pimple
             return $cache->fetch($cache_key);
         }
 
-        $url = 'http://' . $this->_host . '/PrimoWebServices/xservice/search/full?docId=' . $record_id . '&institution=01_BCL';
-
-        $curl_options = [
-            CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL            => $url,
-        ];
-
-        $curl = curl_init();
-        curl_setopt_array($curl, $curl_options);
-        $xml = curl_exec($curl);
-
-        $xml_result = simplexml_load_string($xml);
-        $xml_result->registerXPathNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
-        $xml_result->registerXPathNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
+        $xml_result = $this->_send('full', 'docId=' . $record_id . '&institution=01_BCL');
 
         $item_xml = $xml_result->JAGROOT->RESULT->DOCSET->DOC->PrimoNMBib->record;
 
@@ -171,5 +148,15 @@ class PrimoServices extends \Pimple
     public function cache($cache_enabled)
     {
         $this->_cache_enabled = $cache_enabled;
+    }
+
+    protected function _send($action, $query_string)
+    {
+        $client = new Client('http://' . $this->_host . '/PrimoWebServices/xservice/search/');
+        $request = $client->get($action . '?' . $query_string);
+        $xml_result = simplexml_load_string($request->send()->getBody());
+        $xml_result->registerXPathNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
+        $xml_result->registerXPathNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
+        return $xml_result;
     }
 }
