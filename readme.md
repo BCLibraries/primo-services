@@ -39,7 +39,9 @@ use \BCLib\PrimoServices\PrimoServices;
 use \BCLib\PrimoServices\Query;
 use \BCLib\PrimoServices\QueryTerm;
 
-$primo = new PrimoServices('primo2.staging.hosted.exlibrisgroup.com');
+$host = 'primo2.staging.hosted.exlibrisgroup.com';
+$inst = 'BCL';
+$primo = new PrimoServices($host, $inst);
 ```
 
 Searches are represented by a *Query*. Each Query can have one or more *QueryTerms*, which represent search parameters:
@@ -161,6 +163,22 @@ $deep_link->view('bclib')->onCampus('true')->group('GUEST')->language('eng');
 echo $deep_link->search($query_term) . "\n";
 echo $deep_link->link('ALMA-BC21421261320001021') . "\n";
 ```
+
+### Caching
+
+Results can be cached in-memory by injecting a [Doctrine cache object](http://docs.doctrine-project.org/en/2.0.x/reference/caching.html) when the service is initialized:
+
+```PHP
+use BCLib\PrimoServices\PrimoServices;
+use Doctrine\Common\Cache\ApcCache;
+
+$host = 'primo2.staging.hosted.exlibrisgroup.com';
+$inst = 'BCL';
+$cache = new ApcCache();
+$primo = new PrimoServices($host, $inst, $cache);
+```
+
+
 
 ## Testing
 

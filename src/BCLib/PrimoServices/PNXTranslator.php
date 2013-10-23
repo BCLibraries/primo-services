@@ -19,7 +19,7 @@ class PNXTranslator
         BibRecord $bib_record_template,
         Person $person_template,
         BibRecordComponent $bib_record_component_template,
-        Cache $cache
+        Cache $cache = null
     ) {
         $this->_bib_record_template = $bib_record_template;
         $this->_person_template = $person_template;
@@ -83,9 +83,10 @@ class PNXTranslator
             $this->_record->cover_images = $this->_extractCoverImage($this->_record->isbn);
         }
 
-        $cache_key = 'full-record-' . sha1($this->_record->id);;
-
-        $this->_cache->save($cache_key, $this->_record, 1200);
+        if (isset($this->_cache)) {
+            $cache_key = 'full-record-' . sha1($this->_record->id);;
+            $this->_cache->save($cache_key, $this->_record, 1200);
+        }
 
         return $this->_record;
     }

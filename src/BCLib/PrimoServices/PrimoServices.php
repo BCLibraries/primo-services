@@ -2,7 +2,6 @@
 
 namespace BCLib\PrimoServices;
 
-use Doctrine\Common\Cache\ApcCache;
 use Doctrine\Common\Cache\Cache;
 use Guzzle\Http\Client;
 
@@ -10,7 +9,13 @@ class PrimoServices extends \Pimple
 {
     private $_host;
     private $_institution;
-    private $_cache_enabled = true;
+
+    /**
+     * @var Cache
+     */
+    private $_cache;
+
+    const CACHE_TYPE_APC = 1;
 
     private $_facet_names = [
         'creator'      => 'Creator',
@@ -25,10 +30,11 @@ class PrimoServices extends \Pimple
         'local1'       => 'Collection',
     ];
 
-    public function __construct($host, $institution = 'BCL')
+    public function __construct($host, $institution = 'BCL', Cache $cache = null)
     {
         $this->_host = $host;
         $this->_institution = $institution;
+        $this->_cache = $cache;
 
         parent::__construct();
 
@@ -48,11 +54,7 @@ class PrimoServices extends \Pimple
             return new PNXTranslator($this['bib_record'],
                 $this['person'],
                 $this['bib_record_component'],
-                $this['apc_cache']);
-        };
-
-        $this['apc_cache'] = function () {
-            return new ApcCache();
+                $this->_cache);
         };
 
         $this['facet_translator'] = function () {
@@ -86,13 +88,10 @@ class PrimoServices extends \Pimple
 
     public function search(Query $query, $facet_whitelist = array())
     {
-        /**
-         * @var Cache $cache
-         */
-        $cache = $this['apc_cache'];
         $cache_key = sha1($query);
-        if ($this->_cache_enabled && $cache->contains($cache_key)) {
-            return $cache->fetch($cache_key);
+
+        if ($cached_value = $this->_checkCache($cache_key)) {
+            return $cached_value;
         }
 
         $xml_result = $this->_send('brief', $query);
@@ -112,17 +111,19 @@ class PrimoServices extends \Pimple
             $result->filterFacets($facet_whitelist);
         }
 
-        $cache->save($cache_key, $result, 120);
+        if (isset($this->_cache)) {
+            $this->_cache->save($cache_key, $result);
+        }
 
         return $result;
     }
 
     public function request($record_id)
     {
-        $cache = $this['apc_cache'];
         $cache_key = 'full-record-' . sha1($record_id);
-        if ($this->_cache_enabled && $cache->contains($cache_key)) {
-            return $cache->fetch($cache_key);
+
+        if ($cached_value = $this->_checkCache($cache_key)) {
+            return $cached_value;
         }
 
         $xml_result = $this->_send('full', 'docId=' . $record_id . '&institution=01_BCL');
@@ -132,7 +133,7 @@ class PrimoServices extends \Pimple
         /* @var $result BibRecord */
         $result = $this['pnx_translator']->extractDoc($item_xml);
 
-        $cache->save($cache_key, $result, 120);
+        $this->_cache->save($cache_key, $result, 120);
 
         return $result;
     }
@@ -145,9 +146,13 @@ class PrimoServices extends \Pimple
         return $this['deep_link'];
     }
 
-    public function cache($cache_enabled)
+    protected function _checkCache($key)
     {
-        $this->_cache_enabled = $cache_enabled;
+        if (isset($this->_cache) && $this->_cache->contains($key)) {
+            return $this->_cache->fetch($key);
+        } else {
+            return false;
+        }
     }
 
     protected function _send($action, $query_string)
