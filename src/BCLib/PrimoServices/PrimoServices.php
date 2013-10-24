@@ -47,13 +47,11 @@ class PrimoServices extends \Pimple
         };
 
         $this['bib_record'] = function () {
-            return new BibRecord();
+            return new BibRecord($this['person'], $this['bib_record_component']);
         };
 
         $this['pnx_translator'] = function () {
             return new PNXTranslator($this['bib_record'],
-                $this['person'],
-                $this['bib_record_component'],
                 $this->_cache);
         };
 

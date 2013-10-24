@@ -6,7 +6,8 @@ namespace BCLib\PrimoServices;
  * Class BibRecord
  * @package BCLib\PrimoServices
  *
- * @property sring                $id
+ * @property \SimpleXMLElement    $xml
+ * @property string               $id
  * @property string               $title
  * @property Person               $creator
  * @property Person[]             $contributors
@@ -32,7 +33,6 @@ namespace BCLib\PrimoServices;
  * @property string               $format
  * @property string               $description
  * @property string               $permalink
- * @property Holding[]            $holdings
  * @property string               $find_it_url
  * @property string               $available_online_url
  * @property string               $link_to_worldcat
@@ -41,6 +41,13 @@ namespace BCLib\PrimoServices;
 class BibRecord implements \JsonSerializable
 {
     use Accessor, EncodeJson;
+
+    /**
+     * @var \SimpleXMLElement
+     */
+    private $_xml;
+
+    private $_xml_literal;
 
     private $_id;
     private $_title;
@@ -72,6 +79,15 @@ class BibRecord implements \JsonSerializable
     private $_find_it_url;
     private $_available_online_url;
     private $_link_to_worldcat;
+
+    private $person_template;
+    private $bib_record_template;
+
+    public function __construct(Person $person_template, BibRecordComponent $bib_record_component_template)
+    {
+        $this->person_template = $person_template;
+        $this->bib_record_template = $bib_record_component_template;
+    }
 
     public function addContributor(Person $contributor)
     {
@@ -108,4 +124,114 @@ class BibRecord implements \JsonSerializable
         $this->_creator = $creator;
     }
 
+    public function load(\SimpleXMLElement $xml)
+    {
+        $this->_id = (string) $xml->control->recordid;
+        $this->_title = (string) $xml->display->title;
+        $this->_date = (string) $xml->display->creationdate;
+        $this->_publisher = (string) $xml->display->publisher;
+        $this->_abstract = (string) $xml->addata->abstract;
+        $this->_availability = (string) $xml->display->availpnx;
+        $this->_issn = (string) $xml->search->issn;
+        $this->_isbn = (string) $xml->search->isbn;
+        $this->_oclcid = (string) $xml->addata->oclcid;
+        $this->_type = (string) $xml->display->type;
+        $this->_reserves_info = (string) $xml->addata->lad05;
+        $this->_display_subject = (string) $xml->display->subject;
+        $this->_format = (string) $xml->display->format;
+
+        $this->contributors = $this->_extractContributors($xml);
+        $this->subjects = $this->_extractFieldArray($xml, 'facets', 'topic');
+        $this->genres = $this->_extractFieldArray($xml, 'facets', 'genre');
+        $this->languages = $this->_extractFieldArray($xml, 'facets', 'language');
+        $this->creator_facet = $this->_extractFieldArray($xml, 'facets', 'creatorcontrib');
+        $this->collection_facet = $this->_extractFieldArray($xml, 'facets', 'lfc01');
+        $this->components = $this->_extractComponents($xml);
+
+        $this->creator = clone $this->person_template;
+        $this->creator->display_name = (string) $xml->display->creator;
+        $this->creator->first_name = (string) $xml->addata->aufirst;
+        $this->creator->last_name = (string) $xml->addata->aulast;
+
+        $this->table_of_contents = $this->_extractTableOfContents($xml);
+    }
+
+
+    private function _extractFieldArray(\SimpleXMLElement $xml, $section, $field)
+    {
+        $result = [];
+        foreach ($xml->$section->$field as $item) {
+            $result[] = (string) $item;
+        }
+        return $result;
+    }
+
+    private function _extractComponents($record_xml)
+    {
+        /** @var $components BibRecordComponent[] */
+        $components = [];
+
+        $helper = [];
+
+        $helper['sourceid'] = $this->_extractMultiPartField($record_xml->control->sourceid);
+        $helper['originalsourceid'] = $this->_extractMultiPartField($record_xml->control->originalsourceid);
+        $helper['sourcerecordid'] = $this->_extractMultiPartField($record_xml->control->sourcerecordid);
+        $helper['institution'] = $this->_extractMultiPartField($record_xml->delivery->institution);
+        $helper['delcategory'] = $this->_extractMultiPartField($record_xml->delivery->delcategory);
+        $helper['alma_id'] = $this->_extractMultiPartField($record_xml->control->almaid);
+
+        /** @var $component BibRecordComponent */
+        foreach ($helper['delcategory'] as $id => $delcategory) {
+            $component = clone $this->bib_record_template;
+
+            $component->delivery_category = $delcategory;
+            $component->source_record_id = $helper['sourcerecordid'][$id];
+            $component->source = $helper['sourceid'][$id];
+
+            if ((string) $component->source == 'ALMA-BC') {
+                $alma_id_key = str_replace('ALMA-BC', '01BC_INST:', $id);
+                $component->alma_id = $helper['alma_id'][$alma_id_key];
+            }
+            $components[] = $component;
+        }
+
+        return $components;
+    }
+
+    private function _extractMultiPartField(\SimpleXMLElement $element_xml)
+    {
+        $result = [];
+
+        if (strpos($this->id, 'dedup') > -1) {
+            foreach ($element_xml as $element) {
+                $element_parts = preg_split('/\$\$\w/', (string) $element);
+                $result[$element_parts[2]] = $element_parts[1];
+            }
+        } else {
+            $id = $element_xml->getName() == 'almaid' ? (string) $element_xml : $this->id;
+            $result[$id] = (string) $element_xml;
+        }
+
+        return $result;
+    }
+
+    private function _extractTableOfContents(\SimpleXMLElement $record_xml)
+    {
+        if ((string) $record_xml->display->lds13) {
+            return preg_split('/\s*\-\-\s*/', $record_xml->display->lds13);
+        } else {
+            return [];
+        }
+    }
+
+    private function _extractContributors(\SimpleXMLElement $record_xml)
+    {
+        $contrib_list = [];
+        foreach ($record_xml->display->contributor as $contributor) {
+            $person = clone $this->person_template;
+            $person->display_name = (string) $contributor;
+            $contrib_list[] = $person;
+        }
+        return $contrib_list;
+    }
 }

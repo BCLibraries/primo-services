@@ -6,7 +6,7 @@ trait Accessor
 {
     public function __get($property)
     {
-        $method_name = 'get_' . $property;
+        $method_name = '_get_' . $property;
         $property_name = '_' . $property;
         if (method_exists($this, $method_name)) {
             return $this->$method_name();
