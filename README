@@ -178,12 +178,14 @@ $cache = new ApcCache();
 $primo = new PrimoServices($host, $inst, $cache);
 ```
 
-
-
 ## Testing
 
 This module uses the Composer-installed PHPUnit. From the main project directory:
 
     ./vendor/bin/phpunit test/BCLib/
+    
+## License
+
+See MIT-LICENSE
 
 
