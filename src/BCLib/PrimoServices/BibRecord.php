@@ -54,7 +54,6 @@ class BibRecord implements \JsonSerializable
     private $_type;
     private $_url;
     private $_availability;
-    private $_cover_images;
     private $_isbn;
     private $_issn;
     private $_oclcid;
@@ -92,17 +91,6 @@ class BibRecord implements \JsonSerializable
     public function addLanguages($language)
     {
         $this->_languages[] = $language;
-    }
-
-    public function addCoverImage($image_url, $size = 'small')
-    {
-        $sizes = array('small', 'medium', 'large');
-        if (!in_array($size, $sizes)) {
-            throw new \Exception($size . ' is not a valid image size');
-        }
-
-        $this->_cover_images = new \stdClass();
-        $this->_cover_images->$size = $image_url;
     }
 
     public function addHoldings(Holding $holding)

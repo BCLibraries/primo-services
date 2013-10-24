@@ -62,7 +62,6 @@ class PNXTranslator
         $this->_record->display_subject = (string) $record_xml->display->subject;
         $this->_record->format = (string) $record_xml->display->format;
         $this->_record->oclcid = (string) $record_xml->addata->oclcid;
-        $this->_record->link_to_worldcat = $this->_linkToWorldCat($this->_record->oclcid);
 
         $this->_record->contributors = $this->_extractContributors($record_xml);
         $this->_record->subjects = $this->_extractFieldArray($record_xml, 'facets', 'topic');
@@ -78,10 +77,6 @@ class PNXTranslator
         $this->_record->creator->last_name = (string) $record_xml->addata->aulast;
 
         $this->_record->table_of_contents = $this->_extractTableOfContents($record_xml);
-
-        if ($this->_record->isbn) {
-            $this->_record->cover_images = $this->_extractCoverImage($this->_record->isbn);
-        }
 
         if (isset($this->_cache)) {
             $cache_key = 'full-record-' . sha1($this->_record->id);;
@@ -147,25 +142,6 @@ class PNXTranslator
         }
 
         return $result;
-    }
-
-    private function _linkToWorldCat($oclc_id)
-    {
-        return $oclc_id ? 'http://bc.worldcat.org/search?q=no:' . $oclc_id : '';
-    }
-
-    private function _extractCoverImage($isbn)
-    {
-        $cover_images = null;
-        if ($isbn) {
-            $cover_images = new \stdClass();
-            $image_base_url = 'http://lib.syndetics.com/index.aspx?client=bostonh&isbn=';
-            $cover_images->small = $image_base_url . $isbn . '/' . 'sc' . '.JPG';
-            $cover_images->medium = $image_base_url . $isbn . '/' . 'mc' . '.JPG';
-            $cover_images->large = $image_base_url . $isbn . '/' . 'lc' . '.JPG';
-        }
-
-        return $cover_images;
     }
 
     private function _extractTableOfContents(\SimpleXMLElement $record_xml)

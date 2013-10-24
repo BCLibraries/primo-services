@@ -100,9 +100,6 @@ foreach ($primo_result->results as $result) {
     $result->availability;
     $result->available_online_url;
     $result->collection_facet;
-    $result->cover_images->small;
-    $result->cover_images->medium;
-    $result->cover_images->large;
     $result->creator;
     $result->creator_facet;
     $result->date;
@@ -115,7 +112,6 @@ foreach ($primo_result->results as $result) {
     $result->isbn;
     $result->issn;
     $result->languages; // string[]
-    $result->link_to_worldcat;
     $result->oclcid;
     $result->permalink;
     $result->publisher;
