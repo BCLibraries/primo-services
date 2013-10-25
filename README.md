@@ -15,7 +15,7 @@
 		"repositories": [
 		    {
 		        "type": "vcs",
-		        "url": "ssh:git@libdev.bc.edu:root/primo-services.git"
+		        "url": "https://github.com/BCLibraries/primo-services"
 		    }
 		],
 		    "require": {
