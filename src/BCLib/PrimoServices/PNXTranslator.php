@@ -7,12 +7,10 @@ use Doctrine\Common\Cache\Cache;
 class PNXTranslator
 {
 
+    /** @var \BCLib\PrimoServices\BibRecord */
     private $_bib_record_template;
-    private $_person_template;
-    private $_bib_record_component_template;
-    private $_record;
 
-    /** @var \Doctrine\Common\Cache\Cache * */
+    /** @var \Doctrine\Common\Cache\Cache */
     private $_cache;
 
     public function __construct(
@@ -30,28 +28,33 @@ class PNXTranslator
      */
     public function translate(\SimpleXMLElement $doc_xml)
     {
+        $dom = dom_import_simplexml($doc_xml)->ownerDocument;
+        $xpath = new \DOMXPath($dom);
+
+        $xpath->registerNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
+        $xpath->registerNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
+
         $xpath_to_primo_record = '//sear:DOC/PrimoNMBib/record';
         $xpath_to_pci_record = '//sear:DOC/prim:PrimoNMBib/prim:record';
+        $docs_xml = $xpath->query("$xpath_to_pci_record|$xpath_to_primo_record");
 
-        $docs_xml = $doc_xml->xpath($xpath_to_primo_record . '|' . $xpath_to_pci_record);
-        return \array_map(array($this, 'extractDoc'), $docs_xml);
-    }
+        $records = [];
 
-    public function extractDoc(\SimpleXMLElement $record_xml)
-    {
-        $record_xml = $record_xml->children('http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
+        foreach ($docs_xml as $doc_xml) {
+            $bib_record = clone $this->_bib_record_template;
 
-        /** @var $record BibRecord */
-        $this->_record = clone $this->_bib_record_template;
+            $record_doc = new \DOMDocument();
+            $record_doc->loadXML($dom->saveXML($doc_xml));
 
-        $this->_record->load($record_xml);
+            $bib_record->load($record_doc);
 
-        if (isset($this->_cache)) {
-            $cache_key = 'full-record-' . sha1($this->_record->id);;
-            $this->_cache->save($cache_key, $this->_record, 1200);
+            $records[] = $bib_record;
+
+            if (isset($this->_cache)) {
+                $cache_key = 'full-record-' . sha1($bib_record->id);;
+                $this->_cache->save($cache_key, $bib_record, 1200);
+            }
         }
-
-        return $this->_record;
+        return $records;
     }
-
 }

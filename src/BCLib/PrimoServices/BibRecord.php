@@ -2,15 +2,17 @@
 
 namespace BCLib\PrimoServices;
 
+use DOMDocument;
+use DOMXPath;
+
 /**
  * Class BibRecord
  * @package BCLib\PrimoServices
  *
- * @property \SimpleXMLElement    $xml
  * @property string               $id
  * @property string               $title
  * @property Person               $creator
- * @property Person[]             $contributors
+ * @property string[]             $contributors
  * @property string               $date
  * @property string               $publisher
  * @property string               $abstract
@@ -22,216 +24,175 @@ namespace BCLib\PrimoServices;
  * @property string               $isbn
  * @property string               $issn
  * @property string               $oclcid
- * @property string               $reserves_info
  * @property string[]             $subjects
  * @property string               $display_subject
  * @property string[]             $genres
  * @property string[]             $creator_facet
  * @property string[]             $collection_facet
  * @property string[]             $languages
- * @property string               $table_of_contents
  * @property string               $format
  * @property string               $description
- * @property string               $permalink
- * @property string               $find_it_url
- * @property string               $available_online_url
- * @property string               $link_to_worldcat
  * @property BibRecordComponent[] $components
  */
 class BibRecord implements \JsonSerializable
 {
-    use Accessor, EncodeJson;
+    use EncodeJson;
 
     /**
-     * @var \SimpleXMLElement
+     * @var \DOMDocument
      */
     private $_xml;
 
+    /**
+     * @var \DOMXPath
+     */
+    private $_xpath;
+
     private $_xml_literal;
 
-    private $_id;
-    private $_title;
     private $_creator;
-    private $_contributors = array();
-    private $_components = array();
-    private $_date;
-    private $_publisher;
-    private $_abstract;
+    private $_components;
     private $_frbr_group_id;
-    private $_type;
-    private $_url;
-    private $_availability;
-    private $_isbn;
-    private $_issn;
-    private $_oclcid;
-    private $_reserves_info;
-    private $_subjects = array();
-    private $_display_subject;
-    private $_genres = array();
-    private $_creator_facet = array();
-    private $_collection_facet = array();
-    private $_languages;
-    private $_table_of_contents;
-    private $_format;
-    private $_description;
-    private $_permalink;
-    private $_holdings = array();
-    private $_find_it_url;
-    private $_available_online_url;
-    private $_link_to_worldcat;
 
-    private $person_template;
-    private $bib_record_template;
+    private $_person_template;
+    private $_component_template;
 
-    public function __construct(Person $person_template, BibRecordComponent $bib_record_component_template)
+    private $_single_elements = array(
+        'id'              => 'control/recordid',
+        'title'           => 'display/title',
+        'date'            => 'display/date',
+        'publisher'       => 'display/publisher',
+        'abstract'        => 'addata/abstract',
+        'availability'    => 'display/availpnx',
+        'issn'            => 'search/issn',
+        'isbn'            => 'search/isbn',
+        'oclcid'          => 'addata/oclcid',
+        'type'            => 'display/type',
+        'display_subject' => 'display/subject',
+        'format'          => 'display/format',
+        'description'     => 'display/description'
+    );
+
+    private $_array_elements = array(
+        'subjects'      => 'facets/topic',
+        'genres'        => 'facets/genre',
+        'languages'     => 'facets/language',
+        'creator_facet' => 'facets/creatorcontrib',
+        'contributors'  => 'display/contributor'
+    );
+
+    public function __construct(Person $person_template, BibRecordComponent $component_template)
     {
-        $this->person_template = $person_template;
-        $this->bib_record_template = $bib_record_component_template;
+        $this->_person_template = $person_template;
+        $this->_component_template = $component_template;
     }
 
-    public function addContributor(Person $contributor)
+    public function load(\DOMDocument $xml)
     {
-        $this->_contributors[] = $contributor;
+        $this->_xml = $xml;
+        $this->_xpath = new \DOMXPath($xml);
     }
 
-    public function addSubject($subject)
+    public function field($path)
     {
-        $this->_subjects[] = $subject;
-    }
-
-    public function addGenre($genre)
-    {
-        $this->_genres[] = $genre;
-    }
-
-    public function addLanguages($language)
-    {
-        $this->_languages[] = $language;
-    }
-
-    public function addHoldings(Holding $holding)
-    {
-        $this->_holdings[] = $holding;
-    }
-
-    public function addComponent(BibRecordComponent $component)
-    {
-        $this->_components[] = $component;
-    }
-
-    private function _set_creator(Person $creator)
-    {
-        $this->_creator = $creator;
-    }
-
-    public function load(\SimpleXMLElement $xml)
-    {
-        $this->_id = (string) $xml->control->recordid;
-        $this->_title = (string) $xml->display->title;
-        $this->_date = (string) $xml->display->creationdate;
-        $this->_publisher = (string) $xml->display->publisher;
-        $this->_abstract = (string) $xml->addata->abstract;
-        $this->_availability = (string) $xml->display->availpnx;
-        $this->_issn = (string) $xml->search->issn;
-        $this->_isbn = (string) $xml->search->isbn;
-        $this->_oclcid = (string) $xml->addata->oclcid;
-        $this->_type = (string) $xml->display->type;
-        $this->_reserves_info = (string) $xml->addata->lad05;
-        $this->_display_subject = (string) $xml->display->subject;
-        $this->_format = (string) $xml->display->format;
-
-        $this->contributors = $this->_extractContributors($xml);
-        $this->subjects = $this->_extractFieldArray($xml, 'facets', 'topic');
-        $this->genres = $this->_extractFieldArray($xml, 'facets', 'genre');
-        $this->languages = $this->_extractFieldArray($xml, 'facets', 'language');
-        $this->creator_facet = $this->_extractFieldArray($xml, 'facets', 'creatorcontrib');
-        $this->collection_facet = $this->_extractFieldArray($xml, 'facets', 'lfc01');
-        $this->components = $this->_extractComponents($xml);
-
-        $this->creator = clone $this->person_template;
-        $this->creator->display_name = (string) $xml->display->creator;
-        $this->creator->first_name = (string) $xml->addata->aufirst;
-        $this->creator->last_name = (string) $xml->addata->aulast;
-
-        $this->table_of_contents = $this->_extractTableOfContents($xml);
-    }
-
-
-    private function _extractFieldArray(\SimpleXMLElement $xml, $section, $field)
-    {
-        $result = [];
-        foreach ($xml->$section->$field as $item) {
-            $result[] = (string) $item;
+        $return_array = array();
+        foreach ($this->_xpath->query("/record/$path") as $result) {
+            $return_array[] = $result->textContent;
         }
-        return $result;
+        return $return_array;
     }
 
-    private function _extractComponents($record_xml)
+    private function _load_components()
     {
         /** @var $components BibRecordComponent[] */
-        $components = [];
+        $is_deduped = strpos($this->id, 'dedup') !== false;
 
-        $helper = [];
-
-        $helper['sourceid'] = $this->_extractMultiPartField($record_xml->control->sourceid);
-        $helper['originalsourceid'] = $this->_extractMultiPartField($record_xml->control->originalsourceid);
-        $helper['sourcerecordid'] = $this->_extractMultiPartField($record_xml->control->sourcerecordid);
-        $helper['institution'] = $this->_extractMultiPartField($record_xml->delivery->institution);
-        $helper['delcategory'] = $this->_extractMultiPartField($record_xml->delivery->delcategory);
-        $helper['alma_id'] = $this->_extractMultiPartField($record_xml->control->almaid);
-
-        /** @var $component BibRecordComponent */
-        foreach ($helper['delcategory'] as $id => $delcategory) {
-            $component = clone $this->bib_record_template;
-
-            $component->delivery_category = $delcategory;
-            $component->source_record_id = $helper['sourcerecordid'][$id];
-            $component->source = $helper['sourceid'][$id];
-
-            if ((string) $component->source == 'ALMA-BC') {
-                $alma_id_key = str_replace('ALMA-BC', '01BC_INST:', $id);
-                $component->alma_id = $helper['alma_id'][$alma_id_key];
-            }
-            $components[] = $component;
-        }
-
-        return $components;
-    }
-
-    private function _extractMultiPartField(\SimpleXMLElement $element_xml)
-    {
-        $result = [];
-
-        if (strpos($this->id, 'dedup') > -1) {
-            foreach ($element_xml as $element) {
-                $element_parts = preg_split('/\$\$\w/', (string) $element);
-                $result[$element_parts[2]] = $element_parts[1];
-            }
+        if (!$is_deduped) {
+            $component = clone $this->_component_template;
+            $component->alma_id = $this->_getSingle('control/almaid');
+            $component->delivery_category = $this->_getSingle('delivery/delcategory');
+            $component->source = $this->_getSingle('control/sourceid');
+            $component->source_record_id = $this->_getSingle('control/sourcerecordid');
+            $this->_components[] = $component;
         } else {
-            $id = $element_xml->getName() == 'almaid' ? (string) $element_xml : $this->id;
-            $result[$id] = (string) $element_xml;
-        }
+            $source_record_ids = $this->field('control/sourcerecordid');
+            foreach ($source_record_ids as $source_record_id) {
 
-        return $result;
-    }
-
-    private function _extractTableOfContents(\SimpleXMLElement $record_xml)
-    {
-        if ((string) $record_xml->display->lds13) {
-            return preg_split('/\s*\-\-\s*/', $record_xml->display->lds13);
-        } else {
-            return [];
+                $component = clone $this->_component_template;
+                $parts = $element_parts = preg_split('/\$\$\w/', $source_record_id);
+                $component->source_record_id = $parts[1];
+                $component->alma_id = $this->_loadComponentPart($parts[2], 'control/almaid');
+                $component->delivery_category = $this->_loadComponentPart($parts[2], 'delivery/delcategory');
+                $component->source = $this->_loadComponentPart($parts[2], 'control/sourceid');
+                $this->_components[] = $component;
+            }
         }
     }
 
-    private function _extractContributors(\SimpleXMLElement $record_xml)
+    protected function _loadComponentPart($identifier, $path)
     {
-        $contrib_list = [];
-        foreach ($record_xml->display->contributor as $contributor) {
-            $person = clone $this->person_template;
-            $person->display_name = (string) $contributor;
-            $contrib_list[] = $person;
+        $xpath = $path . "[contains(.,'$identifier')]";
+        $part = $this->_getSingle($xpath);
+        $parts = preg_split('/\$\$\w/', $part);
+        return $parts[1];
+    }
+
+    private function _getSingle($path)
+    {
+        $result_array = $this->field($path);
+        return isset($result_array[0]) ? $result_array[0] : '';
+    }
+
+    public function __get($property)
+    {
+        if (isset($this->_single_elements[$property])) {
+            return $this->_getSingle($this->_single_elements[$property]);
         }
-        return $contrib_list;
+
+        if (isset($this->_array_elements[$property])) {
+            return $this->field($this->_array_elements[$property]);
+        }
+
+        $load_method = '_load_' . $property;
+        if (method_exists($this, $load_method)) {
+
+            $property_name = '_' . $property;
+            if (!isset($this->$property_name)) {
+                $this->$load_method();
+            }
+
+            return $this->$property_name;
+        }
+
+        throw new \Exception("$property is not a valid property name");
+    }
+
+    protected function _load_creator()
+    {
+        $this->_creator = clone $this->_person_template;
+        $this->_creator->first_name = $this->_getSingle('addata/aufirst');
+        $this->_creator->last_name = $this->_getSingle('addata/aulast');
+        $this->_creator->display_name = $this->_getSingle('display/creator');
+    }
+
+    /**
+     * Prepare for serlialization
+     *
+     * @return array
+     */
+    public function __sleep()
+    {
+        $this->_xml_literal = $this->_xml->saveXML();
+        return array('_xml_literal', '_creator', '_component', '_person_template', '_component_template');
+    }
+
+    /**
+     * Wake up from serialization
+     */
+    public function __wakeup()
+    {
+        $this->_xml = new \DOMDocument();
+        $this->_xml->loadXML($this->_xml_literal);
+        $this->_xpath = new \DOMXPath($this->_xml);
     }
 }

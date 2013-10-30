@@ -1,4 +1,4 @@
-`primo-services` are a PHP interface to Primo's X-Service Web services. Access is available to the *brief search* and *full view* services.
+`primo-services` are a PHP interface to Primo's X-Service Web services. It currently supports the *brief search* and *full view* services.
 
 ## Installation
 
@@ -98,14 +98,12 @@ foreach ($primo_result->results as $result) {
     $result->id;
     $result->abstract;
     $result->availability;
-    $result->available_online_url;
     $result->collection_facet;
     $result->creator;
     $result->creator_facet;
     $result->date;
     $result->description;
     $result->display_subject;
-    $result->find_it_url;
     $result->format;
     $result->frbr_group_id;
     $result->genres; // string[]
@@ -113,14 +111,20 @@ foreach ($primo_result->results as $result) {
     $result->issn;
     $result->languages; // string[]
     $result->oclcid;
-    $result->permalink;
     $result->publisher;
     $result->reserves_info;
     $result->subjects; // string[]
-    $result->table_of_contents;
     $result->title;
     $result->type;
 }
+```
+
+The creator is a *Person* object:
+
+```PHP
+$result->creator->display_name;
+$result->creator->first_name;
+$result->creator->last_name;
 ```
 
 Each record is composed of *BibRecordComponent* objects that indicate the source record used to create the Primo record. Most Primo records will have 1 component. De-duplicated records will have multiple components:
@@ -134,13 +138,11 @@ foreach ($result->components as $component) {
 }
 ```
 
-Contributors are listed as an array of *Persons*:
+Other PNX fields can be retrieved using `field()`:
 
 ```PHP
-foreach ($result->contributors as $contributor) {
-    $contributor->display_name;
-    $contributor->first_name;
-    $contributor->last_name;
+foreach ($result->field('display/lds02') as $lds02) {
+    echo "$lds02\n";
 }
 ```
 
@@ -162,7 +164,7 @@ echo $deep_link->link('ALMA-BC21421261320001021') . "\n";
 
 ### Caching
 
-Results can be cached in-memory by injecting a [Doctrine cache object](http://docs.doctrine-project.org/en/2.0.x/reference/caching.html) when the service is initialized:
+Results can be cached by injecting a [Doctrine cache object](http://docs.doctrine-project.org/en/2.0.x/reference/caching.html) when the service is initialized:
 
 ```PHP
 use BCLib\PrimoServices\PrimoServices;
