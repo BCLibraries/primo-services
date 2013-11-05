@@ -1,4 +1,4 @@
-`primo-services` are a PHP interface to Primo's X-Service Web services. It currently supports the *brief search* and *full view* services.
+`primo-services` are a PHP interface to Primo's X-Service Web services. It currently supports the *brief search* and *full view* services. It can also create Deep Links to Primo searches.
 
 ## Installation
 
@@ -57,6 +57,14 @@ Finally execute the search:
 
 ```PHP
 $primo_result = $primo->search($query);
+```
+
+### Full view
+
+Full views require a Primo record ID and return a single BibRecord:
+
+```PHP
+$result = $primo->request('ALMA-BC21421259580001021');
 ```
 
 ### Results

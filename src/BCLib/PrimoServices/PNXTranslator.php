@@ -57,4 +57,23 @@ class PNXTranslator
         }
         return $records;
     }
+
+    public function extractDoc(\SimpleXMLElement $xml)
+    {
+        $dom = dom_import_simplexml($xml)->ownerDocument;
+
+        $bib_record = clone $this->_bib_record_template;
+
+        $record_doc = new \DOMDocument();
+        $record_doc->loadXML($dom->saveXML($xml));
+
+        $bib_record->load($record_doc);
+
+        $records[] = $bib_record;
+
+        if (isset($this->_cache)) {
+            $cache_key = 'full-record-' . sha1($bib_record->id);;
+            $this->_cache->save($cache_key, $bib_record, 1200);
+        }
+    }
 }

@@ -128,12 +128,12 @@ class PrimoServices extends \Pimple
 
         $item_xml = $xml_result->JAGROOT->RESULT->DOCSET->DOC->PrimoNMBib->record;
 
-        /* @var $result BibRecord */
-        $result = $this['pnx_translator']->extractDoc($item_xml);
+        /* @var $result BibRecord[] */
+        $result = $this['pnx_translator']->translate($item_xml);
 
-        $this->_cache->save($cache_key, $result, 120);
+        $this->_cache->save($cache_key, $result[0], 120);
 
-        return $result;
+        return $result[0];
     }
 
     /**
