@@ -65,6 +65,9 @@ class BibRecordTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('01BC_INST:21349370700001021', $component->alma_id);
         $this->assertEquals('Alma-P', $component->delivery_category);
         $this->assertEquals('21349370700001021', $component->source_record_id);
+
+        $call_numbers = array('QL737.C25 C44 1993');
+        $this->assertEquals($call_numbers, $this->_record->field('//prim:display/prim:lds10'));
     }
 
     public function testPCIBriefSearchResult()
