@@ -35,7 +35,6 @@ use DOMXPath;
  * @property string               $link_to_source
  * @property string               $openurl
  * @property string               $openurl_fulltext
- * @property string[] $link_to_
  */
 class BibRecord implements \JsonSerializable
 {

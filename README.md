@@ -124,6 +124,11 @@ foreach ($primo_result->results as $result) {
     $result->subjects; // string[]
     $result->title;
     $result->type;
+    $result->getit; // string[]
+    $result->cover_images; // string[]
+    $result->link_to_source; // string[]
+    $result->openurl;
+    $result->openurl_fulltext;
 }
 ```
 
