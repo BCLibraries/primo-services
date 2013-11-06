@@ -1,0 +1,126 @@
+<sear:DOC SEARCH_ENGINE_TYPE="Primo Central Search Engine" SEARCH_ENGINE="PrimoCentralThirdNode" NO="8"
+          RANK="0.012671535" ID="237187998" LOCAL="false"
+          xmlns:sear="http://www.exlibrisgroup.com/xsd/jaguar/search">
+    <PrimoNMBib xmlns="http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib">
+        <record>
+            <control>
+                <sourcerecordid>32012733eca4b75eea7a729aec64d102</sourcerecordid>
+                <sourceid>doaj</sourceid>
+                <recordid>TN_doaj32012733eca4b75eea7a729aec64d102</recordid>
+                <sourceformat>DC</sourceformat>
+                <sourcesystem>Other</sourcesystem>
+            </control>
+            <display>
+                <type>article</type>
+                <title>POPULISM IN LATIN AMERICA AND THE UNITED STATES. THE CASE OF THE TEA PARTY MOVEMENT
+                </title>
+                <creator>Darío Fernández-morera</creator>
+                <ispartof>Revista de Instituciones, Ideas y Mercados, 2011, Vol.55(0), p.163</ispartof>
+                <identifier>&lt;b>ISSN:&lt;/b> 18511066</identifier>
+                <subject>Populism ; Tea Party ; Freedom ; United States</subject>
+                <description>One line description</description>
+                <source>Directory of Open Access Journals (DOAJ)</source>
+            </display>
+            <links>
+                <openurl>$$Topenurl_article</openurl>
+                <linktorsrc>
+                    $$Uhttp://www.eseade.edu.ar/riim/libertas/riim-n-55-octubre-2011.html$$EView_full_text
+                </linktorsrc>
+                <openurlfulltext>$$Topenurlfull_article</openurlfulltext>
+            </links>
+            <search>
+                <creatorcontrib>Darío Fernández-morera</creatorcontrib>
+                <title>POPULISM IN LATIN AMERICA AND THE UNITED STATES. THE CASE OF THE TEA PARTY MOVEMENT
+                </title>
+                <description>One line description</description>
+                <subject>Populism</subject>
+                <subject>Tea Party</subject>
+                <subject>Freedom</subject>
+                <subject>United States</subject>
+                <general>Directory of Open Access Journals</general>
+                <sourceid>doaj</sourceid>
+                <recordid>doaj32012733eca4b75eea7a729aec64d102</recordid>
+                <issn>1851-1066</issn>
+                <issn>18511066</issn>
+                <rsrctype>article</rsrctype>
+                <creationdate>2011</creationdate>
+                <addtitle>Revista de Instituciones, Ideas y Mercados</addtitle>
+                <searchscope>doaj</searchscope>
+                <scope>doaj</scope>
+            </search>
+            <sort>
+                <title>POPULISM IN LATIN AMERICA AND THE UNITED STATES. THE CASE OF THE TEA PARTY
+                    MOVEMENT
+                </title>
+                <creationdate>20110000</creationdate>
+                <author>Darío Fernández-morera</author>
+            </sort>
+            <facets>
+                <frbrgroupid>8523822057483833871</frbrgroupid>
+                <frbrtype>6</frbrtype>
+                <creationdate>2011</creationdate>
+                <topic>Populism</topic>
+                <topic>Tea Party</topic>
+                <topic>Freedom</topic>
+                <topic>United States</topic>
+                <collection>Directory of Open Access Journals (DOAJ)</collection>
+                <prefilter>articles</prefilter>
+                <rsrctype>articles</rsrctype>
+                <creatorcontrib>Darío Fernández-morera</creatorcontrib>
+                <jtitle>Revista De Instituciones, Ideas Y Mercados</jtitle>
+            </facets>
+            <frbr>
+                <t>2</t>
+                <k1>2011</k1>
+                <k2>18511066</k2>
+                <k4>55</k4>
+                <k5>0</k5>
+                <k6>163</k6>
+                <k7>revista de instituciones ideas mercados</k7>
+                <k8>populism in latin america the united states the case of the tea party movement</k8>
+                <k9>populisminlatinameriement</k9>
+                <k12>populisminlatinamericaand</k12>
+                <k15>daríofernándezmorera</k15>
+                <k16>daríofernándezmorera</k16>
+            </frbr>
+            <delivery>
+                <delcategory>Remote Search Resource</delcategory>
+                <fulltext>fulltext</fulltext>
+            </delivery>
+            <ranking>
+                <booster1>1</booster1>
+                <booster2>1</booster2>
+                <pcg_type>aggregator</pcg_type>
+            </ranking>
+            <addata>
+                <au>Darío Fernández-morera</au>
+                <atitle>POPULISM IN LATIN AMERICA AND THE UNITED STATES. THE CASE OF THE TEA PARTY
+                    MOVEMENT
+                </atitle>
+                <jtitle>Revista de Instituciones, Ideas y Mercados</jtitle>
+                <date>2011</date>
+                <risdate>2011</risdate>
+                <volume>55</volume>
+                <issue>0</issue>
+                <spage>163</spage>
+                <issn>18511066</issn>
+                <format>article</format>
+                <genre>article</genre>
+                <ristype>JOUR</ristype>
+                <abstract>One line abstract</abstract>
+                <pub>Instituto Universitario ESEADE</pub>
+                <url>http://www.eseade.edu.ar/riim/libertas/riim-n-55-octubre-2011.html</url>
+            </addata>
+        </record>
+    </PrimoNMBib>
+    <sear:GETIT deliveryCategory="Remote Search Resource"
+                GetIt1="http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&amp;ctx_id=10_1&amp;ctx_tim=2013-11-05T22%3A42%3A55IST&amp;ctx_ver=Z39.88-2004&amp;url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&amp;url_ver=Z39.88-2004&amp;rfr_id=info:sid/primo.exlibrisgroup.com-crossref&amp;req_id=&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:&amp;rft.genre=article&amp;rft.atitle=Populism%20in%20Latin%20America&amp;rft.jtitle=Choice%20Reviews%20Online&amp;rft.btitle=&amp;rft.aulast=&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.date=20000901&amp;rft.volume=38&amp;rft.issue=01&amp;rft.part=&amp;rft.date=20000901&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=38-0561&amp;rft.epage=38-0561&amp;rft.pages=38-0561-38-0561&amp;rft.artnum=&amp;rft.issn=0009-4978&amp;rft.eissn=1523-8253&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/10.5860/CHOICE.38-0561&amp;rft.object_id=&amp;10.5860/CHOICE.38-0561&lt;/crossref>&amp;rft.eisbn=&amp;rft.edition=&amp;rft.pub=&amp;rft.place=&amp;rft_dat=&lt;crossref>10.5860/CHOICE.38-0561&lt;/crossref>,language=,view=&amp;rft.series={{seriestitle}}&amp;rft.stitle=&amp;rft.bici=&amp;rft_id=info:bibcode/&amp;rft_id=info:hdl/&amp;rft_id=info:lccn/&amp;rft_id=info:oclcnum/&amp;rft_id=info:pmid/&amp;rft_id=info:eric/&amp;svc_dat=viewit&amp;req.skin=BC%20skin"
+                GetIt2="http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&amp;ctx_id=10_1&amp;ctx_tim=2013-11-05T22%3A42%3A55IST&amp;ctx_ver=Z39.88-2004&amp;url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&amp;url_ver=Z39.88-2004&amp;rfr_id=info:sid/primo.exlibrisgroup.com-crossref&amp;req_id=&amp;rft_val_fmt=info:ofi/fmt:kev:mtx:&amp;rft.genre=article&amp;rft.atitle=Populism%20in%20Latin%20America&amp;rft.jtitle=Choice%20Reviews%20Online&amp;rft.btitle=&amp;rft.aulast=&amp;rft.auinit=&amp;rft.auinit1=&amp;rft.auinitm=&amp;rft.ausuffix=&amp;rft.au=&amp;rft.aucorp=&amp;rft.date=20000901&amp;rft.volume=38&amp;rft.issue=01&amp;rft.part=&amp;rft.quarter=&amp;rft.ssn=&amp;rft.spage=38-0561&amp;rft.epage=38-0561&amp;rft.pages=38-0561-38-0561&amp;rft.artnum=&amp;rft.issn=0009-4978&amp;rft.eissn=1523-8253&amp;rft.isbn=&amp;rft.sici=&amp;rft.coden=&amp;rft_id=info:doi/10.5860/CHOICE.38-0561&amp;rft.object_id=;&amp;rft.eisbn=&amp;rft.edition=&amp;rft.pub=&amp;amp;rft.place=&amp;rft.series={{seriestitle}}&amp;rft.stitle=&amp;rft.bici=&amp;rft_id=info:bibcode/&amp;rft_id=info:hdl/&amp;rft_id=info:lccn/&amp;rft_id=info:oclcnum/&amp;rft_id=info:pmid/&amp;rft_id=info:eric/((addata/eric}}&amp;rft_dat=&lt;crossref>10.5860/CHOICE.38-0561&lt;/crossref>,language=,view=&amp;lt;crossref&amp;gt;10.5860/CHOICE.38-0561&amp;lt;/crossref&amp;gt;,language=,view=&amp;svc_dat=getit&amp;user_ip=&amp;req.skin=BC%20skin"/>
+    <sear:LINKS>
+        <sear:openurl>errorPage</sear:openurl>
+        <sear:linktorsrc>http://www.eseade.edu.ar/riim/libertas/riim-n-55-octubre-2011.html
+        </sear:linktorsrc>
+        <sear:thumbnail/>
+        <sear:openurlfulltext>errorPage</sear:openurlfulltext>
+    </sear:LINKS>
+</sear:DOC>
