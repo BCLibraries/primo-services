@@ -131,7 +131,9 @@ class PrimoServices extends \Pimple
         /* @var $result BibRecord[] */
         $result = $this['pnx_translator']->translate($item_xml);
 
-        $this->_cache->save($cache_key, $result[0], 120);
+        if (isset($this->_cache)) {
+            $this->_cache->save($cache_key, $result[0], 120);
+        }
 
         return $result[0];
     }

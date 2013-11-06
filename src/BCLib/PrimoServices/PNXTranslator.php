@@ -31,11 +31,12 @@ class PNXTranslator
         $dom = dom_import_simplexml($doc_xml)->ownerDocument;
         $xpath = new \DOMXPath($dom);
 
+
         $xpath->registerNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
         $xpath->registerNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
 
-        $xpath_to_primo_record = '//sear:DOC/PrimoNMBib/record';
-        $xpath_to_pci_record = '//sear:DOC/prim:PrimoNMBib/prim:record';
+        $xpath_to_primo_record = '//sear:DOC';
+        $xpath_to_pci_record = '//sear:DOC';
         $docs_xml = $xpath->query("$xpath_to_pci_record|$xpath_to_primo_record");
 
         $records = [];
@@ -43,6 +44,9 @@ class PNXTranslator
         foreach ($docs_xml as $doc_xml) {
             $bib_record = clone $this->_bib_record_template;
 
+            $attr = $dom->createAttribute('xmlns:sear');
+            $attr->value = 'http://www.exlibrisgroup.com/xsd/jaguar/search';
+            $doc_xml->appendChild($attr);
             $record_doc = new \DOMDocument();
             $record_doc->loadXML($dom->saveXML($doc_xml));
 
