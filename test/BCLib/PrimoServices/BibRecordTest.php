@@ -39,6 +39,8 @@ class BibRecordTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('Otters; Otters', $this->_record->display_subject);
         $this->assertEquals('127 p. : ill. ; 22 cm.', $this->_record->format);
         $this->assertEquals('This is a book about otters.', $this->_record->description);
+        $this->assertEquals('http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2013-11-05T22%3A40%3A22IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters&rft.aulast=Chanin&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Chanin%2C%20Paul&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0905483901&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21349370700001021</ALMA-BC>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=London&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin', $this->_record->openurl);
+        $this->assertEquals('http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2013-11-05T22%3A40%3A22IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters&rft.aulast=Chanin&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Chanin%2C%20Paul&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0905483901&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21349370700001021</ALMA-BC>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=London&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/gb%2093023867&rft_id=info:oclcnum/28114226&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21349370700001021,language=&svc_dat=viewit&req.skin=BC%20skin', $this->_record->openurl_fulltext);
 
         $contributors = array('with illustrations by Guy Troughton');
         $this->assertEquals($contributors, $this->_record->contributors);
@@ -60,6 +62,12 @@ class BibRecordTest extends \PHPUnit_Framework_TestCase
         $languages = array('eng');
         $this->assertEquals($languages, $this->_record->languages);
 
+        $cover_images = array(
+            'http://images.amazon.com/images/P/0905483901.01._SSTHUM_.jpg',
+            'http://lib.syndetics.com/index.aspx?isbn=0905483901/SC.JPG&client=bostoncollege'
+        );
+        $this->assertEquals($cover_images, $this->_record->cover_images);
+
         $component = $this->_record->components[0];
         $this->assertEquals('ALMA-BC', $component->source);
         $this->assertEquals('01BC_INST:21349370700001021', $component->alma_id);
@@ -68,6 +76,12 @@ class BibRecordTest extends \PHPUnit_Framework_TestCase
 
         $call_numbers = array('QL737.C25 C44 1993');
         $this->assertEquals($call_numbers, $this->_record->field('//prim:display/prim:lds10'));
+
+        $getit = array(
+            'http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2013-11-05T22%3A40%3A22IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21421261320001021,language=,view=&svc_dat=getit&user_ip=',
+            ''
+        );
+        $this->assertEquals($getit, $this->_record->getit);
     }
 
     public function testPCIBriefSearchResult()
@@ -118,6 +132,14 @@ class BibRecordTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('', $component->alma_id);
         $this->assertEquals('Remote Search Resource', $component->delivery_category);
         $this->assertEquals('32012733eca4b75eea7a729aec64d102', $component->source_record_id);
+
+        $this->assertEquals(
+            'http://www.eseade.edu.ar/riim/libertas/riim-n-55-octubre-2011.html',
+            $this->_record->link_to_source
+        );
+
+        $this->assertEquals('errorPage', $this->_record->openurl);
+        $this->assertEquals('errorPage', $this->_record->openurl_fulltext);
     }
 
     protected function _loadTestRecord($path_to_sample)

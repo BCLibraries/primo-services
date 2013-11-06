@@ -30,6 +30,12 @@ use DOMXPath;
  * @property string               $format
  * @property string               $description
  * @property BibRecordComponent[] $components
+ * @property string[]             $getit;
+ * @property string[]             $cover_images
+ * @property string               $link_to_source
+ * @property string               $openurl
+ * @property string               $openurl_fulltext
+ * @property string[] $link_to_
  */
 class BibRecord implements \JsonSerializable
 {
@@ -49,25 +55,28 @@ class BibRecord implements \JsonSerializable
 
     private $_creator;
     private $_components;
-    private $_frbr_group_id;
+    private $_getit;
 
     private $_person_template;
     private $_component_template;
 
     private $_single_elements = array(
-        'id'              => '//prim:recordid',
-        'title'           => '//prim:display/prim:title',
-        'date'            => '//prim:addata/prim:date',
-        'publisher'       => '//prim:addata/prim:pub',
-        'abstract'        => '//prim:addata/prim:abstract',
-        'availability'    => '//prim:display/prim:availpnx',
-        'issn'            => '//prim:search/prim:issn',
-        'isbn'            => '//prim:search/prim:isbn',
-        'oclcid'          => '//prim:addata/prim:oclcid',
-        'type'            => '//prim:display/prim:type',
-        'display_subject' => '//prim:display/prim:subject',
-        'format'          => '//prim:display/prim:format',
-        'description'     => '//prim:display/prim:description'
+        'id'               => '//prim:recordid',
+        'title'            => '//prim:display/prim:title',
+        'date'             => '//prim:addata/prim:date',
+        'publisher'        => '//prim:addata/prim:pub',
+        'abstract'         => '//prim:addata/prim:abstract',
+        'availability'     => '//prim:display/prim:availpnx',
+        'issn'             => '//prim:search/prim:issn',
+        'isbn'             => '//prim:search/prim:isbn',
+        'oclcid'           => '//prim:addata/prim:oclcid',
+        'type'             => '//prim:display/prim:type',
+        'display_subject'  => '//prim:display/prim:subject',
+        'format'           => '//prim:display/prim:format',
+        'description'      => '//prim:display/prim:description',
+        'link_to_source'   => '//sear:LINKS/sear:linktorsrc',
+        'openurl'          => '//sear:LINKS/sear:openurl',
+        'openurl_fulltext' => '//sear:LINKS/sear:openurlfulltext'
     );
 
     private $_array_elements = array(
@@ -76,7 +85,8 @@ class BibRecord implements \JsonSerializable
         'languages'        => '//prim:facets/prim:language',
         'creator_facet'    => '//prim:facets/prim:creatorcontrib',
         'collection_facet' => '//prim:facets/prim:collection',
-        'contributors'     => '//prim:display/prim:contributor'
+        'contributors'     => '//prim:display/prim:contributor',
+        'cover_images'     => '//sear:LINKS/sear:thumbnail'
     );
 
     public function __construct(Person $person_template, BibRecordComponent $component_template)
@@ -90,13 +100,14 @@ class BibRecord implements \JsonSerializable
         $this->_xml = $xml;
         $this->_xpath = new \DOMXPath($xml);
         $this->_xpath->registerNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
+        $this->_xpath->registerNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
     }
 
     public function field($path)
     {
         $return_array = array();
         foreach ($this->_xpath->query("$path") as $result) {
-            $return_array[] = $result->textContent;
+            $return_array[] = trim($result->textContent);
         }
         return $return_array;
     }
@@ -142,7 +153,7 @@ class BibRecord implements \JsonSerializable
     private function _getSingle($path)
     {
         $result_array = $this->field($path);
-        return isset($result_array[0]) ? rtrim($result_array[0]) : '';
+        return isset($result_array[0]) ? trim($result_array[0]) : '';
     }
 
     public function __get($property)
@@ -175,6 +186,13 @@ class BibRecord implements \JsonSerializable
         $this->_creator->first_name = $this->_getSingle('//prim:addata/prim:aufirst');
         $this->_creator->last_name = $this->_getSingle('//prim:addata/prim:aulast');
         $this->_creator->display_name = $this->_getSingle('//prim:display/prim:creator');
+    }
+
+    protected function _load_getit()
+    {
+        $this->_getit = array();
+        $this->_getit[0] = $this->_getSingle('//sear:GETIT/@GetIt1');
+        $this->_getit[1] = $this->_getSingle('//sear:GETIT/@GetIt2');
     }
 
     /**
