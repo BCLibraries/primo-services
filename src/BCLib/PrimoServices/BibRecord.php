@@ -200,7 +200,7 @@ class BibRecord implements \JsonSerializable
     public function __sleep()
     {
         $this->_xml_literal = $this->_xml->saveXML();
-        return array('_xml_literal', '_creator', '_component', '_person_template', '_component_template');
+        return array('_xml_literal', '_creator', '_components', '_person_template', '_component_template');
     }
 
     /**
@@ -210,7 +210,7 @@ class BibRecord implements \JsonSerializable
     {
         $this->_xml = new \DOMDocument();
         $this->_xml->loadXML($this->_xml_literal);
-        $this->_xpath = new \DOMXPath($this->_xml);
+        $this->load($this->_xml);
     }
 
     public function jsonSerialize()
