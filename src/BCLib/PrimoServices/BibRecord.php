@@ -38,8 +38,6 @@ use DOMXPath;
  */
 class BibRecord implements \JsonSerializable
 {
-    use EncodeJson;
-
     /**
      * @var \DOMDocument
      */
@@ -213,5 +211,20 @@ class BibRecord implements \JsonSerializable
         $this->_xml = new \DOMDocument();
         $this->_xml->loadXML($this->_xml_literal);
         $this->_xpath = new \DOMXPath($this->_xml);
+    }
+
+    public function jsonSerialize()
+    {
+        $record = new \stdClass();
+
+        foreach ($this->_single_elements as $name => $xpath) {
+            $record->$name = $this->$name;
+        }
+
+        foreach ($this->_array_elements as $name => $xpath) {
+            $record->$name = $this->$name;
+        }
+
+        return $record;
     }
 }
