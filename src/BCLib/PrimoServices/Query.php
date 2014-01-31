@@ -17,6 +17,7 @@ class Query
     public function addTerm(QueryTerm $query_term)
     {
         $this->_terms[] = 'query=' . urlencode($query_term->queryString());
+        return $this;
     }
 
     public function sortField($sort_order)
@@ -32,6 +33,7 @@ class Query
         }
 
         $this->_parameters['sortField'] = $valid_sort_orders[$sort_order];
+        return $this;
     }
 
     public function onCampus($on_campus = true)
@@ -40,11 +42,13 @@ class Query
             throw new \Exception('onCampus() must take a boolean argument');
         }
         $this->_parameters['onCampus'] = $on_campus ? 'true' : 'false';
+        return $this;
     }
 
     public function articles()
     {
         $this->_parameters['loc'] = 'adaptor,primo_central_multiple_fe';
+        return $this;
     }
 
     public function __toString()
