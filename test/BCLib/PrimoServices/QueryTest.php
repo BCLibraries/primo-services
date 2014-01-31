@@ -97,4 +97,40 @@ class QueryTest extends \PHPUnit_Framework_TestCase
     {
         $this->_query->onCampus('true');
     }
+
+    public function testArticleSearchSetCorrectly()
+    {
+        $this->_query->articles();
+        $expected = 'institution=BCL&indx=0&bulkSize=10&loc=adaptor%2Cprimo_central_multiple_fe';
+        $this->assertEquals($expected, (string) $this->_query);
+    }
+
+    public function testStartIndexSet()
+    {
+        $this->_query->start(12);
+        $expected = 'institution=BCL&indx=12&bulkSize=10';
+        $this->assertEquals($expected, (string) $this->_query);
+    }
+
+    public function testBulkSizeSet()
+    {
+        $this->_query->bulkSize(30);
+        $expected = 'institution=BCL&indx=0&bulkSize=30';
+        $this->assertEquals($expected, (string) $this->_query);
+    }
+
+    public function testInterfaceIsFluent()
+    {
+        $this->assertSame($this->_query->articles(), $this->_query);
+        $this->assertSame($this->_query->start(12), $this->_query);
+        $this->assertSame($this->_query->bulkSize(42), $this->_query);
+        $this->assertSame($this->_query->sortField('title'), $this->_query);
+        $this->assertSame($this->_query->onCampus(), $this->_query);
+
+        $query_term = $this->getMock('\BCLib\PrimoServices\QueryTerm');
+        $query_term->expects($this->once())
+            ->method('queryString')
+            ->will($this->returnValue('any,contains,otters'));
+        $this->assertSame($this->_query->addTerm($query_term), $this->_query);
+    }
 }

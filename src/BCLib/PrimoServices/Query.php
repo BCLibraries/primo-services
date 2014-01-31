@@ -14,6 +14,18 @@ class Query
         $this->_parameters['bulkSize'] = $bulk_size;
     }
 
+    public function start($start_index)
+    {
+        $this->_parameters['indx'] = $start_index;
+        return $this;
+    }
+
+    public function bulkSize($bulk_size)
+    {
+        $this->_parameters['bulkSize'] = $bulk_size;
+        return $this;
+    }
+
     public function addTerm(QueryTerm $query_term)
     {
         $this->_terms[] = 'query=' . urlencode($query_term->queryString());
