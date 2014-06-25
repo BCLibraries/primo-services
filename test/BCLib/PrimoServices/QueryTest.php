@@ -105,6 +105,13 @@ class QueryTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($expected, (string) $this->_query);
     }
 
+    public function testLocalScopeSetCorrectly()
+    {
+        $this->_query->local('BCL');
+        $expected = 'institution=BCL&indx=0&bulkSize=10&loc=local%2Cscope%3A%28BCL%29';
+        $this->assertEquals($expected, (string) $this->_query);
+    }
+
     public function testStartIndexSet()
     {
         $this->_query->start(12);

@@ -57,6 +57,12 @@ class Query
         return $this;
     }
 
+    public function local($scope)
+    {
+        $this->_parameters['loc'] = "local,scope:($scope)";
+        return $this;
+    }
+
     public function articles()
     {
         $this->_parameters['loc'] = 'adaptor,primo_central_multiple_fe';
