@@ -9,22 +9,22 @@ class PNXTranslatorTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $bib_record = \Mockery::mock('BCLib\PrimoServices\BibRecord');
-        $bib_record->shouldReceive('load');
-        $this->_translator = new PNXTranslator($bib_record);
+        $this->_translator = new PNXTranslator();
     }
 
     public function testRecordIsLoaded()
     {
-        $xml = $this->_loadTestRecord(__DIR__ . '/../../helpers/brief-search-result-local-01.xml');
-        $result = $this->_translator->translate($xml);
+        $docset = $this->_loadTestRecord(__DIR__ . '/../../helpers/brief-search-result-local-01.json');
+
+        $result = $this->_translator->translateDocSet($docset);
         $this->assertEquals(9, sizeof($result));
 
     }
 
     protected function _loadTestRecord($path_to_sample)
     {
-        return simplexml_load_file($path_to_sample);
+        $json = json_decode(file_get_contents($path_to_sample));
+        return $json->{'sear:SEGMENTS'}->{'sear:JAGROOT'}->{'sear:RESULT'}->{'sear:DOCSET'};
     }
 }
  
