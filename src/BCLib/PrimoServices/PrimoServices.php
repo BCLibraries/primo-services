@@ -30,17 +30,13 @@ class PrimoServices extends \Pimple
         'local1'       => 'Collection',
     ];
 
-    public function __construct($host, $institution = 'BCL', Cache $cache = null)
+    public function __construct($host, $institution, Cache $cache = null)
     {
         $this->_host = $host;
         $this->_institution = $institution;
         $this->_cache = $cache;
 
         parent::__construct();
-
-        $this['person'] = function () {
-            return new Person();
-        };
 
         $this['pnx_translator'] = function () {
             return new PNXTranslator();
@@ -80,7 +76,7 @@ class PrimoServices extends \Pimple
         $cache_key = sha1($query);
 
         if ($cached_value = $this->_checkCache($cache_key)) {
-            //return $cached_value;
+            return $cached_value;
         }
 
         $json = $this->_send('brief', $query);
@@ -88,30 +84,31 @@ class PrimoServices extends \Pimple
         $docset = $json->{'sear:SEGMENTS'}->{'sear:JAGROOT'}->{'sear:RESULT'}->{'sear:DOCSET'};
         $facetlist = $json->{'sear:SEGMENTS'}->{'sear:JAGROOT'}->{'sear:RESULT'}->{'sear:FACETLIST'};
 
-        /* @var $result BriefSearchResult */
-        $result = $this['search_result'];
-        $result->facets = [];
-        $result->results = [];
-        $result->total_results = $docset->{'@TOTALHITS'};
+        /* @var $response BriefSearchResult */
+        $response = $this['search_result'];
+        $response->total_results = $docset->{'@TOTALHITS'};
 
         if ($facetlist) {
-            $result->facets = $this['facet_translator']->translate($facetlist);
+            $response->facets = $this['facet_translator']->translate($facetlist);
+        } else {
+            $response->facets = array();
         }
 
-        if ($result->total_results > 0) {
-            $result->results = $this['pnx_translator']->translateDocSet($docset);
+        if ($response->total_results > 0) {
+            $response->results = $this['pnx_translator']->translateDocSet($docset);
+        } else {
+            $response->results = array();
         }
-
 
         if (count($facet_whitelist) > 0) {
-            $result->filterFacets($facet_whitelist);
+            $response->filterFacets($facet_whitelist);
         }
 
         if (isset($this->_cache)) {
-            $this->_cache->save($cache_key, $result);
+            $this->_cache->save($cache_key, $response, 60);
         }
 
-        return $result;
+        return $response;
     }
 
     public function request($record_id)
