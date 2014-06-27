@@ -11,6 +11,7 @@ class FacetTranslator
      */
     public function translate($sear_facetlist)
     {
+        print_r($sear_facetlist);
         return \array_map(array($this, '_extractFacet'), $sear_facetlist->{'sear:FACET'});
     }
 
@@ -27,7 +28,13 @@ class FacetTranslator
         $facet->id = $sear_facet->{'@NAME'};
         $facet->count = $sear_facet->{'@COUNT'};
 
-        $facet->values = \array_map([$this, '_extractFacetValue'], $sear_facet->{'sear:FACET_VALUES'});
+        $facet_values = $sear_facet->{'sear:FACET_VALUES'};
+
+        if (! is_array($facet_values)) {
+            $facet_values = array($facet_values);
+        }
+
+        $facet->values = \array_map([$this, '_extractFacetValue'], $facet_values);
 
         return $facet;
     }

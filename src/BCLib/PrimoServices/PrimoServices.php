@@ -94,7 +94,7 @@ class PrimoServices extends \Pimple
         $result->results = [];
         $result->total_results = $docset->{'@TOTALHITS'};
 
-        if (!$facetlist) {
+        if ($facetlist) {
             $result->facets = $this['facet_translator']->translate($facetlist);
         }
 
