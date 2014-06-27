@@ -1,0 +1,2371 @@
+{
+    "sear:SEGMENTS": {
+        "@xmlns:sear": "http://www.exlibrisgroup.com/xsd/jaguar/search", 
+        "sear:JAGROOT": {
+            "sear:RESULT": {
+                "sear:DOCSET": {
+                    "@FIRSTHIT": "0", 
+                    "@HIT_TIME": "330", 
+                    "@IS_LOCAL": "true", 
+                    "@LASTHIT": "7", 
+                    "@TOTALHITS": "7", 
+                    "@TOTAL_TIME": "450", 
+                    "sear:DOC": [
+                        {
+                            "@ID": "3723296", 
+                            "@NO": "1", 
+                            "@RANK": "8.558644E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "abstract": "\"A complete learning experience for creating industry standard Web pages - but you won't be just reading: you'll be playing games, solving puzzles, pondering mysteries and creating Web pages like you never imagined. You'll be also learning how HTML works with CSS . . . if you're going to create Web pages in the 21st century, then you want to know and to understand CSS, too.\"", 
+                                        "addau": [
+                                            "Freeman, Eric, 1965-", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "addtitle": [
+                                            "Head first HTML with CSS and XHTML", 
+                                            "HTML with CSS & XHTML"
+                                        ], 
+                                        "au": "Freeman, Elisabeth", 
+                                        "aufirst": "Elisabeth", 
+                                        "aulast": "Freeman", 
+                                        "btitle": "Head first HTML with CSS & XHTML", 
+                                        "cop": [
+                                            "Beijing ; Sebastopol, CA", 
+                                            "Sebastopol, Calif."
+                                        ], 
+                                        "date": "2006", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": [
+                                            "059610197X", 
+                                            "9780596101978"
+                                        ], 
+                                        "lad04": "059610197X", 
+                                        "lccn": "2006275163", 
+                                        "oclcid": [
+                                            "62766935", 
+                                            "71666119"
+                                        ], 
+                                        "pub": "O'Reilly", 
+                                        "risdate": "c2006.", 
+                                        "ristype": "BOOK", 
+                                        "seriestitle": "Head first series"
+                                    }, 
+                                    "browse": {
+                                        "callnumber": "$$IBCL$$DQA76.76 .H94 F74 2006$$E0qa   0007676000.h  94000  f74 2006$$T0"
+                                    }, 
+                                    "control": {
+                                        "almaid": [
+                                            "$$V01BC_INST:21360494740001021$$O01BC_INST:21360494740001021", 
+                                            "$$V01BC_INST:51435784820001021$$O01BC_INST:51435784820001021"
+                                        ], 
+                                        "ilsapiid": [
+                                            "$$V01BC_INST21360494740001021$$OALMA-BC21360494740001021", 
+                                            "$$V01BC_INST51435784820001021$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "originalsourceid": [
+                                            "$$V01BC_INST$$OALMA-BC21360494740001021", 
+                                            "$$V01BC_INST$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "recordid": "dedupmrg88101655", 
+                                        "sourceformat": [
+                                            "$$VMARC21$$OALMA-BC21360494740001021", 
+                                            "$$VMARC21$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "sourceid": [
+                                            "$$VALMA-BC$$OALMA-BC21360494740001021", 
+                                            "$$VALMA-BC$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "sourcerecordid": [
+                                            "$$V21360494740001021$$OALMA-BC21360494740001021", 
+                                            "$$V51435784820001021$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "sourcesystem": [
+                                            "$$VAlma$$OALMA-BC21360494740001021", 
+                                            "$$VAlma$$OALMA-BC51435784820001021"
+                                        ]
+                                    }, 
+                                    "dedup": {
+                                        "c1": "2006275163", 
+                                        "c2": "059610197X;9780596101978", 
+                                        "c3": "headfirsthtmlwithcssxhtml", 
+                                        "c4": "2006", 
+                                        "c5": "99116182110001021", 
+                                        "f1": "2006275163", 
+                                        "f10": "oreilly", 
+                                        "f11": "freeman elisabeth", 
+                                        "f20": "99116182110001021", 
+                                        "f3": "059610197X;9780596101978", 
+                                        "f5": "headfirsthtmlwithcssxhtml", 
+                                        "f6": "2006", 
+                                        "f7": "head first html with css xhtml", 
+                                        "f8": "cc", 
+                                        "f9": "xxxv, 658 p. ;", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": [
+                                            "$$VAlma-P$$OALMA-BC21360494740001021", 
+                                            "$$VAlma-E$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "institution": [
+                                            "$$VBCL$$OALMA-BC21360494740001021", 
+                                            "$$VBCL$$OALMA-BC51435784820001021"
+                                        ]
+                                    }, 
+                                    "display": {
+                                        "availinstitution": "$$IBCL$$Savailable", 
+                                        "availlibrary": "$$IBCL$$LONL$$1Stacks (STACK)$$2(QA76.76 .H94 F74 2006 )$$Savailable$$X01BC_INST$$YONL$$ZSTACK$$P1$$OALMA-BC21360494740001021", 
+                                        "availpnx": "available", 
+                                        "contributor": "Eric Freeman 1965-", 
+                                        "creationdate": "c2006.", 
+                                        "creator": "Elisabeth Freeman", 
+                                        "description": [
+                                            "\"A complete learning experience for creating industry standard Web pages - but you won't be just reading: you'll be playing games, solving puzzles, pondering mysteries and creating Web pages like you never imagined. You'll be also learning how HTML works with CSS . . . if you're going to create Web pages in the 21st century, then you want to know and to understand CSS, too.\"", 
+                                            "\"A brain-friendly guide to HTML & CSS\" -- Cover.", 
+                                            "Includes index.", 
+                                            "Includes index.", 
+                                            "Electronic reproduction. Boston, Mass. : Safari Books Online, 2006."
+                                        ], 
+                                        "edition": "1st ed..", 
+                                        "format": "xxxv, 658 p. ; ill. (some col.), 24 cm.", 
+                                        "identifier": "ISBN: 059610197X; ISBN: 9780596101978", 
+                                        "language": "eng", 
+                                        "lds01": "ONL Stacks (STACK) QA76.76 .H94 F74 2006", 
+                                        "lds02": [
+                                            "Head first HTML with CSS and XHTML", 
+                                            "HTML with CSS & XHTML", 
+                                            "HTML with CSS and XHTML"
+                                        ], 
+                                        "lds06": "Access restricted to subscribers.", 
+                                        "lds07": [
+                                            "Beijing ; Sebastopol, CA", 
+                                            "Sebastopol, Calif."
+                                        ], 
+                                        "lds09": "O'Reilly", 
+                                        "lds10": "QA76.76 .H94 F74 2006", 
+                                        "lds11": [
+                                            "99116182110001021", 
+                                            "99137644173201021"
+                                        ], 
+                                        "lds12": "Head first series", 
+                                        "lds14": "002519206", 
+                                        "lds15": [
+                                            "Head first HTML with CSS and XHTML", 
+                                            "HTML with CSS & XHTML", 
+                                            "HTML with CSS and XHTML"
+                                        ], 
+                                        "lds30": "SAFARI BOOKS ONLINE", 
+                                        "lds31": "Head first series", 
+                                        "publisher": "Beijing ; Sebastopol, CA : O'Reilly", 
+                                        "relation": "$$Cseries $$VHead first series", 
+                                        "source": [
+                                            "$$VALMA-BC$$OALMA-BC21360494740001021", 
+                                            "$$VALMA-BC$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "subject": "HTML (Document markup language); Cascading style sheets; XHTML (Document markup language); Web sites -- Design", 
+                                        "title": "Head first HTML with CSS & XHTML", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "QA76.76.H94"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "H", 
+                                        "collection": "ONL", 
+                                        "creationdate": "2006", 
+                                        "creatorcontrib": [
+                                            "Freeman, Elisabeth", 
+                                            "Freeman, Eric, 1965-", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "frbrgroupid": "76901990", 
+                                        "frbrtype": "6", 
+                                        "language": "eng", 
+                                        "lfc01": "SAFARI BOOKS ONLINE", 
+                                        "lfc08": "Head first series", 
+                                        "lfc10": "QA76.7", 
+                                        "library": "ONL", 
+                                        "prefilter": [
+                                            "books", 
+                                            "ebooks"
+                                        ], 
+                                        "rsrctype": [
+                                            "books", 
+                                            "ebooks"
+                                        ], 
+                                        "topic": [
+                                            "HTML (Document markup language)", 
+                                            "Cascading style sheets", 
+                                            "XHTML (Document markup language)", 
+                                            "Web sites\u2013Design"
+                                        ], 
+                                        "toplevel": [
+                                            "available", 
+                                            "online_resources"
+                                        ]
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Kfreeman elisabeth$$AA", 
+                                        "k3": "$$Khead first html with css & xhtml$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "addlink": "$$Uhttp://www.loc.gov/catdir/enhancements/fy0715/2006275163-d.html$$DPublisher description", 
+                                        "linktorsrc": [
+                                            "$$V$$Uhttp://www.loc.gov/catdir/toc/fy0607/2006275163.html$$DTable of contents only$$OALMA-BC21360494740001021", 
+                                            "$$V$$Uhttp://proquestcombo.safaribooksonline.com/?uiCode=&xmlId=059610197X$$DOnline Version$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com", 
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": [
+                                            "$$Tpermalink$$DPermalink to this record$$OALMA-BC21360494740001021", 
+                                            "$$Tpermalink$$DPermalink to this record$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "lln03": "$$Uhttp://www.loc.gov/catdir/toc/fy0607/2006275163.html$$DTable of contents only$$OALMA-BC21360494740001021", 
+                                        "openurl": [
+                                            "$$V$$Topenurl_journal$$OALMA-BC21360494740001021", 
+                                            "$$V$$Topenurl_journal$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "openurlfulltext": [
+                                            "$$V$$Topenurlfull_journal$$OALMA-BC21360494740001021", 
+                                            "$$V$$Topenurlfull_journal$$OALMA-BC51435784820001021"
+                                        ], 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "alttitle": [
+                                            "Head first HTML with CSS and XHTML", 
+                                            "HTML with CSS & XHTML", 
+                                            "HTML with CSS and XHTML"
+                                        ], 
+                                        "creationdate": "2006", 
+                                        "creatorcontrib": [
+                                            "Elisabeth Freeman", 
+                                            "Freeman, Elisabeth.", 
+                                            "Freeman, E", 
+                                            "Elisabeth Freeman, Eric Freeman.; Eric Freeman", 
+                                            "Freeman, Eric, 1965-", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "description": "\"A complete learning experience for creating industry standard Web pages - but you won't be just reading: you'll be playing games, solving puzzles, pondering mysteries and creating Web pages like you never imagined. You'll be also learning how HTML works with CSS . . . if you're going to create Web pages in the 21st century, then you want to know and to understand CSS, too.\"", 
+                                        "enddate": "20061231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "059610197X", 
+                                            "9780596101978"
+                                        ], 
+                                        "lsr03": [
+                                            "ALMA-BC21360494740001021", 
+                                            "ALMA-BC51435784820001021"
+                                        ], 
+                                        "lsr05": [
+                                            "62766935", 
+                                            "(OCoLC)ocm62766935", 
+                                            "71666119", 
+                                            "(OCoLC)ocm71666119"
+                                        ], 
+                                        "lsr06": [
+                                            "QA76.76 .H94 F74 2006", 
+                                            "QA76.76.H94F742006", 
+                                            "QA76.76.H94", 
+                                            "F74 2006", 
+                                            "F742006", 
+                                            "QA76.76.H94 F742006", 
+                                            "QA76.76.H94 F74 2006"
+                                        ], 
+                                        "lsr08": "O'Reilly,", 
+                                        "lsr09": [
+                                            "Beijing ; Sebastopol, CA", 
+                                            "Sebastopol, Calif."
+                                        ], 
+                                        "lsr11": "Head first series", 
+                                        "lsr12": [
+                                            "\"A brain-friendly guide to HTML & CSS\" -- Cover.", 
+                                            "Includes index.", 
+                                            "\"A complete learning experience for creating industry standard Web pages - but you won't be just reading: you'll be playing games, solving puzzles, pondering mysteries and creating Web pages like you never imagined. You'll be also learning how HTML works with CSS . . . if you're going to create Web pages in the 21st century, then you want to know and to understand CSS, too.\"", 
+                                            "Electronic reproduction. Boston, Mass. : Safari Books Online, 2006."
+                                        ], 
+                                        "lsr14": "ONL", 
+                                        "lsr20": [
+                                            "002519206", 
+                                            "bc_aleph002519206", 
+                                            "99116182110001021", 
+                                            "99137644173201021"
+                                        ], 
+                                        "lsr30": "SAFARI BOOKS ONLINE", 
+                                        "lsr31": "Head first series", 
+                                        "recordid": [
+                                            "ALMA-BC21360494740001021", 
+                                            "ALMA-BC51435784820001021"
+                                        ], 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "BCL", 
+                                            "ONL", 
+                                            "ALMA-BC", 
+                                            "SAFARI BOOKS ONLINE"
+                                        ], 
+                                        "searchscope": [
+                                            "BCL", 
+                                            "ONL", 
+                                            "ALMA-BC", 
+                                            "SAFARI BOOKS ONLINE"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "20060101", 
+                                        "subject": [
+                                            "HTML (Document markup language)", 
+                                            "Cascading style sheets.", 
+                                            "XHTML (Document markup language)", 
+                                            "Web sites Design."
+                                        ], 
+                                        "title": [
+                                            "Head first HTML with CSS & XHTML /", 
+                                            "Head first HTML with CSS & XHTML"
+                                        ]
+                                    }, 
+                                    "sort": {
+                                        "author": "freeman elisabeth", 
+                                        "creationdate": "2006", 
+                                        "title": "head first html with css xhtml"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": [
+                                {
+                                    "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A45IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=,view=&svc_dat=viewit&u.ignore_date_coverage=true&req.skin=BC%20skin", 
+                                    "@GetIt2": "", 
+                                    "@deliveryCategory": "Alma-E"
+                                }, 
+                                {
+                                    "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                    "@GetIt2": "", 
+                                    "@deliveryCategory": "Alma-P"
+                                }
+                            ], 
+                            "sear:LIBRARIES": {
+                                "sear:LIBRARY": {
+                                    "sear:callNumber": "(QA76.76 .H94 F74 2006 )", 
+                                    "sear:collection": "Stacks (STACK)", 
+                                    "sear:institution": "BCL", 
+                                    "sear:library": "ONL", 
+                                    "sear:status": "available", 
+                                    "sear:url": "OVP"
+                                }
+                            }, 
+                            "sear:LINKS": {
+                                "sear:addlink": "http://www.loc.gov/catdir/enhancements/fy0715/2006275163-d.html", 
+                                "sear:linktorsrc": [
+                                    "http://www.loc.gov/catdir/toc/fy0607/2006275163.html", 
+                                    "http://proquestcombo.safaribooksonline.com/?uiCode=&xmlId=059610197X"
+                                ], 
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=059610197X/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:059610197X", 
+                                    "http://www.amazon.com/gp/product/059610197X"
+                                ], 
+                                "sear:lln02": [
+                                    "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21360494740001021", 
+                                    "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21360494740001021"
+                                ], 
+                                "sear:lln03": "http://www.loc.gov/catdir/toc/fy0607/2006275163.html", 
+                                "sear:openurl": [
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20HTML%20with%20CSS%20%26%20XHTML&rft.aulast=Freeman&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Freeman%2C%20Elisabeth&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=059610197X&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21360494740001021</ALMA-BC><grp_id>76901990</grp_id><oa></oa>&rft.eisbn=&rft.edition=1st%20ed..&rft.pub=&rft.place=Beijing%20%3B%20Sebastopol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20HTML%20with%20CSS%20%26%20XHTML&rft.aulast=Freeman&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Freeman%2C%20Elisabeth&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=059610197X&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51435784820001021</ALMA-BC><grp_id>76901990</grp_id><oa></oa>&rft.eisbn=&rft.edition=1st%20ed..&rft.pub=&rft.place=Beijing%20%3B%20Sebastopol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin"
+                                ], 
+                                "sear:openurlfulltext": [
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20HTML%20with%20CSS%20%26%20XHTML&rft.aulast=Freeman&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Freeman%2C%20Elisabeth&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=059610197X&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21360494740001021</ALMA-BC><grp_id>76901990</grp_id><oa></oa>&rft.eisbn=&rft.edition=1st%20ed..&rft.pub=&rft.place=Beijing%20%3B%20Sebastopol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2006275163&rft_id=info:oclcnum/62766935&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20HTML%20with%20CSS%20%26%20XHTML&rft.aulast=Freeman&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Freeman%2C%20Elisabeth&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=059610197X&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51435784820001021</ALMA-BC><grp_id>76901990</grp_id><oa></oa>&rft.eisbn=&rft.edition=1st%20ed..&rft.pub=&rft.place=Beijing%20%3B%20Sebastopol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2006275163&rft_id=info:oclcnum/62766935&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=&svc_dat=viewit&req.skin=BC%20skin"
+                                ], 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/059610197X.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=059610197X/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }, 
+                        {
+                            "@ID": "2737871", 
+                            "@NO": "2", 
+                            "@RANK": "8.534787E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "addau": [
+                                            "Freeman, Eric, 1965-", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "au": "Robson, Elisabeth", 
+                                        "aufirst": "Elisabeth", 
+                                        "aulast": "Robson", 
+                                        "btitle": "Head first HTML and CSS", 
+                                        "cop": "Sebastopol, CA", 
+                                        "date": "2012", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "oclcid": "827799934", 
+                                        "pub": "O'Reilly", 
+                                        "risdate": "c2012.", 
+                                        "ristype": "BOOK", 
+                                        "seriestitle": "Head first series"
+                                    }, 
+                                    "browse": {
+                                        "author": [
+                                            "$$DRobson, Elisabeth$$ERobson, Elisabeth", 
+                                            "$$DFreeman, Eric, 1965-$$EFreeman, Eric, 1965-", 
+                                            "$$DSafari Books Online (Firm)$$ESafari Books Online (Firm)"
+                                        ], 
+                                        "subject": [
+                                            "$$DHTML (Document markup language)$$EHTML (Document markup language)", 
+                                            "$$DWeb sites -- Authoring programs$$EWeb sites Authoring programs", 
+                                            "$$DCascading style sheets$$ECascading style sheets", 
+                                            "$$DWeb sites -- Design$$EWeb sites Design", 
+                                            "$$DElectronic books$$EElectronic books"
+                                        ], 
+                                        "title": [
+                                            "$$DHead first HTML and CSS$$EHead first HTML and CSS", 
+                                            "$$DO'Reilly's Head first series$$EO'Reilly's Head first series", 
+                                            "$$DHead first series$$EHead first series"
+                                        ]
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:51435783320001021", 
+                                        "ilsapiid": "01BC_INST51435783320001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC51435783320001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "51435783320001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c2": "9780596159900;0596159900", 
+                                        "c3": "headfirsthtmlandcss", 
+                                        "c4": "2012", 
+                                        "c5": "99137644146401021", 
+                                        "f10": "oreilly", 
+                                        "f11": "robson elisabeth", 
+                                        "f20": "99137644146401021", 
+                                        "f4": "9780596159900;0596159900", 
+                                        "f5": "headfirsthtmlandcss", 
+                                        "f6": "2012", 
+                                        "f7": "head first html and css", 
+                                        "f8": "cau", 
+                                        "f9": "1 online resource (xxxvii, 723 p.) :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-E", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "contributor": "Eric Freeman 1965-; Safari Books Online (Firm)", 
+                                        "creationdate": "c2012.", 
+                                        "creator": "Elisabeth Robson", 
+                                        "description": [
+                                            "The language of the Web : getting to know HTML -- Meet the \"HT\" in HTML : going further, with hypertext -- Web page construction : building blocks -- A trip to Webville : getting connected -- Meeting the media : adding images to your pages -- Serious HTML : standards and all that jazz -- Adding a little style : getting started with CSS -- Expanding your vocabulary : styling with fonts and colors -- Getting intimate with elements : the box model -- Advanced Web construction : divs and spans -- Arranging elements : layout and positioning -- Modern HTML : HTML5 markup -- Getting tabular : tables and more lists -- Getting interactive : HTML forms.", 
+                                            "Previously published as: Head first HTML with CSS & XHTML / Elisabeth Freeman, Eric Freeman. 2005.", 
+                                            "Includes index."
+                                        ], 
+                                        "edition": "2nd ed..", 
+                                        "format": "1 online resource (xxxvii, 723 p.) : ill.", 
+                                        "identifier": "ISBN: 9780596159900 (pbk.); ISBN: 0596159900 (pbk.)", 
+                                        "language": "eng", 
+                                        "lds06": "Access restricted to subscribers.", 
+                                        "lds07": "Sebastopol, CA", 
+                                        "lds09": "O'Reilly", 
+                                        "lds11": "99137644146401021", 
+                                        "lds12": "O'Reilly's Head first series", 
+                                        "lds13": "The language of the Web : getting to know HTML -- Meet the \"HT\" in HTML : going further, with hypertext -- Web page construction : building blocks -- A trip to Webville : getting connected -- Meeting the media : adding images to your pages -- Serious HTML : standards and all that jazz -- Adding a little style : getting started with CSS -- Expanding your vocabulary : styling with fonts and colors -- Getting intimate with elements : the box model -- Advanced Web construction : divs and spans -- Arranging elements : layout and positioning -- Modern HTML : HTML5 markup -- Getting tabular : tables and more lists -- Getting interactive : HTML forms.", 
+                                        "lds30": "SAFARI BOOKS ONLINE", 
+                                        "lds31": "O'Reilly's Head first series", 
+                                        "publisher": "Sebastopol, CA : O'Reilly", 
+                                        "relation": [
+                                            "$$Cseries $$VHead first series.", 
+                                            "Head first HTML and CSS."
+                                        ], 
+                                        "source": "ALMA-BC", 
+                                        "subject": "HTML (Document markup language); Web sites -- Authoring programs; Cascading style sheets; Web sites -- Design; Electronic books", 
+                                        "title": "Head first HTML and CSS", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "QA76.76.H94"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "H", 
+                                        "creationdate": "2012", 
+                                        "creatorcontrib": [
+                                            "Robson, Elisabeth", 
+                                            "Freeman, Eric, 1965-", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "frbrgroupid": "76801405", 
+                                        "frbrtype": "6", 
+                                        "genre": "Electronic books", 
+                                        "language": "eng", 
+                                        "lfc01": "SAFARI BOOKS ONLINE", 
+                                        "lfc08": "O'Reilly's Head first series", 
+                                        "prefilter": [
+                                            "ebooks", 
+                                            "books"
+                                        ], 
+                                        "rsrctype": [
+                                            "books", 
+                                            "ebooks"
+                                        ], 
+                                        "topic": [
+                                            "HTML (Document markup language)", 
+                                            "Web sites\u2013Authoring programs", 
+                                            "Cascading style sheets", 
+                                            "Web sites\u2013Design"
+                                        ], 
+                                        "toplevel": "online_resources"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Krobson elisabeth$$AA", 
+                                        "k3": "$$Khead first html and css$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktorsrc": "$$Uhttp://proquestcombo.safaribooksonline.com/?uiCode=&xmlId=9781449324469$$DOnline Version", 
+                                        "linktouc": "$$Tworldcat_oclc$$DThis item in WorldCat\ufffd\ufffd", 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "Head first HTML and CSS.", 
+                                        "creationdate": "2012", 
+                                        "creatorcontrib": [
+                                            "Elisabeth Robson", 
+                                            "Robson, Elisabeth.", 
+                                            "Robson, E", 
+                                            "Elisabeth Robson, Eric Freeman.; Eric Freeman", 
+                                            "Freeman, Eric, 1965-", 
+                                            "Freeman, E", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "enddate": "20121231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "9780596159900", 
+                                            "0596159900"
+                                        ], 
+                                        "lsr03": "ALMA-BC51435783320001021", 
+                                        "lsr05": [
+                                            "827799934", 
+                                            "(OCoLC)ocn827799934"
+                                        ], 
+                                        "lsr06": [
+                                            "QA76.76.H94 R6362012", 
+                                            "QA76.76.H94 R636 2012"
+                                        ], 
+                                        "lsr08": "O'Reilly,", 
+                                        "lsr09": "Sebastopol, CA", 
+                                        "lsr11": [
+                                            "O'Reilly's Head first series", 
+                                            "O Reilly s Head first series", 
+                                            "Head first series."
+                                        ], 
+                                        "lsr12": [
+                                            "Previously published as: Head first HTML with CSS & XHTML / Elisabeth Freeman, Eric Freeman. 2005.", 
+                                            "Includes index."
+                                        ], 
+                                        "lsr20": "99137644146401021", 
+                                        "lsr30": "SAFARI BOOKS ONLINE", 
+                                        "lsr31": "O'Reilly's Head first series", 
+                                        "recordid": "ALMA-BC51435783320001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "SAFARI BOOKS ONLINE", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "searchscope": [
+                                            "SAFARI BOOKS ONLINE", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "20120101", 
+                                        "subject": [
+                                            "HTML (Document markup language)", 
+                                            "Web sites Authoring programs.", 
+                                            "Cascading style sheets.", 
+                                            "Web sites Design.", 
+                                            "Electronic books."
+                                        ], 
+                                        "title": "Head first HTML and CSS", 
+                                        "toc": "The language of the Web : getting to know HTML -- Meet the \"HT\" in HTML : going further, with hypertext -- Web page construction : building blocks -- A trip to Webville : getting connected -- Meeting the media : adding images to your pages -- Serious HTML : standards and all that jazz -- Adding a little style : getting started with CSS -- Expanding your vocabulary : styling with fonts and colors -- Getting intimate with elements : the box model -- Advanced Web construction : divs and spans -- Arranging elements : layout and positioning -- Modern HTML : HTML5 markup -- Getting tabular : tables and more lists -- Getting interactive : HTML forms."
+                                    }, 
+                                    "sort": {
+                                        "author": "robson elisabeth", 
+                                        "creationdate": "2012", 
+                                        "title": "head first html and css"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A45IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=,view=&svc_dat=viewit&u.ignore_date_coverage=true&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-E"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktorsrc": "http://proquestcombo.safaribooksonline.com/?uiCode=&xmlId=9781449324469", 
+                                "sear:linktouc": "http://bc.worldcat.org/search?q=no:827799934", 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC51435783320001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20HTML%20and%20CSS&rft.aulast=Robson&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Robson%2C%20Elisabeth&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51435783320001021</ALMA-BC><grp_id>76801405</grp_id><oa></oa>&rft.eisbn=&rft.edition=2nd%20ed..&rft.pub=&rft.place=Sebastopol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20HTML%20and%20CSS&rft.aulast=Robson&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Robson%2C%20Elisabeth&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51435783320001021</ALMA-BC><grp_id>76801405</grp_id><oa></oa>&rft.eisbn=&rft.edition=2nd%20ed..&rft.pub=&rft.place=Sebastopol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/827799934&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:51435783320001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "3722852", 
+                            "@NO": "3", 
+                            "@RANK": "6.019855E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "abstract": "Provides information on scripting Web applications with JavaScript.", 
+                                        "addau": "Safari Books Online (Firm)", 
+                                        "addtitle": "JavaScript", 
+                                        "au": "Morrison, Michael, 1970-", 
+                                        "aufirst": "Michael,", 
+                                        "aulast": "Morrison", 
+                                        "btitle": "Head first JavaScript", 
+                                        "cop": [
+                                            "Beijing ; Sebastapol, CA", 
+                                            "Beijing ; Sebastapol, Calif."
+                                        ], 
+                                        "date": [
+                                            "2008", 
+                                            "2007"
+                                        ], 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": [
+                                            "9780596527747", 
+                                            "0596527748"
+                                        ], 
+                                        "lad04": "0596527748", 
+                                        "lccn": "2008298111", 
+                                        "oclcid": [
+                                            "190794738", 
+                                            "213482765"
+                                        ], 
+                                        "pub": "O'Reilly", 
+                                        "risdate": [
+                                            "c2008.", 
+                                            "2007, c2008."
+                                        ], 
+                                        "ristype": "BOOK", 
+                                        "seriestitle": "Head first series"
+                                    }, 
+                                    "browse": {
+                                        "callnumber": "$$IBCL$$DQA76.73 .J39 M67 2008$$E0qa   0007673000.j  39000  m67 2008$$T0"
+                                    }, 
+                                    "control": {
+                                        "almaid": [
+                                            "$$V01BC_INST:21345068090001021$$O01BC_INST:21345068090001021", 
+                                            "$$V01BC_INST:51435783620001021$$O01BC_INST:51435783620001021"
+                                        ], 
+                                        "ilsapiid": [
+                                            "$$V01BC_INST21345068090001021$$OALMA-BC21345068090001021", 
+                                            "$$V01BC_INST51435783620001021$$OALMA-BC51435783620001021"
+                                        ], 
+                                        "originalsourceid": [
+                                            "$$V01BC_INST$$OALMA-BC21345068090001021", 
+                                            "$$V01BC_INST$$OALMA-BC51435783620001021"
+                                        ], 
+                                        "recordid": "dedupmrg88003141", 
+                                        "sourceformat": [
+                                            "$$VMARC21$$OALMA-BC21345068090001021", 
+                                            "$$VMARC21$$OALMA-BC51435783620001021"
+                                        ], 
+                                        "sourceid": [
+                                            "$$VALMA-BC$$OALMA-BC21345068090001021", 
+                                            "$$VALMA-BC$$OALMA-BC51435783620001021"
+                                        ], 
+                                        "sourcerecordid": [
+                                            "$$V21345068090001021$$OALMA-BC21345068090001021", 
+                                            "$$V51435783620001021$$OALMA-BC51435783620001021"
+                                        ], 
+                                        "sourcesystem": [
+                                            "$$VAlma$$OALMA-BC21345068090001021", 
+                                            "$$VAlma$$OALMA-BC51435783620001021"
+                                        ]
+                                    }, 
+                                    "dedup": {
+                                        "c1": "2008298111", 
+                                        "c2": "9780596527747;0596527748", 
+                                        "c3": "headfirstjavascript", 
+                                        "c4": "2008", 
+                                        "c5": "99110525220001021", 
+                                        "f1": "2008298111", 
+                                        "f10": "oreilly", 
+                                        "f11": "morrison michael 1970", 
+                                        "f20": "99110525220001021", 
+                                        "f3": "9780596527747;0596527748", 
+                                        "f5": "headfirstjavascript", 
+                                        "f6": "2008", 
+                                        "f7": "head first javascript", 
+                                        "f8": "cc", 
+                                        "f9": "xxxiv, 615 p. :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": [
+                                            "$$VAlma-P$$OALMA-BC21345068090001021", 
+                                            "$$VAlma-E$$OALMA-BC51435783620001021"
+                                        ], 
+                                        "institution": [
+                                            "$$VBCL$$OALMA-BC21345068090001021", 
+                                            "$$VBCL$$OALMA-BC51435783620001021"
+                                        ]
+                                    }, 
+                                    "display": {
+                                        "availinstitution": "$$IBCL$$Sunavailable", 
+                                        "availlibrary": "$$IBCL$$LONL$$1Stacks (STACK)$$2(QA76.73 .J39 M67 2008 )$$Sunavailable$$X01BC_INST$$YONL$$ZSTACK$$P1$$OALMA-BC21345068090001021", 
+                                        "availpnx": "unavailable", 
+                                        "creationdate": "c2008.", 
+                                        "creator": "Michael Morrison 1970-", 
+                                        "description": [
+                                            "The interactive web -- Storing data -- Exploring the client: browser spelunking -- Decision making -- Looping -- Functions: reduce, reuse, recycle -- Forms and validation -- Wrangling the page: slicing and dicing HTML with the DOM -- Bringing data to life -- Creating custom objects -- Kill bugs dead: good scripts gone wrong -- Dynamic data: touchy-feely web applications.", 
+                                            "Provides information on scripting Web applications with JavaScript.", 
+                                            "\"A brain-friendly guide\" -- Cover, p.1.", 
+                                            "\"Printing history: December 2007: First edition\"--T.p. verso.", 
+                                            "Includes index.", 
+                                            "The interactive web -- Storing data -- Exploring the client: browser spelunking -- Decision making -- Looping -- Functions: reduce, reuse, recycle -- Forms and validation -- Wrangling the page: slicing and dicing HTML with the DOM -- Bringing data to life -- Creating custom objects -- Kill bugs dead: good scripts gone wrong -- Dynamic data: touchy-feely web applications.", 
+                                            "Provides information on scripting Web applications with JavaScript.", 
+                                            "\"A brain-friendly guide\" -- Cover, p.1.", 
+                                            "Safari \"free online ed. with purchase of this book.\" p. [617]", 
+                                            "Includes index.", 
+                                            "Electronic reproduction. Boston, Mass. : Safari Books Online 2008"
+                                        ], 
+                                        "format": "xxxiv, 615 p. : ill. ; 24 cm.", 
+                                        "identifier": "ISBN: 9780596527747 (pbk.); ISBN: 0596527748 (pbk.)", 
+                                        "language": "eng", 
+                                        "lds01": "ONL Stacks (STACK) QA76.73 .J39 M67 2008", 
+                                        "lds02": "JavaScript", 
+                                        "lds06": "Access restricted to subscribers.", 
+                                        "lds07": [
+                                            "Beijing ; Sebastapol, CA", 
+                                            "Beijing ; Sebastapol, Calif."
+                                        ], 
+                                        "lds09": "O'Reilly", 
+                                        "lds10": "QA76.73 .J39 M67 2008", 
+                                        "lds11": [
+                                            "99110525220001021", 
+                                            "99137644169401021"
+                                        ], 
+                                        "lds12": "Head first series", 
+                                        "lds13": "The interactive web -- Storing data -- Exploring the client: browser spelunking -- Decision making -- Looping -- Functions: reduce, reuse, recycle -- Forms and validation -- Wrangling the page: slicing and dicing HTML with the DOM -- Bringing data to life -- Creating custom objects -- Kill bugs dead: good scripts gone wrong -- Dynamic data: touchy-feely web applications.", 
+                                        "lds14": "002439321", 
+                                        "lds15": "JavaScript", 
+                                        "lds30": "SAFARI BOOKS ONLINE", 
+                                        "lds31": "Head first series", 
+                                        "publisher": "Beijing ; Sebastapol, CA : O'Reilly", 
+                                        "relation": "$$Cseries $$VHead first series", 
+                                        "source": [
+                                            "$$VALMA-BC$$OALMA-BC21345068090001021", 
+                                            "$$VALMA-BC$$OALMA-BC51435783620001021"
+                                        ], 
+                                        "subject": "JavaScript (Computer program language); Web sites -- Design; Internet programming", 
+                                        "title": "Head first JavaScript", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "QA76.73.J39"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "H", 
+                                        "collection": "ONL", 
+                                        "creationdate": [
+                                            "2008", 
+                                            "2007"
+                                        ], 
+                                        "creatorcontrib": [
+                                            "Morrison, Michael, 1970-", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "frbrgroupid": "76801897", 
+                                        "frbrtype": "6", 
+                                        "language": "eng", 
+                                        "lfc01": "SAFARI BOOKS ONLINE", 
+                                        "lfc08": "Head first series", 
+                                        "lfc10": "QA76.7", 
+                                        "library": "ONL", 
+                                        "prefilter": [
+                                            "ebooks", 
+                                            "books"
+                                        ], 
+                                        "rsrctype": [
+                                            "books", 
+                                            "ebooks"
+                                        ], 
+                                        "topic": [
+                                            "JavaScript (Computer program language)", 
+                                            "Web sites\u2013Design", 
+                                            "Internet programming"
+                                        ], 
+                                        "toplevel": [
+                                            "available", 
+                                            "online_resources"
+                                        ]
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Kmorrison michael 1970$$AA", 
+                                        "k3": "$$Khead first javascript$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktorsrc": "$$Uhttp://proquestcombo.safaribooksonline.com/?uiCode=&xmlId=9780596527747$$DOnline Version", 
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com", 
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": [
+                                            "$$Tpermalink$$DPermalink to this record$$OALMA-BC21345068090001021", 
+                                            "$$Tpermalink$$DPermalink to this record$$OALMA-BC51435783620001021"
+                                        ], 
+                                        "openurl": [
+                                            "$$V$$Topenurl_journal$$OALMA-BC21345068090001021", 
+                                            "$$V$$Topenurl_journal$$OALMA-BC51435783620001021"
+                                        ], 
+                                        "openurlfulltext": [
+                                            "$$V$$Topenurlfull_journal$$OALMA-BC21345068090001021", 
+                                            "$$V$$Topenurlfull_journal$$OALMA-BC51435783620001021"
+                                        ], 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "alttitle": "JavaScript", 
+                                        "creationdate": [
+                                            "2007", 
+                                            "2008"
+                                        ], 
+                                        "creatorcontrib": [
+                                            "Michael Morrison 1970-", 
+                                            "Morrison, Michael, 1970-", 
+                                            "Morrison, M", 
+                                            "Michael Morrison.", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "description": "Provides information on scripting Web applications with JavaScript.", 
+                                        "enddate": [
+                                            "20081231", 
+                                            "20071231"
+                                        ], 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "9780596527747", 
+                                            "0596527748"
+                                        ], 
+                                        "lsr03": [
+                                            "ALMA-BC21345068090001021", 
+                                            "ALMA-BC51435783620001021"
+                                        ], 
+                                        "lsr05": [
+                                            "190794738", 
+                                            "(OCoLC)ocn190794738", 
+                                            "213482765", 
+                                            "(OCoLC)ocm213482765"
+                                        ], 
+                                        "lsr06": [
+                                            "QA76.73 .J39 M67 2008", 
+                                            "QA76.73.J39M672008", 
+                                            "QA76.73.J39", 
+                                            "M67 2008", 
+                                            "M672008", 
+                                            "QA76.73.J39 M672008", 
+                                            "QA76.73.J39 M67 2008"
+                                        ], 
+                                        "lsr08": "O'Reilly,", 
+                                        "lsr09": [
+                                            "Beijing ; Sebastapol, CA", 
+                                            "Beijing ; Sebastapol, Calif."
+                                        ], 
+                                        "lsr11": "Head first series", 
+                                        "lsr12": [
+                                            "\"Printing history: December 2007: First edition\"--T.p. verso.", 
+                                            "\"A brain-friendly guide\" -- Cover, p.1.", 
+                                            "Safari \"free online ed. with purchase of this book.\" p. [617]", 
+                                            "Includes index.", 
+                                            "Provides information on scripting Web applications with JavaScript.", 
+                                            "Electronic reproduction. Boston, Mass. : Safari Books Online 2008"
+                                        ], 
+                                        "lsr14": "ONL", 
+                                        "lsr20": [
+                                            "002439321", 
+                                            "bc_aleph002439321", 
+                                            "99110525220001021", 
+                                            "99137644169401021"
+                                        ], 
+                                        "lsr30": "SAFARI BOOKS ONLINE", 
+                                        "lsr31": "Head first series", 
+                                        "recordid": [
+                                            "ALMA-BC21345068090001021", 
+                                            "ALMA-BC51435783620001021"
+                                        ], 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "ONL", 
+                                            "SAFARI BOOKS ONLINE", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "searchscope": [
+                                            "ONL", 
+                                            "SAFARI BOOKS ONLINE", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": [
+                                            "20080101", 
+                                            "20070101"
+                                        ], 
+                                        "subject": [
+                                            "JavaScript (Computer program language)", 
+                                            "Web sites Design.", 
+                                            "Internet programming."
+                                        ], 
+                                        "title": [
+                                            "Head first JavaScript /", 
+                                            "Head first JavaScript"
+                                        ], 
+                                        "toc": "The interactive web -- Storing data -- Exploring the client: browser spelunking -- Decision making -- Looping -- Functions: reduce, reuse, recycle -- Forms and validation -- Wrangling the page: slicing and dicing HTML with the DOM -- Bringing data to life -- Creating custom objects -- Kill bugs dead: good scripts gone wrong -- Dynamic data: touchy-feely web applications."
+                                    }, 
+                                    "sort": {
+                                        "author": "morrison michael 1970", 
+                                        "creationdate": "2008", 
+                                        "title": "head first javascript"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": [
+                                {
+                                    "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A45IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=,view=&svc_dat=viewit&u.ignore_date_coverage=true&req.skin=BC%20skin", 
+                                    "@GetIt2": "", 
+                                    "@deliveryCategory": "Alma-E"
+                                }, 
+                                {
+                                    "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                    "@GetIt2": "", 
+                                    "@deliveryCategory": "Alma-P"
+                                }
+                            ], 
+                            "sear:LIBRARIES": {
+                                "sear:LIBRARY": {
+                                    "sear:callNumber": "(QA76.73 .J39 M67 2008 )", 
+                                    "sear:collection": "Stacks (STACK)", 
+                                    "sear:institution": "BCL", 
+                                    "sear:library": "ONL", 
+                                    "sear:status": "unavailable", 
+                                    "sear:url": "OVP"
+                                }
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktorsrc": "http://proquestcombo.safaribooksonline.com/?uiCode=&xmlId=9780596527747", 
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=9780596527747/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:9780596527747", 
+                                    "http://www.amazon.com/gp/product/0596527748"
+                                ], 
+                                "sear:lln02": [
+                                    "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21345068090001021", 
+                                    "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21345068090001021"
+                                ], 
+                                "sear:openurl": [
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20JavaScript&rft.aulast=Morrison&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Morrison%2C%20Michael%2C%201970-&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9780596527747&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21345068090001021</ALMA-BC><grp_id>76801897</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Beijing%20%3B%20Sebastapol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20JavaScript&rft.aulast=Morrison&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Morrison%2C%20Michael%2C%201970-&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9780596527747&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51435783620001021</ALMA-BC><grp_id>76801897</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Beijing%20%3B%20Sebastapol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin"
+                                ], 
+                                "sear:openurlfulltext": [
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20JavaScript&rft.aulast=Morrison&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Morrison%2C%20Michael%2C%201970-&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9780596527747&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21345068090001021</ALMA-BC><grp_id>76801897</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Beijing%20%3B%20Sebastapol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2008298111&rft_id=info:oclcnum/190794738&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21345068090001021,ie=01BC_INST:51435783620001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20JavaScript&rft.aulast=Morrison&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Morrison%2C%20Michael%2C%201970-&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9780596527747&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51435783620001021</ALMA-BC><grp_id>76801897</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Beijing%20%3B%20Sebastapol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2008298111&rft_id=info:oclcnum/190794738&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21345068090001021,ie=01BC_INST:51435783620001021,language=&svc_dat=viewit&req.skin=BC%20skin"
+                                ], 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/0596527748.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=9780596527747/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }, 
+                        {
+                            "@ID": "2737835", 
+                            "@NO": "4", 
+                            "@RANK": "5.148103E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "addau": [
+                                            "Robson, Elisabeth", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "addtitle": "Building web apps with Javascript", 
+                                        "au": "Freeman, Eric, 1965-", 
+                                        "aufirst": "Eric,", 
+                                        "aulast": "Freeman", 
+                                        "btitle": "Head first HTML5 programming building web apps with Javascript", 
+                                        "cop": "Sebastopol, CA", 
+                                        "date": "2011", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "oclcid": "773205790", 
+                                        "pub": "O'Reilly", 
+                                        "risdate": "2011.", 
+                                        "ristype": "BOOK", 
+                                        "seriestitle": "Head first series"
+                                    }, 
+                                    "browse": {
+                                        "author": [
+                                            "$$DFreeman, Eric, 1965-$$EFreeman, Eric, 1965-", 
+                                            "$$DRobson, Elisabeth$$ERobson, Elisabeth", 
+                                            "$$DSafari Books Online (Firm)$$ESafari Books Online (Firm)"
+                                        ], 
+                                        "subject": [
+                                            "$$DHTML (Document markup language)$$EHTML (Document markup language)", 
+                                            "$$DJavaScript (Computer program language)$$EJavaScript (Computer program language)", 
+                                            "$$DWeb site development$$EWeb site development", 
+                                            "$$DApplication software -- Development$$EApplication software Development", 
+                                            "$$DElectronic books$$EElectronic books"
+                                        ], 
+                                        "title": [
+                                            "$$DHead first HTML5 programming building web apps with Javascript$$EHead first HTML5 programming building web apps with Javascript", 
+                                            "$$DBuilding web apps with Javascript$$EBuilding web apps with Javascript", 
+                                            "$$DHTML5 programming$$EHTML5 programming", 
+                                            "$$DBuilding web applications with Javascript$$EBuilding web applications with Javascript", 
+                                            "$$DHead first series$$EHead first series"
+                                        ]
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:51435787100001021", 
+                                        "ilsapiid": "01BC_INST51435787100001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC51435787100001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "51435787100001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c2": "9781449390549", 
+                                        "c3": "headfirsthtml5prograjavascript", 
+                                        "c4": "2011", 
+                                        "c5": "99137644151301021", 
+                                        "f10": "oreilly", 
+                                        "f11": "freeman eric 1965", 
+                                        "f20": "99137644151301021", 
+                                        "f4": "9781449390549", 
+                                        "f5": "headfirsthtml5prograjavascript", 
+                                        "f6": "2011", 
+                                        "f7": "head first html5 programming building web apps with javascript", 
+                                        "f8": "cau", 
+                                        "f9": "1 online resource (xxxiii, 573 p.) :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-E", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "contributor": "Elisabeth Robson; Safari Books Online (Firm)", 
+                                        "creationdate": "2011.", 
+                                        "creator": "Eric Freeman 1965-", 
+                                        "description": "Includes index.", 
+                                        "edition": "1st ed..", 
+                                        "format": "1 online resource (xxxiii, 573 p.) : ill., maps.", 
+                                        "identifier": "ISBN: 9781449390549 (pbk.)", 
+                                        "language": "eng", 
+                                        "lds02": [
+                                            "Building web apps with Javascript", 
+                                            "HTML5 programming", 
+                                            "Building web applications with Javascript"
+                                        ], 
+                                        "lds06": "Access restricted to subscribers.", 
+                                        "lds07": "Sebastopol, CA", 
+                                        "lds09": "O'Reilly", 
+                                        "lds11": "99137644151301021", 
+                                        "lds12": "Head first series", 
+                                        "lds15": [
+                                            "Building web apps with Javascript", 
+                                            "HTML5 programming", 
+                                            "Building web applications with Javascript"
+                                        ], 
+                                        "lds30": "SAFARI BOOKS ONLINE", 
+                                        "lds31": "Head first series", 
+                                        "publisher": "Sebastopol, CA : O'Reilly", 
+                                        "relation": [
+                                            "$$Cseries $$VHead first series.", 
+                                            "Head First HTML5 programming."
+                                        ], 
+                                        "source": "ALMA-BC", 
+                                        "subject": "HTML (Document markup language); JavaScript (Computer program language); Web site development; Application software -- Development; Electronic books", 
+                                        "title": "Head first HTML5 programming building web apps with Javascript", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "QA76.76.H94"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "H", 
+                                        "creationdate": "2011", 
+                                        "creatorcontrib": [
+                                            "Freeman, Eric, 1965-", 
+                                            "Robson, Elisabeth", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "frbrgroupid": "76801165", 
+                                        "frbrtype": "6", 
+                                        "genre": "Electronic books", 
+                                        "language": "eng", 
+                                        "lfc01": "SAFARI BOOKS ONLINE", 
+                                        "lfc08": "Head first series", 
+                                        "prefilter": [
+                                            "ebooks", 
+                                            "books"
+                                        ], 
+                                        "rsrctype": [
+                                            "books", 
+                                            "ebooks"
+                                        ], 
+                                        "topic": [
+                                            "HTML (Document markup language)", 
+                                            "JavaScript (Computer program language)", 
+                                            "Web site development", 
+                                            "Application software\u2013Development"
+                                        ], 
+                                        "toplevel": "online_resources"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Kfreeman eric 1965$$AA", 
+                                        "k3": "$$Khead first html5 programming building web apps with javascript$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktorsrc": "$$Uhttp://proquestcombo.safaribooksonline.com/?uiCode=&xmlId=9781449314712$$DOnline Version", 
+                                        "linktouc": "$$Tworldcat_oclc$$DThis item in WorldCat\ufffd\ufffd", 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "Head First HTML5 programming.", 
+                                        "alttitle": [
+                                            "Building web apps with Javascript", 
+                                            "HTML5 programming", 
+                                            "Building web applications with Javascript"
+                                        ], 
+                                        "creationdate": "2011", 
+                                        "creatorcontrib": [
+                                            "Eric Freeman 1965-", 
+                                            "Freeman, Eric, 1965-", 
+                                            "Freeman, E", 
+                                            "Eric Freeman, Elisabeth Robson.; Elisabeth Robson", 
+                                            "Robson, Elisabeth.", 
+                                            "Robson, E", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "enddate": "20111231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "9781449390549", 
+                                            "1449390544"
+                                        ], 
+                                        "lsr03": "ALMA-BC51435787100001021", 
+                                        "lsr05": [
+                                            "773205790", 
+                                            "(OCoLC)ocn773205790"
+                                        ], 
+                                        "lsr06": [
+                                            "QA76.76.H94 F7442011", 
+                                            "QA76.76.H94 F744 2011"
+                                        ], 
+                                        "lsr08": "O'Reilly,", 
+                                        "lsr09": "Sebastopol, CA", 
+                                        "lsr11": [
+                                            "Head first series", 
+                                            "Head first series."
+                                        ], 
+                                        "lsr12": "Includes index.", 
+                                        "lsr20": "99137644151301021", 
+                                        "lsr30": "SAFARI BOOKS ONLINE", 
+                                        "lsr31": "Head first series", 
+                                        "recordid": "ALMA-BC51435787100001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "SAFARI BOOKS ONLINE", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "searchscope": [
+                                            "SAFARI BOOKS ONLINE", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "20110101", 
+                                        "subject": [
+                                            "HTML (Document markup language)", 
+                                            "JavaScript (Computer program language)", 
+                                            "Web site development.", 
+                                            "Application software Development.", 
+                                            "Electronic books."
+                                        ], 
+                                        "title": "Head first HTML5 programming building web apps with Javascript /"
+                                    }, 
+                                    "sort": {
+                                        "author": "freeman eric 1965", 
+                                        "creationdate": "2011", 
+                                        "title": "head first html5 programming building web apps with javascript"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A45IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=,view=&svc_dat=viewit&u.ignore_date_coverage=true&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-E"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktorsrc": "http://proquestcombo.safaribooksonline.com/?uiCode=&xmlId=9781449314712", 
+                                "sear:linktouc": "http://bc.worldcat.org/search?q=no:773205790", 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC51435787100001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20HTML5%20programming%20building%20web%20apps%20with%20Javascript&rft.aulast=Freeman&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Freeman%2C%20Eric%2C%201965-&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51435787100001021</ALMA-BC><grp_id>76801165</grp_id><oa></oa>&rft.eisbn=&rft.edition=1st%20ed..&rft.pub=&rft.place=Sebastopol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20HTML5%20programming%20building%20web%20apps%20with%20Javascript&rft.aulast=Freeman&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Freeman%2C%20Eric%2C%201965-&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51435787100001021</ALMA-BC><grp_id>76801165</grp_id><oa></oa>&rft.eisbn=&rft.edition=1st%20ed..&rft.pub=&rft.place=Sebastopol%2C%20CA&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/773205790&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:51435787100001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "2737475", 
+                            "@NO": "5", 
+                            "@RANK": "4.1710085E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "addau": [
+                                            "Siarto, Jeff", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "au": "Watrall, Ethan", 
+                                        "aufirst": "Ethan", 
+                                        "aulast": "Watrall", 
+                                        "btitle": "Head first Web design", 
+                                        "cop": "Sebastopol, Calif.", 
+                                        "date": "2009", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": [
+                                            "9780596157722", 
+                                            "059615772X"
+                                        ], 
+                                        "lad04": "059615772X", 
+                                        "oclcid": "317877857", 
+                                        "pub": "O'Reilly Media, Inc.", 
+                                        "risdate": "c2009.", 
+                                        "ristype": "BOOK", 
+                                        "seriestitle": "Head first series"
+                                    }, 
+                                    "browse": {
+                                        "author": [
+                                            "$$DWatrall, Ethan$$EWatrall, Ethan", 
+                                            "$$DSiarto, Jeff$$ESiarto, Jeff", 
+                                            "$$DSafari Books Online (Firm)$$ESafari Books Online (Firm)"
+                                        ], 
+                                        "subject": [
+                                            "$$DWeb site development$$EWeb site development", 
+                                            "$$DWeb sites -- Design$$EWeb sites Design", 
+                                            "$$DWeb publishing$$EWeb publishing", 
+                                            "$$DHTML (Document markup language)$$EHTML (Document markup language)", 
+                                            "$$DXHTML (Document markup language)$$EXHTML (Document markup language)", 
+                                            "$$DInternet programming$$EInternet programming"
+                                        ], 
+                                        "title": [
+                                            "$$DHead first Web design$$EHead first Web design", 
+                                            "$$DHead first series$$EHead first series"
+                                        ]
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:51435788630001021", 
+                                        "ilsapiid": "01BC_INST51435788630001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC51435788630001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "51435788630001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c2": "9780596157722;059615772X", 
+                                        "c3": "headfirstwebdesign", 
+                                        "c4": "2009", 
+                                        "c5": "99137644163801021", 
+                                        "f10": "oreilly media inc", 
+                                        "f11": "watrall ethan", 
+                                        "f20": "99137644163801021", 
+                                        "f3": "9780596157722;059615772X", 
+                                        "f5": "headfirstwebdesign", 
+                                        "f6": "2009", 
+                                        "f7": "head first web design", 
+                                        "f8": "cau", 
+                                        "f9": "xxxii, 451 p. :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-E", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "contributor": "Jeff Siarto; Safari Books Online (Firm)", 
+                                        "creationdate": "c2009.", 
+                                        "creator": "Ethan Watrall", 
+                                        "description": [
+                                            "Intro -- Beauty is in the eye of your user -- Paper covers rock -- \"So you take a left at the green water tower-- \" -- Follow the golden rule -- Moving beyond monochrome -- \"In 2 seconds, click 'home'.\" -- Yes, you scan! -- Inaccessibility kills -- The pathway to harmonious design -- Keeping your site fresh -- Mind your own business -- The top ten things (we didn't cover).", 
+                                            "Title from resource description page (viewed March 25, 2009).", 
+                                            "Includes index.", 
+                                            "Electronic reproduction. Boston, Mass. : Safari Books Online, 2009"
+                                        ], 
+                                        "edition": "1st ed..", 
+                                        "format": "xxxii, 451 p. : ill. (chiefly col.)", 
+                                        "identifier": "ISBN: 9780596157722; ISBN: 059615772X", 
+                                        "language": "eng", 
+                                        "lds06": "Access restricted to subscribers.", 
+                                        "lds07": "Sebastopol, Calif.", 
+                                        "lds09": "O'Reilly Media, Inc.", 
+                                        "lds11": "99137644163801021", 
+                                        "lds12": "Head first series", 
+                                        "lds13": "Intro -- Beauty is in the eye of your user -- Paper covers rock -- \"So you take a left at the green water tower-- \" -- Follow the golden rule -- Moving beyond monochrome -- \"In 2 seconds, click 'home'.\" -- Yes, you scan! -- Inaccessibility kills -- The pathway to harmonious design -- Keeping your site fresh -- Mind your own business -- The top ten things (we didn't cover).", 
+                                        "lds30": "SAFARI BOOKS ONLINE", 
+                                        "lds31": "Head first series", 
+                                        "publisher": "Sebastopol, Calif. : O'Reilly Media, Inc.", 
+                                        "relation": "$$Cseries $$VHead first series.", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Web site development; Web sites -- Design; Web publishing; HTML (Document markup language); XHTML (Document markup language); Internet programming", 
+                                        "title": "Head first Web design", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "TK5105.888"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "H", 
+                                        "creationdate": "2009", 
+                                        "creatorcontrib": [
+                                            "Watrall, Ethan", 
+                                            "Siarto, Jeff", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "frbrgroupid": "76801163", 
+                                        "frbrtype": "6", 
+                                        "language": "eng", 
+                                        "lfc01": "SAFARI BOOKS ONLINE", 
+                                        "lfc08": "Head first series", 
+                                        "prefilter": [
+                                            "ebooks", 
+                                            "books"
+                                        ], 
+                                        "rsrctype": [
+                                            "books", 
+                                            "ebooks"
+                                        ], 
+                                        "topic": [
+                                            "Web site development", 
+                                            "Web sites\u2013Design", 
+                                            "Web publishing", 
+                                            "HTML (Document markup language)", 
+                                            "XHTML (Document markup language)", 
+                                            "Internet programming"
+                                        ], 
+                                        "toplevel": "online_resources"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Kwatrall ethan$$AA", 
+                                        "k3": "$$Khead first web design$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktorsrc": "$$Uhttp://proquestcombo.safaribooksonline.com/?uiCode=&xmlId=9780596157722$$DOnline Version", 
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal", 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "creationdate": "2009", 
+                                        "creatorcontrib": [
+                                            "Ethan Watrall", 
+                                            "Watrall, Ethan.", 
+                                            "Watrall, E", 
+                                            "by Ethan Watrall, Jeff Siarto.; Jeff Siarto", 
+                                            "Siarto, Jeff.", 
+                                            "Siarto, J", 
+                                            "Safari Books Online (Firm)"
+                                        ], 
+                                        "enddate": "20091231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "9780596157722", 
+                                            "059615772X"
+                                        ], 
+                                        "lsr03": "ALMA-BC51435788630001021", 
+                                        "lsr05": [
+                                            "317877857", 
+                                            "(OCoLC)ocm317877857"
+                                        ], 
+                                        "lsr06": [
+                                            "TK5105.888 .W382009", 
+                                            "TK5105.888 .W38 2009"
+                                        ], 
+                                        "lsr08": "O'Reilly Media, Inc.,", 
+                                        "lsr09": "Sebastopol, Calif.", 
+                                        "lsr11": [
+                                            "Head first series", 
+                                            "Head first series."
+                                        ], 
+                                        "lsr12": [
+                                            "Title from resource description page (viewed March 25, 2009).", 
+                                            "Includes index.", 
+                                            "Electronic reproduction. Boston, Mass. : Safari Books Online, 2009"
+                                        ], 
+                                        "lsr20": "99137644163801021", 
+                                        "lsr30": "SAFARI BOOKS ONLINE", 
+                                        "lsr31": "Head first series", 
+                                        "recordid": "ALMA-BC51435788630001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "SAFARI BOOKS ONLINE", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "searchscope": [
+                                            "SAFARI BOOKS ONLINE", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "20090101", 
+                                        "subject": [
+                                            "Web site development.", 
+                                            "Web sites Design.", 
+                                            "Web publishing.", 
+                                            "HTML (Document markup language)", 
+                                            "XHTML (Document markup language)", 
+                                            "Internet programming."
+                                        ], 
+                                        "title": "Head first Web design", 
+                                        "toc": "Intro -- Beauty is in the eye of your user -- Paper covers rock -- \"So you take a left at the green water tower-- \" -- Follow the golden rule -- Moving beyond monochrome -- \"In 2 seconds, click 'home'.\" -- Yes, you scan! -- Inaccessibility kills -- The pathway to harmonious design -- Keeping your site fresh -- Mind your own business -- The top ten things (we didn't cover)."
+                                    }, 
+                                    "sort": {
+                                        "author": "watrall ethan", 
+                                        "creationdate": "2009", 
+                                        "title": "head first web design"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A45IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=,view=&svc_dat=viewit&u.ignore_date_coverage=true&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-E"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktorsrc": "http://proquestcombo.safaribooksonline.com/?uiCode=&xmlId=9780596157722", 
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=9780596157722/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:9780596157722", 
+                                    "http://www.amazon.com/gp/product/059615772X"
+                                ], 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC51435788630001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20Web%20design&rft.aulast=Watrall&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Watrall%2C%20Ethan&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9780596157722&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51435788630001021</ALMA-BC><grp_id>76801163</grp_id><oa></oa>&rft.eisbn=&rft.edition=1st%20ed..&rft.pub=&rft.place=Sebastopol%2C%20Calif.&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Head%20first%20Web%20design&rft.aulast=Watrall&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Watrall%2C%20Ethan&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9780596157722&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51435788630001021</ALMA-BC><grp_id>76801163</grp_id><oa></oa>&rft.eisbn=&rft.edition=1st%20ed..&rft.pub=&rft.place=Sebastopol%2C%20Calif.&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/317877857&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:51435788630001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/059615772X.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=9780596157722/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }, 
+                        {
+                            "@ID": "84035", 
+                            "@NO": "6", 
+                            "@RANK": "2.481012E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "addau": [
+                                            "Lee, William Hung Kan, 1940-", 
+                                            "Earthquake Hazards Program (Geological Survey)", 
+                                            "Geological Survey (U.S.)"
+                                        ], 
+                                        "aucorp": "International Workshop on Rotational Seismology and Engineering Applications (1st : 2007 : Menlo Park, Calif.)", 
+                                        "aufirst": "William Hung Kan,", 
+                                        "aulast": "Lee", 
+                                        "btitle": "Rotational seismology and engineering applications proceedings for the First International Workshop, Menlo Park, California, U.S.A. -- September 18 to 19, 2007", 
+                                        "cop": "Reston, Va.", 
+                                        "date": "2007", 
+                                        "format": "book", 
+                                        "genre": "unknown", 
+                                        "notes": "Includes bibliographical references (p. 15-17).", 
+                                        "oclcid": "181103542", 
+                                        "pub": "U.S. Geological Survey", 
+                                        "risdate": "2007.", 
+                                        "ristype": "GEN", 
+                                        "seriestitle": "U.S. Geological Survey open-file report ; 2007-1144"
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:51413688840001021", 
+                                        "ilsapiid": "01BC_INST51413688840001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC51413688840001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "51413688840001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c3": "rotationalseismology18to192007", 
+                                        "c4": "2007", 
+                                        "f10": "u s geological survey", 
+                                        "f11": "international workshop on rotational seismology and engineering applications 1st 2007 menlo park calif", 
+                                        "f20": "99107087620001021", 
+                                        "f5": "rotationalseismology18to192007", 
+                                        "f6": "2007", 
+                                        "f7": "rotational seismology and engineering applications proceedings for the first international workshop menlo park california u s a september 18 to 19 2007", 
+                                        "f8": "vau", 
+                                        "f9": "1 electronic text (46 p.) :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-E", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "contributor": [
+                                            "William Hung Kan Lee; 1940-.", 
+                                            "Earthquake Hazards Program (Geological Survey)", 
+                                            "Geological Survey (U.S.)"
+                                        ], 
+                                        "creationdate": "2007.", 
+                                        "creator": "International Workshop on Rotational Seismology and Engineering Applications (1st : 2007 : Menlo Park, Calif.)", 
+                                        "description": [
+                                            "Title from PDF title screen (viewed on Nov. 13, 2007).", 
+                                            "At head of title on HTML title screen: Earthquake Hazards Program.", 
+                                            "\"October 22, 2007.\"", 
+                                            "Includes bibliographical references (p. 15-17)."
+                                        ], 
+                                        "edition": "Version 2.0..", 
+                                        "format": "1 electronic text (46 p.) : HTML, digital, PDF file.", 
+                                        "language": "eng", 
+                                        "lds07": "Reston, Va.", 
+                                        "lds09": "U.S. Geological Survey", 
+                                        "lds11": "99107087620001021", 
+                                        "lds12": "Open-file report", 
+                                        "lds14": "002347805", 
+                                        "lds16": "Mode of access: Internet from the USGS web site. Address as of 11/13/07: http://pubs.usgs.gov/of/2007/1144/ ; current access via PURL.", 
+                                        "lds31": "Open-file report", 
+                                        "publisher": "Reston, Va. : U.S. Geological Survey", 
+                                        "relation": "$$Cseries $$VU.S. Geological Survey open-file report ; 2007-1144.", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Shear waves -- Congresses; Rotational motion (Rigid dynamics) -- Congresses; Seismology -- Congresses", 
+                                        "title": "Rotational seismology and engineering applications proceedings for the First International Workshop, Menlo Park, California, U.S.A. -- September 18 to 19, 2007", 
+                                        "type": "government_document"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "R", 
+                                        "creationdate": "2007", 
+                                        "creatorcontrib": [
+                                            "International Workshop on Rotational Seismology and Engineering Applications", 
+                                            "Lee, William Hung Kan, 1940-", 
+                                            "Earthquake Hazards Program (Geological Survey)", 
+                                            "Geological Survey (U.S.)"
+                                        ], 
+                                        "frbrgroupid": "18678277", 
+                                        "frbrtype": "6", 
+                                        "genre": "Congresses", 
+                                        "language": "eng", 
+                                        "lfc08": "Open-file report", 
+                                        "prefilter": "government_documents", 
+                                        "rsrctype": "government_documents", 
+                                        "topic": [
+                                            "Shear waves\u2013Congresses", 
+                                            "Rotational motion (Rigid dynamics)\u2013Congresses", 
+                                            "Seismology\u2013Congresses"
+                                        ], 
+                                        "toplevel": "online_resources"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Kinternational workshop on rotational seismology and engineering applications 1st 2007 menlo park calif$$AA", 
+                                        "k3": "$$Krotational seismology and engineering applications proceedings for the first international workshop menlo park california u s a september 18 to 19 2007$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktorsrc": "$$Uhttp://purl.access.gpo.gov/GPO/LPS87872$$DOnline Version", 
+                                        "linktouc": "$$Tworldcat_oclc$$DThis item in WorldCat\u00ae", 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "creationdate": "2007", 
+                                        "creatorcontrib": [
+                                            "International Workshop on Rotational Seismology and Engineering Applications (1st : 2007 : Menlo Park, Calif.)", 
+                                            "compiled and edited by W.H.K. Lee ... [et al.].; William Hung Kan Lee", 
+                                            "Lee, William Hung Kan, 1940-.", 
+                                            "Lee, W", 
+                                            "Earthquake Hazards Program (Geological Survey)", 
+                                            "Geological Survey (U.S.)"
+                                        ], 
+                                        "enddate": "20071231", 
+                                        "format": "government_document", 
+                                        "lsr03": "ALMA-BC51413688840001021", 
+                                        "lsr05": [
+                                            "181103542", 
+                                            "(OCoLC)ocn181103542"
+                                        ], 
+                                        "lsr08": "U.S. Geological Survey,", 
+                                        "lsr09": "Reston, Va.", 
+                                        "lsr11": [
+                                            "Open-file report ; 2007-1144", 
+                                            "Open-file report", 
+                                            "Open file report", 
+                                            "U.S. Geological Survey open-file report ; 2007-1144."
+                                        ], 
+                                        "lsr12": [
+                                            "Title from PDF title screen (viewed on Nov. 13, 2007).", 
+                                            "At head of title on HTML title screen: Earthquake Hazards Program.", 
+                                            "\"October 22, 2007.\"", 
+                                            "Mode of access: Internet from the USGS web site. Address as of 11/13/07: http://pubs.usgs.gov/of/2007/1144/ ; current access via PURL."
+                                        ], 
+                                        "lsr20": [
+                                            "002347805", 
+                                            "bc_aleph002347805", 
+                                            "99107087620001021"
+                                        ], 
+                                        "lsr31": "Open-file report", 
+                                        "recordid": "ALMA-BC51413688840001021", 
+                                        "rsrctype": "government_document", 
+                                        "scope": [
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "searchscope": [
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "20070101", 
+                                        "subject": [
+                                            "Shear waves Congresses.", 
+                                            "Rotational motion (Rigid dynamics) Congresses.", 
+                                            "Seismology Congresses."
+                                        ], 
+                                        "title": "Rotational seismology and engineering applications proceedings for the First International Workshop, Menlo Park, California, U.S.A. -- September 18 to 19, 2007 /"
+                                    }, 
+                                    "sort": {
+                                        "author": "international workshop on rotational seismology and engineering applications", 
+                                        "creationdate": "2007", 
+                                        "title": "rotational seismology and engineering applications proceedings for the first international workshop menlo park california u s a september 18 to 19 2007"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A45IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=,view=&svc_dat=viewit&u.ignore_date_coverage=true&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-E"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktorsrc": "http://purl.access.gpo.gov/GPO/LPS87872", 
+                                "sear:linktouc": "http://bc.worldcat.org/search?q=no:181103542", 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC51413688840001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Rotational%20seismology%20and%20engineering%20applications%20proceedings%20for%20the%20First%20International%20Workshop%2C%20Menlo%20Park%2C%20California%2C%20U.S.A.%20--%20September%2018%20to%2019%2C%202007&rft.aulast=Lee&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=International%20Workshop%20on%20Rotational%20Seismology%20and%20Engineering%20Applications%20(1st%20:%202007%20:%20Menlo%20Park%2C%20Calif.)&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51413688840001021</ALMA-BC><grp_id>18678277</grp_id><oa></oa>&rft.eisbn=&rft.edition=Version%202.0..&rft.pub=&rft.place=Reston%2C%20Va.&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Rotational%20seismology%20and%20engineering%20applications%20proceedings%20for%20the%20First%20International%20Workshop%2C%20Menlo%20Park%2C%20California%2C%20U.S.A.%20--%20September%2018%20to%2019%2C%202007&rft.aulast=Lee&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=International%20Workshop%20on%20Rotational%20Seismology%20and%20Engineering%20Applications%20(1st%20:%202007%20:%20Menlo%20Park%2C%20Calif.)&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51413688840001021</ALMA-BC><grp_id>18678277</grp_id><oa></oa>&rft.eisbn=&rft.edition=Version%202.0..&rft.pub=&rft.place=Reston%2C%20Va.&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/181103542&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:51413688840001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "2654765", 
+                            "@NO": "7", 
+                            "@RANK": "1.8830156E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "addau": [
+                                            "United States. Congress. House. Committee on International Relations", 
+                                            "United States. Congress. Senate. Committee on Foreign Relations", 
+                                            "United States. Congress. House. Committee on Foreign Affairs"
+                                        ], 
+                                        "addtitle": "Legislation on foreign relations", 
+                                        "aucorp": "United States", 
+                                        "btitle": "Legislation on foreign relations through ...", 
+                                        "cop": "Washington", 
+                                        "date": "1976", 
+                                        "eissn": "0736-5985", 
+                                        "format": [
+                                            "book", 
+                                            "journal"
+                                        ], 
+                                        "genre": [
+                                            "unknown", 
+                                            "journal"
+                                        ], 
+                                        "issn": "0736-5985", 
+                                        "jtitle": "Legislation on foreign relations through ...", 
+                                        "lccn": "2009230938", 
+                                        "oclcid": "54978595", 
+                                        "pub": "U.S. G.P.O", 
+                                        "risdate": "1976", 
+                                        "ristype": [
+                                            "GEN", 
+                                            "JOUR"
+                                        ], 
+                                        "seriestitle": "S. prt"
+                                    }, 
+                                    "browse": null, 
+                                    "control": {
+                                        "almaid": [
+                                            "$$V01BC_INST:51397364810001021$$O01BC_INST:51397364810001021", 
+                                            "$$V01BC_INST:51422652640001021$$O01BC_INST:51422652640001021"
+                                        ], 
+                                        "ilsapiid": [
+                                            "$$V01BC_INST51397364810001021$$OALMA-BC51397364810001021", 
+                                            "$$V01BC_INST51422652640001021$$OALMA-BC51422652640001021"
+                                        ], 
+                                        "originalsourceid": [
+                                            "$$V01BC_INST$$OALMA-BC51397364810001021", 
+                                            "$$V01BC_INST$$OALMA-BC51422652640001021"
+                                        ], 
+                                        "recordid": "dedupmrg81309597", 
+                                        "sourceformat": [
+                                            "$$VMARC21$$OALMA-BC51397364810001021", 
+                                            "$$VMARC21$$OALMA-BC51422652640001021"
+                                        ], 
+                                        "sourceid": [
+                                            "$$VALMA-BC$$OALMA-BC51397364810001021", 
+                                            "$$VALMA-BC$$OALMA-BC51422652640001021"
+                                        ], 
+                                        "sourcerecordid": [
+                                            "$$V51397364810001021$$OALMA-BC51397364810001021", 
+                                            "$$V51422652640001021$$OALMA-BC51422652640001021"
+                                        ], 
+                                        "sourcesystem": [
+                                            "$$VAlma$$OALMA-BC51397364810001021", 
+                                            "$$VAlma$$OALMA-BC51422652640001021"
+                                        ]
+                                    }, 
+                                    "dedup": {
+                                        "c1": "2009230938", 
+                                        "c3": "legislationonforeignonsthrough", 
+                                        "f1": "2009230938", 
+                                        "f10": "washington", 
+                                        "f11": "united states", 
+                                        "f20": "99109270370001021", 
+                                        "f6": "1976", 
+                                        "f7": "legislation on foreign relations through", 
+                                        "f8": "legislation on foreign relations through", 
+                                        "f9": "dcu", 
+                                        "t": "2"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": [
+                                            "$$VAlma-E$$OALMA-BC51397364810001021", 
+                                            "$$VAlma-E$$OALMA-BC51422652640001021"
+                                        ], 
+                                        "institution": [
+                                            "$$VBCL$$OALMA-BC51397364810001021", 
+                                            "$$VBCL$$OALMA-BC51422652640001021"
+                                        ]
+                                    }, 
+                                    "display": {
+                                        "availpnx": "unavailable", 
+                                        "contributor": [
+                                            "United States. Congress. House. Committee on International Relations.", 
+                                            "United States. Congress. Senate. Committee on Foreign Relations.", 
+                                            "United States. Congress. House. Committee on Foreign Affairs."
+                                        ], 
+                                        "creationdate": "1976", 
+                                        "creator": "United States.", 
+                                        "description": [
+                                            "At head of title, 1977-19 : Committee on International Relations, Committee on Foreign Relations; <1984>-19 : Committee on Foreign Relations, Committee on Foreign Affairs; <1994->: Committee on Foreign Relations, Committee on International Relations.", 
+                                            "\"Joint committee print.\"", 
+                                            "Description based on: 2000, vol. 1A; title from first screen of 936 in PDF file (Committee website, viewed Apr. 18, 2004).", 
+                                            "Latest issue consulted: 2005, vol. 3."
+                                        ], 
+                                        "format": "v. : digital, PDF, ASCII text file.", 
+                                        "language": "eng", 
+                                        "lds02": "Legislation on foreign relations", 
+                                        "lds07": "Washington", 
+                                        "lds09": "U.S. G.P.O", 
+                                        "lds11": [
+                                            "99109270370001021", 
+                                            "99132852670001021"
+                                        ], 
+                                        "lds12": [
+                                            "<1981>-1992; 1994-<1996>; 1997-1999; 2001-: S. prt.", 
+                                            "<1981>-1992; 1994-<1996>; 1997-1999; 2001: S. prt."
+                                        ], 
+                                        "lds14": "002619260", 
+                                        "lds15": "Legislation on foreign relations", 
+                                        "lds16": [
+                                            "Mode of Access: Internet at the GPO Access Congressional prints web site. Address as of 6/01/09: http://www.gpoaccess.gov/cprints/index.html ; current access is available via PURL.", 
+                                            "Mode of Access: GPO Access Web site. Address as of 6/01/09: http://www.gpoaccess.gov/cprints/index.html ; current access is available via PURL."
+                                        ], 
+                                        "lds31": [
+                                            "<1981>-1992; 1994-<1996>; 1997-1999; 2001-: S. prt", 
+                                            "<1981>-1992; 1994-<1996>; 1997-1999; 2001: S. prt"
+                                        ], 
+                                        "lds32": "Legislation on foreign relations through ... (Online)", 
+                                        "publisher": "Washington : U.S. G.P.O.", 
+                                        "relation": [
+                                            "$$Cseries $$VS. prt.", 
+                                            "Legislation on foreign relations through ..."
+                                        ], 
+                                        "source": [
+                                            "$$VALMA-BC$$OALMA-BC51397364810001021", 
+                                            "$$VALMA-BC$$OALMA-BC51422652640001021"
+                                        ], 
+                                        "subject": "United States -- Foreign relations -- Law and legislation -- Periodicals", 
+                                        "title": "Legislation on foreign relations through ...", 
+                                        "type": "government_document", 
+                                        "unititle": "Legislation on foreign relations through ... (Online)"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "KF4650.A29"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "L", 
+                                        "creationdate": "1976", 
+                                        "creatorcontrib": [
+                                            "United States", 
+                                            "United States. Congress. House. Committee on International Relations", 
+                                            "United States. Congress. Senate. Committee on Foreign Relations", 
+                                            "United States. Congress. House. Committee on Foreign Affairs"
+                                        ], 
+                                        "frbrgroupid": "70240023", 
+                                        "frbrtype": "6", 
+                                        "genre": "Periodicals", 
+                                        "language": "eng", 
+                                        "lfc08": [
+                                            "<1981>-1992; 1994-<1996>; 1997-1999; 2001-: S. prt.", 
+                                            "<1981>-1992; 1994-<1996>; 1997-1999; 2001: S. prt."
+                                        ], 
+                                        "prefilter": [
+                                            "government_documents", 
+                                            "journals"
+                                        ], 
+                                        "rsrctype": [
+                                            "government_documents", 
+                                            "journals"
+                                        ], 
+                                        "topic": "United States\u2013Foreign relations\u2013Law and legislation\u2013Periodicals", 
+                                        "toplevel": "online_resources"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Kunited states$$AA", 
+                                        "k3": "$$Klegislation on foreign relations through online$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktorsrc": "$$Uhttp://purl.access.gpo.gov/GPO/LPS5517$$DOnline Version", 
+                                        "linktouc": [
+                                            "$$Tworldcat_oclc$$DThis item in WorldCat\u00ae", 
+                                            "$$Tworldcat_oclc$$DThis item in WorldCat\u00ae"
+                                        ], 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": [
+                                            "$$V$$Topenurl_journal$$OALMA-BC51397364810001021", 
+                                            "$$V$$Topenurl_journal$$OALMA-BC51422652640001021"
+                                        ], 
+                                        "openurlfulltext": [
+                                            "$$V$$Topenurlfull_journal$$OALMA-BC51397364810001021", 
+                                            "$$V$$Topenurlfull_journal$$OALMA-BC51422652640001021"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "Legislation on foreign relations through ...", 
+                                        "alttitle": [
+                                            "Legislation on foreign relations through ... (Online)", 
+                                            "Legislation on foreign relations"
+                                        ], 
+                                        "creationdate": [
+                                            "1976", 
+                                            "9999"
+                                        ], 
+                                        "creatorcontrib": [
+                                            "United States.", 
+                                            "Committee on Foreign Relations, Committee on International Relations.", 
+                                            "United States. Congress. House. Committee on International Relations.", 
+                                            "United States. Congress. Senate. Committee on Foreign Relations.", 
+                                            "United States. Congress. House. Committee on Foreign Affairs."
+                                        ], 
+                                        "enddate": "19761231", 
+                                        "format": [
+                                            "government_document", 
+                                            "journal"
+                                        ], 
+                                        "issn": "0736-5985", 
+                                        "lsr03": [
+                                            "ALMA-BC51397364810001021", 
+                                            "ALMA-BC51422652640001021"
+                                        ], 
+                                        "lsr05": [
+                                            "54978595", 
+                                            "(OCoLC)ocm54978595"
+                                        ], 
+                                        "lsr06": [
+                                            "ISSN RECORD", 
+                                            "ISSNRECORD", 
+                                            "KF4650.A29"
+                                        ], 
+                                        "lsr08": "U.S. G.P.O.", 
+                                        "lsr09": "Washington", 
+                                        "lsr11": [
+                                            "<1981>-1992; 1994-<1996>; 1997-1999; 2001-: S. prt.", 
+                                            "<1981>-1992; 1994-<1996>; 1997-1999; 2001: S. prt.", 
+                                            "1981 1992 1994 1996 1997 1999 2001 S prt", 
+                                            "S. prt."
+                                        ], 
+                                        "lsr12": [
+                                            "At head of title, 1977-19 : Committee on International Relations, Committee on Foreign Relations; <1984>-19 : Committee on Foreign Relations, Committee on Foreign Affairs; <1994->: Committee on Foreign Relations, Committee on International Relations.", 
+                                            "Description based on: 2000, vol. 1A; title from first screen of 936 in PDF file (Committee website, viewed Apr. 18, 2004).", 
+                                            "Latest issue consulted: 2005, vol. 3.", 
+                                            "Mode of Access: Internet at the GPO Access Congressional prints web site. Address as of 6/01/09: http://www.gpoaccess.gov/cprints/index.html ; current access is available via PURL.", 
+                                            "At head of title, 1977-19 : Committee on International Relations, Committee on Foreign Relations; <1984>-19 , <2008-> : Committee on Foreign Relations, Committee on Foreign Affairs; <1994-20 >: Committee on Foreign Relations, Committee on International Relations.", 
+                                            "\"Joint committee print.\"", 
+                                            "Mode of Access: GPO Access Web site. Address as of 6/01/09: http://www.gpoaccess.gov/cprints/index.html ; current access is available via PURL."
+                                        ], 
+                                        "lsr20": [
+                                            "002619260", 
+                                            "bc_aleph002619260", 
+                                            "99109270370001021", 
+                                            "99132852670001021"
+                                        ], 
+                                        "lsr31": [
+                                            "<1981>-1992; 1994-<1996>; 1997-1999; 2001-: S. prt", 
+                                            "<1981>-1992; 1994-<1996>; 1997-1999; 2001: S. prt"
+                                        ], 
+                                        "lsr32": "Legislation on foreign relations through ... (Online)", 
+                                        "recordid": [
+                                            "ALMA-BC51397364810001021", 
+                                            "ALMA-BC51422652640001021"
+                                        ], 
+                                        "rsrctype": [
+                                            "government_document", 
+                                            "journal"
+                                        ], 
+                                        "scope": [
+                                            "ALMA-BC", 
+                                            "BCL", 
+                                            "AZBCL"
+                                        ], 
+                                        "searchscope": [
+                                            "ALMA-BC", 
+                                            "BCL", 
+                                            "AZBCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "19760101", 
+                                        "subject": "United States Foreign relations Law and legislation Periodicals.", 
+                                        "title": "Legislation on foreign relations through ..."
+                                    }, 
+                                    "sort": {
+                                        "author": "united states", 
+                                        "creationdate": "1976", 
+                                        "title": "legislation on foreign relations through"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A45IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21360494740001021,ie=01BC_INST:51435784820001021,language=,view=&svc_dat=viewit&u.ignore_date_coverage=true&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-E"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktorsrc": "http://purl.access.gpo.gov/GPO/LPS5517", 
+                                "sear:linktouc": "http://bc.worldcat.org/search?q=no:54978595", 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC51397364810001021", 
+                                "sear:openurl": [
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=Legislation%20on%20foreign%20relations%20through%20...&rft.btitle=Legislation%20on%20foreign%20relations%20through%20...&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=United%20States&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=0736-5985&rft.eissn=0736-5985&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51397364810001021</ALMA-BC><grp_id>70240023</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Washington&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=Legislation%20on%20foreign%20relations%20through%20...&rft.btitle=Legislation%20on%20foreign%20relations%20through%20...&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=United%20States&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=0736-5985&rft.eissn=0736-5985&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51422652640001021</ALMA-BC><grp_id>70240023</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Washington&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin"
+                                ], 
+                                "sear:openurlfulltext": [
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=Legislation%20on%20foreign%20relations%20through%20...&rft.btitle=Legislation%20on%20foreign%20relations%20through%20...&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=United%20States&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=0736-5985&rft.eissn=0736-5985&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51397364810001021</ALMA-BC><grp_id>70240023</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Washington&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2009230938&rft_id=info:oclcnum/54978595&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:51397364810001021,ie=01BC_INST:51422652640001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                    "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T18%3A50%3A46IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=Legislation%20on%20foreign%20relations%20through%20...&rft.btitle=Legislation%20on%20foreign%20relations%20through%20...&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=United%20States&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=0736-5985&rft.eissn=0736-5985&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51422652640001021</ALMA-BC><grp_id>70240023</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Washington&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2009230938&rft_id=info:oclcnum/54978595&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:51397364810001021,ie=01BC_INST:51422652640001021,language=&svc_dat=viewit&req.skin=BC%20skin"
+                                ], 
+                                "sear:thumbnail": null
+                            }
+                        }
+                    ]
+                }, 
+                "sear:FACETLIST": {
+                    "@ACCURATE_COUNTERS": "true", 
+                    "sear:FACET": [
+                        {
+                            "@COUNT": "15", 
+                            "@NAME": "creator", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "United States", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Earthquake Hazards Program (Geological Survey)", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "International Workshop on Rotational Seismology and Engineering Applications", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Safari Books Online (Firm)", 
+                                    "@VALUE": "5"
+                                }, 
+                                {
+                                    "@KEY": "Lee, William Hung Kan, 1940-", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Watrall, Ethan", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Robson, Elisabeth", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Geological Survey (U.S.)", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "United States. Congress. House. Committee on Foreign Affairs", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Freeman, Elisabeth", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "United States. Congress. House. Committee on International Relations", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "United States. Congress. Senate. Committee on Foreign Relations", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Freeman, Eric, 1965-", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "Morrison, Michael, 1970-", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Siarto, Jeff", 
+                                    "@VALUE": "1"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "1", 
+                            "@NAME": "lang", 
+                            "sear:FACET_VALUES": {
+                                "@KEY": "eng", 
+                                "@VALUE": "7"
+                            }
+                        }, 
+                        {
+                            "@COUNT": "4", 
+                            "@NAME": "rtype", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "books", 
+                                    "@VALUE": "5"
+                                }, 
+                                {
+                                    "@KEY": "journals", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "government_documents", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "ebooks", 
+                                    "@VALUE": "5"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "13", 
+                            "@NAME": "topic", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "Web sites", 
+                                    "@VALUE": "4"
+                                }, 
+                                {
+                                    "@KEY": "United States", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Shear waves", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Internet programming", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Rotational motion (Rigid dynamics)", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "XHTML (Document markup language)", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Seismology", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Web site development", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "HTML (Document markup language)", 
+                                    "@VALUE": "4"
+                                }, 
+                                {
+                                    "@KEY": "JavaScript (Computer program language)", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Web publishing", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Application software", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Cascading style sheets", 
+                                    "@VALUE": "2"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "2", 
+                            "@NAME": "tlevel", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "online_resources", 
+                                    "@VALUE": "7"
+                                }, 
+                                {
+                                    "@KEY": "available", 
+                                    "@VALUE": "2"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "4", 
+                            "@NAME": "pfilter", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "books", 
+                                    "@VALUE": "5"
+                                }, 
+                                {
+                                    "@KEY": "journals", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "government_documents", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "ebooks", 
+                                    "@VALUE": "5"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "7", 
+                            "@NAME": "creationdate", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "2008", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2009", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2006", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2007", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "1976", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2012", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2011", 
+                                    "@VALUE": "1"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "3", 
+                            "@NAME": "genre", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "Congresses", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Periodicals", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Electronic books", 
+                                    "@VALUE": "2"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "1", 
+                            "@NAME": "library", 
+                            "sear:FACET_VALUES": {
+                                "@KEY": "ONL", 
+                                "@VALUE": "2"
+                            }
+                        }, 
+                        {
+                            "@COUNT": "1", 
+                            "@NAME": "local1", 
+                            "sear:FACET_VALUES": {
+                                "@KEY": "SAFARI BOOKS ONLINE", 
+                                "@VALUE": "5"
+                            }
+                        }, 
+                        {
+                            "@COUNT": "5", 
+                            "@NAME": "local8", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "Head first series", 
+                                    "@VALUE": "4"
+                                }, 
+                                {
+                                    "@KEY": "O'Reilly's Head first series", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "<1981>-1992; 1994-<1996>; 1997-1999; 2001-: S. prt.", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Open-file report", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "<1981>-1992; 1994-<1996>; 1997-1999; 2001: S. prt.", 
+                                    "@VALUE": "1"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "1", 
+                            "@NAME": "local10", 
+                            "sear:FACET_VALUES": {
+                                "@KEY": "QA76.7", 
+                                "@VALUE": "2"
+                            }
+                        }
+                    ]
+                }, 
+                "sear:QUERYTRANSFORMS": null
+            }, 
+            "sear:searchToken": "0"
+        }
+    }
+}

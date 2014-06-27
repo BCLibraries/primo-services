@@ -1,0 +1,1958 @@
+{
+    "sear:SEGMENTS": {
+        "@xmlns:sear": "http://www.exlibrisgroup.com/xsd/jaguar/search", 
+        "sear:JAGROOT": {
+            "sear:RESULT": {
+                "sear:DOCSET": {
+                    "@FIRSTHIT": "0", 
+                    "@HIT_TIME": "46", 
+                    "@LASTHIT": "9", 
+                    "@TOTALHITS": "7386", 
+                    "@TOTAL_TIME": "137", 
+                    "sear:DOC": [
+                        {
+                            "@ID": "306089098", 
+                            "@LOCAL": "false", 
+                            "@NO": "1", 
+                            "@RANK": "0.5", 
+                            "@SEARCH_ENGINE": "PrimoCentralThirdNode", 
+                            "@SEARCH_ENGINE_TYPE": "Primo Central Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "atitle": "Populism in Latin America", 
+                                        "date": "20000901", 
+                                        "doi": "10.5860/CHOICE.38-0561", 
+                                        "eissn": "1523-8253", 
+                                        "epage": "38-0561", 
+                                        "genre": "article", 
+                                        "issn": "0009-4978", 
+                                        "issue": "01", 
+                                        "jtitle": "Choice Reviews Online", 
+                                        "pages": "38-0561-38-0561", 
+                                        "risdate": "20000901", 
+                                        "ristype": "JOUR", 
+                                        "spage": "38-0561", 
+                                        "volume": "38"
+                                    }, 
+                                    "control": {
+                                        "recordid": "TN_crossref10.5860/CHOICE.38-0561", 
+                                        "sourceformat": "XML", 
+                                        "sourceid": "crossref", 
+                                        "sourcerecordid": "10.5860/CHOICE.38-0561", 
+                                        "sourcesystem": "Other"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Remote Search Resource", 
+                                        "fulltext": "fulltext"
+                                    }, 
+                                    "display": {
+                                        "identifier": "<b>ISSN:</b> 0009-4978 ; <b>E-ISSN:</b> 1523-8253 ; <b>DOI:</b> http://dx.doi.org/10.5860/CHOICE.38-0561", 
+                                        "ispartof": "Choice Reviews Online, 2000, Vol.38(01), pp.38-0561-38-0561", 
+                                        "language": "eng", 
+                                        "lds40": "20000901", 
+                                        "lds41": "20000901", 
+                                        "lds43": "20000901", 
+                                        "lds45": "20000901", 
+                                        "lds50": "peer_reviewed", 
+                                        "source": "CrossRef", 
+                                        "title": "Populism in Latin America", 
+                                        "type": "article"
+                                    }, 
+                                    "facets": {
+                                        "creationdate": "2000", 
+                                        "frbrgroupid": "8986511341733439485", 
+                                        "frbrtype": "6", 
+                                        "jtitle": "Choice Reviews Online", 
+                                        "language": "eng", 
+                                        "prefilter": "articles", 
+                                        "rsrctype": "articles", 
+                                        "toplevel": "peer_reviewed"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "2000", 
+                                        "k2": [
+                                            "00094978", 
+                                            "15238253"
+                                        ], 
+                                        "k3": "10.5860/CHOICE.38-0561", 
+                                        "k4": "38", 
+                                        "k5": "01", 
+                                        "k6": "38", 
+                                        "k7": "choice reviews online", 
+                                        "k8": "populism in latin america", 
+                                        "k9": "populisminlatinamerica", 
+                                        "t": "2"
+                                    }, 
+                                    "links": {
+                                        "addlink": "$$Uhttps://exlibris-pub.s3.amazonaws.com/aboutCrossref.html$$DView CrossRef copyright notice", 
+                                        "openurl": "$$Topenurl_article", 
+                                        "openurlfulltext": "$$Topenurlfull_article"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1", 
+                                        "pcg_type": "aggregator_crossref"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "Choice Reviews Online", 
+                                        "creationdate": "2000", 
+                                        "general": [
+                                            "English", 
+                                            "10.5860/CHOICE.38-0561"
+                                        ], 
+                                        "issn": [
+                                            "0009-4978", 
+                                            "00094978", 
+                                            "1523-8253", 
+                                            "15238253"
+                                        ], 
+                                        "recordid": "crossref10.5860/CHOICE.38-0561", 
+                                        "rsrctype": "article", 
+                                        "scope": [
+                                            "crossref_rest", 
+                                            "CrossRef", 
+                                            "Crossref", 
+                                            "crossref"
+                                        ], 
+                                        "searchscope": [
+                                            "crossref_rest", 
+                                            "CrossRef", 
+                                            "Crossref", 
+                                            "crossref"
+                                        ], 
+                                        "sourceid": "crossref", 
+                                        "title": "Populism in Latin America"
+                                    }, 
+                                    "sort": {
+                                        "creationdate": "20000901", 
+                                        "title": "Populism in Latin America"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.date=20000901&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=&10.5860/CHOICE.38-0561</crossref>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/&svc_dat=viewit&req.skin=BC%20skin", 
+                                "@GetIt2": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=;&rft.eisbn=&rft.edition=&rft.pub=&amp;rft.place=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&lt;crossref&gt;10.5860/CHOICE.38-0561&lt;/crossref&gt;,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@deliveryCategory": "Remote Search Resource"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:addlink": "https://exlibris-pub.s3.amazonaws.com/aboutCrossref.html", 
+                                "sear:openurl": "errorPage", 
+                                "sear:openurlfulltext": "errorPage", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "415656936", 
+                            "@LOCAL": "false", 
+                            "@NO": "2", 
+                            "@RANK": "0.25", 
+                            "@SEARCH_ENGINE": "PrimoCentralThirdNode", 
+                            "@SEARCH_ENGINE_TYPE": "Primo Central Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "atitle": "Populism in latin America", 
+                                        "au": "Pinto, Luis", 
+                                        "aufirst": [
+                                            "Luis", 
+                                            "A.", 
+                                            "Costa"
+                                        ], 
+                                        "aulast": "Pinto", 
+                                        "cop": "New York", 
+                                        "date": "197306", 
+                                        "doi": "10.1007/BF02810001", 
+                                        "eissn": "1936-6167", 
+                                        "epage": "212", 
+                                        "genre": "article", 
+                                        "issn": "0039-3606", 
+                                        "issue": "2", 
+                                        "jtitle": "Studies in Comparative International Development", 
+                                        "pub": "Springer-Verlag", 
+                                        "risdate": "197306", 
+                                        "ristype": "JOUR", 
+                                        "spage": "208", 
+                                        "stitle": "St Comp Int Dev", 
+                                        "volume": "8"
+                                    }, 
+                                    "control": {
+                                        "recordid": "TN_springer_jour10.1007/BF02810001", 
+                                        "sourceid": "springer_jour", 
+                                        "sourcerecordid": "10.1007/BF02810001", 
+                                        "sourcesystem": "Other"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Remote Search Resource", 
+                                        "fulltext": "fulltext"
+                                    }, 
+                                    "display": {
+                                        "creator": "Pinto, Luis", 
+                                        "identifier": "<b>ISSN: </b>0039-3606 ; <b>E-ISSN: </b>1936-6167 ; <b>DOI: </b>10.1007/BF02810001", 
+                                        "ispartof": "Studies in Comparative International Development, 1973, Vol.8(2), pp.208-212", 
+                                        "language": "eng", 
+                                        "lds50": "peer_reviewed", 
+                                        "source": "Springer Science & Business Media B.V.", 
+                                        "title": "Populism in latin America", 
+                                        "type": "article", 
+                                        "version": "2"
+                                    }, 
+                                    "facets": {
+                                        "collection": "SpringerLink", 
+                                        "creationdate": "1973", 
+                                        "creatorcontrib": "Pinto, Luis", 
+                                        "frbrgroupid": "8542530259061369967", 
+                                        "frbrtype": "5", 
+                                        "jtitle": "Studies In Comparative International Development", 
+                                        "language": "eng", 
+                                        "prefilter": "articles", 
+                                        "rsrctype": "articles", 
+                                        "toplevel": "peer_reviewed"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "1973", 
+                                        "k15": "luispinto", 
+                                        "k16": "pintoluis", 
+                                        "k2": [
+                                            "00393606", 
+                                            "19366167"
+                                        ], 
+                                        "k3": "10.1007/BF02810001", 
+                                        "k4": "8", 
+                                        "k5": "2", 
+                                        "k6": "208", 
+                                        "k7": "studies in comparative international development", 
+                                        "k8": "populism in latin america", 
+                                        "k9": "populisminlatinamerica", 
+                                        "t": "2"
+                                    }, 
+                                    "links": {
+                                        "openurl": "$$Topenurl_article", 
+                                        "openurlfulltext": "$$Topenurlfull_article"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1", 
+                                        "pcg_type": "publisher"
+                                    }, 
+                                    "search": {
+                                        "addtitle": [
+                                            "Studies in Comparative International Development", 
+                                            "St Comp Int Dev"
+                                        ], 
+                                        "creationdate": "1973", 
+                                        "creatorcontrib": "Pinto, Luis, A.", 
+                                        "general": [
+                                            "10.1007/BF02810001", 
+                                            "English", 
+                                            "Springer Science & Business Media B.V."
+                                        ], 
+                                        "issn": [
+                                            "1936-6167", 
+                                            "19366167", 
+                                            "0039-3606", 
+                                            "00393606"
+                                        ], 
+                                        "recordid": "springer_jour10.1007/BF02810001", 
+                                        "rsrctype": "article", 
+                                        "scope": "springer_journals_complete", 
+                                        "searchscope": "springer_journals_complete", 
+                                        "sourceid": "springer_jour", 
+                                        "title": "Populism in latin America"
+                                    }, 
+                                    "sort": {
+                                        "author": "Pinto, Luis", 
+                                        "creationdate": "19730600", 
+                                        "title": "Populism in latin America"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.date=20000901&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=&10.5860/CHOICE.38-0561</crossref>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/&svc_dat=viewit&req.skin=BC%20skin", 
+                                "@GetIt2": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=;&rft.eisbn=&rft.edition=&rft.pub=&amp;rft.place=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&lt;crossref&gt;10.5860/CHOICE.38-0561&lt;/crossref&gt;,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@deliveryCategory": "Remote Search Resource"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:openurl": "errorPage", 
+                                "sear:openurlfulltext": "errorPage", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "235721801", 
+                            "@LOCAL": "false", 
+                            "@NO": "3", 
+                            "@RANK": "0.03284686", 
+                            "@SEARCH_ENGINE": "PrimoCentralThirdNode", 
+                            "@SEARCH_ENGINE_TYPE": "Primo Central Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "atitle": "Resisting Populism in Latin America", 
+                                        "au": "Gardels, Nathan", 
+                                        "aufirst": "NATHAN", 
+                                        "aulast": "GARDELS", 
+                                        "cop": "Oxford, UK", 
+                                        "date": "201307", 
+                                        "doi": "10.1111/npqu.11391", 
+                                        "eissn": "1540-5842", 
+                                        "epage": "65", 
+                                        "issn": "0893-7850", 
+                                        "issue": "3", 
+                                        "jtitle": "New Perspectives Quarterly", 
+                                        "pub": "Blackwell Publishing Ltd", 
+                                        "risdate": "201307", 
+                                        "ristype": "JOUR", 
+                                        "spage": "61", 
+                                        "volume": "30"
+                                    }, 
+                                    "control": {
+                                        "recordid": "TN_wj10.1111/npqu.11391", 
+                                        "sourceid": "wj", 
+                                        "sourcerecordid": "10.1111/npqu.11391", 
+                                        "sourcesystem": "Other"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Remote Search Resource", 
+                                        "fulltext": "fulltext"
+                                    }, 
+                                    "display": {
+                                        "creator": "Gardels, Nathan", 
+                                        "identifier": "<b>ISSN: </b>0893-7850 ; <b>E-ISSN: </b>1540-5842 ; <b>DOI: </b>10.1111/npqu.11391", 
+                                        "ispartof": "New Perspectives Quarterly, 2013, Vol.30(3), pp.61-65", 
+                                        "lds50": "peer_reviewed", 
+                                        "source": "John Wiley & Sons, Inc.", 
+                                        "title": "Resisting Populism in Latin America", 
+                                        "type": "article", 
+                                        "version": "4"
+                                    }, 
+                                    "facets": {
+                                        "collection": "Wiley Online Library", 
+                                        "creationdate": "2013", 
+                                        "creatorcontrib": "Gardels, Nathan", 
+                                        "frbrgroupid": "9088244019568649400", 
+                                        "frbrtype": "5", 
+                                        "jtitle": "New Perspectives Quarterly", 
+                                        "prefilter": "articles", 
+                                        "rsrctype": "articles", 
+                                        "toplevel": "peer_reviewed"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "2013", 
+                                        "k12": "resistingpopulisminlatina", 
+                                        "k15": "nathangardels", 
+                                        "k16": "gardelsnathan", 
+                                        "k2": [
+                                            "08937850", 
+                                            "15405842"
+                                        ], 
+                                        "k3": "10.1111/npqu.11391", 
+                                        "k4": "30", 
+                                        "k5": "3", 
+                                        "k6": "61", 
+                                        "k7": "new perspectives quarterly", 
+                                        "k8": "resisting populism in latin america", 
+                                        "k9": "resistingpopulisminlerica", 
+                                        "t": "2"
+                                    }, 
+                                    "links": {
+                                        "openurl": "$$Topenurl_article", 
+                                        "openurlfulltext": "$$Topenurlfull_article"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1", 
+                                        "pcg_type": "publisher"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "New Perspectives Quarterly", 
+                                        "creationdate": "2013", 
+                                        "creatorcontrib": "Gardels, Nathan", 
+                                        "general": [
+                                            "Blackwell Publishing Ltd", 
+                                            "10.1111/npqu.11391", 
+                                            "Wiley Online Library"
+                                        ], 
+                                        "issn": [
+                                            "0893-7850", 
+                                            "08937850", 
+                                            "1540-5842", 
+                                            "15405842"
+                                        ], 
+                                        "recordid": "wj10.1111/npqu.11391", 
+                                        "rsrctype": "article", 
+                                        "scope": [
+                                            "wj", 
+                                            "wiley"
+                                        ], 
+                                        "searchscope": [
+                                            "wj", 
+                                            "wiley"
+                                        ], 
+                                        "sourceid": "wj", 
+                                        "title": "Resisting Populism in Latin America"
+                                    }, 
+                                    "sort": {
+                                        "author": "Gardels, Nathan", 
+                                        "creationdate": "20130700", 
+                                        "title": "Resisting Populism in Latin America"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.date=20000901&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=&10.5860/CHOICE.38-0561</crossref>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/&svc_dat=viewit&req.skin=BC%20skin", 
+                                "@GetIt2": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=;&rft.eisbn=&rft.edition=&rft.pub=&amp;rft.place=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&lt;crossref&gt;10.5860/CHOICE.38-0561&lt;/crossref&gt;,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@deliveryCategory": "Remote Search Resource"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:openurl": "errorPage", 
+                                "sear:openurlfulltext": "errorPage", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "280649558", 
+                            "@LOCAL": "false", 
+                            "@NO": "4", 
+                            "@RANK": "0.028736169", 
+                            "@SEARCH_ENGINE": "PrimoCentralThirdNode", 
+                            "@SEARCH_ENGINE_TYPE": "Primo Central Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "atitle": "Gender and populism in Latin America: passionate politics", 
+                                        "date": "20110501", 
+                                        "doi": "10.5860/CHOICE.48-5327", 
+                                        "eissn": "1523-8253", 
+                                        "epage": "48-5327", 
+                                        "genre": "article", 
+                                        "issn": "0009-4978", 
+                                        "issue": "09", 
+                                        "jtitle": "Choice Reviews Online", 
+                                        "pages": "48-5327-48-5327", 
+                                        "risdate": "20110501", 
+                                        "ristype": "JOUR", 
+                                        "spage": "48-5327", 
+                                        "volume": "48"
+                                    }, 
+                                    "control": {
+                                        "recordid": "TN_crossref10.5860/CHOICE.48-5327", 
+                                        "sourceformat": "XML", 
+                                        "sourceid": "crossref", 
+                                        "sourcerecordid": "10.5860/CHOICE.48-5327", 
+                                        "sourcesystem": "Other"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Remote Search Resource", 
+                                        "fulltext": "fulltext"
+                                    }, 
+                                    "display": {
+                                        "identifier": "<b>ISSN:</b> 0009-4978 ; <b>E-ISSN:</b> 1523-8253 ; <b>DOI:</b> http://dx.doi.org/10.5860/CHOICE.48-5327", 
+                                        "ispartof": "Choice Reviews Online, 2011, Vol.48(09), pp.48-5327-48-5327", 
+                                        "language": "eng", 
+                                        "lds40": "20110501", 
+                                        "lds41": "20110501", 
+                                        "lds43": "20110501", 
+                                        "lds45": "20110501", 
+                                        "lds50": "peer_reviewed", 
+                                        "source": "CrossRef", 
+                                        "title": "Gender and populism in Latin America: passionate politics", 
+                                        "type": "article"
+                                    }, 
+                                    "facets": {
+                                        "creationdate": "2011", 
+                                        "frbrgroupid": "7593143119039319598", 
+                                        "frbrtype": "6", 
+                                        "jtitle": "Choice Reviews Online", 
+                                        "language": "eng", 
+                                        "prefilter": "articles", 
+                                        "rsrctype": "articles", 
+                                        "toplevel": "peer_reviewed"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "2011", 
+                                        "k12": "genderandpopulisminlatina", 
+                                        "k2": [
+                                            "00094978", 
+                                            "15238253"
+                                        ], 
+                                        "k3": "10.5860/CHOICE.48-5327", 
+                                        "k4": "48", 
+                                        "k5": "09", 
+                                        "k6": "48", 
+                                        "k7": "choice reviews online", 
+                                        "k8": "gender populism in latin america passionate politics", 
+                                        "k9": "genderandpopulisminlitics", 
+                                        "t": "2"
+                                    }, 
+                                    "links": {
+                                        "addlink": "$$Uhttps://exlibris-pub.s3.amazonaws.com/aboutCrossref.html$$DView CrossRef copyright notice", 
+                                        "openurl": "$$Topenurl_article", 
+                                        "openurlfulltext": "$$Topenurlfull_article"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1", 
+                                        "pcg_type": "aggregator_crossref"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "Choice Reviews Online", 
+                                        "creationdate": "2011", 
+                                        "general": [
+                                            "English", 
+                                            "10.5860/CHOICE.48-5327"
+                                        ], 
+                                        "issn": [
+                                            "0009-4978", 
+                                            "00094978", 
+                                            "1523-8253", 
+                                            "15238253"
+                                        ], 
+                                        "recordid": "crossref10.5860/CHOICE.48-5327", 
+                                        "rsrctype": "article", 
+                                        "scope": [
+                                            "crossref_rest", 
+                                            "CrossRef", 
+                                            "Crossref", 
+                                            "crossref"
+                                        ], 
+                                        "searchscope": [
+                                            "crossref_rest", 
+                                            "CrossRef", 
+                                            "Crossref", 
+                                            "crossref"
+                                        ], 
+                                        "sourceid": "crossref", 
+                                        "title": "Gender and populism in Latin America: passionate politics"
+                                    }, 
+                                    "sort": {
+                                        "creationdate": "20110501", 
+                                        "title": "Gender and populism in Latin America: passionate politics"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.date=20000901&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=&10.5860/CHOICE.38-0561</crossref>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/&svc_dat=viewit&req.skin=BC%20skin", 
+                                "@GetIt2": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=;&rft.eisbn=&rft.edition=&rft.pub=&amp;rft.place=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&lt;crossref&gt;10.5860/CHOICE.38-0561&lt;/crossref&gt;,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@deliveryCategory": "Remote Search Resource"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:addlink": "https://exlibris-pub.s3.amazonaws.com/aboutCrossref.html", 
+                                "sear:openurl": "errorPage", 
+                                "sear:openurlfulltext": "errorPage", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "354013513", 
+                            "@LOCAL": "false", 
+                            "@NO": "5", 
+                            "@RANK": "0.024637809", 
+                            "@SEARCH_ENGINE": "PrimoCentralThirdNode", 
+                            "@SEARCH_ENGINE_TYPE": "Primo Central Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "abstract": "Latin American populism is generally associated with the developmental stage of import substitution industrialization; it is thus widely presumed to have been eclipsed by the debt crisis of the 1980s and the free market reforms of the neoliberal era. However, the leadership of Alberto Fujimori in Peru suggests that new forms of populism may be emerging despite the fiscal constraints of neoliberal austerity. This new variant of populism thrives in a context where economic crisis and social dislocation undermine traditional representative institutions, enabling personalist leaders to establish unmediated relationships with heterogeneous, atomized masses. Political support can be cultivated through populist attacks on entrenched political elites or institutions, along with targeted but highly visible poverty alleviation programs. This new form of populist autocracy complements the efforts of neoliberal technocrats to circumvent the representative institutions that are integral to democratic accountability. The Peruvian case thus demonstrates that populism has been transformed rather than eclipsed during the neoliberal era and that it should be decoupled theoretically from any particular phase or model of economic development.", 
+                                        "atitle": "Neoliberalism and the Transformation of Populism in Latin America: The Peruvian Case", 
+                                        "au": "Roberts, Kenneth M", 
+                                        "aufirst": "Kenneth M.", 
+                                        "aulast": "Roberts", 
+                                        "date": "1995", 
+                                        "eissn": "1086-3338", 
+                                        "epage": "116", 
+                                        "genre": "article", 
+                                        "issn": "0043-8871", 
+                                        "issue": "1", 
+                                        "jtitle": "World Politics", 
+                                        "risdate": "1995", 
+                                        "ristype": "JOUR", 
+                                        "spage": "82", 
+                                        "url": "http://muse.jhu.edu/journals/world_politics/v048/48.1roberts.html", 
+                                        "volume": "48"
+                                    }, 
+                                    "control": {
+                                        "recordid": "TN_museS1086333895100827", 
+                                        "sourceid": "muse", 
+                                        "sourcerecordid": "S1086333895100827", 
+                                        "sourcesystem": "Other"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Remote Search Resource", 
+                                        "fulltext": "fulltext"
+                                    }, 
+                                    "display": {
+                                        "creator": "Roberts, Kenneth M", 
+                                        "description": "Latin American populism is generally associated with the developmental stage of import substitution industrialization; it is thus widely presumed to have been eclipsed by the debt crisis of the 1980s and the free market reforms of the neoliberal era. However, the leadership of Alberto Fujimori in Peru suggests that new forms of populism may be emerging despite the fiscal constraints of neoliberal austerity. This new variant of populism thrives in a context where economic crisis and social dislocation undermine traditional representative institutions, enabling personalist leaders to establish unmediated relationships with heterogeneous, atomized masses. Political support can be cultivated through populist attacks on entrenched political elites or institutions, along with targeted but highly visible poverty alleviation programs. This new form of populist autocracy complements the efforts of neoliberal technocrats to circumvent the representative institutions that are integral to democratic accountability. The Peruvian case thus demonstrates that populism has been transformed rather than eclipsed during the neoliberal era and that it should be decoupled theoretically from any particular phase or model of economic development.", 
+                                        "identifier": "<b>ISSN:</b> 0043-8871 ; <b>E-ISSN:</b> 1086-3338", 
+                                        "ispartof": "World Politics, 1995, Vol.48(1), pp.82-116", 
+                                        "lds50": "peer_reviewed", 
+                                        "source": "Project MUSE", 
+                                        "subject": "Peru -- Politics And Government -- 1980- ; Populism -- Latin America", 
+                                        "title": "Neoliberalism and the Transformation of Populism in Latin America: The Peruvian Case", 
+                                        "type": "article", 
+                                        "version": "6"
+                                    }, 
+                                    "facets": {
+                                        "collection": "Project MUSE", 
+                                        "creationdate": "1995", 
+                                        "creatorcontrib": "Roberts, Kenneth M", 
+                                        "frbrgroupid": "986708285209502708", 
+                                        "frbrtype": "5", 
+                                        "prefilter": "articles", 
+                                        "rsrctype": "articles", 
+                                        "topic": [
+                                            "Peru\u2013Politics And Government\u20131980-", 
+                                            "Populism\u2013Latin America"
+                                        ], 
+                                        "toplevel": "peer_reviewed"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "1995", 
+                                        "k12": "neoliberalismandthetransf", 
+                                        "k15": "kennethmroberts", 
+                                        "k16": "robertskennethm", 
+                                        "k2": [
+                                            "00438871", 
+                                            "10863338"
+                                        ], 
+                                        "k4": "48", 
+                                        "k5": "1", 
+                                        "k6": "82", 
+                                        "k7": "world politics", 
+                                        "k8": "neoliberalism the transformation of populism in latin america the peruvian case", 
+                                        "k9": "neoliberalismandthetncase", 
+                                        "t": "2"
+                                    }, 
+                                    "links": {
+                                        "backlink": "$$Uhttp://muse.jhu.edu/journals/world_politics/v048/48.1roberts.html$$EView_this_record_in_MUSE", 
+                                        "openurlfulltext": "$$Topenurlfull_article"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1", 
+                                        "pcg_type": "publisher"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "World Politics", 
+                                        "creationdate": "1995", 
+                                        "creatorcontrib": "Roberts, Kenneth M", 
+                                        "description": "Latin American populism is generally associated with the developmental stage of import substitution industrialization; it is thus widely presumed to have been eclipsed by the debt crisis of the 1980s and the free market reforms of the neoliberal era. However, the leadership of Alberto Fujimori in Peru suggests that new forms of populism may be emerging despite the fiscal constraints of neoliberal austerity. This new variant of populism thrives in a context where economic crisis and social dislocation undermine traditional representative institutions, enabling personalist leaders to establish unmediated relationships with heterogeneous, atomized masses. Political support can be cultivated through populist attacks on entrenched political elites or institutions, along with targeted but highly visible poverty alleviation programs. This new form of populist autocracy complements the efforts of neoliberal technocrats to circumvent the representative institutions that are integral to democratic accountability. The Peruvian case thus demonstrates that populism has been transformed rather than eclipsed during the neoliberal era and that it should be decoupled theoretically from any particular phase or model of economic development.", 
+                                        "general": "Project MUSE", 
+                                        "issn": [
+                                            "1086-3338", 
+                                            "10863338", 
+                                            "00438871", 
+                                            "0043-8871"
+                                        ], 
+                                        "recordid": "museS1086333895100827", 
+                                        "recordtype": "article", 
+                                        "rsrctype": "article", 
+                                        "scope": "muse", 
+                                        "searchscope": "muse", 
+                                        "sourceid": "muse", 
+                                        "subject": [
+                                            "Peru--Politics And Government--1980-", 
+                                            "Populism--Latin America"
+                                        ], 
+                                        "title": "Neoliberalism and the Transformation of Populism in Latin America: The Peruvian Case"
+                                    }, 
+                                    "sort": {
+                                        "author": "Roberts, Kenneth M", 
+                                        "creationdate": "19950000", 
+                                        "title": "Neoliberalism and the Transformation of Populism in Latin America: The Peruvian Case"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.date=20000901&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=&10.5860/CHOICE.38-0561</crossref>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/&svc_dat=viewit&req.skin=BC%20skin", 
+                                "@GetIt2": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=;&rft.eisbn=&rft.edition=&rft.pub=&amp;rft.place=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&lt;crossref&gt;10.5860/CHOICE.38-0561&lt;/crossref&gt;,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@deliveryCategory": "Remote Search Resource"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:backlink": "http://muse.jhu.edu/journals/world_politics/v048/48.1roberts.html", 
+                                "sear:openurlfulltext": "errorPage", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "582946480", 
+                            "@LOCAL": "false", 
+                            "@NO": "6", 
+                            "@RANK": "0.01724557", 
+                            "@SEARCH_ENGINE": "PrimoCentralThirdNode", 
+                            "@SEARCH_ENGINE_TYPE": "Primo Central Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "atitle": "Gender and Populism in Latin America. Passionate Politics \u2010 edited by Kampwirth, Karen", 
+                                        "au": "Bohn, Simone", 
+                                        "aufirst": "Simone", 
+                                        "aulast": "Bohn", 
+                                        "cop": "Oxford, UK", 
+                                        "date": "201301", 
+                                        "doi": "10.1111/j.1470-9856.2012.00771.x", 
+                                        "eissn": "1470-9856", 
+                                        "epage": "97", 
+                                        "issn": "0261-3050", 
+                                        "issue": "1", 
+                                        "jtitle": "Bulletin of Latin American Research", 
+                                        "pub": "Blackwell Publishing Ltd", 
+                                        "risdate": "201301", 
+                                        "ristype": "GEN", 
+                                        "spage": "95", 
+                                        "volume": "32"
+                                    }, 
+                                    "control": {
+                                        "recordid": "TN_wj10.1111/j.1470-9856.2012.00771.x", 
+                                        "sourceid": "wj", 
+                                        "sourcerecordid": "10.1111/j.1470-9856.2012.00771.x", 
+                                        "sourcesystem": "Other"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Remote Search Resource", 
+                                        "fulltext": "fulltext"
+                                    }, 
+                                    "display": {
+                                        "creator": "Bohn, Simone", 
+                                        "identifier": "<b>ISSN: </b>0261-3050 ; <b>E-ISSN: </b>1470-9856 ; <b>DOI: </b>10.1111/j.1470-9856.2012.00771.x", 
+                                        "ispartof": "Bulletin of Latin American Research, 2013, Vol.32(1), pp.95-97", 
+                                        "lds50": "peer_reviewed", 
+                                        "source": "John Wiley & Sons, Inc.", 
+                                        "title": "Gender and Populism in Latin America. Passionate Politics \u2010 edited by Kampwirth, Karen", 
+                                        "type": "review", 
+                                        "version": "3"
+                                    }, 
+                                    "facets": {
+                                        "collection": "Wiley Online Library", 
+                                        "creationdate": "2013", 
+                                        "creatorcontrib": "Bohn, Simone", 
+                                        "frbrgroupid": "1708616524785472208", 
+                                        "frbrtype": "5", 
+                                        "jtitle": "Bulletin of Latin American Research", 
+                                        "prefilter": "reviews", 
+                                        "rsrctype": "reviews", 
+                                        "toplevel": "peer_reviewed"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "2013", 
+                                        "k12": "genderandpopulisminlatina", 
+                                        "k15": "simonebohn", 
+                                        "k16": "bohnsimone", 
+                                        "k2": [
+                                            "02613050", 
+                                            "14709856"
+                                        ], 
+                                        "k3": "10.1111/j.1470-9856.2012.00771.x", 
+                                        "k4": "32", 
+                                        "k5": "1", 
+                                        "k6": "95", 
+                                        "k7": "bulletin of latin american research", 
+                                        "k8": "gender populism in latin america passionate politics \u2010 edited by kampwirth karen", 
+                                        "k9": "genderandpopulisminlkaren", 
+                                        "t": "2"
+                                    }, 
+                                    "links": {
+                                        "openurl": "$$Topenurl_article", 
+                                        "openurlfulltext": "$$Topenurlfull_article"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1", 
+                                        "pcg_type": "publisher"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "Bulletin of Latin American Research", 
+                                        "creationdate": "2013", 
+                                        "creatorcontrib": "Bohn, Simone", 
+                                        "general": [
+                                            "Blackwell Publishing Ltd", 
+                                            "10.1111/j.1470-9856.2012.00771.x", 
+                                            "Wiley Online Library"
+                                        ], 
+                                        "issn": [
+                                            "0261-3050", 
+                                            "02613050", 
+                                            "1470-9856", 
+                                            "14709856"
+                                        ], 
+                                        "recordid": "wj10.1111/j.1470-9856.2012.00771.x", 
+                                        "rsrctype": "review", 
+                                        "scope": [
+                                            "wj", 
+                                            "wiley"
+                                        ], 
+                                        "searchscope": [
+                                            "wj", 
+                                            "wiley"
+                                        ], 
+                                        "sourceid": "wj", 
+                                        "title": "Gender and Populism in Latin America. Passionate Politics \u2010 edited by Kampwirth, Karen"
+                                    }, 
+                                    "sort": {
+                                        "author": "Bohn, Simone", 
+                                        "creationdate": "20130100", 
+                                        "title": "Gender and Populism in Latin America. Passionate Politics \u2010 edited by Kampwirth, Karen"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.date=20000901&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=&10.5860/CHOICE.38-0561</crossref>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/&svc_dat=viewit&req.skin=BC%20skin", 
+                                "@GetIt2": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=;&rft.eisbn=&rft.edition=&rft.pub=&amp;rft.place=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&lt;crossref&gt;10.5860/CHOICE.38-0561&lt;/crossref&gt;,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@deliveryCategory": "Remote Search Resource"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:openurl": "errorPage", 
+                                "sear:openurlfulltext": "errorPage", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "24771196", 
+                            "@LOCAL": "false", 
+                            "@NO": "7", 
+                            "@RANK": "0.01724557", 
+                            "@SEARCH_ENGINE": "PrimoCentralThirdNode", 
+                            "@SEARCH_ENGINE_TYPE": "Primo Central Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "atitle": "The values of free enterprise versus the new populism in Latin America.", 
+                                        "au": "Braun, Carlos Rodriguez", 
+                                        "date": "20120622", 
+                                        "genre": "article", 
+                                        "issn": "1086-1653", 
+                                        "issue": "1", 
+                                        "jtitle": "Independent Review", 
+                                        "lad01": "gale_ofa", 
+                                        "pub": "Independent Institute", 
+                                        "risdate": "20120622", 
+                                        "ristype": "JOUR", 
+                                        "spage": "19", 
+                                        "volume": "17"
+                                    }, 
+                                    "control": {
+                                        "recordid": "TN_gale_ofa296377411", 
+                                        "sourceformat": "XML", 
+                                        "sourceid": "gale_ofa", 
+                                        "sourcerecordid": "296377411", 
+                                        "sourcesystem": "Other"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Remote Search Resource", 
+                                        "fulltext": "fulltext"
+                                    }, 
+                                    "display": {
+                                        "creator": "Braun, Carlos Rodriguez", 
+                                        "identifier": "<b>ISSN: </b>1086-1653", 
+                                        "ispartof": "Independent Review, Summer, 2012, Vol.17(1), p.19(16)", 
+                                        "language": "English", 
+                                        "lds50": "peer_reviewed", 
+                                        "source": "Cengage Learning, Inc.", 
+                                        "subject": "Protectionism ; Free Enterprise ; Populism ; Liberalism", 
+                                        "title": "The values of free enterprise versus the new populism in Latin America", 
+                                        "type": "article", 
+                                        "version": "5"
+                                    }, 
+                                    "facets": {
+                                        "collection": "OneFile (GALE)", 
+                                        "creationdate": "2012", 
+                                        "creatorcontrib": "Braun, Carlos Rodriguez", 
+                                        "frbrgroupid": "6839209249661775601", 
+                                        "frbrtype": "5", 
+                                        "jtitle": "Independent Review", 
+                                        "language": "eng", 
+                                        "prefilter": "articles", 
+                                        "rsrctype": "articles", 
+                                        "topic": [
+                                            "Protectionism", 
+                                            "Free Enterprise", 
+                                            "Populism", 
+                                            "Liberalism"
+                                        ], 
+                                        "toplevel": "peer_reviewed"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "2012", 
+                                        "k12": "valuesoffreeenterprisever", 
+                                        "k15": "carlosrodriguezbraun", 
+                                        "k16": "brauncarlosrodriguez", 
+                                        "k2": "10861653", 
+                                        "k4": "17", 
+                                        "k5": "1", 
+                                        "k6": "19", 
+                                        "k7": "independent review", 
+                                        "k8": "values of free enterprise versus the new populism in latin america", 
+                                        "k9": "valuesoffreeenterprierica", 
+                                        "t": "2"
+                                    }, 
+                                    "links": {
+                                        "openurl": "$$Topenurl_article", 
+                                        "openurlfulltext": "$$Topenurlfull_article"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1", 
+                                        "pcg_type": "aggregator"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "Independent Review", 
+                                        "creationdate": "2012", 
+                                        "creatorcontrib": [
+                                            "Braun, Carlos Rodriguez", 
+                                            "Braun"
+                                        ], 
+                                        "general": [
+                                            "English", 
+                                            "Independent Institute", 
+                                            "Cengage Learning, Inc."
+                                        ], 
+                                        "issn": [
+                                            "1086-1653", 
+                                            "10861653"
+                                        ], 
+                                        "recordid": "gale_ofa296377411", 
+                                        "recordtype": "article", 
+                                        "rsrctype": "article", 
+                                        "scope": [
+                                            "gale_onefilea", 
+                                            "OneFile"
+                                        ], 
+                                        "searchscope": "OneFile", 
+                                        "sourceid": "gale_ofa", 
+                                        "subject": [
+                                            "Protectionism", 
+                                            "Free enterprise", 
+                                            "Populism", 
+                                            "Liberalism"
+                                        ], 
+                                        "title": "The values of free enterprise versus the new populism in Latin America."
+                                    }, 
+                                    "sort": {
+                                        "author": "Braun, Carlos Rodriguez", 
+                                        "creationdate": "20120622", 
+                                        "title": "The values of free enterprise versus the new populism in Latin America."
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.date=20000901&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=&10.5860/CHOICE.38-0561</crossref>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/&svc_dat=viewit&req.skin=BC%20skin", 
+                                "@GetIt2": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=;&rft.eisbn=&rft.edition=&rft.pub=&amp;rft.place=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&lt;crossref&gt;10.5860/CHOICE.38-0561&lt;/crossref&gt;,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@deliveryCategory": "Remote Search Resource"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:openurl": "errorPage", 
+                                "sear:openurlfulltext": "errorPage", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "327700920", 
+                            "@LOCAL": "false", 
+                            "@NO": "8", 
+                            "@RANK": "0.0172417", 
+                            "@SEARCH_ENGINE": "PrimoCentralThirdNode", 
+                            "@SEARCH_ENGINE_TYPE": "Primo Central Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "atitle": "Gender and Populism in Latin America: Passionate Politics edited by Karen Kampwirth", 
+                                        "au": "Piscopo, Jenniferm.", 
+                                        "aufirst": "JenniferM.", 
+                                        "aulast": "Piscopo", 
+                                        "date": "20111001", 
+                                        "doi": "10.1080/1554477X.2011.613713", 
+                                        "eissn": "1554-4788", 
+                                        "epage": "372", 
+                                        "format": "article", 
+                                        "genre": "article", 
+                                        "issn": "1554-477X", 
+                                        "issue": "4", 
+                                        "jtitle": "Journal of Women, Politics & Policy", 
+                                        "pub": "Taylor & Francis Group", 
+                                        "ristype": "JOUR", 
+                                        "spage": "370", 
+                                        "volume": "32"
+                                    }, 
+                                    "control": {
+                                        "recordid": "TN_tayfranc10.1080/1554477X.2011.613713", 
+                                        "sourceformat": "XML", 
+                                        "sourceid": "tayfranc", 
+                                        "sourcerecordid": "10.1080/1554477X.2011.613713", 
+                                        "sourcesystem": "Other"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Remote Search Resource", 
+                                        "fulltext": "fulltext"
+                                    }, 
+                                    "display": {
+                                        "creator": "Piscopo, Jenniferm.", 
+                                        "identifier": "<b>ISSN: </b>1554-477X ; <b>E-ISSN: </b>1554-4788 ; <b>DOI: </b>10.1080/1554477X.2011.613713", 
+                                        "ispartof": "Journal of Women, Politics & Policy, 2011, Vol.32(4), p.370-372", 
+                                        "lds50": "peer_reviewed", 
+                                        "publisher": "Taylor & Francis Group", 
+                                        "source": "Routledge, Taylor & Francis Group<img src=\"https://exlibris-pub.s3.amazonaws.com/Routledge_RGB.jpg\" style=\"vertical-align:middle;margin-left:7px\">", 
+                                        "title": "Gender and Populism in Latin America: Passionate Politics edited by Karen Kampwirth: (2010). University Park: Penn State University Press, 272 pp., $65.00, ISBN 978-0271-03709-7.", 
+                                        "type": "article", 
+                                        "version": "2"
+                                    }, 
+                                    "facets": {
+                                        "collection": "Taylor & Francis Online - Journals", 
+                                        "creationdate": "2011", 
+                                        "creatorcontrib": "Piscopo, Jenniferm.", 
+                                        "frbrgroupid": "9118606953665372961", 
+                                        "frbrtype": "5", 
+                                        "jtitle": "Journal of Women, Politics & Policy", 
+                                        "prefilter": "articles", 
+                                        "rsrctype": "articles", 
+                                        "toplevel": "peer_reviewed"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "2011", 
+                                        "k12": "genderandpopulisminlatina", 
+                                        "k15": "jennifermpiscopo", 
+                                        "k16": "piscopojenniferm", 
+                                        "k2": [
+                                            "1554477X", 
+                                            "15544788"
+                                        ], 
+                                        "k3": "10.1080/1554477X.2011.613713", 
+                                        "k4": "32", 
+                                        "k5": "4", 
+                                        "k6": "370", 
+                                        "k7": "journal of women politics amp policy", 
+                                        "k8": "gender populism in latin america passionate politics edited by karen kampwirth", 
+                                        "k9": "genderandpopulisminlwirth", 
+                                        "t": "2"
+                                    }, 
+                                    "links": {
+                                        "addlink": "$$Uhttps://exlibris-pub.s3.amazonaws.com/aboutTaylorFrancis.html$$EView_Taylor_&_Francis_Group_Copyright_Statement", 
+                                        "openurl": "$$Topenurl_article", 
+                                        "openurlfulltext": "$$Topenurlfull_article"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1", 
+                                        "pcg_type": "publisher"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "Journal of Women, Politics & Policy", 
+                                        "creationdate": "2011", 
+                                        "creatorcontrib": "Piscopo, JenniferM", 
+                                        "general": [
+                                            "10.1080/1554477X.2011.613713", 
+                                            "Journal of Women, Politics & Policy, Vol. 32, No. 4, October-December 2011: pp. 370\u2013372", 
+                                            "Taylor & Francis Group"
+                                        ], 
+                                        "issn": [
+                                            "1554-477X", 
+                                            "1554477X", 
+                                            "1554-4788", 
+                                            "15544788"
+                                        ], 
+                                        "recordid": "tayfranc10.1080/1554477X.2011.613713", 
+                                        "rsrctype": "article", 
+                                        "scope": [
+                                            "tayfranc", 
+                                            "taylor_francis"
+                                        ], 
+                                        "searchscope": [
+                                            "tayfranc", 
+                                            "taylor_francis"
+                                        ], 
+                                        "sourceid": "tayfranc", 
+                                        "title": "Gender and Populism in Latin America: Passionate Politics edited by Karen Kampwirth"
+                                    }, 
+                                    "sort": {
+                                        "author": "Piscopo, Jenniferm.", 
+                                        "creationdate": "20111001", 
+                                        "title": "Gender and Populism in Latin America: Passionate Politics edited by Karen Kampwirth: (2010). University Park: Penn State University Press, 272 pp., $65.00, ISBN 978-0271-03709-7."
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.date=20000901&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=&10.5860/CHOICE.38-0561</crossref>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/&svc_dat=viewit&req.skin=BC%20skin", 
+                                "@GetIt2": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=;&rft.eisbn=&rft.edition=&rft.pub=&amp;rft.place=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&lt;crossref&gt;10.5860/CHOICE.38-0561&lt;/crossref&gt;,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@deliveryCategory": "Remote Search Resource"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:addlink": "https://exlibris-pub.s3.amazonaws.com/aboutTaylorFrancis.html", 
+                                "sear:openurl": "errorPage", 
+                                "sear:openurlfulltext": "errorPage", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "105132330", 
+                            "@LOCAL": "false", 
+                            "@NO": "9", 
+                            "@RANK": "0.013066851", 
+                            "@SEARCH_ENGINE": "PrimoCentralThirdNode", 
+                            "@SEARCH_ENGINE_TYPE": "Primo Central Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "abstract": "This paper outlines some differences in the conception, inception, and practiceof populism in Latin America and the United States, using the concreteexample of the Tea Party movement. Underlining these distinctions is theproposition that, just as not all populism is the same, not all populism isnecessarily bad from the point of view of the preservation of liberty and thepromotion of responsible individuals in a free society.", 
+                                        "atitle": "POPULISM IN LATIN AMERICA AND THE UNITED STATES. THE CASE OF THE TEA PARTY MOVEMENT", 
+                                        "au": "Dar\u00edo Fern\u00e1ndez-Morera", 
+                                        "date": "2011", 
+                                        "format": "journal", 
+                                        "genre": "article", 
+                                        "issn": "18511066", 
+                                        "issue": "0", 
+                                        "jtitle": "Revista de Instituciones, Ideas y Mercados", 
+                                        "pub": "Instituto Universitario ESEADE", 
+                                        "risdate": "2011", 
+                                        "ristype": "JOUR", 
+                                        "spage": "163", 
+                                        "url": "http://www.eseade.edu.ar/riim/libertas/riim-n-55-octubre-2011.html", 
+                                        "volume": "55"
+                                    }, 
+                                    "control": {
+                                        "recordid": "TN_doaj32012733eca4b75eea7a729aec64d102", 
+                                        "sourceformat": "DC", 
+                                        "sourceid": "doaj", 
+                                        "sourcerecordid": "32012733eca4b75eea7a729aec64d102", 
+                                        "sourcesystem": "Other"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Remote Search Resource", 
+                                        "fulltext": "fulltext"
+                                    }, 
+                                    "display": {
+                                        "creator": "Dar\u00edo Fern\u00e1ndez-Morera", 
+                                        "description": "This paper outlines some differences in the conception, inception, and practiceof populism in Latin America and the United States, using the concreteexample of the Tea Party movement. Underlining these distinctions is theproposition that, just as not all populism is the same, not all populism isnecessarily bad from the point of view of the preservation of liberty and thepromotion of responsible individuals in a free society.", 
+                                        "identifier": "<b>ISSN:</b> 18511066", 
+                                        "ispartof": "Revista de Instituciones, Ideas y Mercados, 2011, Vol.55(0), p.163", 
+                                        "source": "Directory of Open Access Journals (DOAJ)", 
+                                        "subject": "Populism ; Tea Party ; Freedom ; United States", 
+                                        "title": "POPULISM IN LATIN AMERICA AND THE UNITED STATES. THE CASE OF THE TEA PARTY MOVEMENT", 
+                                        "type": "article"
+                                    }, 
+                                    "facets": {
+                                        "collection": "Directory of Open Access Journals (DOAJ)", 
+                                        "creationdate": "2011", 
+                                        "creatorcontrib": "Dar\u00edo Fern\u00e1ndez-Morera", 
+                                        "frbrgroupid": "8523822057483833871", 
+                                        "frbrtype": "6", 
+                                        "jtitle": "Revista De Instituciones, Ideas Y Mercados", 
+                                        "prefilter": "articles", 
+                                        "rsrctype": "articles", 
+                                        "topic": [
+                                            "Populism", 
+                                            "Tea Party", 
+                                            "Freedom", 
+                                            "United States"
+                                        ]
+                                    }, 
+                                    "frbr": {
+                                        "k1": "2011", 
+                                        "k12": "populisminlatinamericaand", 
+                                        "k15": "dar\u00edofern\u00e1ndezmorera", 
+                                        "k16": "dar\u00edofern\u00e1ndezmorera", 
+                                        "k2": "18511066", 
+                                        "k4": "55", 
+                                        "k5": "0", 
+                                        "k6": "163", 
+                                        "k7": "revista de instituciones ideas mercados", 
+                                        "k8": "populism in latin america the united states the case of the tea party movement", 
+                                        "k9": "populisminlatinameriement", 
+                                        "t": "2"
+                                    }, 
+                                    "links": {
+                                        "linktorsrc": "$$Uhttp://www.eseade.edu.ar/riim/libertas/riim-n-55-octubre-2011.html$$EView_full_text", 
+                                        "openurl": "$$Topenurl_article", 
+                                        "openurlfulltext": "$$Topenurlfull_article"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1", 
+                                        "pcg_type": "aggregator"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "Revista de Instituciones, Ideas y Mercados", 
+                                        "creationdate": "2011", 
+                                        "creatorcontrib": "Dar\u00edo Fern\u00e1ndez-Morera", 
+                                        "description": "This paper outlines some differences in the conception, inception, and practiceof populism in Latin America and the United States, using the concreteexample of the Tea Party movement. Underlining these distinctions is theproposition that, just as not all populism is the same, not all populism isnecessarily bad from the point of view of the preservation of liberty and thepromotion of responsible individuals in a free society.", 
+                                        "general": "Directory of Open Access Journals", 
+                                        "issn": [
+                                            "1851-1066", 
+                                            "18511066"
+                                        ], 
+                                        "recordid": "doaj32012733eca4b75eea7a729aec64d102", 
+                                        "rsrctype": "article", 
+                                        "scope": "doaj", 
+                                        "searchscope": "doaj", 
+                                        "sourceid": "doaj", 
+                                        "subject": [
+                                            "Populism", 
+                                            "Tea Party", 
+                                            "Freedom", 
+                                            "United States"
+                                        ], 
+                                        "title": "POPULISM IN LATIN AMERICA AND THE UNITED STATES. THE CASE OF THE TEA PARTY MOVEMENT"
+                                    }, 
+                                    "sort": {
+                                        "author": "Dar\u00edo Fern\u00e1ndez-Morera", 
+                                        "creationdate": "20110000", 
+                                        "lso01": "20110000", 
+                                        "title": "POPULISM IN LATIN AMERICA AND THE UNITED STATES. THE CASE OF THE TEA PARTY MOVEMENT"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.date=20000901&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=&10.5860/CHOICE.38-0561</crossref>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/&svc_dat=viewit&req.skin=BC%20skin", 
+                                "@GetIt2": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-26T15%3A47%3A17IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-crossref&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:&rft.genre=article&rft.atitle=Populism%20in%20Latin%20America&rft.jtitle=Choice%20Reviews%20Online&rft.btitle=&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.date=20000901&rft.volume=38&rft.issue=01&rft.part=&rft.quarter=&rft.ssn=&rft.spage=38-0561&rft.epage=38-0561&rft.pages=38-0561-38-0561&rft.artnum=&rft.issn=0009-4978&rft.eissn=1523-8253&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/10.5860/CHOICE.38-0561&rft.object_id=;&rft.eisbn=&rft.edition=&rft.pub=&amp;rft.place=&rft.series=&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_dat=<crossref>10.5860/CHOICE.38-0561</crossref>,language=,view=&lt;crossref&gt;10.5860/CHOICE.38-0561&lt;/crossref&gt;,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@deliveryCategory": "Remote Search Resource"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktorsrc": "http://www.eseade.edu.ar/riim/libertas/riim-n-55-octubre-2011.html", 
+                                "sear:openurl": "errorPage", 
+                                "sear:openurlfulltext": "errorPage", 
+                                "sear:thumbnail": null
+                            }
+                        }
+                    ]
+                }, 
+                "sear:FACETLIST": {
+                    "@ACCURATE_COUNTERS": "true", 
+                    "sear:FACET": [
+                        {
+                            "@COUNT": "20", 
+                            "@NAME": "creator", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "Kuzio, Taras", 
+                                    "@VALUE": "7"
+                                }, 
+                                {
+                                    "@KEY": "Roberts, Kenneth M.", 
+                                    "@VALUE": "8"
+                                }, 
+                                {
+                                    "@KEY": "Brass, Tom", 
+                                    "@VALUE": "27"
+                                }, 
+                                {
+                                    "@KEY": "Levitsky, Steven", 
+                                    "@VALUE": "7"
+                                }, 
+                                {
+                                    "@KEY": "Weyland, K.", 
+                                    "@VALUE": "10"
+                                }, 
+                                {
+                                    "@KEY": "Phongpaichit, Pasuk", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Lapper, Richard", 
+                                    "@VALUE": "22"
+                                }, 
+                                {
+                                    "@KEY": "Philip, George", 
+                                    "@VALUE": "9"
+                                }, 
+                                {
+                                    "@KEY": "Cannon, Barry", 
+                                    "@VALUE": "10"
+                                }, 
+                                {
+                                    "@KEY": "De La Torre, Carlos", 
+                                    "@VALUE": "7"
+                                }, 
+                                {
+                                    "@KEY": "Panizza, Francisco", 
+                                    "@VALUE": "5"
+                                }, 
+                                {
+                                    "@KEY": "Weyland, Kurt", 
+                                    "@VALUE": "13"
+                                }, 
+                                {
+                                    "@KEY": "Anonymous", 
+                                    "@VALUE": "19"
+                                }, 
+                                {
+                                    "@KEY": "Bittencourt, Manoel", 
+                                    "@VALUE": "6"
+                                }, 
+                                {
+                                    "@KEY": "Blanco, Luisa", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Edwards, Sebastian", 
+                                    "@VALUE": "8"
+                                }, 
+                                {
+                                    "@KEY": "Ellner, Steve", 
+                                    "@VALUE": "7"
+                                }, 
+                                {
+                                    "@KEY": "Fukuyama, Francis", 
+                                    "@VALUE": "5"
+                                }, 
+                                {
+                                    "@KEY": "Veltmeyer, Henry", 
+                                    "@VALUE": "9"
+                                }, 
+                                {
+                                    "@KEY": "Petras, James", 
+                                    "@VALUE": "14"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "7", 
+                            "@NAME": "lang", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "und", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "ita", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "ger", 
+                                    "@VALUE": "339"
+                                }, 
+                                {
+                                    "@KEY": "por", 
+                                    "@VALUE": "8"
+                                }, 
+                                {
+                                    "@KEY": "eng", 
+                                    "@VALUE": "6132"
+                                }, 
+                                {
+                                    "@KEY": "fre", 
+                                    "@VALUE": "8"
+                                }, 
+                                {
+                                    "@KEY": "spa", 
+                                    "@VALUE": "120"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "10", 
+                            "@NAME": "rtype", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "books", 
+                                    "@VALUE": "18"
+                                }, 
+                                {
+                                    "@KEY": "reviews", 
+                                    "@VALUE": "1408"
+                                }, 
+                                {
+                                    "@KEY": "reference_entrys", 
+                                    "@VALUE": "5"
+                                }, 
+                                {
+                                    "@KEY": "other", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "articles", 
+                                    "@VALUE": "6115"
+                                }, 
+                                {
+                                    "@KEY": "research_datasets", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "text_resources", 
+                                    "@VALUE": "250"
+                                }, 
+                                {
+                                    "@KEY": "conference_proceedings", 
+                                    "@VALUE": "19"
+                                }, 
+                                {
+                                    "@KEY": "media", 
+                                    "@VALUE": "19"
+                                }, 
+                                {
+                                    "@KEY": "newspaper_articles", 
+                                    "@VALUE": "764"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "20", 
+                            "@NAME": "topic", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "Democratization", 
+                                    "@VALUE": "96"
+                                }, 
+                                {
+                                    "@KEY": "Liberalism", 
+                                    "@VALUE": "77"
+                                }, 
+                                {
+                                    "@KEY": "Book Reviews", 
+                                    "@VALUE": "239"
+                                }, 
+                                {
+                                    "@KEY": "Populism", 
+                                    "@VALUE": "290"
+                                }, 
+                                {
+                                    "@KEY": "Elections", 
+                                    "@VALUE": "74"
+                                }, 
+                                {
+                                    "@KEY": "Neoliberalism", 
+                                    "@VALUE": "103"
+                                }, 
+                                {
+                                    "@KEY": "Politics", 
+                                    "@VALUE": "265"
+                                }, 
+                                {
+                                    "@KEY": "Latin America", 
+                                    "@VALUE": "354"
+                                }, 
+                                {
+                                    "@KEY": "Economic Development", 
+                                    "@VALUE": "147"
+                                }, 
+                                {
+                                    "@KEY": "Studies", 
+                                    "@VALUE": "203"
+                                }, 
+                                {
+                                    "@KEY": "Democracy", 
+                                    "@VALUE": "360"
+                                }, 
+                                {
+                                    "@KEY": "Lateinamerika", 
+                                    "@VALUE": "55"
+                                }, 
+                                {
+                                    "@KEY": "Populismo", 
+                                    "@VALUE": "41"
+                                }, 
+                                {
+                                    "@KEY": "Economic Reform", 
+                                    "@VALUE": "75"
+                                }, 
+                                {
+                                    "@KEY": "Economic Conditions", 
+                                    "@VALUE": "95"
+                                }, 
+                                {
+                                    "@KEY": "Economic Theory", 
+                                    "@VALUE": "98"
+                                }, 
+                                {
+                                    "@KEY": "Venezuela", 
+                                    "@VALUE": "67"
+                                }, 
+                                {
+                                    "@KEY": "Economic Policy", 
+                                    "@VALUE": "126"
+                                }, 
+                                {
+                                    "@KEY": "Presidents (Government)", 
+                                    "@VALUE": "81"
+                                }, 
+                                {
+                                    "@KEY": "Political Parties", 
+                                    "@VALUE": "145"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "2", 
+                            "@NAME": "tlevel", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "online_resources", 
+                                    "@VALUE": "6003"
+                                }, 
+                                {
+                                    "@KEY": "peer_reviewed", 
+                                    "@VALUE": "5623"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "8", 
+                            "@NAME": "pfilter", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "books", 
+                                    "@VALUE": "79"
+                                }, 
+                                {
+                                    "@KEY": "reviews", 
+                                    "@VALUE": "1408"
+                                }, 
+                                {
+                                    "@KEY": "reference_entrys", 
+                                    "@VALUE": "5"
+                                }, 
+                                {
+                                    "@KEY": "articles", 
+                                    "@VALUE": "6241"
+                                }, 
+                                {
+                                    "@KEY": "research_datasets", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "audio_video", 
+                                    "@VALUE": "19"
+                                }, 
+                                {
+                                    "@KEY": "conference_proceedings", 
+                                    "@VALUE": "19"
+                                }, 
+                                {
+                                    "@KEY": "newspaper_articles", 
+                                    "@VALUE": "764"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "60", 
+                            "@NAME": "creationdate", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "2008", 
+                                    "@VALUE": "429"
+                                }, 
+                                {
+                                    "@KEY": "2009", 
+                                    "@VALUE": "444"
+                                }, 
+                                {
+                                    "@KEY": "2006", 
+                                    "@VALUE": "461"
+                                }, 
+                                {
+                                    "@KEY": "2007", 
+                                    "@VALUE": "438"
+                                }, 
+                                {
+                                    "@KEY": "2004", 
+                                    "@VALUE": "409"
+                                }, 
+                                {
+                                    "@KEY": "2005", 
+                                    "@VALUE": "338"
+                                }, 
+                                {
+                                    "@KEY": "2002", 
+                                    "@VALUE": "572"
+                                }, 
+                                {
+                                    "@KEY": "2003", 
+                                    "@VALUE": "288"
+                                }, 
+                                {
+                                    "@KEY": "1930", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "1970", 
+                                    "@VALUE": "7"
+                                }, 
+                                {
+                                    "@KEY": "1971", 
+                                    "@VALUE": "6"
+                                }, 
+                                {
+                                    "@KEY": "1972", 
+                                    "@VALUE": "6"
+                                }, 
+                                {
+                                    "@KEY": "1973", 
+                                    "@VALUE": "6"
+                                }, 
+                                {
+                                    "@KEY": "1974", 
+                                    "@VALUE": "16"
+                                }, 
+                                {
+                                    "@KEY": "1975", 
+                                    "@VALUE": "13"
+                                }, 
+                                {
+                                    "@KEY": "1976", 
+                                    "@VALUE": "13"
+                                }, 
+                                {
+                                    "@KEY": "2012", 
+                                    "@VALUE": "440"
+                                }, 
+                                {
+                                    "@KEY": "1977", 
+                                    "@VALUE": "15"
+                                }, 
+                                {
+                                    "@KEY": "2011", 
+                                    "@VALUE": "445"
+                                }, 
+                                {
+                                    "@KEY": "1978", 
+                                    "@VALUE": "23"
+                                }, 
+                                {
+                                    "@KEY": "2010", 
+                                    "@VALUE": "345"
+                                }, 
+                                {
+                                    "@KEY": "1979", 
+                                    "@VALUE": "19"
+                                }, 
+                                {
+                                    "@KEY": "2013", 
+                                    "@VALUE": "389"
+                                }, 
+                                {
+                                    "@KEY": "2014", 
+                                    "@VALUE": "199"
+                                }, 
+                                {
+                                    "@KEY": "1990", 
+                                    "@VALUE": "54"
+                                }, 
+                                {
+                                    "@KEY": "1940", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "1982", 
+                                    "@VALUE": "24"
+                                }, 
+                                {
+                                    "@KEY": "1983", 
+                                    "@VALUE": "24"
+                                }, 
+                                {
+                                    "@KEY": "1980", 
+                                    "@VALUE": "16"
+                                }, 
+                                {
+                                    "@KEY": "1981", 
+                                    "@VALUE": "19"
+                                }, 
+                                {
+                                    "@KEY": "1986", 
+                                    "@VALUE": "36"
+                                }, 
+                                {
+                                    "@KEY": "1987", 
+                                    "@VALUE": "58"
+                                }, 
+                                {
+                                    "@KEY": "1984", 
+                                    "@VALUE": "33"
+                                }, 
+                                {
+                                    "@KEY": "1985", 
+                                    "@VALUE": "34"
+                                }, 
+                                {
+                                    "@KEY": "1988", 
+                                    "@VALUE": "49"
+                                }, 
+                                {
+                                    "@KEY": "1989", 
+                                    "@VALUE": "70"
+                                }, 
+                                {
+                                    "@KEY": "1958", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1957", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1956", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1950", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "1995", 
+                                    "@VALUE": "103"
+                                }, 
+                                {
+                                    "@KEY": "1996", 
+                                    "@VALUE": "149"
+                                }, 
+                                {
+                                    "@KEY": "1997", 
+                                    "@VALUE": "152"
+                                }, 
+                                {
+                                    "@KEY": "1998", 
+                                    "@VALUE": "149"
+                                }, 
+                                {
+                                    "@KEY": "1991", 
+                                    "@VALUE": "73"
+                                }, 
+                                {
+                                    "@KEY": "1992", 
+                                    "@VALUE": "85"
+                                }, 
+                                {
+                                    "@KEY": "1993", 
+                                    "@VALUE": "120"
+                                }, 
+                                {
+                                    "@KEY": "1994", 
+                                    "@VALUE": "118"
+                                }, 
+                                {
+                                    "@KEY": "1999", 
+                                    "@VALUE": "148"
+                                }, 
+                                {
+                                    "@KEY": "1920", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1967", 
+                                    "@VALUE": "4"
+                                }, 
+                                {
+                                    "@KEY": "1966", 
+                                    "@VALUE": "5"
+                                }, 
+                                {
+                                    "@KEY": "1969", 
+                                    "@VALUE": "5"
+                                }, 
+                                {
+                                    "@KEY": "1968", 
+                                    "@VALUE": "7"
+                                }, 
+                                {
+                                    "@KEY": "1963", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1962", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1965", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1964", 
+                                    "@VALUE": "6"
+                                }, 
+                                {
+                                    "@KEY": "2001", 
+                                    "@VALUE": "252"
+                                }, 
+                                {
+                                    "@KEY": "2000", 
+                                    "@VALUE": "367"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "20", 
+                            "@NAME": "domain", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "Literature Resource Center (Gale)", 
+                                    "@VALUE": "271"
+                                }, 
+                                {
+                                    "@KEY": "Taylor & Francis Online - Journals", 
+                                    "@VALUE": "1996"
+                                }, 
+                                {
+                                    "@KEY": "SAGE Journals", 
+                                    "@VALUE": "234"
+                                }, 
+                                {
+                                    "@KEY": "Wiley Online Library", 
+                                    "@VALUE": "111"
+                                }, 
+                                {
+                                    "@KEY": "Project MUSE", 
+                                    "@VALUE": "627"
+                                }, 
+                                {
+                                    "@KEY": "SciVerse ScienceDirect (Elsevier)", 
+                                    "@VALUE": "262"
+                                }, 
+                                {
+                                    "@KEY": "Dialnet", 
+                                    "@VALUE": "25"
+                                }, 
+                                {
+                                    "@KEY": "Health Reference Center Academic (Gale)", 
+                                    "@VALUE": "32"
+                                }, 
+                                {
+                                    "@KEY": "SpringerLink", 
+                                    "@VALUE": "144"
+                                }, 
+                                {
+                                    "@KEY": "IngentaConnect", 
+                                    "@VALUE": "40"
+                                }, 
+                                {
+                                    "@KEY": "Duke University Press Journals Online", 
+                                    "@VALUE": "1071"
+                                }, 
+                                {
+                                    "@KEY": "SciELO Brazil (Scientific Electronic Library Online)", 
+                                    "@VALUE": "11"
+                                }, 
+                                {
+                                    "@KEY": "Oxford Journals (Oxford University Press)", 
+                                    "@VALUE": "141"
+                                }, 
+                                {
+                                    "@KEY": "Informa - Taylor & Francis (CrossRef)", 
+                                    "@VALUE": "1829"
+                                }, 
+                                {
+                                    "@KEY": "Directory of Open Access Journals (DOAJ)", 
+                                    "@VALUE": "67"
+                                }, 
+                                {
+                                    "@KEY": "Duke University Press (CrossRef)", 
+                                    "@VALUE": "913"
+                                }, 
+                                {
+                                    "@KEY": "M.E. Sharpe", 
+                                    "@VALUE": "64"
+                                }, 
+                                {
+                                    "@KEY": "University of Chicago Press Journals", 
+                                    "@VALUE": "453"
+                                }, 
+                                {
+                                    "@KEY": "Sage Publications (CrossRef)", 
+                                    "@VALUE": "234"
+                                }, 
+                                {
+                                    "@KEY": "OneFile (GALE)", 
+                                    "@VALUE": "3755"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "20", 
+                            "@NAME": "jtitle", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "Democratization", 
+                                    "@VALUE": "69"
+                                }, 
+                                {
+                                    "@KEY": "Foreign Affairs", 
+                                    "@VALUE": "24"
+                                }, 
+                                {
+                                    "@KEY": "World Development", 
+                                    "@VALUE": "66"
+                                }, 
+                                {
+                                    "@KEY": "Journal of Democracy", 
+                                    "@VALUE": "38"
+                                }, 
+                                {
+                                    "@KEY": "The New York Times", 
+                                    "@VALUE": "64"
+                                }, 
+                                {
+                                    "@KEY": "Comparative Political Studies", 
+                                    "@VALUE": "21"
+                                }, 
+                                {
+                                    "@KEY": "European Review of Latin American and Caribbean Studies/ Revista Europea de Estudios Latinoamericanos y del Caribe", 
+                                    "@VALUE": "42"
+                                }, 
+                                {
+                                    "@KEY": "NACLA Report on the Americas", 
+                                    "@VALUE": "59"
+                                }, 
+                                {
+                                    "@KEY": "Latin American Politics and Society", 
+                                    "@VALUE": "52"
+                                }, 
+                                {
+                                    "@KEY": "Third World Quarterly", 
+                                    "@VALUE": "113"
+                                }, 
+                                {
+                                    "@KEY": "The Economist (US)", 
+                                    "@VALUE": "56"
+                                }, 
+                                {
+                                    "@KEY": "Hispanic American Historical Review", 
+                                    "@VALUE": "791"
+                                }, 
+                                {
+                                    "@KEY": "Hispanic American historical review : HAHR", 
+                                    "@VALUE": "168"
+                                }, 
+                                {
+                                    "@KEY": "Latin American Perspectives", 
+                                    "@VALUE": "28"
+                                }, 
+                                {
+                                    "@KEY": "The Financial Times", 
+                                    "@VALUE": "106"
+                                }, 
+                                {
+                                    "@KEY": "Latin American Research Review", 
+                                    "@VALUE": "32"
+                                }, 
+                                {
+                                    "@KEY": "World Politics", 
+                                    "@VALUE": "21"
+                                }, 
+                                {
+                                    "@KEY": "Cultural Studies", 
+                                    "@VALUE": "26"
+                                }, 
+                                {
+                                    "@KEY": "Bulletin of Latin American Research", 
+                                    "@VALUE": "36"
+                                }, 
+                                {
+                                    "@KEY": "Political Science Quarterly", 
+                                    "@VALUE": "10"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                "sear:QUERYTRANSFORMS": null
+            }, 
+            "sear:searchToken": "0"
+        }
+    }
+}

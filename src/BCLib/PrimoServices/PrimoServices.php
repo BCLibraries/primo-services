@@ -42,17 +42,8 @@ class PrimoServices extends \Pimple
             return new Person();
         };
 
-        $this['bib_record_component'] = function () {
-            return new BibRecordComponent();
-        };
-
-        $this['bib_record'] = function () {
-            return new BibRecord($this['person'], $this['bib_record_component']);
-        };
-
         $this['pnx_translator'] = function () {
-            return new PNXTranslator($this['bib_record'],
-                $this->_cache);
+            return new PNXTranslator();
         };
 
         $this['facet_translator'] = function () {
@@ -89,21 +80,28 @@ class PrimoServices extends \Pimple
         $cache_key = sha1($query);
 
         if ($cached_value = $this->_checkCache($cache_key)) {
-            return $cached_value;
+            //return $cached_value;
         }
 
-        $xml_result = $this->_send('brief', $query);
+        $json = $this->_send('brief', $query);
+
+        $docset = $json->{'sear:SEGMENTS'}->{'sear:JAGROOT'}->{'sear:RESULT'}->{'sear:DOCSET'};
+        $facetlist = $json->{'sear:SEGMENTS'}->{'sear:JAGROOT'}->{'sear:RESULT'}->{'sear:FACETLIST'};
 
         /* @var $result BriefSearchResult */
         $result = $this['search_result'];
         $result->facets = [];
         $result->results = [];
+        $result->total_results = $docset->{'@TOTALHITS'};
 
-        $result->facets = $this['facet_translator']->translate($xml_result);
-        $result->results = $this['pnx_translator']->translate($xml_result);
+        if (!$facetlist) {
+            $result->facets = $this['facet_translator']->translate($facetlist);
+        }
 
-        $docset = $xml_result->xpath('/sear:SEGMENTS/sear:JAGROOT/sear:RESULT/sear:DOCSET');
-        $result->total_results = (string) $docset[0]['TOTALHITS'];
+        if ($result->total_results > 0) {
+            $result->results = $this['pnx_translator']->translateDocSet($docset);
+        }
+
 
         if (count($facet_whitelist) > 0) {
             $result->filterFacets($facet_whitelist);
@@ -118,24 +116,16 @@ class PrimoServices extends \Pimple
 
     public function request($record_id)
     {
-        $cache_key = 'full-record-' . sha1($record_id);
+        $builder = new QueryBuilder($this->_institution);
+        $query = $builder->keyword($record_id)
+            ->getQuery();
+        $response = $this->search($query);
 
-        if ($cached_value = $this->_checkCache($cache_key)) {
-            return $cached_value;
+        if (sizeof($response->total_results > 0)) {
+            return $response->results[0];
+        } else {
+            return null;
         }
-
-        $xml_result = $this->_send('full', 'docId=' . $record_id . '&institution=01_BCL');
-
-        $item_xml = $xml_result->JAGROOT->RESULT->DOCSET->DOC->PrimoNMBib->record;
-
-        /* @var $result BibRecord[] */
-        $result = $this['pnx_translator']->translate($item_xml);
-
-        if (isset($this->_cache)) {
-            $this->_cache->save($cache_key, $result[0], 120);
-        }
-
-        return $result[0];
     }
 
     /**
@@ -158,10 +148,7 @@ class PrimoServices extends \Pimple
     protected function _send($action, $query_string)
     {
         $client = new Client('http://' . $this->_host . '/PrimoWebServices/xservice/search/');
-        $request = $client->get($action . '?' . $query_string);
-        $xml_result = simplexml_load_string($request->send()->getBody());
-        $xml_result->registerXPathNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
-        $xml_result->registerXPathNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
-        return $xml_result;
+        $request = $client->get($action . '?json=true&' . $query_string);
+        return json_decode($request->send()->getBody());
     }
 }

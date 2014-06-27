@@ -59,10 +59,10 @@ class QueryBuilder
         return $this->_addTerm('issn', $issn, $precision);
     }
 
-    public function custom($index, $precision, $term)
+    public function custom($index, $precision, $value)
     {
         $term = new QueryTerm();
-        $term->set($index, $precision, $term);
+        $term->set($index, $precision, $value);
         $this->_query->addTerm($term);
         return $this;
     }

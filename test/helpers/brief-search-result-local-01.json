@@ -1,0 +1,2823 @@
+{
+    "sear:SEGMENTS": {
+        "@xmlns:sear": "http://www.exlibrisgroup.com/xsd/jaguar/search", 
+        "sear:JAGROOT": {
+            "sear:RESULT": {
+                "sear:DOCSET": {
+                    "@FIRSTHIT": "0", 
+                    "@HIT_TIME": "118", 
+                    "@IS_LOCAL": "true", 
+                    "@LASTHIT": "9", 
+                    "@TOTALHITS": "58", 
+                    "@TOTAL_TIME": "158", 
+                    "sear:DOC": [
+                        {
+                            "@ID": "2826033", 
+                            "@NO": "1", 
+                            "@RANK": "0.029963527", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "abstract": "Describes the physical characteristics, natural habitat, history and folklore of the otter.", 
+                                        "au": "Goldsworthy, Kaite", 
+                                        "aufirst": "Kaite", 
+                                        "aulast": "Goldsworthy", 
+                                        "btitle": "Otters", 
+                                        "cop": "New York", 
+                                        "date": "2012", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": [
+                                            "9781616906214", 
+                                            "1616906219", 
+                                            "9781616906276", 
+                                            "1616906278"
+                                        ], 
+                                        "lad04": [
+                                            "1616906219", 
+                                            "1616906278"
+                                        ], 
+                                        "lccn": "2010045190", 
+                                        "oclcid": "671916807", 
+                                        "pub": "AV\u00b2 by Weigl", 
+                                        "risdate": "c2012.", 
+                                        "ristype": "BOOK", 
+                                        "seriestitle": "Backyard animals"
+                                    }, 
+                                    "browse": {
+                                        "author": "$$DGoldsworthy, Kaite$$EGoldsworthy, Kaite", 
+                                        "callnumber": "$$IBCL$$DQL737.C25 G65 2012$$E0ql   00737.c  25000  g65 2012$$T0", 
+                                        "subject": "$$DOtters -- Juvenile literature$$EOtters Juvenile literature", 
+                                        "title": [
+                                            "$$DOtters$$EOtters", 
+                                            "$$DBackyard animals$$EBackyard animals"
+                                        ]
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:21421261320001021", 
+                                        "ilsapiid": "01BC_INST21421261320001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC21421261320001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "21421261320001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c1": "2010045190", 
+                                        "c2": "9781616906214;1616906219;9781616906276;1616906278", 
+                                        "c3": "otters", 
+                                        "c4": "2012", 
+                                        "c5": "99131993870001021", 
+                                        "f1": "2010045190", 
+                                        "f10": "av2 by weigl", 
+                                        "f11": "goldsworthy kaite", 
+                                        "f20": "99131993870001021", 
+                                        "f3": "9781616906214;1616906219;9781616906276;1616906278", 
+                                        "f5": "otters", 
+                                        "f6": "2012", 
+                                        "f7": "otters", 
+                                        "f8": "nyu", 
+                                        "f9": "24 p. :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-P", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "availinstitution": "$$IBCL$$Savailable", 
+                                        "availlibrary": "$$IBCL$$LERC$$1Stacks$$2(QL737.C25 G65 2012 )$$Savailable$$X01BC_INST$$YERC$$ZSTACK$$P1", 
+                                        "availpnx": "available", 
+                                        "creationdate": "c2012.", 
+                                        "creator": "Kaite Goldsworthy", 
+                                        "description": [
+                                            "Meet the otter -- All about otters -- Otter history -- Otter shelter -- Otter features -- What do otters eat? -- Otter life cycle -- Encountering otters -- Myths and legends -- Frequently asked questions.", 
+                                            "Describes the physical characteristics, natural habitat, history and folklore of the otter.", 
+                                            "Includes index."
+                                        ], 
+                                        "format": "24 p. : col. ill., col. map ; 27 cm.", 
+                                        "identifier": "ISBN: 9781616906214 (hardcover : alk. paper); ISBN: 1616906219 (hardcover : alk. paper); ISBN: 9781616906276 (softcover : alk. paper); ISBN: 1616906278 (softcover : alk. paper)", 
+                                        "language": "eng", 
+                                        "lds01": "ERC Stacks QL737.C25 G65 2012", 
+                                        "lds07": "New York", 
+                                        "lds09": "AV\u00b2 by Weigl", 
+                                        "lds10": "QL737.C25 G65 2012", 
+                                        "lds11": "99131993870001021", 
+                                        "lds12": "Backyard animals", 
+                                        "lds13": "Meet the otter -- All about otters -- Otter history -- Otter shelter -- Otter features -- What do otters eat? -- Otter life cycle -- Encountering otters -- Myths and legends -- Frequently asked questions.", 
+                                        "lds31": "Backyard animals", 
+                                        "publisher": "New York : AV\u00b2 by Weigl", 
+                                        "relation": "$$Cseries $$VBackyard animals.", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Otters -- Juvenile literature", 
+                                        "title": "Otters", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "QL737.C25"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "O", 
+                                        "collection": "ERC", 
+                                        "creationdate": "2012", 
+                                        "creatorcontrib": "Goldsworthy, Kaite", 
+                                        "frbrgroupid": "12307071", 
+                                        "frbrtype": "6", 
+                                        "genre": "Juvenile literature", 
+                                        "language": "eng", 
+                                        "lfc08": "Backyard animals", 
+                                        "lfc09": "QL737 .C25", 
+                                        "lfc10": "QL737", 
+                                        "library": "ERC", 
+                                        "prefilter": "books", 
+                                        "rsrctype": "books", 
+                                        "topic": "Otters\u2013Juvenile literature", 
+                                        "toplevel": "available"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Kgoldsworthy kaite$$AA", 
+                                        "k3": "$$Kotters$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal", 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "creationdate": "2012", 
+                                        "creatorcontrib": [
+                                            "Kaite Goldsworthy", 
+                                            "Goldsworthy, Kaite.", 
+                                            "Goldsworthy, K", 
+                                            "Kaite Goldsworthy."
+                                        ], 
+                                        "description": "Describes the physical characteristics, natural habitat, history and folklore of the otter.", 
+                                        "enddate": "20121231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "9781616906214", 
+                                            "1616906219", 
+                                            "9781616906276", 
+                                            "1616906278"
+                                        ], 
+                                        "lsr03": "ALMA-BC21421261320001021", 
+                                        "lsr05": [
+                                            "671916807", 
+                                            "(OCoLC)ocn671916807"
+                                        ], 
+                                        "lsr06": [
+                                            "QL737.C25 G65 2012", 
+                                            "QL737.C25G652012", 
+                                            "QL737.C25", 
+                                            "G65 2012", 
+                                            "G652012"
+                                        ], 
+                                        "lsr08": "AV\u00b2 by Weigl,", 
+                                        "lsr09": "New York", 
+                                        "lsr11": [
+                                            "Backyard animals", 
+                                            "Backyard animals."
+                                        ], 
+                                        "lsr12": [
+                                            "Includes index.", 
+                                            "Describes the physical characteristics, natural habitat, history and folklore of the otter."
+                                        ], 
+                                        "lsr14": "ERC", 
+                                        "lsr20": "99131993870001021", 
+                                        "lsr31": "Backyard animals", 
+                                        "recordid": "ALMA-BC21421261320001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "ERC", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "searchscope": [
+                                            "ERC", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "20120101", 
+                                        "subject": "Otters Juvenile literature.", 
+                                        "title": "Otters /", 
+                                        "toc": "Meet the otter -- All about otters -- Otter history -- Otter shelter -- Otter features -- What do otters eat? -- Otter life cycle -- Encountering otters -- Myths and legends -- Frequently asked questions."
+                                    }, 
+                                    "sort": {
+                                        "author": "goldsworthy kaite", 
+                                        "creationdate": "2012", 
+                                        "title": "otters"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21421261320001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-P"
+                            }, 
+                            "sear:LIBRARIES": {
+                                "sear:LIBRARY": {
+                                    "sear:callNumber": "(QL737.C25 G65 2012 )", 
+                                    "sear:collection": "Stacks", 
+                                    "sear:institution": "BCL", 
+                                    "sear:library": "ERC", 
+                                    "sear:status": "available", 
+                                    "sear:url": "OVP"
+                                }
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=9781616906214/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:9781616906214", 
+                                    "http://www.amazon.com/gp/product/1616906219"
+                                ], 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21421261320001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters&rft.aulast=Goldsworthy&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Goldsworthy%2C%20Kaite&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9781616906214&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21421261320001021</ALMA-BC><grp_id>12307071</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=New%20York&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters&rft.aulast=Goldsworthy&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Goldsworthy%2C%20Kaite&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9781616906214&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21421261320001021</ALMA-BC><grp_id>12307071</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=New%20York&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2010045190&rft_id=info:oclcnum/671916807&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21421261320001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/1616906219.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=9781616906214/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }, 
+                        {
+                            "@ID": "3503867", 
+                            "@NO": "2", 
+                            "@RANK": "0.02012073", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "au": "Chanin, Paul", 
+                                        "aufirst": "Paul", 
+                                        "aulast": "Chanin", 
+                                        "btitle": "Otters", 
+                                        "cop": "London", 
+                                        "date": "1993", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": "0905483901", 
+                                        "lad04": "0905483901", 
+                                        "lad05": "20121115$$d201605280903+-903$$dONLCR$$dTest$$dAD100.01$$dAdvancing Studies", 
+                                        "lccn": "gb 93023867", 
+                                        "oclcid": "28114226", 
+                                        "pub": "Whittet", 
+                                        "risdate": "1993.", 
+                                        "ristype": "BOOK", 
+                                        "seriestitle": "British natural history series"
+                                    }, 
+                                    "browse": {
+                                        "author": "$$DChanin, Paul$$EChanin, Paul", 
+                                        "callnumber": "$$IBCL$$DQL737.C25 C44 1993$$E0ql   00737.c  25000  c44 1993$$T0", 
+                                        "subject": "$$DOtters$$EOtters", 
+                                        "title": [
+                                            "$$DOtters$$EOtters", 
+                                            "$$DBritish natural history series$$EBritish natural history series"
+                                        ]
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:21349370700001021", 
+                                        "ilsapiid": "01BC_INST21349370700001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC21349370700001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "21349370700001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c1": "gb93023867", 
+                                        "c2": "0905483901", 
+                                        "c3": "otters", 
+                                        "c4": "1993", 
+                                        "c5": "99112060030001021", 
+                                        "f1": "gb93023867", 
+                                        "f10": "whittet", 
+                                        "f11": "chanin paul", 
+                                        "f20": "99112060030001021", 
+                                        "f3": "0905483901", 
+                                        "f5": "otters", 
+                                        "f6": "1993", 
+                                        "f7": "otters", 
+                                        "f8": "enk", 
+                                        "f9": "127 p. :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-P", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "availinstitution": "$$IBCL$$Savailable", 
+                                        "availlibrary": "$$IBCL$$LONL$$1Stacks (STACK)$$2(QL737.C25 C44 1993 )$$Savailable$$X01BC_INST$$YONL$$ZSTACK$$P1", 
+                                        "availpnx": "available", 
+                                        "contributor": "Guy Troughton", 
+                                        "creationdate": "1993.", 
+                                        "creator": "Paul Chanin", 
+                                        "description": "with illustrations by Guy Troughton.", 
+                                        "format": "127 p. : ill. ; 22 cm.", 
+                                        "identifier": "ISBN: 0905483901", 
+                                        "language": "eng", 
+                                        "lds01": "ONL Stacks (STACK) QL737.C25 C44 1993", 
+                                        "lds07": "London", 
+                                        "lds09": "Whittet", 
+                                        "lds10": "QL737.C25 C44 1993", 
+                                        "lds11": "99112060030001021", 
+                                        "lds12": "British natural history series", 
+                                        "lds14": "000796406", 
+                                        "lds31": "British natural history series", 
+                                        "publisher": "London : Whittet", 
+                                        "relation": "$$Cseries $$VBritish natural history series", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Otters; Otters", 
+                                        "title": "Otters", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "QL737.C25"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "O", 
+                                        "collection": "ONL", 
+                                        "creationdate": "1993", 
+                                        "creatorcontrib": "Chanin, Paul", 
+                                        "frbrgroupid": "135349146", 
+                                        "frbrtype": "6", 
+                                        "language": "eng", 
+                                        "lfc05": "AD100.01", 
+                                        "lfc06": "Test", 
+                                        "lfc07": "Advancing Studies", 
+                                        "lfc08": "British natural history series", 
+                                        "lfc09": "QL737 .C25", 
+                                        "lfc10": "QL737", 
+                                        "library": "ONL", 
+                                        "prefilter": "books", 
+                                        "rsrctype": "books", 
+                                        "topic": "Otters", 
+                                        "toplevel": "available"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Kchanin paul$$AA", 
+                                        "k3": "$$Kotters$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal", 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "creationdate": "1993", 
+                                        "creatorcontrib": [
+                                            "Paul Chanin", 
+                                            "Chanin, Paul.", 
+                                            "Chanin, P", 
+                                            "Paul Chanin ; with illustrations by Guy Troughton."
+                                        ], 
+                                        "enddate": "19931231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "0905483901", 
+                                            "9780905483900"
+                                        ], 
+                                        "lsr03": "ALMA-BC21349370700001021", 
+                                        "lsr05": [
+                                            "28114226", 
+                                            "(OCoLC)ocm28114226"
+                                        ], 
+                                        "lsr06": [
+                                            "QL737.C25 C44 1993", 
+                                            "QL737.C25C441993", 
+                                            "QL737.C25 C441993"
+                                        ], 
+                                        "lsr08": "Whittet,", 
+                                        "lsr09": "London", 
+                                        "lsr11": "British natural history series", 
+                                        "lsr14": "ONL", 
+                                        "lsr15": [
+                                            "Test", 
+                                            "AD100.01", 
+                                            "Advancing Studies", 
+                                            "AD100"
+                                        ], 
+                                        "lsr20": [
+                                            "000796406", 
+                                            "bc_aleph000796406", 
+                                            "99112060030001021"
+                                        ], 
+                                        "lsr31": "British natural history series", 
+                                        "recordid": "ALMA-BC21349370700001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "BCL", 
+                                            "ONL", 
+                                            "ALMA-BC", 
+                                            "CR"
+                                        ], 
+                                        "searchscope": [
+                                            "BCL", 
+                                            "ONL", 
+                                            "ALMA-BC", 
+                                            "CR"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "19930101", 
+                                        "subject": [
+                                            "Otters.", 
+                                            "Otters"
+                                        ], 
+                                        "title": "Otters /"
+                                    }, 
+                                    "sort": {
+                                        "author": "chanin paul", 
+                                        "creationdate": "1993", 
+                                        "title": "otters"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21421261320001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-P"
+                            }, 
+                            "sear:LIBRARIES": {
+                                "sear:LIBRARY": {
+                                    "sear:callNumber": "(QL737.C25 C44 1993 )", 
+                                    "sear:collection": "Stacks (STACK)", 
+                                    "sear:institution": "BCL", 
+                                    "sear:library": "ONL", 
+                                    "sear:status": "available", 
+                                    "sear:url": "OVP"
+                                }
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=0905483901/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:0905483901", 
+                                    "http://www.amazon.com/gp/product/0905483901"
+                                ], 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21349370700001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters&rft.aulast=Chanin&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Chanin%2C%20Paul&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0905483901&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21349370700001021</ALMA-BC><grp_id>135349146</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=London&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters&rft.aulast=Chanin&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Chanin%2C%20Paul&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0905483901&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21349370700001021</ALMA-BC><grp_id>135349146</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=London&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/gb%2093023867&rft_id=info:oclcnum/28114226&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21349370700001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/0905483901.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=0905483901/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }, 
+                        {
+                            "@ID": "602678", 
+                            "@NO": "3", 
+                            "@RANK": "6.3225406E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "abstract": "Shows two young otters frolicking and feeding in a pond.", 
+                                        "au": "Arnosky, Jim", 
+                                        "aufirst": "Jim", 
+                                        "aulast": "Arnosky", 
+                                        "btitle": "Otters under water", 
+                                        "cop": "New York", 
+                                        "date": "1992", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": "0399223398", 
+                                        "lad04": "0399223398", 
+                                        "lccn": "91036792", 
+                                        "oclcid": "24629248", 
+                                        "pub": "Putnam", 
+                                        "risdate": "c1992.", 
+                                        "ristype": "BOOK"
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:21376829930001021", 
+                                        "ilsapiid": "01BC_INST21376829930001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC21376829930001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "21376829930001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c1": "91036792", 
+                                        "c2": "0399223398", 
+                                        "c3": "ottersunderwater", 
+                                        "c4": "1992", 
+                                        "f1": "91036792", 
+                                        "f10": "putnam", 
+                                        "f11": "arnosky jim", 
+                                        "f20": "99122075560001021", 
+                                        "f5": "ottersunderwater", 
+                                        "f6": "1992", 
+                                        "f7": "otters under water", 
+                                        "f8": "nyu", 
+                                        "f9": "[32] p. :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-P", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "availinstitution": "$$IBCL$$Savailable", 
+                                        "availlibrary": "$$IBCL$$LERC$$1Stacks$$2(QL737.C25 A76 1992 )$$Savailable$$31$$40$$X01BC_INST$$YERC$$ZSTACK", 
+                                        "availpnx": "available", 
+                                        "creationdate": "c1992.", 
+                                        "creator": "Jim Arnosky", 
+                                        "description": "Shows two young otters frolicking and feeding in a pond.", 
+                                        "format": "[32] p. : col. ill. ; 29 cm.", 
+                                        "identifier": "ISBN: 0399223398 :", 
+                                        "language": "eng", 
+                                        "lds01": "ERC Stacks QL737.C25 A76 1992", 
+                                        "lds07": "New York", 
+                                        "lds09": "Putnam", 
+                                        "lds10": "QL737.C25 A76 1992", 
+                                        "lds11": "99122075560001021", 
+                                        "lds14": "000647374", 
+                                        "publisher": "New York : Putnam", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Otters -- Juvenile literature", 
+                                        "title": "Otters under water", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "QL737.C25"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "O", 
+                                        "collection": "ERC", 
+                                        "creationdate": "1992", 
+                                        "creatorcontrib": "Arnosky, Jim", 
+                                        "frbrgroupid": "18080105", 
+                                        "frbrtype": "6", 
+                                        "genre": "Juvenile literature", 
+                                        "language": "eng", 
+                                        "library": "ERC", 
+                                        "prefilter": "books", 
+                                        "rsrctype": "books", 
+                                        "topic": "Otters\u2013Juvenile literature", 
+                                        "toplevel": "available"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Karnosky jim$$AA", 
+                                        "k3": "$$Kotters under water$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\u00ae", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal", 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "creationdate": "1992", 
+                                        "creatorcontrib": [
+                                            "Jim Arnosky", 
+                                            "Arnosky, Jim.", 
+                                            "Arnosky, J", 
+                                            "Jim Arnosky."
+                                        ], 
+                                        "description": "Shows two young otters frolicking and feeding in a pond.", 
+                                        "enddate": "19921231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "0399223398", 
+                                            "9780399223396"
+                                        ], 
+                                        "lsr03": "ALMA-BC21376829930001021", 
+                                        "lsr05": [
+                                            "24629248", 
+                                            "(OCoLC)ocm24629248"
+                                        ], 
+                                        "lsr06": [
+                                            "QL737.C25 A76 1992", 
+                                            "QL737.C25A761992", 
+                                            "QL737.C25", 
+                                            "A76 1992", 
+                                            "A761992"
+                                        ], 
+                                        "lsr08": "Putnam,", 
+                                        "lsr09": "New York", 
+                                        "lsr12": "Shows two young otters frolicking and feeding in a pond.", 
+                                        "lsr14": "ERC", 
+                                        "lsr20": [
+                                            "000647374", 
+                                            "bc_aleph000647374", 
+                                            "99122075560001021"
+                                        ], 
+                                        "recordid": "ALMA-BC21376829930001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "ERC", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "searchscope": [
+                                            "ERC", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "19920101", 
+                                        "subject": "Otters Juvenile literature.", 
+                                        "title": "Otters under water /"
+                                    }, 
+                                    "sort": {
+                                        "author": "arnosky jim", 
+                                        "creationdate": "1992", 
+                                        "title": "otters under water"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21421261320001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-P"
+                            }, 
+                            "sear:LIBRARIES": {
+                                "sear:LIBRARY": {
+                                    "sear:callNumber": "(QL737.C25 A76 1992 )", 
+                                    "sear:collection": "Stacks", 
+                                    "sear:institution": "BCL", 
+                                    "sear:library": "ERC", 
+                                    "sear:status": "available", 
+                                    "sear:url": "OVP"
+                                }
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=0399223398/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:0399223398", 
+                                    "http://www.amazon.com/gp/product/0399223398"
+                                ], 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21376829930001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters%20under%20water&rft.aulast=Arnosky&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Arnosky%2C%20Jim&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0399223398&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21376829930001021</ALMA-BC><grp_id>18080105</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=New%20York&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters%20under%20water&rft.aulast=Arnosky&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Arnosky%2C%20Jim&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0399223398&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21376829930001021</ALMA-BC><grp_id>18080105</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=New%20York&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/91036792&rft_id=info:oclcnum/24629248&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21376829930001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/0399223398.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=0399223398/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }, 
+                        {
+                            "@ID": "428729", 
+                            "@NO": "4", 
+                            "@RANK": "5.8400247E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "addau": "U.S. Fish and Wildlife Service. Ventura Fish and Wildlife Office", 
+                                        "addtitle": "Translocation of southern sea otters", 
+                                        "btitle": "Draft supplemental environmental impact statement translocation of southern sea otters", 
+                                        "cop": "Ventura, Calif.", 
+                                        "date": "2005", 
+                                        "format": "book", 
+                                        "genre": "unknown", 
+                                        "notes": "Includes bibliographical references.", 
+                                        "oclcid": "697283024", 
+                                        "pub": "U.S. Dept, of the Interior, U.S. Fish and Wildlife Service", 
+                                        "risdate": [
+                                            2005
+                                        ], 
+                                        "ristype": "GEN"
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:51410148670001021", 
+                                        "ilsapiid": "01BC_INST51410148670001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC51410148670001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "51410148670001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c3": "draftsupplementalenvnseaotters", 
+                                        "c4": "2005", 
+                                        "f10": "u s dept of the interior u s fish and wildlife service", 
+                                        "f20": "99102062170001021", 
+                                        "f5": "draftsupplementalenvnseaotters", 
+                                        "f6": "2005", 
+                                        "f7": "draft supplemental environmental impact statement translocation of southern sea otters", 
+                                        "f8": "cau", 
+                                        "f9": "1 online resource ([434] p.) :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-E", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "contributor": "U.S. Fish and Wildlife Service. Ventura Fish and Wildlife Office.", 
+                                        "creationdate": "2005", 
+                                        "description": [
+                                            "Title from PDF title screen (viewed on Jan. 18, 2010).", 
+                                            "\"August 2005.\"", 
+                                            "Includes bibliographical references."
+                                        ], 
+                                        "format": "1 online resource ([434] p.) : ill., maps.", 
+                                        "language": "eng", 
+                                        "lds02": "Translocation of southern sea otters", 
+                                        "lds07": "Ventura, Calif.", 
+                                        "lds09": "U.S. Dept, of the Interior, U.S. Fish and Wildlife Service", 
+                                        "lds11": "99102062170001021", 
+                                        "lds14": "002909244", 
+                                        "lds15": "Translocation of southern sea otters", 
+                                        "publisher": "Ventura, Calif. : U.S. Dept, of the Interior, U.S. Fish and Wildlife Service", 
+                                        "relation": "Draft supplemental environmental impact statement : translocation of southern sea otters", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Sea otter -- Conservation Pacific Coast (U.S.); Sea otter -- Reintroduction Pacific Coast (U.S.); Wildlife reintroduction -- Pacific Coast (U.S.)", 
+                                        "title": "Draft supplemental environmental impact statement translocation of southern sea otters", 
+                                        "type": "government_document"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "D", 
+                                        "creationdate": "2005", 
+                                        "creatorcontrib": "U.S. Fish and Wildlife Service. Ventura Fish and Wildlife Office", 
+                                        "frbrgroupid": "18072838", 
+                                        "frbrtype": "6", 
+                                        "language": "eng", 
+                                        "prefilter": "government_documents", 
+                                        "rsrctype": "government_documents", 
+                                        "topic": [
+                                            "Sea otter\u2013Conservation\u2013Pacific Coast (U.S.)", 
+                                            "Sea otter\u2013Reintroduction\u2013Pacific Coast (U.S.)", 
+                                            "Wildlife reintroduction\u2013Pacific Coast (U.S.)"
+                                        ], 
+                                        "toplevel": "online_resources"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Ku s fish and wildlife service ventura fish and wildlife office$$AA", 
+                                        "k3": "$$Kdraft supplemental environmental impact statement translocation of southern sea otters$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktorsrc": "$$Uhttp://purl.fdlp.gov/GPO/gpo2868$$DConnect to this resource", 
+                                        "linktouc": "$$Tworldcat_oclc$$DThis item in WorldCat\u00ae", 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal"
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "addtitle": "Draft supplemental environmental impact statement : translocation of southern sea otters", 
+                                        "alttitle": "Translocation of southern sea otters", 
+                                        "creationdate": "2005", 
+                                        "creatorcontrib": [
+                                            "prepared by U.S. Fish and Wildlife Service, Ventura Fish and Wildlife Office.", 
+                                            "U.S. Fish and Wildlife Service. Ventura Fish and Wildlife Office."
+                                        ], 
+                                        "enddate": "20051231", 
+                                        "format": "government_document", 
+                                        "lsr03": "ALMA-BC51410148670001021", 
+                                        "lsr05": [
+                                            "697283024", 
+                                            "(OCoLC)ocn697283024"
+                                        ], 
+                                        "lsr08": "U.S. Dept, of the Interior, U.S. Fish and Wildlife Service,", 
+                                        "lsr09": "Ventura, Calif.", 
+                                        "lsr12": [
+                                            "Title from PDF title screen (viewed on Jan. 18, 2010).", 
+                                            "\"August 2005.\""
+                                        ], 
+                                        "lsr20": [
+                                            "002909244", 
+                                            "bc_aleph002909244", 
+                                            "99102062170001021"
+                                        ], 
+                                        "recordid": "ALMA-BC51410148670001021", 
+                                        "rsrctype": "government_document", 
+                                        "scope": [
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "searchscope": [
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "20050101", 
+                                        "subject": [
+                                            "Sea otter Conservation Pacific Coast (U.S.).", 
+                                            "Sea otter Reintroduction Pacific Coast (U.S.).", 
+                                            "Wildlife reintroduction Pacific Coast (U.S.)."
+                                        ], 
+                                        "title": "Draft supplemental environmental impact statement translocation of southern sea otters /"
+                                    }, 
+                                    "sort": {
+                                        "author": "prepared by u s fish and wildlife service ventura fish and wildlife office", 
+                                        "creationdate": "2005", 
+                                        "title": "draft supplemental environmental impact statement translocation of southern sea otters"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:51410148670001021,language=,view=&svc_dat=viewit&u.ignore_date_coverage=true&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-E"
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktorsrc": "http://purl.fdlp.gov/GPO/gpo2868", 
+                                "sear:linktouc": "http://bc.worldcat.org/search?q=no:697283024", 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC51410148670001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Draft%20supplemental%20environmental%20impact%20statement%20translocation%20of%20southern%20sea%20otters&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51410148670001021</ALMA-BC><grp_id>18072838</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Ventura%2C%20Calif.&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=unknown&rft.atitle=&rft.jtitle=&rft.btitle=Draft%20supplemental%20environmental%20impact%20statement%20translocation%20of%20southern%20sea%20otters&rft.aulast=&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51410148670001021</ALMA-BC><grp_id>18072838</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Ventura%2C%20Calif.&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/697283024&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:51410148670001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": null
+                            }
+                        }, 
+                        {
+                            "@ID": "602564", 
+                            "@NO": "5", 
+                            "@RANK": "5.6537625E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "abstract": "\"Summary: Simple text and photographs describe sea otters, their body parts, and what they do\"--Provided by publisher.", 
+                                        "au": "Rake, Jody Sullivan", 
+                                        "aufirst": "Jody Sullivan", 
+                                        "aulast": "Rake", 
+                                        "btitle": "Sea otters", 
+                                        "cop": "Mankato, Minn.", 
+                                        "date": "2008", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": [
+                                            "9781429600347", 
+                                            "1429600349"
+                                        ], 
+                                        "lad04": "1429600349", 
+                                        "lccn": "2006102228", 
+                                        "notes": "Includes bibliographical references (p. 23) and index.", 
+                                        "oclcid": "77485984", 
+                                        "pub": "Capstone Press", 
+                                        "risdate": "c2008.", 
+                                        "ristype": "BOOK", 
+                                        "seriestitle": "Pebble Plus. Under the sea"
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:21338594500001021", 
+                                        "ilsapiid": "01BC_INST21338594500001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC21338594500001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "21338594500001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c1": "2006102228", 
+                                        "c2": "9781429600347;1429600349", 
+                                        "c3": "seaotters", 
+                                        "c4": "2008", 
+                                        "f1": "2006102228", 
+                                        "f10": "capstone press", 
+                                        "f11": "rake jody sullivan", 
+                                        "f20": "99108170680001021", 
+                                        "f3": "9781429600347;1429600349", 
+                                        "f5": "seaotters", 
+                                        "f6": "2008", 
+                                        "f7": "sea otters", 
+                                        "f8": "mnu", 
+                                        "f9": "24 p. :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-P", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "availinstitution": "$$IBCL$$Savailable", 
+                                        "availlibrary": "$$IBCL$$LERC$$1Stacks$$2(QL737 .C25 E35 2008 )$$Savailable$$31$$40$$X01BC_INST$$YERC$$ZSTACK", 
+                                        "availpnx": "available", 
+                                        "creationdate": "c2008.", 
+                                        "creator": "Jody Sullivan Rake", 
+                                        "description": [
+                                            "What are sea otters? -- Body parts -- What sea otters do -- Under the sea -- Glossary -- Read more -- Internet sites -- Index.", 
+                                            "\"Summary: Simple text and photographs describe sea otters, their body parts, and what they do\"--Provided by publisher.", 
+                                            "Includes bibliographical references (p. 23) and index."
+                                        ], 
+                                        "format": "24 p. : col. ill. ; 24 x 29 cm.", 
+                                        "identifier": "ISBN: 9781429600347; ISBN: 1429600349", 
+                                        "language": "eng", 
+                                        "lds01": "ERC Stacks QL737 .C25 E35 2008", 
+                                        "lds07": "Mankato, Minn.", 
+                                        "lds09": "Capstone Press", 
+                                        "lds10": "QL737 .C25 E35 2008", 
+                                        "lds11": "99108170680001021", 
+                                        "lds12": "Pebble Plus. Under the sea", 
+                                        "lds13": "What are sea otters? -- Body parts -- What sea otters do -- Under the sea -- Glossary -- Read more -- Internet sites -- Index.", 
+                                        "lds14": "002924408", 
+                                        "lds31": "Pebble Plus. Under the sea", 
+                                        "publisher": "Mankato, Minn. : Capstone Press", 
+                                        "relation": "$$Cseries $$VPebble Plus. Under the sea", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Sea otter -- Juvenile literature", 
+                                        "title": "Sea otters", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "QL737.C25"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "S", 
+                                        "collection": "ERC", 
+                                        "creationdate": "2008", 
+                                        "creatorcontrib": "Rake, Jody Sullivan", 
+                                        "frbrgroupid": "135618302", 
+                                        "frbrtype": "6", 
+                                        "genre": "Juvenile literature", 
+                                        "language": "eng", 
+                                        "lfc08": "Pebble Plus. Under the sea", 
+                                        "library": "ERC", 
+                                        "prefilter": "books", 
+                                        "rsrctype": "books", 
+                                        "topic": "Sea otter\u2013Juvenile literature", 
+                                        "toplevel": "available"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Krake jody sullivan$$AA", 
+                                        "k3": "$$Ksea otters$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\u00ae", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal", 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "creationdate": "2008", 
+                                        "creatorcontrib": [
+                                            "Jody Sullivan Rake", 
+                                            "Rake, Jody Sullivan.", 
+                                            "Rake, J", 
+                                            "by Jody Sullivan Rake."
+                                        ], 
+                                        "description": "\"Summary: Simple text and photographs describe sea otters, their body parts, and what they do\"--Provided by publisher.", 
+                                        "enddate": "20081231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "9781429600347", 
+                                            "1429600349"
+                                        ], 
+                                        "lsr03": "ALMA-BC21338594500001021", 
+                                        "lsr05": [
+                                            "77485984", 
+                                            "(OCoLC)ocm77485984"
+                                        ], 
+                                        "lsr06": [
+                                            "QL737 .C25 E35 2008", 
+                                            "QL737.C25E352008", 
+                                            "QL737.C25", 
+                                            "E35 2008", 
+                                            "E352008"
+                                        ], 
+                                        "lsr08": "Capstone Press,", 
+                                        "lsr09": "Mankato, Minn.", 
+                                        "lsr11": [
+                                            "Pebble Plus. Under the sea", 
+                                            "Pebble Plus Under the sea"
+                                        ], 
+                                        "lsr12": "\"Summary: Simple text and photographs describe sea otters, their body parts, and what they do\"--Provided by publisher.", 
+                                        "lsr14": "ERC", 
+                                        "lsr20": [
+                                            "002924408", 
+                                            "bc_aleph002924408", 
+                                            "99108170680001021"
+                                        ], 
+                                        "lsr31": "Pebble Plus. Under the sea", 
+                                        "recordid": "ALMA-BC21338594500001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "ERC", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "searchscope": [
+                                            "ERC", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "20080101", 
+                                        "subject": "Sea otter Juvenile literature.", 
+                                        "title": "Sea otters /", 
+                                        "toc": "What are sea otters? -- Body parts -- What sea otters do -- Under the sea -- Glossary -- Read more -- Internet sites -- Index."
+                                    }, 
+                                    "sort": {
+                                        "author": "rake jody sullivan", 
+                                        "creationdate": "2008", 
+                                        "title": "sea otters"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21421261320001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-P"
+                            }, 
+                            "sear:LIBRARIES": {
+                                "sear:LIBRARY": {
+                                    "sear:callNumber": "(QL737 .C25 E35 2008 )", 
+                                    "sear:collection": "Stacks", 
+                                    "sear:institution": "BCL", 
+                                    "sear:library": "ERC", 
+                                    "sear:status": "available", 
+                                    "sear:url": "OVP"
+                                }
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=9781429600347/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:9781429600347", 
+                                    "http://www.amazon.com/gp/product/1429600349"
+                                ], 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21338594500001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Sea%20otters&rft.aulast=Rake&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Rake%2C%20Jody%20Sullivan&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9781429600347&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21338594500001021</ALMA-BC><grp_id>135618302</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Mankato%2C%20Minn.&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Sea%20otters&rft.aulast=Rake&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Rake%2C%20Jody%20Sullivan&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9781429600347&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21338594500001021</ALMA-BC><grp_id>135618302</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Mankato%2C%20Minn.&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2006102228&rft_id=info:oclcnum/77485984&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21338594500001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/1429600349.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=9781429600347/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }, 
+                        {
+                            "@ID": "3868194", 
+                            "@NO": "6", 
+                            "@RANK": "5.649106E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "abstract": "Angry at being left behind when her father and brother go off to muster sheep, Alexa decides to search in the wild for the otters previously seen only by a mystical Maori tribesman.", 
+                                        "au": "Savage, Deborah", 
+                                        "aufirst": "Deborah", 
+                                        "aulast": "Savage", 
+                                        "btitle": "A rumour of otters", 
+                                        "cop": "Boston", 
+                                        "date": "1986", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": "0395411866", 
+                                        "lad04": "0395411866", 
+                                        "oclcid": "12693853", 
+                                        "pub": "Houghton Mifflin", 
+                                        "risdate": "1986.", 
+                                        "ristype": "BOOK"
+                                    }, 
+                                    "browse": {
+                                        "author": "$$DSavage, Deborah$$ESavage, Deborah", 
+                                        "callnumber": "$$IBCL$$D@458089$$E@458089$$T", 
+                                        "subject": [
+                                            "$$DOtters -- Juvenile fiction$$EOtters Juvenile fiction", 
+                                            "$$DSex role -- Fiction$$ESex role Fiction", 
+                                            "$$DNew Zealand -- Juvenile fiction$$ENew Zealand Juvenile fiction"
+                                        ], 
+                                        "title": "$$DA rumour of otters$$Erumour of otters"
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:21374180990001021", 
+                                        "ilsapiid": "01BC_INST21374180990001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC21374180990001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "21374180990001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c2": "0395411866", 
+                                        "c3": "rumourofotters", 
+                                        "c4": "1986", 
+                                        "c5": "99121107520001021", 
+                                        "f10": "houghton mifflin", 
+                                        "f11": "savage deborah", 
+                                        "f20": "99121107520001021", 
+                                        "f3": "0395411866", 
+                                        "f5": "rumourofotters", 
+                                        "f6": "1986", 
+                                        "f7": "rumour of otters", 
+                                        "f8": "mau", 
+                                        "f9": "156 p. ;", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-P", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "availinstitution": "$$IBCL$$Savailable", 
+                                        "availlibrary": "$$IBCL$$LONL$$1Offsite Collection$$2(@458089 )$$Savailable$$X01BC_INST$$YONL$$ZRM150_STAC$$P1", 
+                                        "availpnx": "available", 
+                                        "creationdate": "1986.", 
+                                        "creator": "Deborah Savage", 
+                                        "description": "Angry at being left behind when her father and brother go off to muster sheep, Alexa decides to search in the wild for the otters previously seen only by a mystical Maori tribesman.", 
+                                        "format": "156 p. ; 22 cm.", 
+                                        "identifier": "ISBN: 0395411866", 
+                                        "language": "eng", 
+                                        "lds01": "ONL Offsite Collection @458089", 
+                                        "lds07": "Boston", 
+                                        "lds09": "Houghton Mifflin", 
+                                        "lds10": "@458089", 
+                                        "lds11": "99121107520001021", 
+                                        "lds14": "000625694", 
+                                        "publisher": "Boston : Houghton Mifflin", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Otters -- Juvenile fiction; Sex role -- Fiction; New Zealand -- Juvenile fiction", 
+                                        "title": "A rumour of otters", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "PZ7.S2588"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "R", 
+                                        "collection": "ONL", 
+                                        "creationdate": "1986", 
+                                        "creatorcontrib": "Savage, Deborah", 
+                                        "frbrgroupid": "18496246", 
+                                        "frbrtype": "6", 
+                                        "genre": "Juvenile fiction", 
+                                        "language": "eng", 
+                                        "library": "ONL", 
+                                        "prefilter": "books", 
+                                        "rsrctype": "books", 
+                                        "topic": [
+                                            "Otters\u2013Juvenile fiction", 
+                                            "Sex role\u2013Fiction", 
+                                            "New Zealand\u2013Juvenile fiction"
+                                        ], 
+                                        "toplevel": "available"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Ksavage deborah$$AA", 
+                                        "k3": "$$Krumour of otters$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal", 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "creationdate": "1986", 
+                                        "creatorcontrib": [
+                                            "Deborah Savage", 
+                                            "Savage, Deborah.", 
+                                            "Savage, D", 
+                                            "Deborah Savage."
+                                        ], 
+                                        "description": "Angry at being left behind when her father and brother go off to muster sheep, Alexa decides to search in the wild for the otters previously seen only by a mystical Maori tribesman.", 
+                                        "enddate": "19861231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "0395411866", 
+                                            "9780395411865"
+                                        ], 
+                                        "lsr03": "ALMA-BC21374180990001021", 
+                                        "lsr05": [
+                                            "12693853", 
+                                            "(OCoLC)ocm12693853"
+                                        ], 
+                                        "lsr06": [
+                                            "@458089", 
+                                            "PZ7.S2588", 
+                                            "Ru 1986", 
+                                            "Ru1986"
+                                        ], 
+                                        "lsr08": "Houghton Mifflin,", 
+                                        "lsr09": "Boston", 
+                                        "lsr12": "Angry at being left behind when her father and brother go off to muster sheep, Alexa decides to search in the wild for the otters previously seen only by a mystical Maori tribesman.", 
+                                        "lsr14": "ONL", 
+                                        "lsr20": [
+                                            "000625694", 
+                                            "bc_aleph000625694", 
+                                            "99121107520001021"
+                                        ], 
+                                        "recordid": "ALMA-BC21374180990001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "BCL", 
+                                            "ONL", 
+                                            "ALMA-BC"
+                                        ], 
+                                        "searchscope": [
+                                            "BCL", 
+                                            "ONL", 
+                                            "ALMA-BC"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "19860101", 
+                                        "subject": [
+                                            "Otters Juvenile fiction.", 
+                                            "Sex role Fiction.", 
+                                            "New Zealand Juvenile fiction."
+                                        ], 
+                                        "title": "A rumour of otters /"
+                                    }, 
+                                    "sort": {
+                                        "author": "savage deborah", 
+                                        "creationdate": "1986", 
+                                        "title": "rumour of otters"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21421261320001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-P"
+                            }, 
+                            "sear:LIBRARIES": {
+                                "sear:LIBRARY": {
+                                    "sear:callNumber": "(@458089 )", 
+                                    "sear:collection": "Offsite Collection", 
+                                    "sear:institution": "BCL", 
+                                    "sear:library": "ONL", 
+                                    "sear:status": "available", 
+                                    "sear:url": "OVP"
+                                }
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=0395411866/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:0395411866", 
+                                    "http://www.amazon.com/gp/product/0395411866"
+                                ], 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21374180990001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=A%20rumour%20of%20otters&rft.aulast=Savage&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Savage%2C%20Deborah&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0395411866&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21374180990001021</ALMA-BC><grp_id>18496246</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Boston&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=A%20rumour%20of%20otters&rft.aulast=Savage&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Savage%2C%20Deborah&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0395411866&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21374180990001021</ALMA-BC><grp_id>18496246</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Boston&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/&rft_id=info:oclcnum/12693853&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21374180990001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/0395411866.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=0395411866/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }, 
+                        {
+                            "@ID": "2732129", 
+                            "@NO": "7", 
+                            "@RANK": "5.23526E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "abstract": "Mr. Rabbit wonders if he will be able to get along with his new neighbors, who are otters, until he is reminded of the golden rule.", 
+                                        "au": "Keller, Laurie", 
+                                        "aufirst": "Laurie", 
+                                        "aulast": "Keller", 
+                                        "btitle": "Do unto otters : a book about manners", 
+                                        "cop": "New York, N.Y.", 
+                                        "date": "2007", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": [
+                                            "0805079963", 
+                                            "9780805079968", 
+                                            "0805079394", 
+                                            "9780805079395"
+                                        ], 
+                                        "lad04": [
+                                            "0805079963", 
+                                            "0805079394"
+                                        ], 
+                                        "lccn": "2006030505", 
+                                        "oclcid": "76133475", 
+                                        "pub": "H. Holt", 
+                                        "risdate": "c2007.", 
+                                        "ristype": "BOOK"
+                                    }, 
+                                    "browse": {
+                                        "author": "$$DKeller, Laurie$$EKeller, Laurie", 
+                                        "callnumber": "$$IBCL$$DPZ7 .K281346 Do 2007$$E0pz   00007.k  281346  do 2007$$T0", 
+                                        "subject": [
+                                            "$$DGolden rule -- Juvenile fiction$$EGolden rule Juvenile fiction", 
+                                            "$$DNeighborliness -- Juvenile fiction$$ENeighborliness Juvenile fiction", 
+                                            "$$DRabbits -- Juvenile fiction$$ERabbits Juvenile fiction", 
+                                            "$$DOtters -- Juvenile fiction$$EOtters Juvenile fiction"
+                                        ], 
+                                        "title": "$$DDo unto otters : a book about manners$$EDo unto otters : a book about manners"
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:21344185800001021", 
+                                        "ilsapiid": "01BC_INST21344185800001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC21344185800001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "21344185800001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c1": "2006030505", 
+                                        "c2": "0805079963;9780805079968;0805079394;9780805079395", 
+                                        "c3": "dountoottersabookaboutmanners", 
+                                        "c4": "2007", 
+                                        "c5": "99110230720001021", 
+                                        "f1": "2006030505", 
+                                        "f10": "h holt", 
+                                        "f11": "keller laurie", 
+                                        "f20": "99110230720001021", 
+                                        "f3": "0805079963;9780805079968;0805079394;9780805079395", 
+                                        "f5": "dountoottersabookaboutmanners", 
+                                        "f6": "2007", 
+                                        "f7": "do unto otters a book about manners", 
+                                        "f8": "nyu", 
+                                        "f9": "[33] p. :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-P", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "availinstitution": "$$IBCL$$Savailable", 
+                                        "availlibrary": "$$IBCL$$LERC$$1Stacks$$2(PZ7 .K281346 Do 2007 )$$Savailable$$X01BC_INST$$YERC$$ZSTACK$$P1", 
+                                        "availpnx": "available", 
+                                        "creationdate": "c2007.", 
+                                        "creator": "Laurie Keller", 
+                                        "description": "Mr. Rabbit wonders if he will be able to get along with his new neighbors, who are otters, until he is reminded of the golden rule.", 
+                                        "edition": "1st ed..", 
+                                        "format": "[33] p. : col. ill. ; 29 cm.", 
+                                        "identifier": "ISBN: 0805079963 (reinforced); ISBN: 9780805079968 (reinforced); ISBN: 0805079394 (hardcover : alk. paper); ISBN: 9780805079395 (hardcover : alk. paper)", 
+                                        "language": "eng", 
+                                        "lds01": "ERC Stacks PZ7 .K281346 Do 2007", 
+                                        "lds07": "New York, N.Y.", 
+                                        "lds09": "H. Holt", 
+                                        "lds10": "PZ7 .K281346 Do 2007", 
+                                        "lds11": "99110230720001021", 
+                                        "lds14": "002401736", 
+                                        "publisher": "New York, N.Y. : H. Holt", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Golden rule -- Juvenile fiction; Neighborliness -- Juvenile fiction; Rabbits -- Juvenile fiction; Otters -- Juvenile fiction", 
+                                        "title": "Do unto otters : a book about manners", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "PZ7.K281346"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "D", 
+                                        "collection": "ERC", 
+                                        "creationdate": "2007", 
+                                        "creatorcontrib": "Keller, Laurie", 
+                                        "frbrgroupid": "18083285", 
+                                        "frbrtype": "6", 
+                                        "genre": "Juvenile fiction", 
+                                        "language": "eng", 
+                                        "lfc09": "PZ7 .K281346", 
+                                        "lfc10": "PZ7", 
+                                        "library": "ERC", 
+                                        "prefilter": "books", 
+                                        "rsrctype": "books", 
+                                        "topic": [
+                                            "Golden rule\u2013Juvenile fiction", 
+                                            "Neighborliness\u2013Juvenile fiction", 
+                                            "Rabbits\u2013Juvenile fiction", 
+                                            "Otters\u2013Juvenile fiction"
+                                        ], 
+                                        "toplevel": "available"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Kkeller laurie$$AA", 
+                                        "k3": "$$Kdo unto otters a book about manners$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal", 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "creationdate": "2007", 
+                                        "creatorcontrib": [
+                                            "Laurie Keller", 
+                                            "Keller, Laurie.", 
+                                            "Keller, L", 
+                                            "by Laurie Keller."
+                                        ], 
+                                        "description": "Mr. Rabbit wonders if he will be able to get along with his new neighbors, who are otters, until he is reminded of the golden rule.", 
+                                        "enddate": "20071231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "0805079963", 
+                                            "9780805079968", 
+                                            "0805079394", 
+                                            "9780805079395"
+                                        ], 
+                                        "lsr03": "ALMA-BC21344185800001021", 
+                                        "lsr05": [
+                                            "76133475", 
+                                            "(OCoLC)ocm76133475"
+                                        ], 
+                                        "lsr06": [
+                                            "PZ7 .K281346 Do 2007", 
+                                            "PZ7.K281346Do2007", 
+                                            "PZ7.K281346", 
+                                            "Do 2007", 
+                                            "Do2007"
+                                        ], 
+                                        "lsr08": "H. Holt,", 
+                                        "lsr09": "New York, N.Y.", 
+                                        "lsr12": "Mr. Rabbit wonders if he will be able to get along with his new neighbors, who are otters, until he is reminded of the golden rule.", 
+                                        "lsr14": "ERC", 
+                                        "lsr20": [
+                                            "002401736", 
+                                            "bc_aleph002401736", 
+                                            "99110230720001021"
+                                        ], 
+                                        "recordid": "ALMA-BC21344185800001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "ERC", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "searchscope": [
+                                            "ERC", 
+                                            "ALMA-BC", 
+                                            "BCL"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "20070101", 
+                                        "subject": [
+                                            "Golden rule Juvenile fiction.", 
+                                            "Neighborliness Juvenile fiction.", 
+                                            "Rabbits Juvenile fiction.", 
+                                            "Otters Juvenile fiction."
+                                        ], 
+                                        "title": "Do unto otters : a book about manners /"
+                                    }, 
+                                    "sort": {
+                                        "author": "keller laurie", 
+                                        "creationdate": "2007", 
+                                        "title": "do unto otters a book about manners"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21421261320001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-P"
+                            }, 
+                            "sear:LIBRARIES": {
+                                "sear:LIBRARY": {
+                                    "sear:callNumber": "(PZ7 .K281346 Do 2007 )", 
+                                    "sear:collection": "Stacks", 
+                                    "sear:institution": "BCL", 
+                                    "sear:library": "ERC", 
+                                    "sear:status": "available", 
+                                    "sear:url": "OVP"
+                                }
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=0805079963/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:0805079963", 
+                                    "http://www.amazon.com/gp/product/0805079963"
+                                ], 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21344185800001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Do%20unto%20otters%20:%20a%20book%20about%20manners&rft.aulast=Keller&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Keller%2C%20Laurie&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0805079963&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21344185800001021</ALMA-BC><grp_id>18083285</grp_id><oa></oa>&rft.eisbn=&rft.edition=1st%20ed..&rft.pub=&rft.place=New%20York%2C%20N.Y.&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Do%20unto%20otters%20:%20a%20book%20about%20manners&rft.aulast=Keller&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Keller%2C%20Laurie&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0805079963&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21344185800001021</ALMA-BC><grp_id>18083285</grp_id><oa></oa>&rft.eisbn=&rft.edition=1st%20ed..&rft.pub=&rft.place=New%20York%2C%20N.Y.&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2006030505&rft_id=info:oclcnum/76133475&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21344185800001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/0805079963.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=0805079963/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }, 
+                        {
+                            "@ID": "3236898", 
+                            "@NO": "8", 
+                            "@RANK": "4.7797675E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "au": "Simms, Colin, 1939-", 
+                                        "aufirst": "Colin,", 
+                                        "aulast": "Simms", 
+                                        "btitle": "Otters and martens", 
+                                        "cop": "Exeter", 
+                                        "date": "2004", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": "0907562507", 
+                                        "lad04": "0907562507", 
+                                        "lccn": "2005415947", 
+                                        "notes": "\"Colin Simms, selected bibliography\"--P. facing t.p.", 
+                                        "oclcid": "57559217", 
+                                        "pub": "Shearsman Books", 
+                                        "risdate": "2004.", 
+                                        "ristype": "BOOK"
+                                    }, 
+                                    "browse": {
+                                        "author": "$$DSimms, Colin, 1939-$$ESimms, Colin, 1939-", 
+                                        "callnumber": "$$IBCL$$DPR6069 .I413 O78 2004$$E0pr   06069.i  41300  o78 2004$$T0", 
+                                        "subject": [
+                                            "$$DOtters -- Poetry$$EOtters Poetry", 
+                                            "$$DMartens -- Poetry$$EMartens Poetry"
+                                        ], 
+                                        "title": "$$DOtters and martens$$EOtters and martens"
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:21333040540001021", 
+                                        "ilsapiid": "01BC_INST21333040540001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC21333040540001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "21333040540001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c1": "2005415947", 
+                                        "c2": "0907562507", 
+                                        "c3": "ottersandmartens", 
+                                        "c4": "2004", 
+                                        "c5": "99106156350001021", 
+                                        "f1": "2005415947", 
+                                        "f10": "shearsman books", 
+                                        "f11": "simms colin 1939", 
+                                        "f20": "99106156350001021", 
+                                        "f3": "0907562507", 
+                                        "f5": "ottersandmartens", 
+                                        "f6": "2004", 
+                                        "f7": "otters and martens", 
+                                        "f8": "enk", 
+                                        "f9": "163 p. :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-P", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "availinstitution": "$$IBCL$$Savailable", 
+                                        "availlibrary": "$$IBCL$$LONL$$1Stacks (STACK)$$2(PR6069 .I413 O78 2004 )$$Savailable$$X01BC_INST$$YONL$$ZSTACK$$P1", 
+                                        "availpnx": "available", 
+                                        "creationdate": "2004.", 
+                                        "creator": "Colin Simms 1939-", 
+                                        "description": [
+                                            "Poems.", 
+                                            "\"Colin Simms, selected bibliography\"--P. facing t.p."
+                                        ], 
+                                        "format": "163 p. : ill. ; 23 cm.", 
+                                        "identifier": "ISBN: 0907562507 (pbk.)", 
+                                        "language": "eng", 
+                                        "lds01": "ONL Stacks (STACK) PR6069 .I413 O78 2004", 
+                                        "lds07": "Exeter", 
+                                        "lds09": "Shearsman Books", 
+                                        "lds10": "PR6069 .I413 O78 2004", 
+                                        "lds11": "99106156350001021", 
+                                        "lds14": "002236166", 
+                                        "publisher": "Exeter : Shearsman Books", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Otters -- Poetry; Martens -- Poetry", 
+                                        "title": "Otters and martens", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "PR6069.I413"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "O", 
+                                        "collection": "ONL", 
+                                        "creationdate": "2004", 
+                                        "creatorcontrib": "Simms, Colin, 1939-", 
+                                        "frbrgroupid": "18643354", 
+                                        "frbrtype": "6", 
+                                        "genre": "Poetry", 
+                                        "language": "eng", 
+                                        "lfc09": "PR6069 .I413", 
+                                        "lfc10": "PR6069", 
+                                        "library": "ONL", 
+                                        "prefilter": "books", 
+                                        "rsrctype": "books", 
+                                        "topic": [
+                                            "Otters\u2013Poetry", 
+                                            "Martens\u2013Poetry"
+                                        ], 
+                                        "toplevel": "available"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Ksimms colin 1939$$AA", 
+                                        "k3": "$$Kotters and martens$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal", 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "creationdate": "2004", 
+                                        "creatorcontrib": [
+                                            "Colin Simms 1939-", 
+                                            "Simms, Colin, 1939-", 
+                                            "Simms, C", 
+                                            "Colin Simms."
+                                        ], 
+                                        "enddate": "20041231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "0907562507", 
+                                            "9780907562504"
+                                        ], 
+                                        "lsr03": "ALMA-BC21333040540001021", 
+                                        "lsr05": [
+                                            "57559217", 
+                                            "(OCoLC)ocm57559217"
+                                        ], 
+                                        "lsr06": [
+                                            "PR6069 .I413 O78 2004", 
+                                            "PR6069.I413O782004", 
+                                            "PR6069.I413", 
+                                            "O78 2004", 
+                                            "O782004"
+                                        ], 
+                                        "lsr08": "Shearsman Books,", 
+                                        "lsr09": "Exeter", 
+                                        "lsr12": "Poems.", 
+                                        "lsr14": "ONL", 
+                                        "lsr20": [
+                                            "002236166", 
+                                            "bc_aleph002236166", 
+                                            "99106156350001021"
+                                        ], 
+                                        "recordid": "ALMA-BC21333040540001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "BCL", 
+                                            "ONL", 
+                                            "ALMA-BC"
+                                        ], 
+                                        "searchscope": [
+                                            "BCL", 
+                                            "ONL", 
+                                            "ALMA-BC"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "20040101", 
+                                        "subject": [
+                                            "Otters Poetry.", 
+                                            "Martens Poetry."
+                                        ], 
+                                        "title": "Otters and martens /"
+                                    }, 
+                                    "sort": {
+                                        "author": "simms colin 1939", 
+                                        "creationdate": "2004", 
+                                        "title": "otters and martens"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21421261320001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-P"
+                            }, 
+                            "sear:LIBRARIES": {
+                                "sear:LIBRARY": {
+                                    "sear:callNumber": "(PR6069 .I413 O78 2004 )", 
+                                    "sear:collection": "Stacks (STACK)", 
+                                    "sear:institution": "BCL", 
+                                    "sear:library": "ONL", 
+                                    "sear:status": "available", 
+                                    "sear:url": "OVP"
+                                }
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=0907562507/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:0907562507", 
+                                    "http://www.amazon.com/gp/product/0907562507"
+                                ], 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21333040540001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters%20and%20martens&rft.aulast=Simms&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Simms%2C%20Colin%2C%201939-&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0907562507&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21333040540001021</ALMA-BC><grp_id>18643354</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Exeter&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters%20and%20martens&rft.aulast=Simms&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Simms%2C%20Colin%2C%201939-&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0907562507&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21333040540001021</ALMA-BC><grp_id>18643354</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Exeter&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2005415947&rft_id=info:oclcnum/57559217&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21333040540001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/0907562507.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=0907562507/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }, 
+                        {
+                            "@ID": "3503622", 
+                            "@NO": "9", 
+                            "@RANK": "4.632839E-4", 
+                            "@SEARCH_ENGINE": "Local Search Engine", 
+                            "@SEARCH_ENGINE_TYPE": "Local Search Engine", 
+                            "PrimoNMBib": {
+                                "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib", 
+                                "record": {
+                                    "addata": {
+                                        "au": "Kruuk, H. (Hans)", 
+                                        "aufirst": "H.", 
+                                        "aulast": "Kruuk", 
+                                        "btitle": "Wild otters : predation and populations", 
+                                        "cop": "Oxford ; New York", 
+                                        "date": "1995", 
+                                        "format": "book", 
+                                        "genre": "book", 
+                                        "isbn": "0198540701", 
+                                        "lad04": "0198540701", 
+                                        "lccn": "94034842", 
+                                        "notes": "Includes bibliographical references (p. [270]-285) and index.", 
+                                        "oclcid": "31077138", 
+                                        "pub": "Oxford University Press", 
+                                        "risdate": "1995.", 
+                                        "ristype": "BOOK"
+                                    }, 
+                                    "browse": {
+                                        "author": "$$DKruuk, H. (Hans)$$EKruuk, H. (Hans)", 
+                                        "callnumber": "$$IBCL$$DQL737.C25 K795 1995$$E0ql   00737.c  25000  k795 1995$$T0", 
+                                        "subject": "$$DLutra lutra -- Scotland$$ELutra lutra Scotland", 
+                                        "title": "$$DWild otters : predation and populations$$EWild otters : predation and populations"
+                                    }, 
+                                    "control": {
+                                        "almaid": "01BC_INST:21349370100001021", 
+                                        "ilsapiid": "01BC_INST21349370100001021", 
+                                        "originalsourceid": "01BC_INST", 
+                                        "recordid": "ALMA-BC21349370100001021", 
+                                        "sourceformat": "MARC21", 
+                                        "sourceid": "ALMA-BC", 
+                                        "sourcerecordid": "21349370100001021", 
+                                        "sourcesystem": "Alma"
+                                    }, 
+                                    "dedup": {
+                                        "c1": "94034842", 
+                                        "c2": "0198540701", 
+                                        "c3": "wildotterspredationaopulations", 
+                                        "c4": "1995", 
+                                        "c5": "99112059790001021", 
+                                        "f1": "94034842", 
+                                        "f10": "oxford university press", 
+                                        "f11": "kruuk h hans", 
+                                        "f20": "99112059790001021", 
+                                        "f3": "0198540701", 
+                                        "f5": "wildotterspredationaopulations", 
+                                        "f6": "1995", 
+                                        "f7": "wild otters predation and populations", 
+                                        "f8": "enk", 
+                                        "f9": "xi, 290 p. :", 
+                                        "t": "1"
+                                    }, 
+                                    "delivery": {
+                                        "delcategory": "Alma-P", 
+                                        "institution": "BCL"
+                                    }, 
+                                    "display": {
+                                        "availinstitution": "$$IBCL$$Savailable", 
+                                        "availlibrary": "$$IBCL$$LONL$$1Stacks (STACK)$$2(QL737.C25 K795 1995 )$$Savailable$$X01BC_INST$$YONL$$ZSTACK$$P1", 
+                                        "availpnx": "available", 
+                                        "creationdate": "1995.", 
+                                        "creator": "H. Kruuk (Hans)", 
+                                        "description": "Includes bibliographical references (p. [270]-285) and index.", 
+                                        "format": "xi, 290 p. : ill., maps ; 25 cm.", 
+                                        "identifier": "ISBN: 0198540701 (acid-free paper) :", 
+                                        "language": "eng", 
+                                        "lds01": "ONL Stacks (STACK) QL737.C25 K795 1995", 
+                                        "lds07": "Oxford ; New York", 
+                                        "lds09": "Oxford University Press", 
+                                        "lds10": "QL737.C25 K795 1995", 
+                                        "lds11": "99112059790001021", 
+                                        "lds14": "000796410", 
+                                        "publisher": "Oxford ; New York : Oxford University Press", 
+                                        "source": "ALMA-BC", 
+                                        "subject": "Lutra lutra -- Scotland; Otters", 
+                                        "title": "Wild otters : predation and populations", 
+                                        "type": "book"
+                                    }, 
+                                    "enrichment": {
+                                        "classificationlcc": "QL737.C25"
+                                    }, 
+                                    "facets": {
+                                        "atoz": "W", 
+                                        "collection": "ONL", 
+                                        "creationdate": "1995", 
+                                        "creatorcontrib": "Kruuk, H. (Hans)", 
+                                        "frbrgroupid": "135349747", 
+                                        "frbrtype": "6", 
+                                        "language": "eng", 
+                                        "lfc09": "QL737 .C25", 
+                                        "lfc10": "QL737", 
+                                        "library": "ONL", 
+                                        "prefilter": "books", 
+                                        "rsrctype": "books", 
+                                        "topic": "Lutra lutra\u2013Scotland", 
+                                        "toplevel": "available"
+                                    }, 
+                                    "frbr": {
+                                        "k1": "$$Kkruuk h hans$$AA", 
+                                        "k3": "$$Kwild otters predation and populations$$AT", 
+                                        "t": "1"
+                                    }, 
+                                    "links": {
+                                        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information", 
+                                        "linktouc": [
+                                            "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd", 
+                                            "$$Tamazon_uc$$DThis item in Amazon.com"
+                                        ], 
+                                        "lln02": "$$Tpermalink$$DPermalink to this record", 
+                                        "openurl": "$$Topenurl_journal", 
+                                        "openurlfulltext": "$$Topenurlfull_journal", 
+                                        "thumbnail": [
+                                            "$$Tamazon_thumb", 
+                                            "$$Tsyndetics_thumb"
+                                        ]
+                                    }, 
+                                    "ranking": {
+                                        "booster1": "1", 
+                                        "booster2": "1"
+                                    }, 
+                                    "search": {
+                                        "creationdate": "1995", 
+                                        "creatorcontrib": [
+                                            "H. Kruuk (Hans)", 
+                                            "Kruuk, H. (Hans)", 
+                                            "Kruuk, H", 
+                                            "Hans Kruuk ; drawings by Diana Brown."
+                                        ], 
+                                        "enddate": "19951231", 
+                                        "format": "book", 
+                                        "isbn": [
+                                            "0198540701", 
+                                            "9780198540700"
+                                        ], 
+                                        "lsr03": "ALMA-BC21349370100001021", 
+                                        "lsr05": [
+                                            "31077138", 
+                                            "(OCoLC)ocm31077138"
+                                        ], 
+                                        "lsr06": [
+                                            "QL737.C25 K795 1995", 
+                                            "QL737.C25K7951995", 
+                                            "QL737.C25", 
+                                            "K795 1995", 
+                                            "K7951995"
+                                        ], 
+                                        "lsr08": "Oxford University Press,", 
+                                        "lsr09": "Oxford ; New York", 
+                                        "lsr14": "ONL", 
+                                        "lsr20": [
+                                            "000796410", 
+                                            "bc_aleph000796410", 
+                                            "99112059790001021"
+                                        ], 
+                                        "recordid": "ALMA-BC21349370100001021", 
+                                        "rsrctype": "book", 
+                                        "scope": [
+                                            "BCL", 
+                                            "ONL", 
+                                            "ALMA-BC"
+                                        ], 
+                                        "searchscope": [
+                                            "BCL", 
+                                            "ONL", 
+                                            "ALMA-BC"
+                                        ], 
+                                        "sourceid": "ALMA-BC", 
+                                        "startdate": "19950101", 
+                                        "subject": [
+                                            "Lutra lutra Scotland.", 
+                                            "Otters"
+                                        ], 
+                                        "title": "Wild otters : predation and populations /"
+                                    }, 
+                                    "sort": {
+                                        "author": "kruuk h", 
+                                        "creationdate": "1995", 
+                                        "title": "wild otters predation and populations"
+                                    }
+                                }
+                            }, 
+                            "sear:GETIT": {
+                                "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21421261320001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin", 
+                                "@GetIt2": "", 
+                                "@deliveryCategory": "Alma-P"
+                            }, 
+                            "sear:LIBRARIES": {
+                                "sear:LIBRARY": {
+                                    "sear:callNumber": "(QL737.C25 K795 1995 )", 
+                                    "sear:collection": "Stacks (STACK)", 
+                                    "sear:institution": "BCL", 
+                                    "sear:library": "ONL", 
+                                    "sear:status": "available", 
+                                    "sear:url": "OVP"
+                                }
+                            }, 
+                            "sear:LINKS": {
+                                "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=0198540701/index.html&client=bostonh&type=xw12", 
+                                "sear:linktouc": [
+                                    "http://bc.worldcat.org/search?q=isbn:0198540701", 
+                                    "http://www.amazon.com/gp/product/0198540701"
+                                ], 
+                                "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21349370100001021", 
+                                "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Wild%20otters%20:%20predation%20and%20populations&rft.aulast=Kruuk&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Kruuk%2C%20H.%20(Hans)&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0198540701&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21349370100001021</ALMA-BC><grp_id>135349747</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Oxford%20%3B%20New%20York&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Wild%20otters%20:%20predation%20and%20populations&rft.aulast=Kruuk&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Kruuk%2C%20H.%20(Hans)&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=0198540701&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21349370100001021</ALMA-BC><grp_id>135349747</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=Oxford%20%3B%20New%20York&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/94034842&rft_id=info:oclcnum/31077138&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21349370100001021,language=&svc_dat=viewit&req.skin=BC%20skin", 
+                                "sear:thumbnail": [
+                                    "http://images.amazon.com/images/P/0198540701.01._SSTHUM_.jpg", 
+                                    "http://lib.syndetics.com/index.aspx?isbn=0198540701/SC.JPG&client=bostonh"
+                                ]
+                            }
+                        }
+                    ]
+                }, 
+                "sear:FACETLIST": {
+                    "@ACCURATE_COUNTERS": "true", 
+                    "sear:FACET": [
+                        {
+                            "@COUNT": "20", 
+                            "@NAME": "creator", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "Damon, Matt", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Lawson, Robert, 1955-", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Virginia-Maryland Regional College of Veterinary Medicine", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "MacGabhann, Ant\u00f3in", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "IUCN/SSC Otter Specialist Group", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Carlson, Jon D., 1969-", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Ackerman, Diane", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Keller, Laurie", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "VanBlaricom, G. R. (Glenn R.), 1949-", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Kortick, Yoel 1971-", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "MacCaskill, Bridget", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Bothy Band", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "Simms, Colin, 1939-", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Madden, Joanie", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Estes, J. A. (James A.), 1945-", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Keane, Brian", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Cherish the Ladies (Musical group)", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Kosek, Jane Kelly", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "O'Connor, Mick", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Crehan, Martin Junior", 
+                                    "@VALUE": "1"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "3", 
+                            "@NAME": "lang", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "gle", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "eng", 
+                                    "@VALUE": "52"
+                                }, 
+                                {
+                                    "@KEY": "iri", 
+                                    "@VALUE": "2"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "8", 
+                            "@NAME": "rtype", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "books", 
+                                    "@VALUE": "36"
+                                }, 
+                                {
+                                    "@KEY": "other", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "journals", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "scores", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "government_documents", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "audio_musics", 
+                                    "@VALUE": "14"
+                                }, 
+                                {
+                                    "@KEY": "ebooks", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "video", 
+                                    "@VALUE": "2"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "20", 
+                            "@NAME": "topic", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "Jigs", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Animals", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Wildlife reintroduction", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Mammals", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Wildlife conservation", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "Mineralogists", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Marine ecology", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Folk dance music", 
+                                    "@VALUE": "10"
+                                }, 
+                                {
+                                    "@KEY": "Sea otter", 
+                                    "@VALUE": "12"
+                                }, 
+                                {
+                                    "@KEY": "Folk music", 
+                                    "@VALUE": "12"
+                                }, 
+                                {
+                                    "@KEY": "Reels (Music)", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Environmental protection", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Nature", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Folk songs, English", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Folk songs", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Otters", 
+                                    "@VALUE": "11"
+                                }, 
+                                {
+                                    "@KEY": "Marine mammals", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "Popular music", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Music", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Endangered species", 
+                                    "@VALUE": "2"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "2", 
+                            "@NAME": "tlevel", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "online_resources", 
+                                    "@VALUE": "8"
+                                }, 
+                                {
+                                    "@KEY": "available", 
+                                    "@VALUE": "50"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "8", 
+                            "@NAME": "pfilter", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "books", 
+                                    "@VALUE": "36"
+                                }, 
+                                {
+                                    "@KEY": "journals", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "other", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "scores", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "government_documents", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "audio_musics", 
+                                    "@VALUE": "14"
+                                }, 
+                                {
+                                    "@KEY": "ebooks", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "video", 
+                                    "@VALUE": "2"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "28", 
+                            "@NAME": "creationdate", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "2008", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "2009", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2006", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "2007", 
+                                    "@VALUE": "4"
+                                }, 
+                                {
+                                    "@KEY": "2004", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2005", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2002", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2003", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1995", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "1996", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "1997", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "1998", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "1992", 
+                                    "@VALUE": "4"
+                                }, 
+                                {
+                                    "@KEY": "1993", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "1976", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1994", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "1800", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2012", 
+                                    "@VALUE": "3"
+                                }, 
+                                {
+                                    "@KEY": "2011", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "2010", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1999", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "2013", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1900", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1990", 
+                                    "@VALUE": "4"
+                                }, 
+                                {
+                                    "@KEY": "1981", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "1986", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "1988", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "2000", 
+                                    "@VALUE": "3"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "18", 
+                            "@NAME": "genre", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "Statistics", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Educational films", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Juvenile fiction", 
+                                    "@VALUE": "4"
+                                }, 
+                                {
+                                    "@KEY": "Electronic books", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Internet videos", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Poetry", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Biography", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Nonfiction television programs", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Documentary television programs", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Videorecording", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Classification", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Bibliography", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Television programs for the hearing impaired", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Periodicals", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Juvenile software", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Popular works", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Anecdotes", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Juvenile literature", 
+                                    "@VALUE": "11"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "4", 
+                            "@NAME": "library", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "BURNS", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "ARCH", 
+                                    "@VALUE": "4"
+                                }, 
+                                {
+                                    "@KEY": "ERC", 
+                                    "@VALUE": "17"
+                                }, 
+                                {
+                                    "@KEY": "ONL", 
+                                    "@VALUE": "31"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "10", 
+                            "@NAME": "local1", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "BRETHOLZ (Myron Bretholz Irish Music Collection)", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "GENERAL", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "CONNOLLY, M.J. (Michael J. Connolly Irish Music Collection)", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "SALEM DIVINES", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "IRISH MUSIC ARCHIVES", 
+                                    "@VALUE": "4"
+                                }, 
+                                {
+                                    "@KEY": "ECCO 2", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "FILMS ON DEMAND", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "GREEN LINNET (Green Linnet Irish Music Collection)", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "YBPDDA", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "1827", 
+                                    "@VALUE": "1"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "1", 
+                            "@NAME": "local5", 
+                            "sear:FACET_VALUES": {
+                                "@KEY": "AD100.01", 
+                                "@VALUE": "2"
+                            }
+                        }, 
+                        {
+                            "@COUNT": "1", 
+                            "@NAME": "local6", 
+                            "sear:FACET_VALUES": {
+                                "@KEY": "test", 
+                                "@VALUE": "2"
+                            }
+                        }, 
+                        {
+                            "@COUNT": "1", 
+                            "@NAME": "local7", 
+                            "sear:FACET_VALUES": {
+                                "@KEY": "Advancing Studies", 
+                                "@VALUE": "2"
+                            }
+                        }, 
+                        {
+                            "@COUNT": "16", 
+                            "@NAME": "local8", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "A Bobbie Kalman book", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Marine sanctuaries conservation series", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Ecological studies", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Pebble Plus. Under the sea", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Living in the wild. Sea mammals", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Heinemann infosearch", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Let's explore science.", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Science seekers", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Backyard animals", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "The what's inside library", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "What kind of animal is it?", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Monterey Bay Aquarium natural history series", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "AWIC resource series", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "British natural history series", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "Zoobooks", 
+                                    "@VALUE": "2"
+                                }, 
+                                {
+                                    "@KEY": "Life science", 
+                                    "@VALUE": "1"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "13", 
+                            "@NAME": "local9", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "QL737 .C25", 
+                                    "@VALUE": "10"
+                                }, 
+                                {
+                                    "@KEY": "QE361 .C5", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QL795 .O8", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "PZ7 .K281346", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "PR6069 .I413", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QL713.2 .M353", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QL703 .W222", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "M1744 .C84", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "TD171.3 .C22", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "JZ1316 .C37", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QH141 .M39", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QH541.5 .S3", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "PZ10.3 .B715", 
+                                    "@VALUE": "1"
+                                }
+                            ]
+                        }, 
+                        {
+                            "@COUNT": "18", 
+                            "@NAME": "local10", 
+                            "sear:FACET_VALUES": [
+                                {
+                                    "@KEY": "PZ10.3", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QL737", 
+                                    "@VALUE": "10"
+                                }, 
+                                {
+                                    "@KEY": "PZ7", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QL795", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "M120", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "M019", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QH141", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "M089", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "PR6069", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QL703", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "M074", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QH541.5", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QL713.2", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "TD171.3", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "QE361", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "M1744", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "DS134.6", 
+                                    "@VALUE": "1"
+                                }, 
+                                {
+                                    "@KEY": "JZ1316", 
+                                    "@VALUE": "1"
+                                }
+                            ]
+                        }
+                    ]
+                }, 
+                "sear:QUERYTRANSFORMS": null
+            }, 
+            "sear:searchToken": "0"
+        }
+    }
+}

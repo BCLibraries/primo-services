@@ -2,82 +2,98 @@
 
 namespace BCLib\PrimoServices;
 
-use Doctrine\Common\Cache\Cache;
-
 class PNXTranslator
 {
-
-    /** @var \BCLib\PrimoServices\BibRecord */
-    private $_bib_record_template;
-
-    /** @var \Doctrine\Common\Cache\Cache */
-    private $_cache;
-
-    public function __construct(
-        BibRecord $bib_record_template,
-        Cache $cache = null
-    ) {
-        $this->_bib_record_template = $bib_record_template;
-        $this->_cache = $cache;
-    }
-
     /**
-     * @param \SimpleXMLElement $doc_xml
+     * Translate a set of PNX docs into bib records
+     *
+     * @param array $docset the "sear:DOCSET" array from a search/view result
      *
      * @return BibRecord[]
      */
-    public function translate(\SimpleXMLElement $doc_xml)
+    public function translateDocSet($docset)
     {
-        $dom = dom_import_simplexml($doc_xml)->ownerDocument;
-        $xpath = new \DOMXPath($dom);
+        $return = Array();
 
-
-        $xpath->registerNamespace('sear', 'http://www.exlibrisgroup.com/xsd/jaguar/search');
-        $xpath->registerNamespace('prim', 'http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib');
-
-        $xpath_to_primo_record = '//sear:DOC';
-        $xpath_to_pci_record = '//sear:DOC';
-        $docs_xml = $xpath->query("$xpath_to_pci_record|$xpath_to_primo_record");
-
-        $records = [];
-
-        foreach ($docs_xml as $doc_xml) {
-            $bib_record = clone $this->_bib_record_template;
-
-            $attr = $dom->createAttribute('xmlns:sear');
-            $attr->value = 'http://www.exlibrisgroup.com/xsd/jaguar/search';
-            $doc_xml->appendChild($attr);
-            $record_doc = new \DOMDocument();
-            $record_doc->loadXML($dom->saveXML($doc_xml));
-
-            $bib_record->load($record_doc);
-
-            $records[] = $bib_record;
-
-            if (isset($this->_cache)) {
-                $cache_key = 'full-record-' . sha1($bib_record->id);;
-                $this->_cache->save($cache_key, $bib_record, 1200);
+        if (is_array($docset->{'sear:DOC'})) {
+            foreach ($docset->{'sear:DOC'} as $doc) {
+                $return[] = $this->translateDoc($doc);
             }
+        } else {
+            $return[] = $this->translateDoc($docset->{'sear:DOC'});
         }
-        return $records;
+
+        return $return;
     }
 
-    public function extractDoc(\SimpleXMLElement $xml)
+    /**
+     * Translate a single PNX doc into a bib record
+     *
+     * @param \stdClass $doc a "sear:DOC" object from a search/view result
+     *
+     * @return BibRecord[]
+     */
+    public function translateDoc(\stdClass $doc)
     {
-        $dom = dom_import_simplexml($xml)->ownerDocument;
+        $bib = new BibRecord();
 
-        $bib_record = clone $this->_bib_record_template;
+        $record = $doc->PrimoNMBib->record;
+        $control = $record->control;
+        $display = $record->display;
+        $search = $record->search;
+        $addata = $record->addata;
+        $facets = $record->facets;
+        $sort = $record->sort;
+        $sear_links = $doc->{'sear:LINKS'};
 
-        $record_doc = new \DOMDocument();
-        $record_doc->loadXML($dom->saveXML($xml));
+        $bib->id = $this->extractField($control, 'recordid');
+        $bib->title = $this->extractField($display, 'title');
+        $bib->date = $this->extractField($display, 'creationdate');
+        $bib->publisher = $this->extractField($addata, 'pub');
+        $bib->abstract = $this->extractField($addata, 'abstract');
+        $bib->type = $this->extractField($display, 'type');
+        $bib->isbn = $this->extractArray($search, 'isbn');
+        $bib->issn = $this->extractArray($search, 'issn');
+        $bib->oclcid = $this->extractArray($addata, 'oclcid');
+        $bib->display_subject = $this->extractField($display, 'subject');
+        $bib->format = $this->extractField($display, 'format');
+        $bib->description = $this->extractArray($display, 'description');
+        $bib->subjects = $this->extractArray($facets, 'topic');
+        $bib->genres = $this->extractArray($facets, 'genre');
+        $bib->languages = $this->extractArray($facets, 'language');
+        $bib->contributors = $this->extractArray($display, 'contributor');
+        $bib->cover_images = $this->extractArray($doc->{'sear:LINKS'}, 'sear:thumbnail');
 
-        $bib_record->load($record_doc);
+        $bib->creator_facet = $this->extractArray($facets, 'creatorcontrib');
+        $bib->collection_facet = $this->extractArray($facets, 'collection');
 
-        $records[] = $bib_record;
+        $bib->link_to_source = $this->extractArray($sear_links, 'sear:linktosrc');
 
-        if (isset($this->_cache)) {
-            $cache_key = 'full-record-' . sha1($bib_record->id);;
-            $this->_cache->save($cache_key, $bib_record, 1200);
-        }
+        $bib->sort_creator = $this->extractField($sort, 'author');
+        $bib->sort_date = $this->extractField($sort, 'date');
+        $bib->sort_title = $this->extractField($sort, 'title');
+
+        $bib->fulltext = $this->extractField($record->delivery, 'fulltext');
+
+        // move to item level info
+        //$bib->openurl = $this->extractField($sear_links, 'sear:openurl');
+        //$bib->openurl_fulltext = $this->extractField($sear_links, 'sear:openurlfulltext');
+
+        $holdings_translator = new BibComponentTranslator();
+
+        $bib->components = $holdings_translator->translate($doc);
+
+        return $bib;
+    }
+
+    private function extractField(\stdClass $group, $field)
+    {
+        return isset($group->$field) ? $group->$field : null;
+    }
+
+    private function extractArray(\stdClass $group, $field)
+    {
+        $value = isset($group->$field) ? $group->$field : array();
+        return (is_array($value)) ? $value : array($value);
     }
 }
