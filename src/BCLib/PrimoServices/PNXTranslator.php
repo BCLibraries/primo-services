@@ -83,7 +83,29 @@ class PNXTranslator
 
         $bib->components = $holdings_translator->translate($doc);
 
+        $bib->getit = $this->extractGetIts($doc->{'sear:GETIT'});
+
         return $bib;
+    }
+
+    private function extractGetIts($sear_getit)
+    {
+        if (!is_array($sear_getit)) {
+            $sear_getit = array($sear_getit);
+        }
+
+        $result = \array_map(array($this, 'extractGetIt'), $sear_getit);
+
+        return $result;
+    }
+
+    private function extractGetIt($sear_getit)
+    {
+        $getit = new GetIt();
+        $getit->getit_1 = $sear_getit->{'@GetIt1'};
+        $getit->getit_2 = $sear_getit->{'@GetIt2'};
+        $getit->category = $sear_getit->{'@deliveryCategory'};
+        return $getit;
     }
 
     private function extractField(\stdClass $group, $field)

@@ -15,7 +15,7 @@ class BibRecord
     public $title;
 
     /**
-     * @var Person
+     * @var string
      */
     public $creator;
 
@@ -110,7 +110,7 @@ class BibRecord
     public $components = array();
 
     /**
-     * @var string[]
+     * @var GetIt[]
      */
     public $getit = array();
 

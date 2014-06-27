@@ -11,7 +11,6 @@ class FacetTranslator
      */
     public function translate($sear_facetlist)
     {
-        print_r($sear_facetlist);
         return \array_map(array($this, '_extractFacet'), $sear_facetlist->{'sear:FACET'});
     }
 
@@ -34,7 +33,7 @@ class FacetTranslator
             $facet_values = array($facet_values);
         }
 
-        $facet->values = \array_map([$this, '_extractFacetValue'], $facet_values);
+        $facet->values = \array_map(array($this, '_extractFacetValue'), $facet_values);
 
         return $facet;
     }
