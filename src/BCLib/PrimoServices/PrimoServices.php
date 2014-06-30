@@ -15,21 +15,6 @@ class PrimoServices extends \Pimple
      */
     private $_cache;
 
-    const CACHE_TYPE_APC = 1;
-
-    private $_facet_names = [
-        'creator'      => 'Creator',
-        'lang'         => 'Language',
-        'rtype'        => 'Type',
-        'topic'        => 'Topic',
-        'tlevel'       => 'Availablility',
-        'pfilter'      => 'Prefilter?',
-        'creationdate' => 'Date',
-        'genre'        => 'Genre',
-        'library'      => 'Library',
-        'local1'       => 'Collection',
-    ];
-
     public function __construct($host, $institution, Cache $cache = null)
     {
         $this->_host = $host;
@@ -43,7 +28,7 @@ class PrimoServices extends \Pimple
         };
 
         $this['facet_translator'] = function () {
-            return new FacetTranslator($this['facet'], $this['facet_value'], $this->_facet_names);
+            return new FacetTranslator();
         };
 
         $this['facet'] = function () {
@@ -73,7 +58,7 @@ class PrimoServices extends \Pimple
 
     public function search(Query $query, $facet_whitelist = array())
     {
-        $cache_key = sha1($query);
+        $cache_key = sha1((string) $query);
 
         if ($cached_value = $this->_checkCache($cache_key)) {
             return $cached_value;

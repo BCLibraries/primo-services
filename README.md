@@ -95,13 +95,12 @@ To see a list of al facets, with facet values
 ```PHP
 echo "Facets\n";
 foreach ($primo_result->facets as $facet) {
-    echo "\tId:" . $facet->id . "\n";
-    echo "\t\tName:" . $facet->name . "\n";
-    echo "\t\tCount: " . $facet->count . "\n";
+    echo "  Id:" . $facet->id . "\n";
+    echo "    Count: " . $facet->count . "\n";
 
-    echo "\t\tValues:\n";
+    echo "    Values:\n";
     foreach ($facet->values as $value) {
-        echo "\t\t\t" . $value->display_name . " (" . $facet->id . ") - " . $facet->count . "\n";
+        echo "      " . $value->display_name . " (" . $facet->id . ") - " . $facet->count . "\n";
     }
 }
 ```
