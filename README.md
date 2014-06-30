@@ -10,7 +10,6 @@
 
 2. Create a `composer.json` file. The example below will install `primo-services`:
 
-
 		{
 		"repositories": [
 		    {
@@ -27,6 +26,18 @@
 3. Install using `composer.phar`:
 
 		php composer.phar install
+		
+4. Instantiate:
+
+         use \BCLib\PrimoServices\PrimoServices;
+         use \BCLib\PrimoServices\Query;
+         use \BCLib\PrimoServices\QueryTerm;
+       
+         require_once('vendor/autoload.php');
+       
+         $host = 'primo2.staging.hosted.exlibrisgroup.com'; //Your Primo host.
+         $inst = 'BCL'; // Your Primo institution code.
+         $primo = new PrimoServices($host, $inst);
    
 ## Use
 
@@ -105,30 +116,32 @@ foreach ($primo_result->results as $result) {
     // Accessible string and string [] properties of a result
     $result->id;
     $result->abstract;
-    $result->availability;
-    $result->collection_facet;
-    $result->creator;
-    $result->creator_facet;
+    $result->collection_facet; // string[]
+    $result->cover_images; // string[]
+    $result->creator_facet; // string[]
     $result->date;
-    $result->description;
+    $result->description; // string[]
     $result->display_subject;
     $result->format;
     $result->frbr_group_id;
+    $result->fulltext;
     $result->genres; // string[]
-    $result->isbn;
-    $result->issn;
+    $result->isbn; // string []
+    $result->issn; // string[]
     $result->languages; // string[]
-    $result->oclcid;
+    $result->link_to_source;
+    $result->oclcid;    
+    $result->openurl; // string[]
+    $result->openurl_fulltext; // string[]
     $result->publisher;
     $result->reserves_info;
+    $result->sort_creator;
+    $result->sort_date;
+    $result->sort_title;
     $result->subjects; // string[]
     $result->title;
     $result->type;
     $result->getit; // string[]
-    $result->cover_images; // string[]
-    $result->link_to_source; // string[]
-    $result->openurl;
-    $result->openurl_fulltext;
 }
 ```
 
@@ -140,7 +153,7 @@ $result->creator->first_name;
 $result->creator->last_name;
 ```
 
-Each record is composed of *BibRecordComponent* objects that indicate the source record used to create the Primo record. Most Primo records will have 1 component. De-duplicated records will have multiple components:
+Each record is composed of *BibComponent* objects that indicate the source record used to create the Primo record. Most Primo records will have 1 component. De-duplicated records will have multiple components:
 
 ```PHP
 foreach ($result->components as $component) {
@@ -148,6 +161,16 @@ foreach ($result->components as $component) {
     $component->delivery_category;
     $component->source;
     $component->source_record_id;
+}
+```
+
+Each record also has an array of *GetIt* objects:
+ 
+```PHP
+foreach ($result->getit as $getit) {
+    $component->getit1;
+    $component->getit2;
+    $component->category;
 }
 ```
 

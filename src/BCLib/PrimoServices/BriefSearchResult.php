@@ -4,8 +4,19 @@ namespace BCLib\PrimoServices;
 
 class BriefSearchResult
 {
+    /**
+     * @var Facet[]
+     */
     public $facets = array();
+
+    /**
+     * @var BibRecord[]
+     */
     public $results = array();
+
+    /**
+     * @var int
+     */
     public $total_results;
 
     public function filterFacets(array $facet_whitelist)

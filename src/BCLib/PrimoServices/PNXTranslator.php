@@ -35,7 +35,7 @@ class PNXTranslator
      */
     public function translateDoc(\stdClass $doc)
     {
-        $bib = new BibRecord();
+        $bib = new BibRecord($doc);
 
         $record = $doc->PrimoNMBib->record;
         $control = $record->control;
@@ -64,6 +64,11 @@ class PNXTranslator
         $bib->contributors = $this->extractArray($display, 'contributor');
         $bib->cover_images = $this->extractArray($doc->{'sear:LINKS'}, 'sear:thumbnail');
 
+        $bib->creator = new Person();
+        $bib->creator->display_name = $this->extractField($display, 'creator');
+        $bib->creator->first_name = $this->extractField($addata, 'aufirst');
+        $bib->creator->last_name = $this->extractField($addata, 'aulast');
+
         $bib->creator_facet = $this->extractArray($facets, 'creatorcontrib');
         $bib->collection_facet = $this->extractArray($facets, 'collection');
 
@@ -76,14 +81,16 @@ class PNXTranslator
         $bib->fulltext = $this->extractField($record->delivery, 'fulltext');
 
         // move to item level info
-        //$bib->openurl = $this->extractField($sear_links, 'sear:openurl');
-        //$bib->openurl_fulltext = $this->extractField($sear_links, 'sear:openurlfulltext');
+        $bib->openurl = $this->extractArray($sear_links, 'sear:openurl');
+        $bib->openurl_fulltext = $this->extractArray($sear_links, 'sear:openurlfulltext');
 
         $holdings_translator = new BibComponentTranslator();
 
         $bib->components = $holdings_translator->translate($doc);
 
         $bib->getit = $this->extractGetIts($doc->{'sear:GETIT'});
+
+        $this->extractPNXGroups($record, $bib);
 
         return $bib;
     }
@@ -106,6 +113,24 @@ class PNXTranslator
         $getit->getit_2 = $sear_getit->{'@GetIt2'};
         $getit->category = $sear_getit->{'@deliveryCategory'};
         return $getit;
+    }
+
+    private function extractPNXGroups(\stdClass $pnx_record, BibRecord $record)
+    {
+        $groups = array();
+        foreach ($pnx_record as $group_name => $group) {
+            $this->extractGroupFields($group, $group_name, $record);
+        }
+        return $groups;
+    }
+
+    private function extractGroupFields(\stdClass $pnx_group, $group_name, BibRecord $record)
+    {
+        $fields = array();
+        foreach ($pnx_group as $field_name => $field) {
+            $record->addField($group_name, $field_name, $field);
+        }
+        return $fields;
     }
 
     private function extractField(\stdClass $group, $field)

@@ -100,7 +100,7 @@ class BibRecord
     public $format;
 
     /**
-     * @var string
+     * @var string[]
      */
     public $description;
 
@@ -125,19 +125,14 @@ class BibRecord
     public $link_to_source;
 
     /**
-     * @var string
+     * @var string[]
      */
     public $openurl;
 
     /**
-     * @var string
+     * @var string[]
      */
     public $openurl_fulltext;
-
-    /**
-     * @var \stdClass
-     */
-    public $json;
 
     /**
      * @var string
@@ -159,8 +154,32 @@ class BibRecord
      */
     public $fulltext;
 
+    private $fields = array();
+
     public function __construct(\stdClass $json_doc = null)
     {
         $this->json = $json_doc;
+    }
+
+    /**
+     * @param string $field_name The qualified PNX field with group, e.g. 'display/lds01'
+     *
+     * @return mixed|null the value of the field or null if not available
+     */
+    public function field($field_name)
+    {
+        list($group, $field) = explode('/', $field_name);
+        if (!isset($this->fields[$group]) || !isset($this->fields[$group][$field])) {
+            return null;
+        }
+        return $this->fields[$group][$field];
+    }
+
+    public function addField($group_name, $field_name, $field_value)
+    {
+        if (!isset ($this->fields[$group_name])) {
+            $this->fields[$group_name] = array();
+        }
+        $this->fields[$group_name][$field_name] = $field_value;
     }
 }
