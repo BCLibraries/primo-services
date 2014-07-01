@@ -2,7 +2,7 @@
 
 namespace BCLib\PrimoServices;
 
-use Doctrine\Common\Cache\Cache;
+use Doctrine\Common\Cache\Cache as DoctrineCache;
 use Guzzle\Http\Client;
 
 class PrimoServices extends \Pimple
@@ -15,10 +15,18 @@ class PrimoServices extends \Pimple
      */
     private $_cache;
 
-    public function __construct($host, $institution, Cache $cache = null)
+    /**
+     * @param string        $host
+     * @param string        $institution
+     * @param DoctrineCache $cache
+     */
+    public function __construct($host, $institution, DoctrineCache $cache = null)
     {
         $this->_host = $host;
         $this->_institution = $institution;
+        if (is_null($cache)) {
+            $cache = new NullCache();
+        }
         $this->_cache = $cache;
 
         parent::__construct();
@@ -31,16 +39,8 @@ class PrimoServices extends \Pimple
             return new FacetTranslator();
         };
 
-        $this['facet'] = function () {
-            return new Facet();
-        };
-
-        $this['facet_value'] = function () {
-            return new FacetValue();
-        };
-
-        $this['query'] = function () {
-            return new Query($this->_institution);
+        $this['query'] = function () use ($institution) {
+            return new Query($institution);
         };
 
         $this['query_term'] = function () {
@@ -51,16 +51,32 @@ class PrimoServices extends \Pimple
             return new BriefSearchResult();
         };
 
-        $this['deep_link'] = function () {
-            return new DeepLink($this->_host, $this->_institution);
+        $this['deep_link'] = function () use ($host, $institution) {
+            return new DeepLink($host, $institution);
         };
     }
 
+    /**
+     * Set the cache
+     *
+     * @param Cache $cache
+     */
+    public function cache(Cache $cache)
+    {
+        $this->_cache = $cache;
+    }
+
+    /**
+     * Perform a search
+     *
+     * @param Query $query           the search query
+     * @param array $facet_whitelist a list of facets to fetch
+     *
+     * @return BriefSearchResult
+     */
     public function search(Query $query, $facet_whitelist = array())
     {
-        $cache_key = sha1((string) $query);
-
-        if ($cached_value = $this->_checkCache($cache_key)) {
+        if ($cached_value = $this->_cache->fetchQueryResult($query)) {
             return $cached_value;
         }
 
@@ -89,42 +105,50 @@ class PrimoServices extends \Pimple
             $response->filterFacets($facet_whitelist);
         }
 
-        if (isset($this->_cache)) {
-            $this->_cache->save($cache_key, $response, 60);
+        $this->_cache->saveQueryResult($query, $response);
+
+        foreach ($response->results as $result) {
+            $this->_cache->saveRecord($result->id, $result);
         }
 
         return $response;
     }
 
+    /**
+     * Request a single record
+     *
+     * @param $record_id
+     *
+     * @return BibRecord|null
+     */
     public function request($record_id)
     {
+        if ($this->_cache->fetchRecord($record_id)) {
+            return $this->_cache->fetchRecord($record_id);
+        }
+
         $builder = new QueryBuilder($this->_institution);
-        $query = $builder->keyword($record_id)
-            ->getQuery();
+        $query = $builder->keyword($record_id)->getQuery();
         $response = $this->search($query);
 
+        $record = null;
+
         if (sizeof($response->total_results > 0)) {
-            return $response->results[0];
-        } else {
-            return null;
+            $record = $response->results[0];
+            $this->_cache->saveRecord($record_id, $record);
         }
+
+        return $record;
     }
 
     /**
+     * Create a Deep Link to a search
+     *
      * @return DeepLink
      */
     public function createDeepLink()
     {
         return $this['deep_link'];
-    }
-
-    protected function _checkCache($key)
-    {
-        if (isset($this->_cache) && $this->_cache->contains($key)) {
-            return $this->_cache->fetch($key);
-        } else {
-            return false;
-        }
     }
 
     protected function _send($action, $query_string)
