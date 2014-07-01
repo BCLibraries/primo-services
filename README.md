@@ -10,18 +10,20 @@
 
 2. Create a `composer.json` file. The example below will install `primo-services`:
 
-		{
-		"repositories": [
-		    {
-		        "type": "vcs",
-		        "url": "https://github.com/BCLibraries/primo-services"
-		    }
-		],
-		    "require": {
-		            "bclibraries/primo-services" : "master"
-		    },
-		    "minimum-stability": "dev"
-		}
+        {
+            "name": "your-organization/your-package",
+            "description": "Does something interesting with Primo!",
+            "license": "your license here",
+            "repositories": [
+                {
+                    "type": "vcs",
+                    "url": "https://github.com/BCLibraries/primo-services"
+                }
+            ],
+            "require": {
+                    "bclibraries/primo-services" : "0.1.*"
+            }
+        }
     
 3. Install using `composer.phar`:
 

@@ -21,7 +21,7 @@ class FacetTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        $this->_values = [];
+        $this->_values = array();
 
         $this->_values[0] = new \stdClass();
         $this->_values[0]->count = 5;
@@ -56,12 +56,12 @@ class FacetTest extends \PHPUnit_Framework_TestCase
      */
     public function testSortByFrequencyWorks()
     {
-        $expected = [
+        $expected = array(
             $this->_values[2],
             $this->_values[0],
             $this->_values[1],
             $this->_values[3]
-        ];
+        );
         $this->object->sortByFrequency();
         $this->assertEquals($expected, $this->object->values);
     }
@@ -71,12 +71,12 @@ class FacetTest extends \PHPUnit_Framework_TestCase
      */
     public function testSortAlphabeticallyWorks()
     {
-        $expected = [
+        $expected = array(
             $this->_values[0],
             $this->_values[2],
             $this->_values[3],
             $this->_values[1]
-        ];
+        );
         $this->object->sortAlphabetically();
         $this->assertEquals($expected, $this->object->values);
     }
@@ -100,12 +100,12 @@ class FacetTest extends \PHPUnit_Framework_TestCase
      */
     public function testRemapWorks()
     {
-        $mapping_array = [
-            'ant' => 'Foo',
+        $mapping_array = array(
+            'ant'      => 'Foo',
             'aardvark' => 'Bar',
-            'beaver' => 'Baz',
-            'Camel' => 'FooBarBaz'
-        ];
+            'beaver'   => 'Baz',
+            'Camel'    => 'FooBarBaz'
+        );
 
         $this->_values[0]->display_name = 'Foo';
         $this->_values[1]->display_name = 'Bar';
