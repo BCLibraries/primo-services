@@ -1,6 +1,7 @@
 {
     "name": "bclibraries/primo-services",
     "description": "Access to Primo Web services",
+    "version": "0.1.0",
     "type": "library",
     "minimum-stability": "dev",
     "license": "proprietary",
