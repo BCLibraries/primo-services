@@ -1,7 +1,7 @@
 {
     "name": "bclibraries/primo-services",
     "description": "Access to Primo Web services",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "type": "library",
     "license": "MIT",
     "authors": [

@@ -21,14 +21,14 @@ class BibComponentTranslator
     {
         $record = $sear_doc->PrimoNMBib->record;
 
-        $this->is_multi = is_array($record->control->originalsourceid);
+        $this->is_multi = is_array($record->control->sourceid);
 
         if ($this->is_multi) {
             $this->keys = array_map(
                 function ($value) {
                     return $this->splitMultiField($value)->key;
                 },
-                $sear_doc->PrimoNMBib->record->control->originalsourceid
+                $sear_doc->PrimoNMBib->record->control->sourceid
             );
         } else {
             $this->keys = array($record->control->recordid);
@@ -42,8 +42,15 @@ class BibComponentTranslator
         $this->assign($record->control, 'sourcerecordid', 'source_record_id');
         $this->assign($record->delivery, 'delcategory', 'delivery_category');
         $this->assign($record->control, 'sourceid', 'source');
-        $this->assign($record->control, 'almaid', 'alma_id');
 
+        // AlmaIDs aren't always set accurately in the records. Fail gracefully.
+        try {
+            $this->assign($record->control, 'almaid', 'alma_id');
+        } catch (\Exception $e) {
+            foreach ($this->components as $component) {
+                $component->alma_id = '';
+            }
+        }
 
         return $this->components;
     }
