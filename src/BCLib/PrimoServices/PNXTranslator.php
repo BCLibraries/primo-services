@@ -75,7 +75,7 @@ class PNXTranslator
         $bib->link_to_source = $this->extractArray($sear_links, 'sear:linktosrc');
 
         $bib->sort_creator = $this->extractField($sort, 'author');
-        $bib->sort_date = $this->extractField($sort, 'date');
+        $bib->sort_date = $this->extractField($sort, 'creationdate');
         $bib->sort_title = $this->extractField($sort, 'title');
 
         $bib->fulltext = $this->extractField($record->delivery, 'fulltext');

@@ -15,7 +15,7 @@ class BibRecord
     public $title;
 
     /**
-     * @var string
+     * @var Person
      */
     public $creator;
 
