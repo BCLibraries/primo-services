@@ -25,9 +25,10 @@ class PrimoServices extends \Pimple
         $this->_host = $host;
         $this->_institution = $institution;
         if (is_null($cache)) {
-            $cache = new NullCache();
+            $this->_cache = new NullCache();
+        } else {
+            $this->_cache = new Cache($cache);
         }
-        $this->_cache = $cache;
 
         parent::__construct();
 
