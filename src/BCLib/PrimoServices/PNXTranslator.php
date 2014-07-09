@@ -119,7 +119,10 @@ class PNXTranslator
     {
         $groups = array();
         foreach ($pnx_record as $group_name => $group) {
-            $this->extractGroupFields($group, $group_name, $record);
+            if (! is_null($group)) {
+                $this->extractGroupFields($group, $group_name, $record);
+            }
+
         }
         return $groups;
     }
