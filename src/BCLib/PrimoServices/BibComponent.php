@@ -23,4 +23,9 @@ class BibComponent
      * @var string
      */
     public $delivery_category;
+
+    /**
+     * @var BCLib\PrimoServices\Availability\Availability
+     */
+    public $availability;
 }

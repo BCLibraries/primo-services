@@ -2,6 +2,8 @@
 
 namespace BCLib\PrimoServices;
 
+use BCLib\PrimoServices\Availability\AvailibilityClient;
+
 class BriefSearchResult
 {
     /**
@@ -26,5 +28,25 @@ class BriefSearchResult
         };
 
         $this->facets = array_values(array_filter($this->facets, $fn));
+    }
+
+    public function checkAvailability(AvailibilityClient $client)
+    {
+        $availability_results = $client->checkAvailability($this->results);
+
+        $ids = array_keys($availability_results);
+
+        $all_components = array();
+
+        foreach ($this->results as $result) {
+            foreach ($result->components as $component) {
+                $component_key = preg_replace('/\D/', '', $component->source_record_id);
+                $all_components[$component_key] = $component;
+            }
+        }
+
+        foreach ($ids as $id) {
+            $all_components[$id]->availability = $availability_results[$id];
+        }
     }
 }
