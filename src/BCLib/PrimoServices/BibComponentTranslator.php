@@ -45,8 +45,12 @@ class BibComponentTranslator
 
         // AlmaIDs aren't always set accurately in the records. Fail gracefully.
         try {
-            $this->assign($record->control, 'almaid', 'alma_id');
+            //          $this->assign($record->control, 'almaid', 'alma_id');
+            $this->assignAlmaId($record->control);
         } catch (\Exception $e) {
+            echo $e->getMessage() . "\n";
+            print_r($record->display);
+
             foreach ($this->components as $component) {
                 $component->alma_id = '';
             }
@@ -70,6 +74,26 @@ class BibComponentTranslator
         foreach ($values as $value) {
             $pair = $this->splitMultiField($value);
             $this->components[$pair->key]->$property = $pair->val;
+        }
+    }
+
+    private function assignAlmaId($group)
+    {
+        $values = $this->extractField($group, 'almaid');
+
+        $component_keys = array_keys($this->components);
+
+        foreach ($values as $value) {
+            $pair = $this->splitMultiField($value);
+
+            $key_parts = explode(':', $pair->key);
+            $pair->key = array_pop($key_parts);
+
+            foreach ($component_keys as $component_key) {
+                if (strpos($component_key, $pair->key) !== false) {
+                    $this->components[$component_key]->alma_id = $pair->val;
+                }
+            }
         }
     }
 
