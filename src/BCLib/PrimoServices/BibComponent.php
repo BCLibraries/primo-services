@@ -25,7 +25,7 @@ class BibComponent
     public $delivery_category;
 
     /**
-     * @var BCLib\PrimoServices\Availability\Availability
+     * @var \BCLib\PrimoServices\Availability\Availability[]
      */
-    public $availability;
+    public $availability = [];
 }

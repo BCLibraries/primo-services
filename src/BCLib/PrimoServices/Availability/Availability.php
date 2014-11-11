@@ -8,7 +8,7 @@ namespace BCLib\PrimoServices\Availability;
  *
  * @property string $availability
  */
-class Availability
+class Availability implements \JsonSerializable
 {
     public $institution;
     public $library;
@@ -29,11 +29,34 @@ class Availability
         }
     }
 
+    public function __get($name)
+    {
+        if ($name = 'availability') {
+            return $this->availability;
+        }
+    }
+
     private function setAvailability($value)
     {
         if (!in_array($value, array('available', 'unavailable', 'check_holdings'))) {
             throw new \Exception("Invalid availability status ($value)");
         }
         $this->availability = $value;
+    }
+
+    public function jsonSerialize()
+    {
+        return array(
+            "institution"        => $this->institution,
+            "library"            => $this->library,
+            "location"           => $this->location,
+            "call_number"        => $this->call_number,
+            "availability"       => $this->availability,
+            "number"             => $this->number,
+            "number_unavailable" => $this->number_unavailable,
+            "j"                  => $this->j,
+            "multi_volume"       => $this->multi_volume,
+            "number_loans"       => $this->number_loans,
+        );
     }
 }

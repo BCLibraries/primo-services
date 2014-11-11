@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ca4076c7f9ef439d1675d777f536c9ea",
+    "hash": "95a7c09956d0b0577e559af65e65a3ca",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -277,6 +277,50 @@
                 "stream"
             ],
             "time": "2013-07-30 22:07:23"
+        },
+        {
+            "name": "packfire/php5.3-compat",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/packfire/php5.3-compatibility.git",
+                "reference": "b6f257d07b6e0891433857262435622fd4ebd56d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/packfire/php5.3-compatibility/zipball/b6f257d07b6e0891433857262435622fd4ebd56d",
+                "reference": "b6f257d07b6e0891433857262435622fd4ebd56d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam-Mauris Yong",
+                    "email": "mauris@hotmail.sg",
+                    "homepage": "http://mauris.sg/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides class and interface compatibility between PHP 5.3 and PHP 5.4 through autoloading.",
+            "homepage": "http://mauris.sg/packfire/",
+            "keywords": [
+                "OOP",
+                "compatibility",
+                "library"
+            ],
+            "time": "2012-10-28 05:29:18"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -803,6 +847,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
+    "prefer-stable": false,
     "platform": {
         "php": ">=5.3.3"
     },
