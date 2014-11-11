@@ -27,5 +27,5 @@ class BibComponent
     /**
      * @var \BCLib\PrimoServices\Availability\Availability[]
      */
-    public $availability = [];
+    public $availability = array();
 }

@@ -45,11 +45,6 @@ class BibRecord
     public $type;
 
     /**
-     * @todo refactor availability into it's own thing
-     */
-    //public $availability;
-
-    /**
      * @var string[]
      */
     public $isbn = array();

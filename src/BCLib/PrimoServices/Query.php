@@ -34,12 +34,12 @@ class Query
 
     public function sortField($sort_order)
     {
-        $valid_sort_orders = [
+        $valid_sort_orders = array(
             'title'      => 'stitle',
             'date'       => 'scdate',
             'author'     => 'screator',
             'popularity' => 'popularity'
-        ];
+        );
         if (!array_key_exists($sort_order, $valid_sort_orders)) {
             throw new \Exception($sort_order . ' is not a valid result sort');
         }

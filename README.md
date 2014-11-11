@@ -162,6 +162,7 @@ foreach ($result->components as $component) {
     $component->delivery_category;
     $component->source;
     $component->source_record_id;
+    $component->availability;
 }
 ```
 
@@ -169,9 +170,9 @@ Each record also has an array of *GetIt* objects:
  
 ```PHP
 foreach ($result->getit as $getit) {
-    $component->getit1;
-    $component->getit2;
-    $component->category;
+    $getit->getit1;
+    $getit->getit2;
+    $getit->category;
 }
 ```
 

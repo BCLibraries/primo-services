@@ -26,6 +26,8 @@ class Availability implements \JsonSerializable
     {
         if ($name = 'availability') {
             $this->setAvailability($value);
+        } else {
+            throw new \Exception("$name is not a property of Availability");
         }
     }
 
@@ -33,6 +35,8 @@ class Availability implements \JsonSerializable
     {
         if ($name = 'availability') {
             return $this->availability;
+        } else {
+            throw new \Exception("$name is not a property of Availability");
         }
     }
 

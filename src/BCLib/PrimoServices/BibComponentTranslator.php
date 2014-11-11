@@ -24,9 +24,12 @@ class BibComponentTranslator
         $this->is_multi = is_array($record->control->sourceid);
 
         if ($this->is_multi) {
+
+            // @TODO $that is a PHP5.3 compatibility kludge
+            $that = $this;
             $this->keys = array_map(
-                function ($value) {
-                    return $this->splitMultiField($value)->key;
+                function ($value) use ($that) {
+                    return $that->splitMultiField($value)->key;
                 },
                 $sear_doc->PrimoNMBib->record->control->sourceid
             );

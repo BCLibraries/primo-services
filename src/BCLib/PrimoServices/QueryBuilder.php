@@ -44,17 +44,17 @@ class QueryBuilder
         return $this->_addTerm('subject', $subject, $precision);
     }
 
-    public function date($date)
+    public function date($date, $precision = QueryTerm::CONTAINS)
     {
         return $this->_addTerm('date', $date, $precision);
     }
 
-    public function isbn($isbn)
+    public function isbn($isbn, $precision = QueryTerm::CONTAINS)
     {
         return $this->_addTerm('isbn', $isbn, $precision);
     }
 
-    public function issn($issn)
+    public function issn($issn, $precision = QueryTerm::CONTAINS)
     {
         return $this->_addTerm('issn', $issn, $precision);
     }
