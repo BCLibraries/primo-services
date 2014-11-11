@@ -14,12 +14,12 @@ class AlmaClient implements AvailibilityClient
     private $client;
 
     /**
-     * @var
+     * @var string Alma host name (e.g. 'alma.exlibris.com')
      */
     private $alma_host;
 
     /**
-     * @var
+     * @var string Alma library code (e.g. '01BC_INST')
      */
     private $library;
 
@@ -54,7 +54,24 @@ class AlmaClient implements AvailibilityClient
             $ids[$record->id] = $this->getIDS($record);
         }
         $foo = $this->client->get($this->buildUrl($ids))->send();
-        return $this->readAvailability(simplexml_load_string($foo->getBody(true)));
+        $availability_results = $this->readAvailability(simplexml_load_string($foo->getBody(true)));
+
+        $ids = array_keys($availability_results);
+
+        $all_components = array();
+
+        foreach ($results as $result) {
+            foreach ($result->components as $component) {
+                $component_key = preg_replace('/\D/', '', $component->source_record_id);
+                $all_components[$component_key] = $component;
+            }
+        }
+
+        foreach ($ids as $id) {
+            $all_components[$id]->availability = $availability_results[$id];
+        }
+
+        return $results;
     }
 
     private function getIDS(BibRecord $record)

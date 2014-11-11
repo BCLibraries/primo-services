@@ -48,7 +48,6 @@ class BibComponentTranslator
 
         // AlmaIDs aren't always set accurately in the records. Fail gracefully.
         try {
-            //          $this->assign($record->control, 'almaid', 'alma_id');
             $this->assignAlmaId($record->control);
         } catch (\Exception $e) {
             echo $e->getMessage() . "\n";
