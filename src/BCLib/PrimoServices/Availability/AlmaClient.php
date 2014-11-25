@@ -2,7 +2,6 @@
 
 namespace BCLib\PrimoServices\Availability;
 
-use BCLib\PrimoServices\BibRecord;
 use Guzzle\Http\Client;
 
 class AlmaClient implements AvailibilityClient
@@ -22,6 +21,11 @@ class AlmaClient implements AvailibilityClient
      * @var string Alma library code (e.g. '01BC_INST')
      */
     private $library;
+
+    /**
+     * @var Availability[]
+     */
+    private $all_components;
 
     public function __construct(Client $client, $alma_host, $library)
     {
@@ -49,72 +53,35 @@ class AlmaClient implements AvailibilityClient
      */
     public function checkAvailability(array $results)
     {
-        $ids = array();
-        foreach ($results as $record) {
-            $ids[$record->id] = $this->getIDS($record);
-        }
-        $foo = $this->client->get($this->buildUrl($ids))->send();
-        $availability_results = $this->readAvailability(simplexml_load_string($foo->getBody(true)));
-
-        $ids = array_keys($availability_results);
-
-        $all_components = array();
-
-        foreach ($results as $result) {
-            foreach ($result->components as $component) {
-                $component_key = preg_replace('/\D/', '', $component->source_record_id);
-                $all_components[$component_key] = $component;
-            }
-        }
-
-        foreach ($ids as $id) {
-            $all_components[$id]->availability = $availability_results[$id];
-        }
-
+        $this->buildComponentsHash($results);
+        $this->readAvailability();
         return $results;
-    }
-
-    private function getIDS(BibRecord $record)
-    {
-        $ids = array();
-        foreach ($record->components as $component) {
-            if ($component->delivery_category == 'Alma-P') {
-                $ids[] = $component->alma_id;
-            }
-        }
-        return $ids;
     }
 
     private function buildUrl($ids)
     {
-        $flat_ids = array();
-        foreach ($ids as $id) {
-            foreach ($id as $component) {
-                $parts = explode(':', $component);
-                if (isset($parts[1])) {
-                    $flat_ids[] = $parts[1];
-                }
-            }
-        }
-        $url = "http://" . $this->alma_host . "/view/publish_avail?doc_num=" . join(
-                ',',
-                $flat_ids
-            ) . "&library=" . $this->library;
-        return $url;
+        $query = http_build_query(
+            array(
+                'doc_num' => join(',', $ids),
+                'library' => $this->library
+            )
+        );
+        return "http://" . $this->alma_host . "/view/publish_avail?$query";
     }
 
-    private function readAvailability(\SimpleXMLElement $xml)
+    private function readAvailability()
     {
-        $total = array();
+        $response = $this->client->get($this->buildUrl(array_keys($this->all_components)))->send();
+        $xml = simplexml_load_string($response->getBody(true));
 
         foreach ($xml->{'OAI-PMH'} as $oai) {
             $key_parts = explode(':', (string) $oai->ListRecords->record->header->identifier);
             $record_xml = simplexml_load_string($oai->ListRecords->record->metadata->record->asXml());
             if (isset($key_parts)) {
-                $total[$key_parts[1]] = $this->readRecord($record_xml);
+                $this->all_components[$key_parts[1]]->availability = $this->readRecord($record_xml);
             }
         }
-        return $total;
+
     }
 
     private function readRecord(\SimpleXMLElement $record_xml)
@@ -131,5 +98,19 @@ class AlmaClient implements AvailibilityClient
             $record_response[] = $availability;
         }
         return $record_response;
+    }
+
+    private function buildComponentsHash(array $results)
+    {
+        $this->all_components = array();
+
+        foreach ($results as $result) {
+            foreach ($result->components as $component) {
+                if ($component->delivery_category == 'Alma-P') {
+                    $component_key = preg_replace('/\D/', '', $component->source_record_id);
+                    $this->all_components[$component_key] = $component;
+                }
+            }
+        }
     }
 }
