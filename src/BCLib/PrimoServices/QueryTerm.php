@@ -54,6 +54,9 @@ class QueryTerm
 
     public function set($index, $precision, $term)
     {
+        $term = str_replace(',', ' ', $term);
+        $term = preg_replace('/\s+/', ' ', $term);
+
         if ($precision != QueryTerm::CONTAINS && $precision != QueryTerm::EXACT) {
             throw new \Exception($precision . ' is not a valid query relation');
         }

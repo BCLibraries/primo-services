@@ -62,4 +62,18 @@ class QueryTermTest extends \PHPUnit_Framework_TestCase
         $this->_query_term->creator('Aesop');
         $this->assertEquals($expected, $this->_query_term->queryString());
     }
+
+    public function testCommasAreFiltered()
+    {
+        $expected = 'any,contains,inferno brown';
+        $this->_query_term->keyword('inferno, brown');
+        $this->assertEquals($expected, $this->_query_term->queryString());
+    }
+
+    public function testMultipleSpacesAreCollapsed()
+    {
+        $expected = 'any,contains,inferno brown';
+        $this->_query_term->keyword('inferno     brown');
+        $this->assertEquals($expected, $this->_query_term->queryString());
+    }
 }
