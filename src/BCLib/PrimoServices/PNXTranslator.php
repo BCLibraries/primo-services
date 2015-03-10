@@ -5,6 +5,22 @@ namespace BCLib\PrimoServices;
 class PNXTranslator
 {
     /**
+     * @var string
+     */
+    private $_version;
+
+    /**
+     * @var string
+     */
+    private $_sear;
+
+    public function __construct($version = "4.7")
+    {
+        $this->_version = $version;
+        $this->_sear = ($version === '4.8' || $version === '4.7') ? "sear:" : '';
+    }
+
+    /**
      * Translate a set of PNX docs into bib records
      *
      * @param array $docset the "sear:DOCSET" array from a search/view result
@@ -15,12 +31,12 @@ class PNXTranslator
     {
         $return = Array();
 
-        if (is_array($docset->{'sear:DOC'})) {
-            foreach ($docset->{'sear:DOC'} as $doc) {
+        if (is_array($docset->{$this->_sear . 'DOC'})) {
+            foreach ($docset->{$this->_sear . 'DOC'} as $doc) {
                 $return[] = $this->translateDoc($doc);
             }
         } else {
-            $return[] = $this->translateDoc($docset->{'sear:DOC'});
+            $return[] = $this->translateDoc($docset->{$this->_sear . 'DOC'});
         }
 
         return $return;
@@ -44,7 +60,7 @@ class PNXTranslator
         $addata = $record->addata;
         $facets = $record->facets;
         $sort = $record->sort;
-        $sear_links = $doc->{'sear:LINKS'};
+        $sear_links = $doc->{$this->_sear . 'LINKS'};
 
         $bib->id = $this->extractField($control, 'recordid');
         $bib->title = $this->extractField($display, 'title');
@@ -62,7 +78,7 @@ class PNXTranslator
         $bib->genres = $this->extractArray($facets, 'genre');
         $bib->languages = $this->extractArray($facets, 'language');
         $bib->contributors = $this->extractArray($display, 'contributor');
-        $bib->cover_images = $this->extractArray($doc->{'sear:LINKS'}, 'sear:thumbnail');
+        $bib->cover_images = $this->extractArray($doc->{$this->_sear . 'LINKS'}, $this->_sear . 'thumbnail');
 
         $bib->creator = new Person();
         $bib->creator->display_name = $this->extractField($display, 'creator');
@@ -72,7 +88,7 @@ class PNXTranslator
         $bib->creator_facet = $this->extractArray($facets, 'creatorcontrib');
         $bib->collection_facet = $this->extractArray($facets, 'collection');
 
-        $bib->link_to_source = $this->extractArray($sear_links, 'sear:linktosrc');
+        $bib->link_to_source = $this->extractArray($sear_links, $this->_sear . 'linktosrc');
 
         $bib->sort_creator = $this->extractField($sort, 'author');
         $bib->sort_date = $this->extractField($sort, 'creationdate');
@@ -81,14 +97,14 @@ class PNXTranslator
         $bib->fulltext = $this->extractField($record->delivery, 'fulltext');
 
         // move to item level info
-        $bib->openurl = $this->extractArray($sear_links, 'sear:openurl');
-        $bib->openurl_fulltext = $this->extractArray($sear_links, 'sear:openurlfulltext');
+        $bib->openurl = $this->extractArray($sear_links, $this->_sear . 'openurl');
+        $bib->openurl_fulltext = $this->extractArray($sear_links, $this->_sear . 'openurlfulltext');
 
         $holdings_translator = new BibComponentTranslator();
 
         $bib->components = $holdings_translator->translate($doc);
 
-        $bib->getit = $this->extractGetIts($doc->{'sear:GETIT'});
+        $bib->getit = $this->extractGetIts($doc->{$this->_sear . 'GETIT'});
 
         $this->extractPNXGroups($record, $bib);
 
@@ -119,7 +135,7 @@ class PNXTranslator
     {
         $groups = array();
         foreach ($pnx_record as $group_name => $group) {
-            if (! is_null($group)) {
+            if (!is_null($group)) {
                 $this->extractGroupFields($group, $group_name, $record);
             }
 

@@ -14,13 +14,18 @@ class PrimoServices extends \Pimple
      * @var Cache
      */
     private $_cache;
+    /**
+     * @var string
+     */
+    private $_version;
 
     /**
      * @param string        $host
      * @param string        $institution
      * @param DoctrineCache $cache
+     * @param string        $version
      */
-    public function __construct($host, $institution, DoctrineCache $cache = null)
+    public function __construct($host, $institution, DoctrineCache $cache = null, $version = "4.7")
     {
         $this->_host = $host;
         $this->_institution = $institution;
@@ -32,12 +37,12 @@ class PrimoServices extends \Pimple
 
         parent::__construct();
 
-        $this['pnx_translator'] = function () {
-            return new PNXTranslator();
+        $this['pnx_translator'] = function () use ($version) {
+            return new PNXTranslator($version);
         };
 
-        $this['facet_translator'] = function () {
-            return new FacetTranslator();
+        $this['facet_translator'] = function () use ($version)  {
+            return new FacetTranslator($version);
         };
 
         $this['query'] = function () use ($institution) {
@@ -55,6 +60,7 @@ class PrimoServices extends \Pimple
         $this['deep_link'] = function () use ($host, $institution) {
             return new DeepLink($host, $institution);
         };
+        $this->_version = $version;
     }
 
     /**
@@ -81,10 +87,12 @@ class PrimoServices extends \Pimple
             return $cached_value;
         }
 
+        $sear = $this->_version === '4.7' || $this->_version === '4.8' ? 'sear:' : '';
+
         $json = $this->_send('brief', $query);
 
-        $docset = $json->{'sear:SEGMENTS'}->{'sear:JAGROOT'}->{'sear:RESULT'}->{'sear:DOCSET'};
-        $facetlist = $json->{'sear:SEGMENTS'}->{'sear:JAGROOT'}->{'sear:RESULT'}->{'sear:FACETLIST'};
+        $docset = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'}->{$sear . 'DOCSET'};
+        $facetlist = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'}->{$sear . 'FACETLIST'};
 
         /* @var $response BriefSearchResult */
         $response = $this['search_result'];

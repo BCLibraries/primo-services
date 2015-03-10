@@ -14,7 +14,7 @@ class PNXTranslatorTest extends \PHPUnit_Framework_TestCase
 
     public function testRecordIsLoaded()
     {
-        $docset = $this->_loadTestRecord(__DIR__ . '/../../helpers/brief-search-result-local-01.json');
+        $docset = $this->_loadTestRecord(__DIR__ . '/../../helpers/4.7/brief-search-result-local-01.json');
 
         $result = $this->_translator->translateDocSet($docset);
         $this->assertEquals(9, sizeof($result));
@@ -23,7 +23,7 @@ class PNXTranslatorTest extends \PHPUnit_Framework_TestCase
 
     public function testLocalRecordLoadsCorrectly()
     {
-        $docset = $this->_loadTestRecord(__DIR__ . '/../../helpers/brief-search-result-local-01.json');
+        $docset = $this->_loadTestRecord(__DIR__ . '/../../helpers/4.7/brief-search-result-local-01.json');
         $result = $this->_translator->translateDocSet($docset);
 
         $result_0 = $result[0];
