@@ -7,7 +7,7 @@ class Query
     private $_parameters = array();
     private $_terms = array();
 
-    public function __construct($institution, $start_idx = 0, $bulk_size = 10)
+    public function __construct($institution, $start_idx = 1, $bulk_size = 10)
     {
         $this->_parameters['institution'] = $institution;
         $this->_parameters['indx'] = $start_idx;
