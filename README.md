@@ -196,7 +196,9 @@ $query_term->keyword('otters');
 $deep_link = $primo_services->createDeepLink();
 $deep_link->view('bclib')->onCampus('true')->group('GUEST')->language('eng');
 
-echo $deep_link->search($query_term) . "\n";
+$scope = 'bcl';
+$tab = 'books_tab';
+echo $deep_link->search($query_term, $scope, $tab) . "\n";
 echo $deep_link->link('ALMA-BC21421261320001021') . "\n";
 ```
 

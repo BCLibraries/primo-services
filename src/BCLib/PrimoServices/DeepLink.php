@@ -40,9 +40,16 @@ class DeepLink
         $this->_language = $languange;
     }
 
-    public function search(QueryTerm $term)
+    public function search(QueryTerm $term, $scope = null, $tab = null)
     {
         $params['query'] = $term->queryString();
+        if (isset($scope)) {
+            $params['search_scope'] = $scope;
+        }
+        if (isset($tab)) {
+            $params['tab'] = $tab;
+        }
+
         return $this->_buildURL('dlSearch.do', $params);
     }
 

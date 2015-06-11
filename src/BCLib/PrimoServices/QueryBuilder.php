@@ -67,6 +67,18 @@ class QueryBuilder
         return $this;
     }
 
+    public function local($scope)
+    {
+        $this->_query->local($scope);
+        return $this;
+    }
+
+    public function articles()
+    {
+        $this->_query->articles();
+        return $this;
+    }
+
     protected function _addTerm($name, $value, $precision)
     {
         $term = new QueryTerm();
