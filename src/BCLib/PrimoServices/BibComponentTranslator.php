@@ -50,9 +50,6 @@ class BibComponentTranslator
         try {
             $this->assignAlmaId($record->control);
         } catch (\Exception $e) {
-            echo $e->getMessage() . "\n";
-            print_r($record->display);
-
             foreach ($this->components as $component) {
                 $component->alma_id = '';
             }
