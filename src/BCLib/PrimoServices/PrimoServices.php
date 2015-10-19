@@ -25,7 +25,7 @@ class PrimoServices extends \Pimple
      * @param DoctrineCache $cache
      * @param string        $version
      */
-    public function __construct($host, $institution, DoctrineCache $cache = null, $version = "4.7")
+    public function __construct($host, $institution, DoctrineCache $cache = null, $version = "4.9")
     {
         $this->_host = $host;
         $this->_institution = $institution;
