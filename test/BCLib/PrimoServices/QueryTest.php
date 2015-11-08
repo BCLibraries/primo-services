@@ -14,13 +14,13 @@ class QueryTest extends \PHPUnit_Framework_TestCase
 
     public function testGeneratesCorrectURLWithoutAnyTerms()
     {
-        $expected = 'institution=BCL&indx=0&bulkSize=10';
+        $expected = 'institution=BCL&indx=1&bulkSize=10';
         $this->assertEquals($expected, (string) $this->_query);
     }
 
     public function testGeneratesCorrectURLWithOneQueryTerm()
     {
-        $expected = 'institution=BCL&indx=0&bulkSize=10&query=any%2Ccontains%2Cotters';
+        $expected = 'institution=BCL&indx=1&bulkSize=10&query=any%2Ccontains%2Cotters';
         $query_term = $this->getMock('\BCLib\PrimoServices\QueryTerm');
         $query_term->expects($this->once())
             ->method('queryString')
@@ -32,7 +32,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase
     public function testGeneratesCorrectURLWithMultipleQueryTerms()
     {
 
-        $expected = 'institution=BCL&indx=0&bulkSize=10&query=any%2Ccontains%2Cotters&query=any%2Ccontains%2Cbears&query=any%2Ccontains%2Crabbits';
+        $expected = 'institution=BCL&indx=1&bulkSize=10&query=any%2Ccontains%2Cotters&query=any%2Ccontains%2Cbears&query=any%2Ccontains%2Crabbits';
 
         $term_1 = $this->getMock('\BCLib\PrimoServices\QueryTerm');
         $term_2 = $this->getMock('\BCLib\PrimoServices\QueryTerm');
@@ -54,19 +54,19 @@ class QueryTest extends \PHPUnit_Framework_TestCase
 
     public function testSortFieldAddsCorrectly()
     {
-        $expected = 'institution=BCL&indx=0&bulkSize=10&sortField=stitle';
+        $expected = 'institution=BCL&indx=1&bulkSize=10&sortField=stitle';
         $this->_query->sortField('title');
         $this->assertEquals($expected, (string) $this->_query);
 
-        $expected = 'institution=BCL&indx=0&bulkSize=10&sortField=scdate';
+        $expected = 'institution=BCL&indx=1&bulkSize=10&sortField=scdate';
         $this->_query->sortField('date');
         $this->assertEquals($expected, (string) $this->_query);
 
-        $expected = 'institution=BCL&indx=0&bulkSize=10&sortField=screator';
+        $expected = 'institution=BCL&indx=1&bulkSize=10&sortField=screator';
         $this->_query->sortField('author');
         $this->assertEquals($expected, (string) $this->_query);
 
-        $expected = 'institution=BCL&indx=0&bulkSize=10&sortField=popularity';
+        $expected = 'institution=BCL&indx=1&bulkSize=10&sortField=popularity';
         $this->_query->sortField('popularity');
         $this->assertEquals($expected, (string) $this->_query);
     }
@@ -81,11 +81,11 @@ class QueryTest extends \PHPUnit_Framework_TestCase
 
     public function testOnCampusAddedCorrectly()
     {
-        $expected = 'institution=BCL&indx=0&bulkSize=10&onCampus=true';
+        $expected = 'institution=BCL&indx=1&bulkSize=10&onCampus=true';
         $this->_query->onCampus();
         $this->assertEquals($expected, (string) $this->_query);
 
-        $expected = 'institution=BCL&indx=0&bulkSize=10&onCampus=false';
+        $expected = 'institution=BCL&indx=1&bulkSize=10&onCampus=false';
         $this->_query->onCampus(false);
         $this->assertEquals($expected, (string) $this->_query);
     }
@@ -101,14 +101,14 @@ class QueryTest extends \PHPUnit_Framework_TestCase
     public function testArticleSearchSetCorrectly()
     {
         $this->_query->articles();
-        $expected = 'institution=BCL&indx=0&bulkSize=10&loc=adaptor%2Cprimo_central_multiple_fe';
+        $expected = 'institution=BCL&indx=1&bulkSize=10&loc=adaptor%2Cprimo_central_multiple_fe';
         $this->assertEquals($expected, (string) $this->_query);
     }
 
     public function testLocalScopeSetCorrectly()
     {
         $this->_query->local('BCL');
-        $expected = 'institution=BCL&indx=0&bulkSize=10&loc=local%2Cscope%3A%28BCL%29';
+        $expected = 'institution=BCL&indx=1&bulkSize=10&loc=local%2Cscope%3A%28BCL%29';
         $this->assertEquals($expected, (string) $this->_query);
     }
 
@@ -122,7 +122,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase
     public function testBulkSizeSet()
     {
         $this->_query->bulkSize(30);
-        $expected = 'institution=BCL&indx=0&bulkSize=30';
+        $expected = 'institution=BCL&indx=1&bulkSize=30';
         $this->assertEquals($expected, (string) $this->_query);
     }
 
