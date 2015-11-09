@@ -7,7 +7,7 @@ class BibComponent
     /**
      * @var string
      */
-    public $alma_id;
+    public $alma_ids = array();
 
     /**
      * @var string
