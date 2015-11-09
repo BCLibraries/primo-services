@@ -51,7 +51,7 @@ class BibComponentTranslator
             $this->assignAlmaId($record->control);
         } catch (\Exception $e) {
             foreach ($this->components as $component) {
-                $component->alma_id = '';
+                $component->alma_ids = [];
             }
         }
 
@@ -90,7 +90,7 @@ class BibComponentTranslator
 
             foreach ($component_keys as $component_key) {
                 if (strpos($component_key, $pair->key) !== false) {
-                    $this->components[$component_key]->alma_id = $pair->val;
+                    $this->components[$component_key]->alma_ids[] = $pair->val;
                 }
             }
         }
@@ -104,6 +104,14 @@ class BibComponentTranslator
         if ($this->is_multi) {
             return $group->$field;
         }
-        return array('$$V' . $group->$field . '$$O' . $this->keys[0]);
+
+        $fieldValues = is_array($group->$field) ? $group->$field : array($group->$field);
+
+        // @TODO $that is a PHP5.3 compatibility kludge
+        $that = $this;
+
+        return array_map(function($fieldValue) use ($that) {
+            return '$$V' . $fieldValue . '$$O' . $that->keys[0];
+        }, $fieldValues);
     }
 }
