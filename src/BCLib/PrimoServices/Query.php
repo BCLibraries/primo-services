@@ -69,6 +69,12 @@ class Query
         return $this;
     }
 
+    public function language($language_code)
+    {
+        $this->_parameters['lang'] = $lang;
+        return $this;
+    }
+
     public function __toString()
     {
         $url = http_build_query($this->_parameters);
