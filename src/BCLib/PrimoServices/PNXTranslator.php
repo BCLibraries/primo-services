@@ -107,6 +107,10 @@ class PNXTranslator
 
         $bib->getit = $this->extractGetIts($doc->{$this->_sear . 'GETIT'});
 
+        if ($this->extractField($facets, 'frbrtype') != '6') {
+            $bib->frbr_group_id = $this->extractField($facets, 'frbrgroupid');
+        }
+
         $this->extractPNXGroups($record, $bib);
 
         return $bib;

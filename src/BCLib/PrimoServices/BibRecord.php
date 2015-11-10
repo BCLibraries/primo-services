@@ -115,6 +115,11 @@ class BibRecord
     public $getit = array();
 
     /**
+     * @var string
+     */
+    public $frbr_group_id = null;
+
+    /**
      * @var string[]
      */
     public $cover_images;
