@@ -87,6 +87,7 @@ class PNXTranslator
 
         $bib->creator_facet = $this->extractArray($facets, 'creatorcontrib');
         $bib->collection_facet = $this->extractArray($facets, 'collection');
+        $bib->resourcetype_facet = $this->extractArray($facets, 'rsrctype');
 
         $bib->link_to_source = $this->extractArray($sear_links, $this->_sear . 'linktosrc');
 

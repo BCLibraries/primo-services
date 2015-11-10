@@ -87,6 +87,11 @@ class BibRecord
     /**
      * @var string[]
      */
+    public $resourcetype_facet = array();
+
+    /**
+     * @var string[]
+     */
     public $languages = array();
 
     /**

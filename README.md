@@ -136,6 +136,7 @@ foreach ($primo_result->results as $result) {
     $result->openurl_fulltext; // string[]
     $result->publisher;
     $result->reserves_info;
+    $result->resourcetype_facet; // string[]
     $result->sort_creator;
     $result->sort_date;
     $result->sort_title;
