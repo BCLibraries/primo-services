@@ -108,9 +108,10 @@ class AlmaClient implements AvailibilityClient
 
         foreach ($results as $result) {
             foreach ($result->components as $component) {
-                if ($component->delivery_category == 'Alma-P') {
-                    $component_key = preg_replace('/\D/', '', $component->source_record_id);
-                    $this->all_components[$component_key] = $component;
+                $delivery_category = explode('$$', $component->delivery_category);
+                if ($delivery_category[0] == 'Alma-P' && isset($component->alma_ids[$this->library])) {
+                    $alma_id = $component->alma_ids[$this->library];
+                    $this->all_components[$alma_id] = $component;
                 }
             }
         }

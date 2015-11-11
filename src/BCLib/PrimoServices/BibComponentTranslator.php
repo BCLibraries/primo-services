@@ -89,8 +89,9 @@ class BibComponentTranslator
             $pair->key = array_pop($key_parts);
 
             foreach ($component_keys as $component_key) {
-                if (strpos($component_key, $pair->key) !== false) {
-                    $this->components[$component_key]->alma_ids[] = $pair->val;
+                if (strpos($component_key, $pair->key) !== false && strpos($pair->val, ':')) {
+                    list($institution, $institution_id) = explode(':', $pair->val);
+                    $this->components[$component_key]->alma_ids[$institution] = $institution_id;
                 }
             }
         }
