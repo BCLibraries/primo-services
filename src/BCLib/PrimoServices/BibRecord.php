@@ -87,6 +87,11 @@ class BibRecord
     /**
      * @var string[]
      */
+    public $resourcetype_facet = array();
+
+    /**
+     * @var string[]
+     */
     public $languages = array();
 
     /**
@@ -108,6 +113,11 @@ class BibRecord
      * @var GetIt[]
      */
     public $getit = array();
+
+    /**
+     * @var string
+     */
+    public $frbr_group_id = null;
 
     /**
      * @var string[]
