@@ -89,13 +89,24 @@ class PrimoServices extends \Pimple
 
         $sear = $this->_version === '4.7' || $this->_version === '4.8' ? 'sear:' : '';
 
-        $json = $this->_send('brief', $query);
-
-        $docset = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'}->{$sear . 'DOCSET'};
-        $facetlist = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'}->{$sear . 'FACETLIST'};
-
         /* @var $response BriefSearchResult */
         $response = $this['search_result'];
+
+        $json = $this->_send('brief', $query);
+        if (is_null($json)) {
+            // json_decode returns null on invalid JSON
+            throw new PrimoException('Invalid or no response');
+        }
+
+        $result = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'};
+
+        if (isset($result->{$sear . 'ERROR'})) {
+            throw new PrimoException($result->{$sear . 'ERROR'}->{'@MESSAGE'}, $result->{$sear . 'ERROR'}->{'@CODE'});
+        }
+
+        $docset = $result->{$sear . 'DOCSET'};
+        $facetlist = $result->{$sear . 'FACETLIST'};
+
         $response->total_results = $docset->{'@TOTALHITS'};
 
         if ($facetlist) {

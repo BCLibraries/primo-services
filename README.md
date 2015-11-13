@@ -51,6 +51,7 @@ First instatiate a connection to the Primo server:
 use \BCLib\PrimoServices\PrimoServices;
 use \BCLib\PrimoServices\Query;
 use \BCLib\PrimoServices\QueryTerm;
+use \BCLib\PrimoServices\PrimoException;
 
 $host = 'primo2.staging.hosted.exlibrisgroup.com';
 $inst = 'BCL';
@@ -69,7 +70,11 @@ $query->addTerm($term);
 Finally execute the search:
 
 ```PHP
-$primo_result = $primo->search($query);
+try {
+    $primo_result = $primo->search($query);
+} catch (PrimoException $e) {
+    // Handle error
+}
 ```
 
 ### Full view

@@ -1,0 +1,13 @@
+{
+   "SEGMENTS" : {
+      "@xmlns" : "http://www.exlibrisgroup.com/xsd/jaguar/search",
+      "JAGROOT" : {
+         "RESULT" : {
+            "ERROR" : {
+               "@CODE" : "-1",
+               "@MESSAGE" : "PrimoSearchWS ExecuteSearch null; nested exception is:   java.lang.reflect.InvocationTargetException"
+            }
+         }
+      }
+   }
+}
