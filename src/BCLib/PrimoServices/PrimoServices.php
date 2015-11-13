@@ -171,10 +171,22 @@ class PrimoServices extends \Pimple
         return $this['deep_link'];
     }
 
+    /**
+     * Generate a Primo API url
+     *
+     * @param $action
+     * @param $query_string
+     *
+     * @return string
+     */
+    public function url($action, $query_string) {
+        return 'http://' . $this->_host . '/PrimoWebServices/xservice/search/' . $action . '?json=true&' . $query_string;
+    }
+
     protected function _send($action, $query_string)
     {
-        $client = new Client('http://' . $this->_host . '/PrimoWebServices/xservice/search/');
-        $request = $client->get($action . '?json=true&' . $query_string);
+        $client = new Client();
+        $request = $client->get($this->url($action, $query_string));
         return json_decode($request->send()->getBody());
     }
 }
