@@ -226,7 +226,7 @@ $primo = new PrimoServices($host, $inst, $cache);
 
 This module uses the Composer-installed PHPUnit. From the main project directory:
 
-    ./vendor/bin/phpunit test/BCLib/
+    composer test
     
 ## License
 
