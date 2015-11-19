@@ -28,7 +28,7 @@ class Query
 
     public function addTerm(QueryTerm $query_term)
     {
-        $this->_terms[] = 'query=' . urlencode($query_term->queryString());
+        $this->_terms[] = $query_term;
         return $this;
     }
 
@@ -77,9 +77,11 @@ class Query
 
     public function __toString()
     {
-        $url = http_build_query($this->_parameters);
-        $url .= (count($this->_terms) > 0) ? '&' . join('&', $this->_terms) : '';
-        return $url;
+        $query_terms = array_map(function(QueryTerm $query_term) {
+            return '&query=' . urlencode($query_term->queryString());
+        }, $this->_terms);
+
+        return http_build_query($this->_parameters) . implode('', $query_terms);
     }
 
     public function next($bulk_size = null)
