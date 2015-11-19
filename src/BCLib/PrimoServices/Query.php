@@ -32,6 +32,16 @@ class Query
         return $this;
     }
 
+    public function getTerms()
+    {
+        return $this->_terms;
+    }
+
+    public function getParameters()
+    {
+        return $this->_parameters;
+    }
+
     public function sortField($sort_order)
     {
         $valid_sort_orders = array(
