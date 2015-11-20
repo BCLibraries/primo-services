@@ -5,7 +5,11 @@ namespace BCLib\PrimoServices;
 class Query
 {
     private $_parameters = array();
-    private $_terms = array();
+    private $_terms = array(
+        'query' => array(),
+        'query_inc' => array(),
+        'query_exc' => array(),
+    );
 
     public function __construct($institution, $start_idx = 1, $bulk_size = 10)
     {
@@ -28,13 +32,28 @@ class Query
 
     public function addTerm(QueryTerm $query_term)
     {
-        $this->_terms[] = $query_term;
+        $this->_terms['query'][] = $query_term;
         return $this;
     }
 
-    public function getTerms()
+    public function includeTerm(QueryTerm $query_term)
     {
-        return $this->_terms;
+        $this->_terms['query_inc'][] = $query_term;
+        return $this;
+    }
+
+    public function excludeTerm(QueryTerm $query_term)
+    {
+        $this->_terms['query_exc'][] = $query_term;
+        return $this;
+    }
+
+    public function getTerms($filter = null)
+    {
+        if (!is_null($filter)) {
+            return $this->_terms[$filter];
+        }
+        return array_merge($this->_terms['query'], $this->_terms['query_inc'], $this->_terms['query_exc']);
     }
 
     public function getParameters()
@@ -85,13 +104,14 @@ class Query
         return $this;
     }
 
-    public function __toString()
-    {
-        $query_terms = array_map(function(QueryTerm $query_term) {
-            return '&query=' . urlencode($query_term->queryString());
-        }, $this->_terms);
-
-        return http_build_query($this->_parameters) . implode('', $query_terms);
+    public function __toString() {
+        $query_terms = '';
+        foreach ($this->_terms as $k => $v) {
+            $query_terms .= implode('', array_map(function(QueryTerm $query_term) use ($k) {
+                return '&' . $k . '=' . urlencode($query_term->queryString());
+            }, $v));
+        }
+        return http_build_query($this->_parameters) . $query_terms;
     }
 
     public function next($bulk_size = null)

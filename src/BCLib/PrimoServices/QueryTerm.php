@@ -52,10 +52,20 @@ class QueryTerm
         return $this->_index . ',' . $this->_precision . ',' . $this->_term;
     }
 
-    public function set($index, $precision, $term)
+    protected function processTerm($term)
     {
         $term = str_replace(',', ' ', $term);
         $term = preg_replace('/\s+/', ' ', $term);
+        return $term;
+    }
+
+    public function set($index, $precision, $term)
+    {
+        if (is_array($term)) {
+            $term = implode(',', array_map(array($this, 'processTerm'), $term));
+        } else {
+            $term = $this->processTerm($term);
+        }
 
         if ($precision != QueryTerm::CONTAINS && $precision != QueryTerm::EXACT) {
             throw new \Exception($precision . ' is not a valid query relation');
