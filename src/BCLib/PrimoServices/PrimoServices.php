@@ -89,13 +89,24 @@ class PrimoServices extends \Pimple
 
         $sear = $this->_version === '4.7' || $this->_version === '4.8' ? 'sear:' : '';
 
-        $json = $this->_send('brief', $query);
-
-        $docset = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'}->{$sear . 'DOCSET'};
-        $facetlist = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'}->{$sear . 'FACETLIST'};
-
         /* @var $response BriefSearchResult */
         $response = $this['search_result'];
+
+        $json = $this->_send('brief', $query);
+        if (is_null($json)) {
+            // json_decode returns null on invalid JSON
+            throw new PrimoException('Invalid or no response');
+        }
+
+        $result = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'};
+
+        if (isset($result->{$sear . 'ERROR'})) {
+            throw new PrimoException($result->{$sear . 'ERROR'}->{'@MESSAGE'}, $result->{$sear . 'ERROR'}->{'@CODE'});
+        }
+
+        $docset = $result->{$sear . 'DOCSET'};
+        $facetlist = $result->{$sear . 'FACETLIST'};
+
         $response->total_results = $docset->{'@TOTALHITS'};
 
         if ($facetlist) {
@@ -160,10 +171,22 @@ class PrimoServices extends \Pimple
         return $this['deep_link'];
     }
 
+    /**
+     * Generate a Primo API url
+     *
+     * @param $action
+     * @param $query_string
+     *
+     * @return string
+     */
+    public function url($action, $query_string) {
+        return 'http://' . $this->_host . '/PrimoWebServices/xservice/search/' . $action . '?json=true&' . $query_string;
+    }
+
     protected function _send($action, $query_string)
     {
-        $client = new Client('http://' . $this->_host . '/PrimoWebServices/xservice/search/');
-        $request = $client->get($action . '?json=true&' . $query_string);
+        $client = new Client();
+        $request = $client->get($this->url($action, $query_string));
         return json_decode($request->send()->getBody());
     }
 }
