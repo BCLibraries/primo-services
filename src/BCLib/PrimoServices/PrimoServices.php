@@ -107,6 +107,13 @@ class PrimoServices extends \Pimple
         $docset = $result->{$sear . 'DOCSET'};
         $facetlist = $result->{$sear . 'FACETLIST'};
 
+        print_r($result);
+
+        if (null !== $result->{$sear . 'QUERYTRANSFORMS'}
+            && null !== ($result->{$sear . 'QUERYTRANSFORMS'}->{$sear . 'QUERYTRANSFORM'}->{$sear . '@QUERY'})) {
+            $response->dym = $result->{$sear . 'QUERYTRANSFORMS'}->{$sear . 'QUERYTRANSFORM'}->{$sear . '@QUERY'};
+        }
+
         $response->total_results = $docset->{'@TOTALHITS'};
 
         if ($facetlist) {

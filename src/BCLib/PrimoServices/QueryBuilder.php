@@ -79,6 +79,12 @@ class QueryBuilder
         return $this;
     }
 
+    public function dym()
+    {
+        $this->_query->dym();
+        return $this;
+    }
+
     protected function _addTerm($name, $value, $precision)
     {
         $term = new QueryTerm();

@@ -104,7 +104,14 @@ class Query
         return $this;
     }
 
-    public function __toString() {
+    public function dym()
+    {
+        $this->_parameters['dym'] = 'true';
+        return $this;
+    }
+
+    public function __toString()
+    {
         $query_terms = '';
         foreach ($this->_terms as $k => $v) {
             $query_terms .= implode('', array_map(function(QueryTerm $query_term) use ($k) {

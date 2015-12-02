@@ -21,6 +21,11 @@ class BriefSearchResult
      */
     public $total_results;
 
+    /**
+     * @var string
+     */
+    public $dym;
+
     public function filterFacets(array $facet_whitelist)
     {
         $fn = function ($facet) use ($facet_whitelist) {
