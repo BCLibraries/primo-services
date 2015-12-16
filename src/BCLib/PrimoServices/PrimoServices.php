@@ -100,7 +100,7 @@ class PrimoServices extends \Pimple
 
         $result = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'};
 
-        if (isset($result->{$sear . 'ERROR'}) && $result->{$sear.'ERROR'}->{$sear.'@git sCODE'} !='search.meassage.ui.expansion.pc') {
+        if (isset($result->{$sear . 'ERROR'}) && $result->{$sear.'ERROR'}->{$sear.'@CODE'} !='search.message.ui.expansion.pc') {
             throw new PrimoException($result->{$sear . 'ERROR'}->{'@MESSAGE'}, $result->{$sear . 'ERROR'}->{'@CODE'});
         }
 
