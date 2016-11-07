@@ -43,7 +43,8 @@ class AlmaClient implements AvailibilityClient
             'g' => 'number_unavailable',
             'j' => 'j',
             'k' => 'multi_volume',
-            'p' => 'number_loans'
+            'p' => 'number_loans',
+            'q' => 'library_display'
         );
     }
 

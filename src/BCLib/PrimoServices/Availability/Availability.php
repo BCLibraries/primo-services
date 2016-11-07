@@ -12,6 +12,7 @@ class Availability implements \JsonSerializable
 {
     public $institution;
     public $library;
+    public $library_display;
     public $location;
     public $call_number;
     private $availability;
