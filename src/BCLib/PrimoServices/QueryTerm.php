@@ -54,6 +54,7 @@ class QueryTerm
 
     protected function processTerm($term)
     {
+        $term = str_replace('+', ' ', $term);
         $term = str_replace(',', ' ', $term);
         $term = preg_replace('/\s+/', ' ', $term);
         return $term;
