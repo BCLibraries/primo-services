@@ -94,8 +94,10 @@ class AlmaClient implements AvailibilityClient
             $availability = new Availability();
             foreach ($ava->subfield as $sub) {
                 if ($sub['code'] != '0') {
-                    $property = $this->ava_map[(string) $sub['code']];
-                    $availability->$property = (string) $sub;
+                    if (isset($this->ava_map[(string) $sub['code']])) {
+                        $property = $this->ava_map[(string) $sub['code']];
+                        $availability->$property = (string) $sub;
+                    }
                 }
             }
             $record_response[] = $availability;
