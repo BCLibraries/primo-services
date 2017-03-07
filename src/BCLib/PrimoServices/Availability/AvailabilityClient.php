@@ -2,7 +2,7 @@
 
 namespace BCLib\PrimoServices\Availability;
 
-interface AvailibilityClient
+interface AvailabilityClient
 {
     /**
      * @param \BCLib\PrimoServices\BibRecord[] $results

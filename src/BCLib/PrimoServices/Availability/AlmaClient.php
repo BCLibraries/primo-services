@@ -4,7 +4,7 @@ namespace BCLib\PrimoServices\Availability;
 
 use Guzzle\Http\Client;
 
-class AlmaClient implements AvailibilityClient
+class AlmaClient implements AvailabilityClient
 {
 
     /**
