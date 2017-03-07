@@ -25,11 +25,9 @@ class BibComponentTranslator
 
         if ($this->is_multi) {
 
-            // @TODO $that is a PHP5.3 compatibility kludge
-            $that = $this;
             $this->keys = array_map(
-                function ($value) use ($that) {
-                    return $that->splitMultiField($value)->key;
+                function ($value)  {
+                    return $this->splitMultiField($value)->key;
                 },
                 $sear_doc->PrimoNMBib->record->control->sourceid
             );
@@ -108,11 +106,8 @@ class BibComponentTranslator
 
         $fieldValues = (array) $group->$field;
 
-        // @TODO $that is a PHP5.3 compatibility kludge
-        $that = $this;
-
-        return array_map(function($fieldValue) use ($that) {
-            return '$$V' . $fieldValue . '$$O' . $that->keys[0];
+        return array_map(function($fieldValue) {
+            return '$$V' . $fieldValue . '$$O' . $this->keys[0];
         }, $fieldValues);
     }
 }
