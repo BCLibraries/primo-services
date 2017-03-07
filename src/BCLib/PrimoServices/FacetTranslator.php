@@ -5,17 +5,11 @@ namespace BCLib\PrimoServices;
 class FacetTranslator
 {
     /**
-     * @var string
-     */
-    private $_version;
-
-    /**
      * @param string $version
      */
-    public function __construct($version = "4.7")
+    public function __construct($version = '4.7')
     {
-        $this->_version = $version;
-        $this->_sear = ($version === '4.8' || $version === '4.7') ? "sear:" : '';
+        $this->_sear = ($version === '4.8' || $version === '4.7') ? 'sear:' : '';
     }
 
     /**
@@ -41,11 +35,7 @@ class FacetTranslator
         $facet->id = $sear_facet->{'@NAME'};
         $facet->count = $sear_facet->{'@COUNT'};
 
-        $facet_values = $sear_facet->{$this->_sear . 'FACET_VALUES'};
-
-        if (!is_array($facet_values)) {
-            $facet_values = array($facet_values);
-        }
+        $facet_values = (array) $sear_facet->{$this->_sear . 'FACET_VALUES'};
 
         $facet->values = \array_map(array($this, '_extractFacetValue'), $facet_values);
 

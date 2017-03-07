@@ -7,17 +7,11 @@ class PNXTranslator
     /**
      * @var string
      */
-    private $_version;
-
-    /**
-     * @var string
-     */
     private $_sear;
 
-    public function __construct($version = "4.7")
+    public function __construct($version = '4.7')
     {
-        $this->_version = $version;
-        $this->_sear = ($version === '4.8' || $version === '4.7') ? "sear:" : '';
+        $this->_sear = ($version === '4.8' || $version === '4.7') ? 'sear:' : '';
     }
 
     /**
@@ -47,7 +41,7 @@ class PNXTranslator
      *
      * @param \stdClass $doc a "sear:DOC" object from a search/view result
      *
-     * @return BibRecord[]
+     * @return BibRecord
      */
     public function translateDoc(\stdClass $doc)
     {
@@ -107,7 +101,7 @@ class PNXTranslator
 
         $bib->getit = $this->extractGetIts($doc->{$this->_sear . 'GETIT'});
 
-        if ($this->extractField($facets, 'frbrtype') != '6') {
+        if ($this->extractField($facets, 'frbrtype') !== '6') {
             $bib->frbr_group_id = $this->extractField($facets, 'frbrgroupid');
         }
 
@@ -118,13 +112,8 @@ class PNXTranslator
 
     private function extractGetIts($sear_getit)
     {
-        if (!is_array($sear_getit)) {
-            $sear_getit = array($sear_getit);
-        }
-
-        $result = \array_map(array($this, 'extractGetIt'), $sear_getit);
-
-        return $result;
+        $sear_getit = (array) $sear_getit;
+        return \array_map(array($this, 'extractGetIt'), $sear_getit);
     }
 
     private function extractGetIt($sear_getit)
@@ -140,7 +129,7 @@ class PNXTranslator
     {
         $groups = array();
         foreach ($pnx_record as $group_name => $group) {
-            if (!is_null($group)) {
+            if (null !== $group) {
                 $this->extractGroupFields($group, $group_name, $record);
             }
 
@@ -165,6 +154,6 @@ class PNXTranslator
     private function extractArray(\stdClass $group, $field)
     {
         $value = isset($group->$field) ? $group->$field : array();
-        return (is_array($value)) ? $value : array($value);
+        return (array) $value;
     }
 }

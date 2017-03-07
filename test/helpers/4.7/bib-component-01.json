@@ -1,0 +1,247 @@
+{
+  "@ID": "2826033",
+  "@NO": "1",
+  "@RANK": "0.029963527",
+  "@SEARCH_ENGINE": "Local Search Engine",
+  "@SEARCH_ENGINE_TYPE": "Local Search Engine",
+  "PrimoNMBib": {
+    "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib",
+    "record": {
+      "addata": {
+        "abstract": "Describes the physical characteristics, natural habitat, history and folklore of the otter.",
+        "au": "Goldsworthy, Kaite",
+        "aufirst": "Kaite",
+        "aulast": "Goldsworthy",
+        "btitle": "Otters",
+        "cop": "New York",
+        "date": "2012",
+        "format": "book",
+        "genre": "book",
+        "isbn": [
+          "9781616906214",
+          "1616906219",
+          "9781616906276",
+          "1616906278"
+        ],
+        "lad04": [
+          "1616906219",
+          "1616906278"
+        ],
+        "lccn": "2010045190",
+        "oclcid": "671916807",
+        "pub": "AV\u00b2 by Weigl",
+        "risdate": "c2012.",
+        "ristype": "BOOK",
+        "seriestitle": "Backyard animals"
+      },
+      "browse": {
+        "author": "$$DGoldsworthy, Kaite$$EGoldsworthy, Kaite",
+        "callnumber": "$$IBCL$$DQL737.C25 G65 2012$$E0ql   00737.c  25000  g65 2012$$T0",
+        "subject": "$$DOtters -- Juvenile literature$$EOtters Juvenile literature",
+        "title": [
+          "$$DOtters$$EOtters",
+          "$$DBackyard animals$$EBackyard animals"
+        ]
+      },
+      "control": {
+        "almaid": "01BC_INST:21421261320001021",
+        "ilsapiid": "01BC_INST21421261320001021",
+        "originalsourceid": "01BC_INST",
+        "recordid": "ALMA-BC21421261320001021",
+        "sourceformat": "MARC21",
+        "sourceid": "ALMA-BC",
+        "sourcerecordid": "21421261320001021",
+        "sourcesystem": "Alma"
+      },
+      "dedup": {
+        "c1": "2010045190",
+        "c2": "9781616906214;1616906219;9781616906276;1616906278",
+        "c3": "otters",
+        "c4": "2012",
+        "c5": "99131993870001021",
+        "f1": "2010045190",
+        "f10": "av2 by weigl",
+        "f11": "goldsworthy kaite",
+        "f20": "99131993870001021",
+        "f3": "9781616906214;1616906219;9781616906276;1616906278",
+        "f5": "otters",
+        "f6": "2012",
+        "f7": "otters",
+        "f8": "nyu",
+        "f9": "24 p. :",
+        "t": "1"
+      },
+      "delivery": {
+        "delcategory": "Alma-P",
+        "institution": "BCL"
+      },
+      "display": {
+        "availinstitution": "$$IBCL$$Savailable",
+        "availlibrary": "$$IBCL$$LERC$$1Stacks$$2(QL737.C25 G65 2012 )$$Savailable$$X01BC_INST$$YERC$$ZSTACK$$P1",
+        "availpnx": "available",
+        "creationdate": "c2012.",
+        "creator": "Kaite Goldsworthy",
+        "description": [
+          "Meet the otter -- All about otters -- Otter history -- Otter shelter -- Otter features -- What do otters eat? -- Otter life cycle -- Encountering otters -- Myths and legends -- Frequently asked questions.",
+          "Describes the physical characteristics, natural habitat, history and folklore of the otter.",
+          "Includes index."
+        ],
+        "format": "24 p. : col. ill., col. map ; 27 cm.",
+        "identifier": "ISBN: 9781616906214 (hardcover : alk. paper); ISBN: 1616906219 (hardcover : alk. paper); ISBN: 9781616906276 (softcover : alk. paper); ISBN: 1616906278 (softcover : alk. paper)",
+        "language": "eng",
+        "lds01": "ERC Stacks QL737.C25 G65 2012",
+        "lds07": "New York",
+        "lds09": "AV\u00b2 by Weigl",
+        "lds10": "QL737.C25 G65 2012",
+        "lds11": "99131993870001021",
+        "lds12": "Backyard animals",
+        "lds13": "Meet the otter -- All about otters -- Otter history -- Otter shelter -- Otter features -- What do otters eat? -- Otter life cycle -- Encountering otters -- Myths and legends -- Frequently asked questions.",
+        "lds31": "Backyard animals",
+        "publisher": "New York : AV\u00b2 by Weigl",
+        "relation": "$$Cseries $$VBackyard animals.",
+        "source": "ALMA-BC",
+        "subject": "Otters -- Juvenile literature",
+        "title": "Otters",
+        "type": "book"
+      },
+      "enrichment": {
+        "classificationlcc": "QL737.C25"
+      },
+      "facets": {
+        "atoz": "O",
+        "collection": "ERC",
+        "creationdate": "2012",
+        "creatorcontrib": "Goldsworthy, Kaite",
+        "frbrgroupid": "12307071",
+        "frbrtype": "6",
+        "genre": "Juvenile literature",
+        "language": "eng",
+        "lfc08": "Backyard animals",
+        "lfc09": "QL737 .C25",
+        "lfc10": "QL737",
+        "library": "ERC",
+        "prefilter": "books",
+        "rsrctype": "books",
+        "topic": "Otters\u2013Juvenile literature",
+        "toplevel": "available"
+      },
+      "frbr": {
+        "k1": "$$Kgoldsworthy kaite$$AA",
+        "k3": "$$Kotters$$AT",
+        "t": "1"
+      },
+      "links": {
+        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information",
+        "linktouc": [
+          "$$Tworldcat_isbn$$DThis item in WorldCat\ufffd\ufffd",
+          "$$Tamazon_uc$$DThis item in Amazon.com"
+        ],
+        "lln02": "$$Tpermalink$$DPermalink to this record",
+        "openurl": "$$Topenurl_journal",
+        "openurlfulltext": "$$Topenurlfull_journal",
+        "thumbnail": [
+          "$$Tamazon_thumb",
+          "$$Tsyndetics_thumb"
+        ]
+      },
+      "ranking": {
+        "booster1": "1",
+        "booster2": "1"
+      },
+      "search": {
+        "creationdate": "2012",
+        "creatorcontrib": [
+          "Kaite Goldsworthy",
+          "Goldsworthy, Kaite.",
+          "Goldsworthy, K",
+          "Kaite Goldsworthy."
+        ],
+        "description": "Describes the physical characteristics, natural habitat, history and folklore of the otter.",
+        "enddate": "20121231",
+        "format": "book",
+        "isbn": [
+          "9781616906214",
+          "1616906219",
+          "9781616906276",
+          "1616906278"
+        ],
+        "lsr03": "ALMA-BC21421261320001021",
+        "lsr05": [
+          "671916807",
+          "(OCoLC)ocn671916807"
+        ],
+        "lsr06": [
+          "QL737.C25 G65 2012",
+          "QL737.C25G652012",
+          "QL737.C25",
+          "G65 2012",
+          "G652012"
+        ],
+        "lsr08": "AV\u00b2 by Weigl,",
+        "lsr09": "New York",
+        "lsr11": [
+          "Backyard animals",
+          "Backyard animals."
+        ],
+        "lsr12": [
+          "Includes index.",
+          "Describes the physical characteristics, natural habitat, history and folklore of the otter."
+        ],
+        "lsr14": "ERC",
+        "lsr20": "99131993870001021",
+        "lsr31": "Backyard animals",
+        "recordid": "ALMA-BC21421261320001021",
+        "rsrctype": "book",
+        "scope": [
+          "ERC",
+          "ALMA-BC",
+          "BCL"
+        ],
+        "searchscope": [
+          "ERC",
+          "ALMA-BC",
+          "BCL"
+        ],
+        "sourceid": "ALMA-BC",
+        "startdate": "20120101",
+        "subject": "Otters Juvenile literature.",
+        "title": "Otters /",
+        "toc": "Meet the otter -- All about otters -- Otter history -- Otter shelter -- Otter features -- What do otters eat? -- Otter life cycle -- Encountering otters -- Myths and legends -- Frequently asked questions."
+      },
+      "sort": {
+        "author": "goldsworthy kaite",
+        "creationdate": "2012",
+        "title": "otters"
+      }
+    }
+  },
+  "sear:GETIT": {
+    "@GetIt1": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:21421261320001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin",
+    "@GetIt2": "",
+    "@deliveryCategory": "Alma-P"
+  },
+  "sear:LIBRARIES": {
+    "sear:LIBRARY": {
+      "sear:callNumber": "(QL737.C25 G65 2012 )",
+      "sear:collection": "Stacks",
+      "sear:institution": "BCL",
+      "sear:library": "ERC",
+      "sear:status": "available",
+      "sear:url": "OVP"
+    }
+  },
+  "sear:LINKS": {
+    "sear:linktotoc": "http://lib.syndetics.com/index.aspx?isbn=9781616906214/index.html&client=bostonh&type=xw12",
+    "sear:linktouc": [
+      "http://bc.worldcat.org/search?q=isbn:9781616906214",
+      "http://www.amazon.com/gp/product/1616906219"
+    ],
+    "sear:lln02": "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC21421261320001021",
+    "sear:openurl": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters&rft.aulast=Goldsworthy&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Goldsworthy%2C%20Kaite&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9781616906214&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21421261320001021</ALMA-BC><grp_id>12307071</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=New%20York&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin",
+    "sear:openurlfulltext": "http://alma.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2014-06-25T18%3A54%3A20IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=book&rft.atitle=&rft.jtitle=&rft.btitle=Otters&rft.aulast=Goldsworthy&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Goldsworthy%2C%20Kaite&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9781616906214&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21421261320001021</ALMA-BC><grp_id>12307071</grp_id><oa></oa>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=New%20York&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2010045190&rft_id=info:oclcnum/671916807&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:21421261320001021,language=&svc_dat=viewit&req.skin=BC%20skin",
+    "sear:thumbnail": [
+      "http://images.amazon.com/images/P/1616906219.01._SSTHUM_.jpg",
+      "http://lib.syndetics.com/index.aspx?isbn=9781616906214/SC.JPG&client=bostonh"
+    ]
+  }
+}

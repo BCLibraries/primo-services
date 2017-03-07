@@ -50,7 +50,7 @@ class Query
 
     public function getTerms($filter = null)
     {
-        if (!is_null($filter)) {
+        if (null !== $filter) {
             return $this->_terms[$filter];
         }
         return array_merge($this->_terms['query'], $this->_terms['query_inc'], $this->_terms['query_exc']);
@@ -70,7 +70,7 @@ class Query
             'popularity' => 'popularity'
         );
         if (!array_key_exists($sort_order, $valid_sort_orders)) {
-            throw new \Exception($sort_order . ' is not a valid result sort');
+            throw new PrimoException($sort_order . ' is not a valid result sort');
         }
 
         $this->_parameters['sortField'] = $valid_sort_orders[$sort_order];
@@ -80,7 +80,7 @@ class Query
     public function onCampus($on_campus = true)
     {
         if (!is_bool($on_campus)) {
-            throw new \Exception('onCampus() must take a boolean argument');
+            throw new PrimoException('onCampus() must take a boolean argument');
         }
         $this->_parameters['onCampus'] = $on_campus ? 'true' : 'false';
         return $this;
@@ -100,7 +100,7 @@ class Query
 
     public function language($language_code)
     {
-        $this->_parameters['lang'] = $lang;
+        $this->_parameters['lang'] = $language_code;
         return $this;
     }
 
@@ -125,7 +125,7 @@ class Query
     {
         $this->_parameters['indx'] += $this->_parameters['bulkSize'];
 
-        if (isset($bulk_size)) {
+        if (null !== $bulk_size) {
             $this->_parameters['bulkSize'] = $bulk_size;
         }
     }

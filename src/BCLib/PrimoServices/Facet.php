@@ -40,11 +40,9 @@ class Facet
 
     public function remap(array $mapping_array)
     {
-        for ($i = 0; $i < count($this->values); $i++) {
-            $current = $this->values[$i]->value;
-
-            if (isset($mapping_array[$current])) {
-                $this->values[$i]->display_name = $mapping_array[$current];
+        foreach ($this->values as $value) {
+            if (isset($mapping_array[$value->value])) {
+                $value->display_name = $mapping_array[$value->value];
             }
         }
     }

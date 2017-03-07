@@ -135,7 +135,7 @@ class QueryTest extends \PHPUnit_Framework_TestCase
         $this->assertSame($this->_query->onCampus(), $this->_query);
 
         $query_term = $this->getMock('\BCLib\PrimoServices\QueryTerm');
-        $query_term->expects($this->once())
+        $query_term->expects($this->any())
             ->method('queryString')
             ->will($this->returnValue('any,contains,otters'));
         $this->assertSame($this->_query->addTerm($query_term), $this->_query);

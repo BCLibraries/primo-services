@@ -54,8 +54,7 @@ class QueryTerm
 
     protected function processTerm($term)
     {
-        $term = str_replace('+', ' ', $term);
-        $term = str_replace(',', ' ', $term);
+        $term = str_replace(array('+',','), ' ', $term);
         $term = preg_replace('/\s+/', ' ', $term);
         return $term;
     }
@@ -68,8 +67,8 @@ class QueryTerm
             $term = $this->processTerm($term);
         }
 
-        if ($precision != QueryTerm::CONTAINS && $precision != QueryTerm::EXACT) {
-            throw new \Exception($precision . ' is not a valid query relation');
+        if ($precision !== QueryTerm::CONTAINS && $precision !== QueryTerm::EXACT) {
+            throw new PrimoException($precision . ' is not a valid query relation');
         }
 
         $this->_index = $index;

@@ -1,0 +1,422 @@
+{
+  "@ID": "4863700",
+  "@RANK": "1.8586075E-5",
+  "@NO": "1",
+  "@SEARCH_ENGINE": "Local Search Engine",
+  "@SEARCH_ENGINE_TYPE": "Local Search Engine",
+  "PrimoNMBib": {
+    "@xmlns": "http://www.exlibrisgroup.com/xsd/primo/primo_nm_bib",
+    "record": {
+      "control": {
+        "almaid": [
+          "$$V01BC_INST:51467486230001021$$OALMA-BC51467486230001021",
+          "$$V01BC_INST:21374537610001021$$OALMA-BC21374537610001021"
+        ],
+        "sourcerecordid": [
+          "$$V51467486230001021$$OALMA-BC51467486230001021",
+          "$$V21374537610001021$$OALMA-BC21374537610001021"
+        ],
+        "sourceid": [
+          "$$VALMA-BC$$OALMA-BC51467486230001021",
+          "$$VALMA-BC$$OALMA-BC21374537610001021"
+        ],
+        "recordid": "dedupmrg152013577",
+        "originalsourceid": [
+          "$$V01BC_INST$$OALMA-BC51467486230001021",
+          "$$V01BC_INST$$OALMA-BC21374537610001021"
+        ],
+        "sourceformat": [
+          "$$VMARC21$$OALMA-BC51467486230001021",
+          "$$VMARC21$$OALMA-BC21374537610001021"
+        ],
+        "sourcesystem": [
+          "$$VAlma$$OALMA-BC51467486230001021",
+          "$$VAlma$$OALMA-BC21374537610001021"
+        ],
+        "ilsapiid": [
+          "$$V01BC_INST51467486230001021$$OALMA-BC51467486230001021",
+          "$$V01BC_INST21374537610001021$$OALMA-BC21374537610001021"
+        ]
+      },
+      "display": {
+        "type": "book",
+        "title": "Hamlet",
+        "creator": "William Shakespeare 1564-1616",
+        "contributor": [
+          "Burton Raffel; Harold Bloom",
+          "with an essay by Harold Bloom"
+        ],
+        "publisher": "New Haven : Yale University Press",
+        "creationdate": "©2003.",
+        "format": "1 online resource (xxxi, 249 pages).",
+        "identifier": "ISBN: 9780300138238; ISBN: 0300138237; ISBN: 0300101759; ISBN: 9780300101751; ISBN: 0300101058; ISBN: 9780300101058",
+        "subject": "Hamlet (Legendary character) -- Drama; Ophelia (Fictitious character) -- Drama; Gertrude, Queen of Denmark (Fictitious character); Hamlet (Legendary character); Ophelia (Fictitious character); Claudius, King of Denmark (Fictitious character) -- Drama; Polonius (Fictitious character : Shakespeare) -- Drama; Horatio (Fictitious character : Shakespeare) -- Drama; Laertes (Fictitious character : Shakespeare) -- Drama; Gertrude, Queen of Denmark (Fictitious character) -- Drama; Princes -- Denmark Drama; Murder victims' families -- Drama; Regicide -- Drama; Fathers -- Death Drama; Revenge -- Drama; Denmark -- Drama; Electronic books; Tragedies (Drama); Drama; Electronic books",
+        "description": [
+          "\"\"Contents \"\"; \"\"About This Book\"\"; \"\"Introduction\"\"; \"\"The Tragedy of Hamlet, Prince of Denmark\"\"; \"\"An Essay by Harold Bloom\"\"; \"\"Further Reading\"\"; \"\"Finding List\"\"",
+          "Includes bibliographical references (pages 245-247).",
+          "with an essay by Harold Bloom."
+        ],
+        "language": "eng",
+        "relation": [
+          "$$Cseries $$VShakespeare, William, 1564-1616. Works. Yale University Press. 2003.",
+          "Hamlet."
+        ],
+        "source": [
+          "$$VALMA-BC$$OALMA-BC51467486230001021",
+          "$$VALMA-BC$$OALMA-BC21374537610001021"
+        ],
+        "availlibrary": "$$IBCL$$LTML$$1Stacks$$2(PR2807.A2 R34 2003 )$$Savailable$$X01BC_INST$$YTML$$ZSTACK$$P1$$OALMA-BC21374537610001021",
+        "availinstitution": "$$IBCL$$Savailable",
+        "availpnx": "available",
+        "lds01": "Theology and Ministry Library (TML) Stacks PR2807.A2 R34 2003",
+        "lds06": "Access restricted to subscribers.",
+        "lds07": "New Haven",
+        "lds09": "Yale University Press",
+        "lds10": "PR2807.A2 R34 2003",
+        "lds11": [
+          "99137783684601021",
+          "99121259110001021"
+        ],
+        "lds12": "The annotated Shakespeare",
+        "lds13": "\"\"Contents \"\"; \"\"About This Book\"\"; \"\"Introduction\"\"; \"\"The Tragedy of Hamlet, Prince of Denmark\"\"; \"\"An Essay by Harold Bloom\"\"; \"\"Further Reading\"\"; \"\"Finding List\"\"",
+        "lds14": "002125028",
+        "lds30": "BLC JSTOR EBA DISCOVERY",
+        "lds31": "The annotated Shakespeare"
+      },
+      "links": {
+        "linktorsrc": "$$Uhttp://www.jstor.org/stable/10.2307/j.ctt1njkw8$$DOnline Version",
+        "openurl": [
+          "$$V$$Topenurl_journal$$OALMA-BC51467486230001021",
+          "$$V$$Topenurl_journal$$OALMA-BC21374537610001021"
+        ],
+        "openurlfulltext": [
+          "$$V$$Topenurlfull_journal$$OALMA-BC51467486230001021",
+          "$$V$$Topenurlfull_journal$$OALMA-BC21374537610001021"
+        ],
+        "linktotoc": "$$Tsyndetics_index$$DCheck Here for Additional Information",
+        "linktouc": [
+          "$$Tworldcat_isbn$$DThis item in WorldCat®",
+          "$$Tamazon_uc$$DThis item in Amazon.com",
+          "$$Tworldcat_isbn$$DThis item in WorldCat®",
+          "$$Tamazon_uc$$DThis item in Amazon.com"
+        ],
+        "thumbnail": [
+          "$$Tamazon_thumb",
+          "$$Tsyndetics_thumb"
+        ],
+        "lln02": [
+          "$$Tpermalink$$DPermalink to this record$$OALMA-BC51467486230001021",
+          "$$Tpermalink$$DPermalink to this record$$OALMA-BC21374537610001021"
+        ]
+      },
+      "search": {
+        "creatorcontrib": [
+          "William Shakespeare 1564-1616.",
+          "Shakespeare, William, 1564-1616.",
+          "Shakespeare, W",
+          "William Shakespeare ; fully annotated, with an introduction by Burton Raffel ; with an essay by Harold Bloom. Burton Raffel Harold Bloom",
+          "Raffel, Burton.",
+          "Bloom, Harold.",
+          "Raffel, B",
+          "Bloom, H",
+          "William Shakespeare ; fully annotated, with an introduction by Burton Raffel ; with an essay by Harold Bloom.; Burton",
+          "Raffel; Harold",
+          "Bloom"
+        ],
+        "title": "Hamlet /",
+        "subject": [
+          "Hamlet (Legendary character) Drama.",
+          "Ophelia (Fictitious character) Drama.",
+          "Claudius, King of Denmark (Fictitious character) Drama.",
+          "Polonius (Fictitious character : Shakespeare) Drama.",
+          "Horatio (Fictitious character : Shakespeare) Drama.",
+          "Laertes (Fictitious character : Shakespeare) Drama.",
+          "Gertrude, Queen of Denmark (Fictitious character) Drama.",
+          "Princes Denmark Drama.",
+          "Murder victims' families Drama.",
+          "Regicide Drama.",
+          "Fathers Death Drama.",
+          "Revenge Drama.",
+          "Denmark Drama.",
+          "Electronic books.",
+          "Tragedies (Drama)",
+          "Drama.",
+          "Princes Drama."
+        ],
+        "sourceid": "ALMA-BC",
+        "recordid": [
+          "ALMA-BC51467486230001021",
+          "ALMA-BC21374537610001021"
+        ],
+        "isbn": [
+          "9780300138238",
+          "0300138237",
+          "0300101759",
+          "9780300101751",
+          "0300101058",
+          "9780300101058"
+        ],
+        "toc": "\"\"Contents \"\"; \"\"About This Book\"\"; \"\"Introduction\"\"; \"\"The Tragedy of Hamlet, Prince of Denmark\"\"; \"\"An Essay by Harold Bloom\"\"; \"\"Further Reading\"\"; \"\"Finding List\"\"",
+        "rsrctype": "book",
+        "format": "book",
+        "creationdate": "2003",
+        "startdate": "20030101",
+        "enddate": "20031231",
+        "addtitle": "Hamlet.",
+        "addsrcrecordid": [
+          "99137783684601021",
+          "99121259110001021"
+        ],
+        "searchscope": [
+          "BLC JSTOR EBA DISCOVERY",
+          "BCL",
+          "ALMA-BC",
+          "TML"
+        ],
+        "scope": [
+          "BLC JSTOR EBA DISCOVERY",
+          "BCL",
+          "ALMA-BC",
+          "TML"
+        ],
+        "lsr03": [
+          "ALMA-BC51467486230001021",
+          "ALMA-BC21374537610001021"
+        ],
+        "lsr05": [
+          "175055661",
+          "(OCoLC)ocn175055661",
+          "51886286",
+          "(OCoLC)ocm51886286"
+        ],
+        "lsr06": [
+          "PR2807.A2",
+          "R34 2003eb",
+          "R342003eb",
+          "PR2807.A2 R34 2003",
+          "PR2807.A2R342003",
+          "R34 2003",
+          "R342003"
+        ],
+        "lsr08": "Yale University Press,",
+        "lsr11": [
+          "Yale University Press. 2003.",
+          "The annotated Shakespeare"
+        ],
+        "lsr12": [
+          "1 online resource (xxxi, 249 pages).",
+          "# 051538",
+          "xxxi, 249 p. ;"
+        ],
+        "lsr20": [
+          "99137783684601021",
+          "002125028",
+          "bc_aleph002125028",
+          "99121259110001021"
+        ],
+        "lsr30": "BLC JSTOR EBA DISCOVERY",
+        "lsr31": "The annotated Shakespeare",
+        "lsr09": "New Haven",
+        "lsr14": "TML"
+      },
+      "sort": {
+        "title": "hamlet",
+        "creationdate": "2003",
+        "author": "shakespeare william 1564 1616"
+      },
+      "facets": {
+        "language": "eng",
+        "creationdate": "2003",
+        "topic": [
+          "Hamlet (Legendary character)–Drama",
+          "Ophelia (Fictitious character)–Drama",
+          "Claudius, King of Denmark (Fictitious character)–Drama",
+          "Polonius (Fictitious character : Shakespeare)–Drama",
+          "Horatio (Fictitious character : Shakespeare)–Drama",
+          "Laertes (Fictitious character : Shakespeare)–Drama",
+          "Gertrude, Queen of Denmark (Fictitious character)–Drama",
+          "Princes–Denmark–Drama",
+          "Murder victims' families–Drama",
+          "Regicide–Drama",
+          "Fathers–Death–Drama",
+          "Revenge–Drama",
+          "Denmark–Drama",
+          "Princes–Drama"
+        ],
+        "toplevel": [
+          "online_resources",
+          "available"
+        ],
+        "rsrctype": [
+          "books",
+          "ebooks"
+        ],
+        "creatorcontrib": [
+          "Shakespeare, William, 1564-1616",
+          "Raffel, Burton",
+          "Bloom, Harold"
+        ],
+        "genre": [
+          "Electronic books",
+          "Tragedies (Drama)",
+          "Drama"
+        ],
+        "atoz": "H",
+        "lfc01": "BLC JSTOR EBA DISCOVERY",
+        "lfc08": "The annotated Shakespeare",
+        "prefilter": [
+          "ebooks",
+          "books"
+        ],
+        "newrecords": [
+          "20170126_494",
+          "20120618_467"
+        ],
+        "collection": "TML",
+        "library": "TML",
+        "lfc09": "PR2807 .A2",
+        "lfc10": "PR2807",
+        "frbrgroupid": "142672580",
+        "frbrtype": "6"
+      },
+      "dedup": {
+        "t": "1",
+        "c1": "2003005805",
+        "c2": "9780300138238;0300138237;0300101759;9780300101751;0300101058;9780300101058",
+        "c3": "hamlet",
+        "c4": "2003",
+        "c5": "99137783684601021",
+        "f2": "2003005805",
+        "f3": "9780300138238;0300138237",
+        "f4": "0300101759;9780300101751;0300101058;9780300101058",
+        "f5": "hamlet",
+        "f6": "2003",
+        "f7": "hamlet",
+        "f8": "ctu",
+        "f9": "1 online resource (xxxi, 249 pages).",
+        "f10": "yale university press",
+        "f11": "shakespeare william 1564 1616",
+        "f20": "99137783684601021"
+      },
+      "frbr": {
+        "t": "1",
+        "k1": "$$Kshakespeare william 1564 1616$$AA",
+        "k3": "$$Khamlet$$AT"
+      },
+      "delivery": {
+        "institution": [
+          "$$VBCL$$OALMA-BC51467486230001021",
+          "$$VBCL$$OALMA-BC21374537610001021"
+        ],
+        "delcategory": [
+          "$$VAlma-E$$OALMA-BC51467486230001021",
+          "$$VAlma-P$$OALMA-BC21374537610001021"
+        ]
+      },
+      "enrichment": {
+        "classificationlcc": "PR2807.A2"
+      },
+      "ranking": {
+        "booster1": "1",
+        "booster2": "1"
+      },
+      "addata": {
+        "aulast": "Shakespeare",
+        "aufirst": "William,",
+        "au": "Shakespeare, William, 1564-1616",
+        "addau": [
+          "Raffel, Burton",
+          "Bloom, Harold"
+        ],
+        "seriesau": "Shakespeare, William, 1564-1616",
+        "btitle": "Hamlet",
+        "seriestitle": "Shakespeare, William, 1564-1616. Works. Yale University Press. 2003",
+        "date": "2003",
+        "risdate": [
+          "©2003.",
+          "c2003."
+        ],
+        "isbn": [
+          "9780300138238",
+          "0300138237",
+          "0300101759",
+          "0300101058"
+        ],
+        "format": "book",
+        "ristype": "BOOK",
+        "notes": [
+          "Includes bibliographical references (pages 245-247).",
+          "Includes bibliographical references (p. 245-247)."
+        ],
+        "cop": "New Haven",
+        "pub": "Yale University Press",
+        "oclcid": [
+          "175055661",
+          "51886286"
+        ],
+        "lad04": [
+          "0300138237",
+          "0300101759",
+          "0300101058"
+        ],
+        "lad06": null,
+        "lad07": [
+          "9780300138238",
+          "0300101759"
+        ],
+        "lccn": "2003005805"
+      },
+      "browse": {
+        "callnumber": "$$IBCL$$DPR2807.A2 R34 2003$$EPR 2807            A 2   R 34   2003$$T0"
+      }
+    }
+  },
+  "GETIT": [
+    {
+      "@deliveryCategory": "Alma-E",
+      "@GetIt1": "https://bc.userservices.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2017-03-06T13%3A57%3A23IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:51467486230001021,ie=01BC_INST:21374537610001021,language=,view=&svc_dat=viewit&u.ignore_date_coverage=true&req.skin=BC%20skin",
+      "@GetIt2": ""
+    },
+    {
+      "@deliveryCategory": "Alma-P",
+      "@GetIt1": "https://bc.userservices.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2017-03-06T13%3A57%3A23IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com-ALMA-BC&req_id=&rft_dat=ie=01BC_INST:51467486230001021,ie=01BC_INST:21374537610001021,language=,view=&svc_dat=getit&user_ip=&req.skin=BC%20skin",
+      "@GetIt2": ""
+    }
+  ],
+  "LIBRARIES": {
+    "LIBRARY": {
+      "institution": "BCL",
+      "library": "TML",
+      "status": "available",
+      "collection": "Stacks",
+      "callNumber": "(PR2807.A2 R34 2003 )",
+      "url": "OVP"
+    }
+  },
+  "LINKS": {
+    "openurl": [
+      "https://bc.userservices.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2017-03-06T13%3A57%3A23IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=&rft.atitle=&rft.jtitle=&rft.btitle=Hamlet&rft.aulast=Shakespeare&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Shakespeare,%20William,%201564-1616&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9780300138238&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51467486230001021<\/ALMA-BC><grp_id>142672580<\/grp_id><oa><\/oa><url><\/url>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=New%20Haven&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin&req.language=",
+      "https://bc.userservices.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2017-03-06T13%3A57%3A23IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=&rft.atitle=&rft.jtitle=&rft.btitle=Hamlet&rft.aulast=Shakespeare&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Shakespeare,%20William,%201564-1616&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9780300138238&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21374537610001021<\/ALMA-BC><grp_id>142672580<\/grp_id><oa><\/oa><url><\/url>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=New%20Haven&rft.series={{seriestitle}}&rft.stitle=&svc_dat=viewit&req.skin=BC%20skin&req.language="
+    ],
+    "linktorsrc": "http://www.jstor.org/stable/10.2307/j.ctt1njkw8",
+    "thumbnail": [
+      "https://proxy-na.hosted.exlibrisgroup.com/exl_rewrite/images.amazon.com/images/P/0300138237.01._SSTHUM_.jpg",
+      "https://proxy-na.hosted.exlibrisgroup.com/exl_rewrite/lib.syndetics.com/index.aspx?isbn=9780300138238&upc=null/SC.JPG&client=bostonh",
+      "https://proxy-na.hosted.exlibrisgroup.com/exl_rewrite/images.amazon.com/images/P/0300138237.01._SS[size]_SCLZZZZZZZ_.jpg",
+      "https://proxy-na.hosted.exlibrisgroup.com/exl_rewrite/lib.syndetics.com/index.aspx?isbn=9780300138238&upc=null/SC.JPG&client=bostonh"
+    ],
+    "linktotoc": "http://lib.syndetics.com/index.aspx?isbn=9780300138238/index.html&client=bostonh&type=xw12",
+    "openurlfulltext": [
+      "https://bc.userservices.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2017-03-06T13%3A57%3A23IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=&rft.atitle=&rft.jtitle=&rft.btitle=Hamlet&rft.aulast=Shakespeare&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Shakespeare,%20William,%201564-1616&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9780300138238&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>51467486230001021<\/ALMA-BC><grp_id>142672580<\/grp_id><oa><\/oa><url><\/url>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=New%20Haven&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2003005805&rft_id=info:oclcnum/175055661&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:51467486230001021,ie=01BC_INST:21374537610001021,language=&svc_dat=viewit&req.skin=BC%20skin&req.language=",
+      "https://bc.userservices.exlibrisgroup.com/view/uresolver/01BC_INST/openurl?ctx_enc=info:ofi/enc:UTF-8&ctx_id=10_1&ctx_tim=2017-03-06T13%3A57%3A23IST&ctx_ver=Z39.88-2004&url_ctx_fmt=info:ofi/fmt:kev:mtx:ctx&url_ver=Z39.88-2004&rfr_id=info:sid/primo.exlibrisgroup.com&req_id=&rft_val_fmt=info:ofi/fmt:kev:mtx:book&rft.genre=&rft.atitle=&rft.jtitle=&rft.btitle=Hamlet&rft.aulast=Shakespeare&rft.auinit=&rft.auinit1=&rft.auinitm=&rft.ausuffix=&rft.au=Shakespeare,%20William,%201564-1616&rft.aucorp=&rft.volume=&rft.issue=&rft.part=&rft.quarter=&rft.ssn=&rft.spage=&rft.epage=&rft.pages=&rft.artnum=&rft.issn=&rft.eissn=&rft.isbn=9780300138238&rft.sici=&rft.coden=&rft_id=info:doi/&rft.object_id=&rft_dat=<ALMA-BC>21374537610001021<\/ALMA-BC><grp_id>142672580<\/grp_id><oa><\/oa><url><\/url>&rft.eisbn=&rft.edition=&rft.pub=&rft.place=New%20Haven&rft.series={{seriestitle}}&rft.stitle=&rft.bici=&rft_id=info:bibcode/&rft_id=info:hdl/&rft_id=info:lccn/2003005805&rft_id=info:oclcnum/175055661&rft_id=info:pmid/&rft_id=info:eric/((addata/eric}}&rft_data=ie=01BC_INST:51467486230001021,ie=01BC_INST:21374537610001021,language=&svc_dat=viewit&req.skin=BC%20skin&req.language="
+    ],
+    "linktouc": [
+      "https://bc.on.worldcat.org/search?queryString=bn:9780300138238",
+      "http://www.amazon.com/gp/product/0300138237"
+    ],
+    "lln02": [
+      "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC51467486230001021",
+      "http://bclib.bc.edu/libsearch/bc/keyword/ALMA-BC51467486230001021"
+    ]
+  }
+}

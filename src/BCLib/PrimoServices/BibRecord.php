@@ -117,7 +117,7 @@ class BibRecord
     /**
      * @var string
      */
-    public $frbr_group_id = null;
+    public $frbr_group_id;
 
     /**
      * @var string[]
@@ -174,7 +174,7 @@ class BibRecord
     public function field($field_name)
     {
         list($group, $field) = explode('/', $field_name);
-        if (!isset($this->fields[$group]) || !isset($this->fields[$group][$field])) {
+        if (!isset($this->fields[$group], $this->fields[$group][$field])) {
             return null;
         }
         return $this->fields[$group][$field];

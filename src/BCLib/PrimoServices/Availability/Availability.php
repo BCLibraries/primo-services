@@ -2,6 +2,8 @@
 
 namespace BCLib\PrimoServices\Availability;
 
+use BCLib\PrimoServices\PrimoException;
+
 /**
  * Class Availability
  * @package BCLib\PrimoServices\Availability
@@ -25,26 +27,26 @@ class Availability implements \JsonSerializable
 
     public function __set($name, $value)
     {
-        if ($name = 'availability') {
+        if ($name === 'availability') {
             $this->setAvailability($value);
         } else {
-            throw new \Exception("$name is not a property of Availability");
+            throw new PrimoException("$name is not a property of Availability");
         }
     }
 
     public function __get($name)
     {
-        if ($name = 'availability') {
+        if ($name === 'availability') {
             return $this->availability;
         } else {
-            throw new \Exception("$name is not a property of Availability");
+            throw new PrimoException("$name is not a property of Availability");
         }
     }
 
     private function setAvailability($value)
     {
-        if (!in_array($value, array('available', 'unavailable', 'check_holdings'))) {
-            throw new \Exception("Invalid availability status ($value)");
+        if (!in_array($value, array('available', 'unavailable', 'check_holdings'), true)) {
+            throw new PrimoException("Invalid availability status ($value)");
         }
         $this->availability = $value;
     }
@@ -52,16 +54,16 @@ class Availability implements \JsonSerializable
     public function jsonSerialize()
     {
         return array(
-            "institution"        => $this->institution,
-            "library"            => $this->library,
-            "location"           => $this->location,
-            "call_number"        => $this->call_number,
-            "availability"       => $this->availability,
-            "number"             => $this->number,
-            "number_unavailable" => $this->number_unavailable,
-            "j"                  => $this->j,
-            "multi_volume"       => $this->multi_volume,
-            "number_loans"       => $this->number_loans,
+            'institution'        => $this->institution,
+            'library'            => $this->library,
+            'location'           => $this->location,
+            'call_number'        => $this->call_number,
+            'availability'       => $this->availability,
+            'number'             => $this->number,
+            'number_unavailable' => $this->number_unavailable,
+            'j'                  => $this->j,
+            'multi_volume'       => $this->multi_volume,
+            'number_loans'       => $this->number_loans,
         );
     }
 }

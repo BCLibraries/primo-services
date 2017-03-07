@@ -43,10 +43,10 @@ class DeepLink
     public function search(QueryTerm $term, $scope = null, $tab = null)
     {
         $params['query'] = $term->queryString();
-        if (isset($scope)) {
+        if (null !== $scope) {
             $params['search_scope'] = $scope;
         }
-        if (isset($tab)) {
+        if (null !== $tab) {
             $params['tab'] = $tab;
         }
 

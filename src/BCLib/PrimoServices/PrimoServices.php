@@ -25,11 +25,11 @@ class PrimoServices extends \Pimple
      * @param DoctrineCache $cache
      * @param string        $version
      */
-    public function __construct($host, $institution, DoctrineCache $cache = null, $version = "4.9")
+    public function __construct($host, $institution, DoctrineCache $cache = null, $version = '4.9')
     {
         $this->_host = $host;
         $this->_institution = $institution;
-        if (is_null($cache)) {
+        if (null === $cache) {
             $this->_cache = new NullCache();
         } else {
             $this->_cache = new Cache($cache);
@@ -78,10 +78,10 @@ class PrimoServices extends \Pimple
      *
      * @param Query $query           the search query
      * @param array $facet_whitelist a list of facets to fetch
-     *
      * @return BriefSearchResult
+     * @throws PrimoException
      */
-    public function search(Query $query, $facet_whitelist = array())
+    public function search(Query $query, array $facet_whitelist = array())
     {
         if ($cached_value = $this->_cache->fetchQueryResult($query)) {
             return $cached_value;
@@ -93,14 +93,14 @@ class PrimoServices extends \Pimple
         $response = $this['search_result'];
 
         $json = $this->_send('brief', $query);
-        if (is_null($json)) {
+        if (null === $json) {
             // json_decode returns null on invalid JSON
             throw new PrimoException('Invalid or no response');
         }
 
         $result = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'};
 
-       if (isset($result->{$sear . 'ERROR'}) && $result->{$sear . 'ERROR'}->{$sear . '@CODE'} != 'search.message.ui.expansion.pc') {
+       if (isset($result->{$sear . 'ERROR'}) && $result->{$sear . 'ERROR'}->{$sear . '@CODE'} !== 'search.message.ui.expansion.pc') {
             if (strpos($result->{$sear . 'ERROR'}->{$sear . '@CODE'}, 'search.message.ui.expansion') === false) {
                 throw new PrimoException(
                     $result->{$sear . 'ERROR'}->{'@MESSAGE'}, $result->{$sear . 'ERROR'}->{'@CODE'}
@@ -112,23 +112,15 @@ class PrimoServices extends \Pimple
         $facetlist = $result->{$sear . 'FACETLIST'};
 
         if (null !== $result->{$sear . 'QUERYTRANSFORMS'}
-            && null !== ($result->{$sear . 'QUERYTRANSFORMS'}->{$sear . 'QUERYTRANSFORM'}->{$sear . '@QUERY'})) {
+            && null !== $result->{$sear . 'QUERYTRANSFORMS'}->{$sear . 'QUERYTRANSFORM'}->{$sear . '@QUERY'}
+        ) {
             $response->dym = $result->{$sear . 'QUERYTRANSFORMS'}->{$sear . 'QUERYTRANSFORM'}->{$sear . '@QUERY'};
         }
 
         $response->total_results = $docset->{'@TOTALHITS'};
 
-        if ($facetlist) {
-            $response->facets = $this['facet_translator']->translate($facetlist);
-        } else {
-            $response->facets = array();
-        }
-
-        if ($response->total_results > 0) {
-            $response->results = $this['pnx_translator']->translateDocSet($docset);
-        } else {
-            $response->results = array();
-        }
+        $response->facets = $facetlist ? $this['facet_translator']->translate($facetlist) : array();
+        $response->results = $response->total_results > 0 ? $this['pnx_translator']->translateDocSet($docset) : array();
 
         if (count($facet_whitelist) > 0) {
             $response->filterFacets($facet_whitelist);
@@ -162,7 +154,7 @@ class PrimoServices extends \Pimple
 
         $record = null;
 
-        if (sizeof($response->total_results > 0)) {
+        if ($response->total_results > 0) {
             $record = $response->results[0];
             $this->_cache->saveRecord($record_id, $record);
         }
@@ -189,7 +181,7 @@ class PrimoServices extends \Pimple
      * @return string
      */
     public function url($action, $query_string) {
-        return 'http://' . $this->_host . '/PrimoWebServices/xservice/search/' . $action . '?json=true&' . $query_string;
+        return "http://{$this->_host}/PrimoWebServices/xservice/search/$action?json=true&$query_string";
     }
 
     protected function _send($action, $query_string)

@@ -27,6 +27,11 @@ class AlmaClient implements AvailibilityClient
      */
     private $all_components;
 
+    /**
+     * @var array
+     */
+    private $ava_map;
+
     public function __construct(Client $client, $alma_host, $library)
     {
         $this->client = $client;
@@ -63,11 +68,11 @@ class AlmaClient implements AvailibilityClient
     {
         $query = http_build_query(
             array(
-                'doc_num' => join(',', $ids),
+                'doc_num' => implode(',', $ids),
                 'library' => $this->library
             )
         );
-        return "http://" . $this->alma_host . "/view/publish_avail?$query";
+        return "http://{$this->alma_host}/view/publish_avail?$query";
     }
 
     private function readAvailability()
@@ -78,7 +83,7 @@ class AlmaClient implements AvailibilityClient
         foreach ($xml->{'OAI-PMH'} as $oai) {
             $key_parts = explode(':', (string) $oai->ListRecords->record->header->identifier);
             $record_xml = simplexml_load_string($oai->ListRecords->record->metadata->record->asXml());
-            if (isset($key_parts)) {
+            if (null !== $key_parts && array_key_exists(1, $key_parts)) {
                 $this->all_components[$key_parts[1]]->availability = $this->readRecord($record_xml);
             }
         }
@@ -93,7 +98,7 @@ class AlmaClient implements AvailibilityClient
         foreach ($avas as $ava) {
             $availability = new Availability();
             foreach ($ava->subfield as $sub) {
-                if ($sub['code'] != '0') {
+                if ($sub['code'] !== '0') {
                     if (isset($this->ava_map[(string) $sub['code']])) {
                         $property = $this->ava_map[(string) $sub['code']];
                         $availability->$property = (string) $sub;
@@ -112,7 +117,7 @@ class AlmaClient implements AvailibilityClient
         foreach ($results as $result) {
             foreach ($result->components as $component) {
                 $delivery_category = explode('$$', $component->delivery_category);
-                if ($delivery_category[0] == 'Alma-P' && isset($component->alma_ids[$this->library])) {
+                if ($delivery_category[0] === 'Alma-P' && isset($component->alma_ids[$this->library])) {
                     $alma_id = $component->alma_ids[$this->library];
                     $this->all_components[$alma_id] = $component;
                 }

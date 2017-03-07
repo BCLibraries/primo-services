@@ -51,7 +51,7 @@ class BibComponentTranslator
             $this->assignAlmaId($record->control);
         } catch (\Exception $e) {
             foreach ($this->components as $component) {
-                $component->alma_ids = [];
+                $component->alma_ids = array();
             }
         }
 
@@ -106,7 +106,7 @@ class BibComponentTranslator
             return $group->$field;
         }
 
-        $fieldValues = is_array($group->$field) ? $group->$field : array($group->$field);
+        $fieldValues = (array) $group->$field;
 
         // @TODO $that is a PHP5.3 compatibility kludge
         $that = $this;
