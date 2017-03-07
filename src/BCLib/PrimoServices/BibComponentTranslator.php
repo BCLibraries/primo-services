@@ -5,12 +5,12 @@ namespace BCLib\PrimoServices;
 class BibComponentTranslator
 {
     private $is_multi = false;
-    private $keys = array();
+    private $keys = [];
 
     /**
      * @var BibComponent[]
      */
-    private $components = array();
+    private $components = [];
 
     /**
      * @param \stdClass $sear_doc a single "sear:DOC" object
@@ -34,10 +34,10 @@ class BibComponentTranslator
                 $sear_doc->PrimoNMBib->record->control->sourceid
             );
         } else {
-            $this->keys = array($record->control->recordid);
+            $this->keys = [$record->control->recordid];
         }
 
-        $this->components = array();
+        $this->components = [];
         foreach ($this->keys as $key) {
             $this->components[$key] = new BibComponent();
         }
@@ -51,7 +51,7 @@ class BibComponentTranslator
             $this->assignAlmaId($record->control);
         } catch (\Exception $e) {
             foreach ($this->components as $component) {
-                $component->alma_ids = array();
+                $component->alma_ids = [];
             }
         }
 
@@ -100,7 +100,7 @@ class BibComponentTranslator
     private function extractField(\stdClass $group, $field)
     {
         if (!isset($group->$field)) {
-            return array();
+            return [];
         }
         if ($this->is_multi) {
             return $group->$field;

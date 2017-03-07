@@ -22,7 +22,7 @@ class BibRecord
     /**
      * @var string[]
      */
-    public $contributors = array();
+    public $contributors = [];
 
     /**
      * @var string
@@ -47,22 +47,22 @@ class BibRecord
     /**
      * @var string[]
      */
-    public $isbn = array();
+    public $isbn = [];
 
     /**
      * @var string[]
      */
-    public $issn = array();
+    public $issn = [];
 
     /**
      * @var string[]
      */
-    public $oclcid = array();
+    public $oclcid = [];
 
     /**
      * @var string[]
      */
-    public $subjects = array();
+    public $subjects = [];
 
     /**
      * @var string
@@ -72,27 +72,27 @@ class BibRecord
     /**
      * @var string[]
      */
-    public $genres = array();
+    public $genres = [];
 
     /**
      * @var string[]
      */
-    public $creator_facet = array();
+    public $creator_facet = [];
 
     /**
      * @var string[]
      */
-    public $collection_facet = array();
+    public $collection_facet = [];
 
     /**
      * @var string[]
      */
-    public $resourcetype_facet = array();
+    public $resourcetype_facet = [];
 
     /**
      * @var string[]
      */
-    public $languages = array();
+    public $languages = [];
 
     /**
      * @var string
@@ -107,12 +107,12 @@ class BibRecord
     /**
      * @var BibComponent[]
      */
-    public $components = array();
+    public $components = [];
 
     /**
      * @var GetIt[]
      */
-    public $getit = array();
+    public $getit = [];
 
     /**
      * @var string
@@ -159,7 +159,7 @@ class BibRecord
      */
     public $fulltext;
 
-    private $fields = array();
+    private $fields = [];
 
     public function __construct(\stdClass $json_doc = null)
     {
@@ -183,7 +183,7 @@ class BibRecord
     public function addField($group_name, $field_name, $field_value)
     {
         if (!isset ($this->fields[$group_name])) {
-            $this->fields[$group_name] = array();
+            $this->fields[$group_name] = [];
         }
         $this->fields[$group_name][$field_name] = $field_value;
     }

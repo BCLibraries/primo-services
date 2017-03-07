@@ -4,12 +4,12 @@ namespace BCLib\PrimoServices;
 
 class Query
 {
-    private $_parameters = array();
-    private $_terms = array(
-        'query' => array(),
-        'query_inc' => array(),
-        'query_exc' => array(),
-    );
+    private $_parameters = [];
+    private $_terms = [
+        'query' => [],
+        'query_inc' => [],
+        'query_exc' => [],
+    ];
 
     public function __construct($institution, $start_idx = 1, $bulk_size = 10)
     {
@@ -63,12 +63,12 @@ class Query
 
     public function sortField($sort_order)
     {
-        $valid_sort_orders = array(
+        $valid_sort_orders = [
             'title'      => 'stitle',
             'date'       => 'scdate',
             'author'     => 'screator',
             'popularity' => 'popularity'
-        );
+        ];
         if (!array_key_exists($sort_order, $valid_sort_orders)) {
             throw new PrimoException($sort_order . ' is not a valid result sort');
         }

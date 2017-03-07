@@ -7,12 +7,12 @@ class BriefSearchResult
     /**
      * @var Facet[]
      */
-    public $facets = array();
+    public $facets = [];
 
     /**
      * @var BibRecord[]
      */
-    public $results = array();
+    public $results = [];
 
     /**
      * @var int

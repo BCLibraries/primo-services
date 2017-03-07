@@ -5,9 +5,9 @@ namespace BCLib\PrimoServices;
 class BibComponent
 {
     /**
-     * @var string
+     * @var array
      */
-    public $alma_ids = array();
+    public $alma_ids = [];
 
     /**
      * @var string
@@ -27,5 +27,5 @@ class BibComponent
     /**
      * @var \BCLib\PrimoServices\Availability\Availability[]
      */
-    public $availability = array();
+    public $availability = [];
 }

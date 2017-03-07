@@ -38,7 +38,7 @@ class AlmaClient implements AvailibilityClient
         $this->alma_host = $alma_host;
         $this->library = $library;
 
-        $this->ava_map = array(
+        $this->ava_map = [
             'a' => 'institution',
             'b' => 'library',
             'c' => 'location',
@@ -50,7 +50,7 @@ class AlmaClient implements AvailibilityClient
             'k' => 'multi_volume',
             'p' => 'number_loans',
             'q' => 'library_display'
-        );
+        ];
     }
 
     /**
@@ -67,10 +67,10 @@ class AlmaClient implements AvailibilityClient
     private function buildUrl($ids)
     {
         $query = http_build_query(
-            array(
+            [
                 'doc_num' => implode(',', $ids),
                 'library' => $this->library
-            )
+            ]
         );
         return "http://{$this->alma_host}/view/publish_avail?$query";
     }
@@ -92,7 +92,7 @@ class AlmaClient implements AvailibilityClient
 
     private function readRecord(\SimpleXMLElement $record_xml)
     {
-        $record_response = array();
+        $record_response = [];
         $record_xml->registerXPathNamespace('slim', 'http://www.loc.gov/MARC21/slim');
         $avas = $record_xml->xpath('//slim:datafield[@tag="AVA"]');
         foreach ($avas as $ava) {
@@ -112,7 +112,7 @@ class AlmaClient implements AvailibilityClient
 
     private function buildComponentsHash(array $results)
     {
-        $this->all_components = array();
+        $this->all_components = [];
 
         foreach ($results as $result) {
             foreach ($result->components as $component) {
