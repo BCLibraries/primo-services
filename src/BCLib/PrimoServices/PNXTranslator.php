@@ -112,7 +112,9 @@ class PNXTranslator
 
     private function extractGetIts($sear_getit)
     {
-        $sear_getit = (array) $sear_getit;
+        if (!is_array($sear_getit)) {
+            $sear_getit = [$sear_getit];
+        }
         return \array_map([$this, 'extractGetIt'], $sear_getit);
     }
 

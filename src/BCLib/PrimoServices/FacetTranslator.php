@@ -35,7 +35,11 @@ class FacetTranslator
         $facet->id = $sear_facet->{'@NAME'};
         $facet->count = $sear_facet->{'@COUNT'};
 
-        $facet_values = (array) $sear_facet->{$this->_sear . 'FACET_VALUES'};
+        $facet_values = $sear_facet->{$this->_sear . 'FACET_VALUES'};
+
+        if (!is_array($facet_values)) {
+            $facet_values = array($facet_values);
+        }
 
         $facet->values = \array_map([$this, '_extractFacetValue'], $facet_values);
 
@@ -49,7 +53,7 @@ class FacetTranslator
      *
      * @return FacetValue
      */
-    private function _extractFacetValue(\stdClass $sear_facet_value)
+    private function _extractFacetValue($sear_facet_value)
     {
         $facet_value = new FacetValue();
         $facet_value->value = $sear_facet_value->{'@KEY'};
