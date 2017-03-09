@@ -1,0 +1,273 @@
+<record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <leader>03770cgm 2200817 a 4500</leader>
+    <controlfield tag="005">20140610154400.0</controlfield>
+    <controlfield tag="007">vd cvaizu</controlfield>
+    <controlfield tag="008">070529s2007 cau242 g vleng d</controlfield>
+    <controlfield tag="001">99125210370001021</controlfield>
+    <datafield tag="019" ind1=" " ind2=" ">
+        <subfield code="a">166281934</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+        <subfield code="a">1419849727</subfield>
+    </datafield>
+    <datafield tag="020" ind1=" " ind2=" ">
+        <subfield code="a">9781419849725</subfield>
+    </datafield>
+    <datafield tag="024" ind1="1" ind2=" ">
+        <subfield code="a">053939268324</subfield>
+    </datafield>
+    <datafield tag="028" ind1="4" ind2="2">
+        <subfield code="a">C2683</subfield>
+        <subfield code="b">Warner Home Video</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(Aleph)002353016BCL01</subfield>
+    </datafield>
+    <datafield tag="035" ind1=" " ind2=" ">
+        <subfield code="a">(OCoLC)ocn137242345</subfield>
+    </datafield>
+    <datafield tag="037" ind1=" " ind2=" ">
+        <subfield code="b">Midwest Tape</subfield>
+        <subfield code="n">http://www.midwesttapes.com</subfield>
+    </datafield>
+    <datafield tag="040" ind1=" " ind2=" ">
+        <subfield code="a">TEFMT</subfield>
+        <subfield code="c">TEFMT</subfield>
+        <subfield code="d">IMD</subfield>
+        <subfield code="d">CCO</subfield>
+        <subfield code="d">YDXCP</subfield>
+        <subfield code="d">RCS</subfield>
+        <subfield code="d">BTCTA</subfield>
+        <subfield code="d">OCLCQ</subfield>
+        <subfield code="d">BXM</subfield>
+    </datafield>
+    <datafield tag="041" ind1="1" ind2=" ">
+        <subfield code="a">eng</subfield>
+        <subfield code="b">eng</subfield>
+        <subfield code="b">fre</subfield>
+        <subfield code="b">spa</subfield>
+        <subfield code="h">eng</subfield>
+    </datafield>
+    <datafield tag="043" ind1=" " ind2=" ">
+        <subfield code="a">e-dk---</subfield>
+    </datafield>
+    <datafield tag="049" ind1=" " ind2=" ">
+        <subfield code="a">BXMM</subfield>
+    </datafield>
+    <datafield tag="050" ind1="1" ind2="4">
+        <subfield code="a">PN1995.9.M45</subfield>
+        <subfield code="b">H36548 2007</subfield>
+    </datafield>
+    <datafield tag="090" ind1=" " ind2=" ">
+        <subfield code="a">PR2807.A23</subfield>
+        <subfield code="b">B72 2007</subfield>
+    </datafield>
+    <datafield tag="130" ind1="0" ind2=" ">
+        <subfield code="a">Hamlet (Motion picture : 1996).</subfield>
+    </datafield>
+    <datafield tag="245" ind1="1" ind2="0">
+        <subfield code="a">Hamlet</subfield>
+        <subfield code="h">[videorecording] /</subfield>
+        <subfield code="c">[presented by] Castle Rock Entertainment ; produced by David Barron ; adapted for the screen and directed by Kenneth Branagh.</subfield>
+    </datafield>
+    <datafield tag="246" ind1="3" ind2=" ">
+        <subfield code="a">William Shakespeare's Hamlet</subfield>
+    </datafield>
+    <datafield tag="250" ind1=" " ind2=" ">
+        <subfield code="a">Two-disc special ed.</subfield>
+    </datafield>
+    <datafield tag="260" ind1=" " ind2=" ">
+        <subfield code="a">Burbank, CA :</subfield>
+        <subfield code="b">Distributed by Warner Home Video,</subfield>
+        <subfield code="c">[2007]</subfield>
+    </datafield>
+    <datafield tag="300" ind1=" " ind2=" ">
+        <subfield code="a">2 videodiscs (242 min.) :</subfield>
+        <subfield code="b">sd., col. ;</subfield>
+        <subfield code="c">4 3/4 in.</subfield>
+    </datafield>
+    <datafield tag="538" ind1=" " ind2=" ">
+        <subfield code="a">DVD, region 1, widescreen (letterbox, enhanced) presentation; Dolby Digital 5.1 surround, dual-layer.</subfield>
+    </datafield>
+    <datafield tag="546" ind1=" " ind2=" ">
+        <subfield code="a">English dialogue, English, French or Spanish subtitles; English subtitles for the deaf and hard-of-hearing.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+        <subfield code="a">Title from container.</subfield>
+    </datafield>
+    <datafield tag="511" ind1="1" ind2=" ">
+        <subfield code="a">Kenneth Branagh, Julie Christie, Billy Crystal, Gerard Depardieu, Charlton Heston, Derek Jacobi, Jack Lemmon, Rufus Sewell, Robin Williams, Kate Winslet.</subfield>
+    </datafield>
+    <datafield tag="508" ind1=" " ind2=" ">
+        <subfield code="a">Director of photography, Alex Thomson ; editor, Neil Farrell ; music, Patrick Doyle ; "In pace" performed by Placido Domingo ; production designer, Tim Harvey.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+        <subfield code="a">Based on the tragedy by William Shakespeare.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+        <subfield code="a">Originally released as a motion picture in 1996.</subfield>
+    </datafield>
+    <datafield tag="540" ind1=" " ind2=" ">
+        <subfield code="a">This DVD is copy protected and may be played only on licensed devices.</subfield>
+    </datafield>
+    <datafield tag="521" ind1="8" ind2=" ">
+        <subfield code="a">MPAA rating: PG-13; some violent images and sexuality.</subfield>
+    </datafield>
+    <datafield tag="520" ind1=" " ind2=" ">
+        <subfield code="a">In this first-ever full-text film of William Shakespeare's work, the Prince of Denmark, Hamlet, returns home to find his father murdered and his mother remarrying the murderer. Meanwhile, war is brewing.</subfield>
+    </datafield>
+    <datafield tag="500" ind1=" " ind2=" ">
+        <subfield code="a">Special features: Introduction by director/star Kenneth Branagh; commentary by Kenneth Branagh and Shakespeare scholar Russell Jackson; new digital transfer from original 70mm elements; featurette "To be on camera: a history with Hamlet"; 1996 Cannes Film Festival promo; Shakespeare movies trailer gallery.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Hamlet (Legendary character)</subfield>
+        <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Murder victims' families</subfield>
+        <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Fathers</subfield>
+        <subfield code="x">Death</subfield>
+        <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Princes</subfield>
+        <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield tag="650" ind1=" " ind2="0">
+        <subfield code="a">Revenge</subfield>
+        <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield tag="651" ind1=" " ind2="0">
+        <subfield code="a">Denmark</subfield>
+        <subfield code="v">Drama.</subfield>
+    </datafield>
+    <datafield tag="600" ind1="1" ind2="0">
+        <subfield code="a">Shakespeare, William,</subfield>
+        <subfield code="d">1564-1616</subfield>
+        <subfield code="v">Film adaptations.</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="0">
+        <subfield code="a">Feature films.</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="0">
+        <subfield code="a">Melodrama.</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="0">
+        <subfield code="a">Film adaptations.</subfield>
+    </datafield>
+    <datafield tag="655" ind1=" " ind2="0">
+        <subfield code="a">Films for the hearing impaired.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Barron, David.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Branagh, Kenneth.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Christie, Julie,</subfield>
+        <subfield code="d">1941-</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Crystal, Billy.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Depardieu, Gérard,</subfield>
+        <subfield code="d">1948-</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Heston, Charlton.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Jacobi, Derek.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Lemmon, Jack.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Sewell, Rufus,</subfield>
+        <subfield code="d">1967-</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Williams, Robin,</subfield>
+        <subfield code="d">1951-2014.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Winslet, Kate.</subfield>
+    </datafield>
+    <datafield tag="700" ind1="1" ind2=" ">
+        <subfield code="a">Shakespeare, William,</subfield>
+        <subfield code="d">1564-1616.</subfield>
+        <subfield code="t">Hamlet.</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+        <subfield code="a">Castle Rock Entertainment (Firm)</subfield>
+    </datafield>
+    <datafield tag="710" ind1="2" ind2=" ">
+        <subfield code="a">Warner Home Video (Firm)</subfield>
+    </datafield>
+    <datafield tag="938" ind1=" " ind2=" ">
+        <subfield code="a">YBP Library Services</subfield>
+        <subfield code="b">YANK</subfield>
+        <subfield code="n">2560676</subfield>
+    </datafield>
+    <datafield tag="938" ind1=" " ind2=" ">
+        <subfield code="a">Baker and Taylor</subfield>
+        <subfield code="b">BTCP</subfield>
+        <subfield code="n">be2007020682</subfield>
+    </datafield>
+    <datafield tag="948" ind1=" " ind2=" ">
+        <subfield code="a">LTI 01/11/2008</subfield>
+    </datafield>
+    <datafield tag="950" ind1=" " ind2=" ">
+        <subfield code="a">OL</subfield>
+    </datafield>
+    <datafield tag="989" ind1=" " ind2=" ">
+        <subfield code="a">Streaming video</subfield>
+    </datafield>
+    <datafield tag="994" ind1=" " ind2=" ">
+        <subfield code="a">C0</subfield>
+        <subfield code="b">BXM</subfield>
+    </datafield>
+    <datafield tag="INT" ind1=" " ind2=" ">
+        <subfield code="a">P</subfield>
+    </datafield>
+    <datafield tag="INST" ind1=" " ind2=" ">
+        <subfield code="a">01BC_INST</subfield>
+    </datafield>
+    <datafield tag="AVA" ind1=" " ind2=" ">
+        <subfield code="0">99125210370001021</subfield>
+        <subfield code="8">22451717450001021</subfield>
+        <subfield code="a">01BC_INST</subfield>
+        <subfield code="b">ONL</subfield>
+        <subfield code="c">Circulation Main Desk 7 days</subfield>
+        <subfield code="d">PR2807 .A23 B72 2007</subfield>
+        <subfield code="e">available</subfield>
+        <subfield code="f">1</subfield>
+        <subfield code="g">0</subfield>
+        <subfield code="j">CIRMD_7D</subfield>
+        <subfield code="k">0</subfield>
+        <subfield code="p">1</subfield>
+        <subfield code="q">O'Neill</subfield>
+        <subfield code="t">disc 1-disc 2</subfield>
+    </datafield>
+    <datafield tag="AVA" ind1=" " ind2=" ">
+        <subfield code="0">99125210370001021</subfield>
+        <subfield code="8">22451585750001021</subfield>
+        <subfield code="a">01BC_INST</subfield>
+        <subfield code="b">ONL</subfield>
+        <subfield code="c">Media 7 day</subfield>
+        <subfield code="d">PR2807 .A23 B72 2007</subfield>
+        <subfield code="e">available</subfield>
+        <subfield code="f">1</subfield>
+        <subfield code="g">0</subfield>
+        <subfield code="j">MED_7D</subfield>
+        <subfield code="k">0</subfield>
+        <subfield code="p">2</subfield>
+        <subfield code="q">O'Neill</subfield>
+        <subfield code="t">disc 1-disc 2</subfield>
+    </datafield>
+</record>
