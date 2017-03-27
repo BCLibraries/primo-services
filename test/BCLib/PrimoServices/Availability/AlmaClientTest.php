@@ -3,6 +3,8 @@
 
 namespace BCLib\PrimoServices\Availability;
 
+use BCLib\PrimoServices\BibRecord;
+
 class AlmaClientTest extends \PHPUnit_Framework_TestCase
 {
     /** @var  AlmaClient */
@@ -31,6 +33,61 @@ class AlmaClientTest extends \PHPUnit_Framework_TestCase
 
         $result = $this->client->readRecord($this->loadTestRecord('availability-02.xml'));
         $this->assertEquals([$expected], $result);
+    }
+
+    public function testBuildComponentsHashWorks()
+    {
+        $bib_records = [new \stdClass(), new \stdClass(), new \stdClass()];
+
+        $component1_info = [
+            [
+                'del_cat' => 'Alma-P$$OALMA-BC21360494740001021',
+                'id'      => 'COMPONENT 1'
+            ],
+            [
+                'del_cat' => 'Alma-E$$OALMA-BC51435784820001021',
+                'id'      => 'COMPONENT 2'
+            ]
+        ];
+        $bib_records[0]->components = array_map([$this, 'buildComponent'], $component1_info);
+
+        $component2_info = [
+            [
+                'del_cat' => 'Alma-E',
+                'id'      => 'COMPONENT 3'
+            ]
+        ];
+        $bib_records[1]->components = array_map([$this, 'buildComponent'], $component2_info);
+
+        $component3_info = [
+            [
+                'del_cat' => 'Alma-P',
+                'id'      => 'COMPONENT 4'
+            ]
+        ];
+        $bib_records[2]->components = array_map([$this, 'buildComponent'], $component3_info);
+
+        $expected = [
+            'COMPONENT 1' => new \stdClass(),
+            'COMPONENT 4' => new \stdClass()
+        ];
+
+        $expected['COMPONENT 1']->delivery_category = 'Alma-P$$OALMA-BC21360494740001021';
+        $expected['COMPONENT 1']->alma_ids = ['EXLIB' => 'COMPONENT 1'];
+
+        $expected['COMPONENT 4']->delivery_category = 'Alma-P';
+        $expected['COMPONENT 4']->alma_ids = ['EXLIB' => 'COMPONENT 4'];
+
+        $bib_hash = iterator_to_array($this->client->buildComponentsHash($bib_records));
+        $this->assertEquals($expected, $bib_hash);
+    }
+
+    private function buildComponent(array $component_info)
+    {
+        $component = new \stdClass();
+        $component->delivery_category = $component_info['del_cat'];
+        $component->alma_ids['EXLIB'] = $component_info['id'];
+        return $component;
     }
 
     private function loadTestRecord($record_name)
