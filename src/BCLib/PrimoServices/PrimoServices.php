@@ -4,8 +4,9 @@ namespace BCLib\PrimoServices;
 
 use Doctrine\Common\Cache\Cache as DoctrineCache;
 use Guzzle\Http\Client;
+use Pimple\Container;
 
-class PrimoServices extends \Pimple
+class PrimoServices extends Container
 {
     private $_host;
     private $_institution;
