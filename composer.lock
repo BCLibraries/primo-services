@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cd3e4784c1df46c18d3c4e875c1e5981",
+    "content-hash": "121502678632b2883b2dc70551e96fc5",
     "packages": [
         {
             "name": "doctrine/cache",
@@ -323,16 +323,16 @@
         },
         {
             "name": "pimple/pimple",
-            "version": "v1.0.2",
+            "version": "v1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "ae11e57e8c2bb414b2ff93396dbbfc0eb92feb94"
+                "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/ae11e57e8c2bb414b2ff93396dbbfc0eb92feb94",
-                "reference": "ae11e57e8c2bb414b2ff93396dbbfc0eb92feb94",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/2019c145fe393923f3441b23f29bbdfaa5c58c4d",
+                "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d",
                 "shasum": ""
             },
             "require": {
@@ -341,7 +341,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -365,7 +365,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2013-03-08T08:21:40+00:00"
+            "time": "2013-11-22T08:30:29+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
