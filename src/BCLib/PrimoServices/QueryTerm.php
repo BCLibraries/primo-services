@@ -54,7 +54,7 @@ class QueryTerm
 
     protected function processTerm($term)
     {
-        $term = str_replace(array('+',','), ' ', $term);
+        $term = str_replace(['+',','], ' ', $term);
         $term = preg_replace('/\s+/', ' ', $term);
         return $term;
     }
@@ -62,7 +62,7 @@ class QueryTerm
     public function set($index, $precision, $term)
     {
         if (is_array($term)) {
-            $term = implode(',', array_map(array($this, 'processTerm'), $term));
+            $term = implode(',', array_map([$this, 'processTerm'], $term));
         } else {
             $term = $this->processTerm($term);
         }

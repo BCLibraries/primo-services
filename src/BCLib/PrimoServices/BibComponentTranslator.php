@@ -5,12 +5,12 @@ namespace BCLib\PrimoServices;
 class BibComponentTranslator
 {
     private $is_multi = false;
-    private $keys = array();
+    private $keys = [];
 
     /**
      * @var BibComponent[]
      */
-    private $components = array();
+    private $components = [];
 
     /**
      * @param \stdClass $sear_doc a single "sear:DOC" object
@@ -25,19 +25,17 @@ class BibComponentTranslator
 
         if ($this->is_multi) {
 
-            // @TODO $that is a PHP5.3 compatibility kludge
-            $that = $this;
             $this->keys = array_map(
-                function ($value) use ($that) {
-                    return $that->splitMultiField($value)->key;
+                function ($value)  {
+                    return $this->splitMultiField($value)->key;
                 },
                 $sear_doc->PrimoNMBib->record->control->sourceid
             );
         } else {
-            $this->keys = array($record->control->recordid);
+            $this->keys = [$record->control->recordid];
         }
 
-        $this->components = array();
+        $this->components = [];
         foreach ($this->keys as $key) {
             $this->components[$key] = new BibComponent();
         }
@@ -51,7 +49,7 @@ class BibComponentTranslator
             $this->assignAlmaId($record->control);
         } catch (\Exception $e) {
             foreach ($this->components as $component) {
-                $component->alma_ids = array();
+                $component->alma_ids = [];
             }
         }
 
@@ -100,7 +98,7 @@ class BibComponentTranslator
     private function extractField(\stdClass $group, $field)
     {
         if (!isset($group->$field)) {
-            return array();
+            return [];
         }
         if ($this->is_multi) {
             return $group->$field;
@@ -108,11 +106,8 @@ class BibComponentTranslator
 
         $fieldValues = (array) $group->$field;
 
-        // @TODO $that is a PHP5.3 compatibility kludge
-        $that = $this;
-
-        return array_map(function($fieldValue) use ($that) {
-            return '$$V' . $fieldValue . '$$O' . $that->keys[0];
+        return array_map(function($fieldValue) {
+            return '$$V' . $fieldValue . '$$O' . $this->keys[0];
         }, $fieldValues);
     }
 }

@@ -23,7 +23,7 @@ class PNXTranslator
      */
     public function translateDocSet($docset)
     {
-        $return = Array();
+        $return = [];
 
         if (is_array($docset->{$this->_sear . 'DOC'})) {
             foreach ($docset->{$this->_sear . 'DOC'} as $doc) {
@@ -112,8 +112,10 @@ class PNXTranslator
 
     private function extractGetIts($sear_getit)
     {
-        $sear_getit = (array) $sear_getit;
-        return \array_map(array($this, 'extractGetIt'), $sear_getit);
+        if (!is_array($sear_getit)) {
+            $sear_getit = [$sear_getit];
+        }
+        return \array_map([$this, 'extractGetIt'], $sear_getit);
     }
 
     private function extractGetIt($sear_getit)
@@ -127,7 +129,7 @@ class PNXTranslator
 
     private function extractPNXGroups(\stdClass $pnx_record, BibRecord $record)
     {
-        $groups = array();
+        $groups = [];
         foreach ($pnx_record as $group_name => $group) {
             if (null !== $group) {
                 $this->extractGroupFields($group, $group_name, $record);
@@ -139,7 +141,7 @@ class PNXTranslator
 
     private function extractGroupFields(\stdClass $pnx_group, $group_name, BibRecord $record)
     {
-        $fields = array();
+        $fields = [];
         foreach ($pnx_group as $field_name => $field) {
             $record->addField($group_name, $field_name, $field);
         }
@@ -153,7 +155,7 @@ class PNXTranslator
 
     private function extractArray(\stdClass $group, $field)
     {
-        $value = isset($group->$field) ? $group->$field : array();
+        $value = isset($group->$field) ? $group->$field : [];
         return (array) $value;
     }
 }

@@ -81,7 +81,7 @@ class PrimoServices extends \Pimple
      * @return BriefSearchResult
      * @throws PrimoException
      */
-    public function search(Query $query, array $facet_whitelist = array())
+    public function search(Query $query, array $facet_whitelist = [])
     {
         if ($cached_value = $this->_cache->fetchQueryResult($query)) {
             return $cached_value;
@@ -119,8 +119,8 @@ class PrimoServices extends \Pimple
 
         $response->total_results = $docset->{'@TOTALHITS'};
 
-        $response->facets = $facetlist ? $this['facet_translator']->translate($facetlist) : array();
-        $response->results = $response->total_results > 0 ? $this['pnx_translator']->translateDocSet($docset) : array();
+        $response->facets = $facetlist ? $this['facet_translator']->translate($facetlist) : [];
+        $response->results = $response->total_results > 0 ? $this['pnx_translator']->translateDocSet($docset) : [];
 
         if (count($facet_whitelist) > 0) {
             $response->filterFacets($facet_whitelist);

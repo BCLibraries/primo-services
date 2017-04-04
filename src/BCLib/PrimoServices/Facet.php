@@ -11,7 +11,7 @@ class Facet
     /**
      * @var FacetValue[]
      */
-    public $values = array();
+    public $values = [];
 
     public function sortByFrequency()
     {

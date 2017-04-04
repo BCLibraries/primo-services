@@ -45,7 +45,7 @@ class Availability implements \JsonSerializable
 
     private function setAvailability($value)
     {
-        if (!in_array($value, array('available', 'unavailable', 'check_holdings'), true)) {
+        if (!in_array($value, ['available', 'unavailable', 'check_holdings'], true)) {
             throw new PrimoException("Invalid availability status ($value)");
         }
         $this->availability = $value;
@@ -53,7 +53,7 @@ class Availability implements \JsonSerializable
 
     public function jsonSerialize()
     {
-        return array(
+        return [
             'institution'        => $this->institution,
             'library'            => $this->library,
             'location'           => $this->location,
@@ -64,6 +64,6 @@ class Availability implements \JsonSerializable
             'j'                  => $this->j,
             'multi_volume'       => $this->multi_volume,
             'number_loans'       => $this->number_loans,
-        );
+        ];
     }
 }

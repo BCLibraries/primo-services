@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<publish-avail>
+    <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+        <ListRecords>
+            <record>
+                <header>
+                    <identifier>aleph_publish:21333040540001021</identifier>
+                </header>
+                <metadata>
+                    <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+                        <leader>01008cam 2200349 a 4500</leader>
+                        <controlfield tag="005">20160823121003.0</controlfield>
+                        <controlfield tag="008">120610s2004 enka b 000 0 eng c</controlfield>
+                        <controlfield tag="001">99106156350001021</controlfield>
+                        <datafield tag="010" ind1=" " ind2=" ">
+                            <subfield code="a">2005415947</subfield>
+                        </datafield>
+                        <datafield tag="015" ind1=" " ind2=" ">
+                            <subfield code="a">GBA530451</subfield>
+                            <subfield code="2">bnb</subfield>
+                        </datafield>
+                        <datafield tag="016" ind1="7" ind2=" ">
+                            <subfield code="a">013025122</subfield>
+                            <subfield code="2">Uk</subfield>
+                        </datafield>
+                        <datafield tag="020" ind1=" " ind2=" ">
+                            <subfield code="a">0907562507 (pbk.)</subfield>
+                        </datafield>
+                        <datafield tag="035" ind1=" " ind2=" ">
+                            <subfield code="a">(Aleph)002236166BCL01</subfield>
+                        </datafield>
+                        <datafield tag="035" ind1=" " ind2=" ">
+                            <subfield code="a">(OCoLC)ocm57559217</subfield>
+                        </datafield>
+                        <datafield tag="040" ind1=" " ind2=" ">
+                            <subfield code="a">BUF</subfield>
+                            <subfield code="c">BUF</subfield>
+                            <subfield code="d">DLC</subfield>
+                            <subfield code="d">UKM</subfield>
+                            <subfield code="d">BAKER</subfield>
+                        </datafield>
+                        <datafield tag="042" ind1=" " ind2=" ">
+                            <subfield code="a">pcc</subfield>
+                        </datafield>
+                        <datafield tag="049" ind1=" " ind2=" ">
+                            <subfield code="a">BXMM</subfield>
+                        </datafield>
+                        <datafield tag="050" ind1="0" ind2="0">
+                            <subfield code="a">PR6069.I413</subfield>
+                            <subfield code="b">O78 2004</subfield>
+                        </datafield>
+                        <datafield tag="082" ind1="0" ind2="0">
+                            <subfield code="a">821/.914</subfield>
+                            <subfield code="2">22</subfield>
+                        </datafield>
+                        <datafield tag="100" ind1="1" ind2=" ">
+                            <subfield code="a">Simms, Colin,</subfield>
+                            <subfield code="d">1939-</subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="1" ind2="0">
+                            <subfield code="a">Otters and martens /</subfield>
+                            <subfield code="c">Colin Simms.</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="a">Exeter :</subfield>
+                            <subfield code="b">Shearsman Books,</subfield>
+                            <subfield code="c">2004.</subfield>
+                        </datafield>
+                        <datafield tag="300" ind1=" " ind2=" ">
+                            <subfield code="a">163 p. :</subfield>
+                            <subfield code="b">ill. ;</subfield>
+                            <subfield code="c">23 cm.</subfield>
+                        </datafield>
+                        <datafield tag="500" ind1=" " ind2=" ">
+                            <subfield code="a">Poems.</subfield>
+                        </datafield>
+                        <datafield tag="504" ind1=" " ind2=" ">
+                            <subfield code="a">"Colin Simms, selected bibliography"--P. facing t.p.</subfield>
+                        </datafield>
+                        <datafield tag="650" ind1=" " ind2="0">
+                            <subfield code="a">Otters</subfield>
+                            <subfield code="v">Poetry.</subfield>
+                        </datafield>
+                        <datafield tag="650" ind1=" " ind2="0">
+                            <subfield code="a">Martens</subfield>
+                            <subfield code="v">Poetry.</subfield>
+                        </datafield>
+                        <datafield tag="938" ind1=" " ind2=" ">
+                            <subfield code="a">Baker &amp; Taylor</subfield>
+                            <subfield code="b">BKTY</subfield>
+                            <subfield code="c">15.95</subfield>
+                            <subfield code="d">15.95</subfield>
+                            <subfield code="i">0907562507</subfield>
+                            <subfield code="n">0006236039</subfield>
+                            <subfield code="s">active</subfield>
+                        </datafield>
+                        <datafield tag="940" ind1=" " ind2=" ">
+                            <subfield code="a">RETAIN FOR EAST</subfield>
+                        </datafield>
+                        <datafield tag="948" ind1=" " ind2=" ">
+                            <subfield code="a">LTI 09/24/2006</subfield>
+                        </datafield>
+                        <datafield tag="950" ind1=" " ind2=" ">
+                            <subfield code="a">OL</subfield>
+                        </datafield>
+                        <datafield tag="994" ind1=" " ind2=" ">
+                            <subfield code="a">C0</subfield>
+                            <subfield code="b">BXM</subfield>
+                        </datafield>
+                        <datafield tag="INT" ind1=" " ind2=" ">
+                            <subfield code="a">P</subfield>
+                        </datafield>
+                        <datafield tag="INST" ind1=" " ind2=" ">
+                            <subfield code="a">01BC_INST</subfield>
+                        </datafield>
+                        <datafield tag="AVA" ind1=" " ind2=" ">
+                            <subfield code="0">99106156350001021</subfield>
+                            <subfield code="8">22333040530001021</subfield>
+                            <subfield code="a">01BC_INST</subfield>
+                            <subfield code="b">ONL</subfield>
+                            <subfield code="c">Stacks (STACK)</subfield>
+                            <subfield code="d">PR6069 .I413 O78 2004</subfield>
+                            <subfield code="e">available</subfield>
+                            <subfield code="f">1</subfield>
+                            <subfield code="g">0</subfield>
+                            <subfield code="j">STACK</subfield>
+                            <subfield code="k">0</subfield>
+                            <subfield code="p">1</subfield>
+                            <subfield code="q">O'Neill</subfield>
+                        </datafield>
+                    </record>
+                </metadata>
+            </record>
+        </ListRecords>
+    </OAI-PMH>
+    <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+        <ListRecords>
+            <record>
+                <header>
+                    <identifier>aleph_publish:21438900870001021</identifier>
+                </header>
+                <metadata>
+                    <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+                        <leader>01960cgm a2200517Ia 4500</leader>
+                        <controlfield tag="005">20140910140404.0</controlfield>
+                        <controlfield tag="007">vd cvaizu</controlfield>
+                        <controlfield tag="008">080605s2008 ctu010 j vaeng d</controlfield>
+                        <controlfield tag="001">99137658835101021</controlfield>
+                        <datafield tag="020" ind1=" " ind2=" ">
+                            <subfield code="a">0545092132</subfield>
+                        </datafield>
+                        <datafield tag="020" ind1=" " ind2=" ">
+                            <subfield code="a">9780545092135</subfield>
+                        </datafield>
+                        <datafield tag="028" ind1="4" ind2="2">
+                            <subfield code="a">DVD832</subfield>
+                            <subfield code="b">Weston Woods</subfield>
+                        </datafield>
+                        <datafield tag="035" ind1=" " ind2=" ">
+                            <subfield code="a">(OCoLC)ocn230822772</subfield>
+                        </datafield>
+                        <datafield tag="040" ind1=" " ind2=" ">
+                            <subfield code="a">VPL</subfield>
+                            <subfield code="b">eng</subfield>
+                            <subfield code="c">VPL</subfield>
+                            <subfield code="d">BNO</subfield>
+                            <subfield code="d">NCECU</subfield>
+                            <subfield code="d">OCLCQ</subfield>
+                            <subfield code="d">BDX</subfield>
+                            <subfield code="d">OCLCA</subfield>
+                            <subfield code="d">OCLCF</subfield>
+                            <subfield code="d">BXM</subfield>
+                        </datafield>
+                        <datafield tag="049" ind1=" " ind2=" ">
+                            <subfield code="a">BXMM</subfield>
+                        </datafield>
+                        <datafield tag="050" ind1="1" ind2="4">
+                            <subfield code="a">PZ7.K281346</subfield>
+                            <subfield code="b">Do 2008</subfield>
+                        </datafield>
+                        <datafield tag="245" ind1="0" ind2="0">
+                            <subfield code="a">Do unto otters</subfield>
+                            <subfield code="h">[videorecording] /</subfield>
+                            <subfield code="c">Scholastic ; Weston Woods ; by Laurie Keller ; adapted, directed, &amp; animated by Galen Fott ; produced by Paul R. Gagne &amp; Melissa Reilly.</subfield>
+                        </datafield>
+                        <datafield tag="260" ind1=" " ind2=" ">
+                            <subfield code="a">Norwalk, CT :</subfield>
+                            <subfield code="b">Weston Woods Studios,</subfield>
+                            <subfield code="c">c2008.</subfield>
+                        </datafield>
+                        <datafield tag="300" ind1=" " ind2=" ">
+                            <subfield code="a">1 videodisc (10 min.) :</subfield>
+                            <subfield code="b">sd., col. ;</subfield>
+                            <subfield code="c">4 3/4 in.</subfield>
+                        </datafield>
+                        <datafield tag="538" ind1=" " ind2=" ">
+                            <subfield code="a">DVD.</subfield>
+                        </datafield>
+                        <datafield tag="546" ind1=" " ind2=" ">
+                            <subfield code="a">Includes optional read-along subtitles in English.</subfield>
+                        </datafield>
+                        <datafield tag="511" ind1="0" ind2=" ">
+                            <subfield code="a">Voices: Diana Canova, David de Vries, Galen Fott, Jack Sundrud, &amp; Rusty Young.</subfield>
+                        </datafield>
+                        <datafield tag="508" ind1=" " ind2=" ">
+                            <subfield code="a">Music composed &amp; performed by Rusty Young &amp; Jack Sundrud.</subfield>
+                        </datafield>
+                        <datafield tag="500" ind1=" " ind2=" ">
+                            <subfield code="a">Bonus feature: an interview with Laurie Keller.</subfield>
+                        </datafield>
+                        <datafield tag="520" ind1=" " ind2=" ">
+                            <subfield code="a">Mr. Rabbit wonders if he will be able to get along with his new neighbors, who are otters, until he is reminded of the golden rule.</subfield>
+                        </datafield>
+                        <datafield tag="521" ind1="8" ind2=" ">
+                            <subfield code="a">Ages 4-8.</subfield>
+                        </datafield>
+                        <datafield tag="650" ind1=" " ind2="0">
+                            <subfield code="a">Golden rule</subfield>
+                            <subfield code="v">Juvenile films.</subfield>
+                        </datafield>
+                        <datafield tag="650" ind1=" " ind2="0">
+                            <subfield code="a">Neighborliness</subfield>
+                            <subfield code="v">Juvenile films.</subfield>
+                        </datafield>
+                        <datafield tag="650" ind1=" " ind2="0">
+                            <subfield code="a">Rabbits</subfield>
+                            <subfield code="v">Juvenile films.</subfield>
+                        </datafield>
+                        <datafield tag="650" ind1=" " ind2="0">
+                            <subfield code="a">Otters</subfield>
+                            <subfield code="v">Juvenile films.</subfield>
+                        </datafield>
+                        <datafield tag="655" ind1=" " ind2="0">
+                            <subfield code="a">Fiction films.</subfield>
+                        </datafield>
+                        <datafield tag="655" ind1=" " ind2="0">
+                            <subfield code="a">Short films.</subfield>
+                        </datafield>
+                        <datafield tag="655" ind1=" " ind2="0">
+                            <subfield code="a">Animated films.</subfield>
+                        </datafield>
+                        <datafield tag="655" ind1=" " ind2="0">
+                            <subfield code="a">Children's films.</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Fott, Galen.</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Canova, Diana.</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">De Vries, David,</subfield>
+                            <subfield code="d">1958-</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Sundrud, Jack.</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Young, Rusty.</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Gagne, Paul R.,</subfield>
+                            <subfield code="d">1956-</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Ellard, Melissa Reilly</subfield>
+                        </datafield>
+                        <datafield tag="700" ind1="1" ind2=" ">
+                            <subfield code="a">Keller, Laurie.</subfield>
+                            <subfield code="t">Do unto otters.</subfield>
+                        </datafield>
+                        <datafield tag="710" ind1="2" ind2=" ">
+                            <subfield code="a">Scholastic Inc.</subfield>
+                        </datafield>
+                        <datafield tag="710" ind1="2" ind2=" ">
+                            <subfield code="a">Weston Woods Studios.</subfield>
+                        </datafield>
+                        <datafield tag="938" ind1=" " ind2=" ">
+                            <subfield code="a">Brodart</subfield>
+                            <subfield code="b">BROD</subfield>
+                            <subfield code="n">09815848</subfield>
+                            <subfield code="c">$59.95</subfield>
+                        </datafield>
+                        <datafield tag="994" ind1=" " ind2=" ">
+                            <subfield code="a">C0</subfield>
+                            <subfield code="b">BXM</subfield>
+                        </datafield>
+                        <datafield tag="INT" ind1=" " ind2=" ">
+                            <subfield code="a">P</subfield>
+                        </datafield>
+                        <datafield tag="INST" ind1=" " ind2=" ">
+                            <subfield code="a">01BC_INST</subfield>
+                        </datafield>
+                        <datafield tag="AVA" ind1=" " ind2=" ">
+                            <subfield code="0">99137658835101021</subfield>
+                            <subfield code="8">22438900860001021</subfield>
+                            <subfield code="a">01BC_INST</subfield>
+                            <subfield code="b">ERC</subfield>
+                            <subfield code="c">Stacks</subfield>
+                            <subfield code="d">PZ7.K281346 Do 2008</subfield>
+                            <subfield code="e">available</subfield>
+                            <subfield code="f">1</subfield>
+                            <subfield code="g">0</subfield>
+                            <subfield code="j">STACK</subfield>
+                            <subfield code="k">0</subfield>
+                            <subfield code="p">1</subfield>
+                            <subfield code="q">Educational Resource Center</subfield>
+                        </datafield>
+                    </record>
+                </metadata>
+            </record>
+        </ListRecords>
+    </OAI-PMH>
+</publish-avail>

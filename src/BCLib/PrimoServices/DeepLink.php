@@ -68,12 +68,12 @@ class DeepLink
 
     protected function _baseParams()
     {
-        return array(
+        return [
             'vid'         => $this->_view_id,
             'institution' => $this->_institution,
             'group'       => $this->_group,
             'onCampus'    => $this->_on_campus,
             'lang'        => $this->_language
-        );
+        ];
     }
 }

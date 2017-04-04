@@ -2,9 +2,10 @@
 
 namespace BCLib\PrimoServices\Availability;
 
+use BCLib\PrimoServices\BibRecord;
 use Guzzle\Http\Client;
 
-class AlmaClient implements AvailibilityClient
+class AlmaClient implements AvailabilityClient
 {
 
     /**
@@ -23,11 +24,6 @@ class AlmaClient implements AvailibilityClient
     private $library;
 
     /**
-     * @var Availability[]
-     */
-    private $all_components;
-
-    /**
      * @var array
      */
     private $ava_map;
@@ -38,7 +34,7 @@ class AlmaClient implements AvailibilityClient
         $this->alma_host = $alma_host;
         $this->library = $library;
 
-        $this->ava_map = array(
+        $this->ava_map = [
             'a' => 'institution',
             'b' => 'library',
             'c' => 'location',
@@ -50,78 +46,114 @@ class AlmaClient implements AvailibilityClient
             'k' => 'multi_volume',
             'p' => 'number_loans',
             'q' => 'library_display'
-        );
+        ];
     }
 
     /**
-     * @param \BCLib\PrimoServices\BibRecord[] $results
+     * @param \BCLib\PrimoServices\BibRecord[] $bib_records
      * @return \BCLib\PrimoServices\BibRecord[]
+     * @throws \Guzzle\Http\Exception\RequestException
      */
-    public function checkAvailability(array $results)
+    public function checkAvailability(array $bib_records)
     {
-        $this->buildComponentsHash($results);
-        $this->readAvailability();
-        return $results;
+        $components = iterator_to_array($this->buildComponentsHash($bib_records));
+        $xml = $this->fetchAvailability($components);
+        foreach ($this->readAvailability($xml) as $key => $availability) {
+            $components[$key]->availability = $availability;
+        }
+        return $bib_records;
+    }
+
+    /**
+     * Yields tuples of Alma ID => availability information
+     *
+     * @param $availability_xml
+     * @return \Generator
+     */
+    public function readAvailability($availability_xml)
+    {
+        foreach ($availability_xml->{'OAI-PMH'} as $oai) {
+            $key_parts = explode(':', (string) $oai->ListRecords->record->header->identifier);
+            $record_xml = simplexml_load_string($oai->ListRecords->record->metadata->record->asXml());
+            if (null !== $key_parts && array_key_exists(1, $key_parts)) {
+                yield $key_parts[1] => $this->readRecord($record_xml);
+            }
+        }
+
     }
 
     private function buildUrl($ids)
     {
         $query = http_build_query(
-            array(
+            [
                 'doc_num' => implode(',', $ids),
                 'library' => $this->library
-            )
+            ]
         );
         return "http://{$this->alma_host}/view/publish_avail?$query";
     }
 
-    private function readAvailability()
+    /**
+     * Read a set of AVA records
+     *
+     * @param \SimpleXMLElement $record_xml
+     * @return Availability[]
+     */
+    public function readRecord(\SimpleXMLElement $record_xml)
     {
-        $response = $this->client->get($this->buildUrl(array_keys($this->all_components)))->send();
-        $xml = simplexml_load_string($response->getBody(true));
-
-        foreach ($xml->{'OAI-PMH'} as $oai) {
-            $key_parts = explode(':', (string) $oai->ListRecords->record->header->identifier);
-            $record_xml = simplexml_load_string($oai->ListRecords->record->metadata->record->asXml());
-            if (null !== $key_parts && array_key_exists(1, $key_parts)) {
-                $this->all_components[$key_parts[1]]->availability = $this->readRecord($record_xml);
-            }
-        }
-
-    }
-
-    private function readRecord(\SimpleXMLElement $record_xml)
-    {
-        $record_response = array();
         $record_xml->registerXPathNamespace('slim', 'http://www.loc.gov/MARC21/slim');
         $avas = $record_xml->xpath('//slim:datafield[@tag="AVA"]');
-        foreach ($avas as $ava) {
-            $availability = new Availability();
-            foreach ($ava->subfield as $sub) {
-                if ($sub['code'] !== '0') {
-                    if (isset($this->ava_map[(string) $sub['code']])) {
-                        $property = $this->ava_map[(string) $sub['code']];
-                        $availability->$property = (string) $sub;
-                    }
-                }
-            }
-            $record_response[] = $availability;
-        }
-        return $record_response;
+        return array_map([$this, 'readAVA'], $avas);
     }
 
-    private function buildComponentsHash(array $results)
-    {
-        $this->all_components = array();
 
-        foreach ($results as $result) {
+    /**
+     * Read an availability response's AVA records
+     *
+     * @param \SimpleXMLElement $ava_xml
+     * @return Availability
+     */
+    private function readAVA(\SimpleXMLElement $ava_xml)
+    {
+        $availability = new Availability();
+        foreach ($ava_xml->subfield as $sub) {
+            $code = (string) $sub['code'];
+            if (isset($this->ava_map[$code])) {
+                $property = $this->ava_map[$code];
+                $availability->$property = (string) $sub[0];
+            }
+        }
+        return $availability;
+    }
+
+    /**
+     * Generates an associative array of alma_ids pointing to components
+     *
+     * @param BibRecord[] $bib_records
+     * @return \Generator
+     */
+    public function buildComponentsHash(array $bib_records)
+    {
+        foreach ($bib_records as $result) {
             foreach ($result->components as $component) {
                 $delivery_category = explode('$$', $component->delivery_category);
                 if ($delivery_category[0] === 'Alma-P' && isset($component->alma_ids[$this->library])) {
                     $alma_id = $component->alma_ids[$this->library];
-                    $this->all_components[$alma_id] = $component;
+                    yield $alma_id => $component;
                 }
             }
         }
+    }
+
+    /**
+     * @param array $components
+     * @return \SimpleXMLElement
+     */
+    private function fetchAvailability(array $components)
+    {
+        $url = $this->buildUrl(array_keys($components));
+        echo $url;
+        $response = $this->client->get($url)->send();
+        return simplexml_load_string($response->getBody(true));
     }
 }
