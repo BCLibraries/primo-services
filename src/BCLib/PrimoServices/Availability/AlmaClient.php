@@ -152,7 +152,6 @@ class AlmaClient implements AvailabilityClient
     private function fetchAvailability(array $components)
     {
         $url = $this->buildUrl(array_keys($components));
-        echo $url;
         $response = $this->client->get($url)->send();
         return simplexml_load_string($response->getBody(true));
     }
