@@ -3,15 +3,23 @@
 namespace BCLib\PrimoServices\Availability;
 
 use BCLib\PrimoServices\BibRecord;
-use Guzzle\Http\Client;
+use Http\Client\Exception\RequestException;
+use Http\Client\HttpClient;
+use Http\Discovery\HttpClientDiscovery;
+use Http\Discovery\MessageFactoryDiscovery;
+use Http\Message\MessageFactory;
 
 class AlmaClient implements AvailabilityClient
 {
-
     /**
-     * @var Client
+     * @var HttpClient
      */
     private $client;
+
+    /**
+     * @var MessageFactory
+     */
+    protected $messageFactory;
 
     /**
      * @var string Alma host name (e.g. 'alma.exlibris.com')
@@ -28,11 +36,12 @@ class AlmaClient implements AvailabilityClient
      */
     private $ava_map;
 
-    public function __construct(Client $client, $alma_host, $library)
+    public function __construct(HttpClient $client = null, $alma_host, $library, MessageFactory $messageFactory = null)
     {
-        $this->client = $client;
+        $this->client = $client ?: HttpClientDiscovery::find();
         $this->alma_host = $alma_host;
         $this->library = $library;
+        $this->messageFactory = $messageFactory ?: MessageFactoryDiscovery::find();
 
         $this->ava_map = [
             'a' => 'institution',
@@ -52,7 +61,7 @@ class AlmaClient implements AvailabilityClient
     /**
      * @param \BCLib\PrimoServices\BibRecord[] $bib_records
      * @return \BCLib\PrimoServices\BibRecord[]
-     * @throws \Guzzle\Http\Exception\RequestException
+     * @throws RequestException
      */
     public function checkAvailability(array $bib_records)
     {
@@ -152,7 +161,10 @@ class AlmaClient implements AvailabilityClient
     private function fetchAvailability(array $components)
     {
         $url = $this->buildUrl(array_keys($components));
-        $response = $this->client->get($url)->send();
-        return simplexml_load_string($response->getBody(true));
+
+        $request = $this->messageFactory->createRequest('GET', $url);
+        $response = $this->client->sendRequest($request);
+
+        return simplexml_load_string((string) $response->getBody());
     }
 }

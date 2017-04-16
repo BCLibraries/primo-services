@@ -3,7 +3,9 @@
 namespace BCLib\PrimoServices;
 
 use Doctrine\Common\Cache\Cache as DoctrineCache;
-use Guzzle\Http\Client;
+use Http\Client\HttpClient;
+use Http\Discovery\HttpClientDiscovery;
+use Http\Discovery\MessageFactoryDiscovery;
 use Pimple\Container;
 
 class PrimoServices extends Container
@@ -15,6 +17,12 @@ class PrimoServices extends Container
      * @var Cache
      */
     private $_cache;
+
+    /**
+     * @var HttpClient
+     */
+    private $_httpClient;
+
     /**
      * @var string
      */
@@ -25,8 +33,9 @@ class PrimoServices extends Container
      * @param string        $institution
      * @param DoctrineCache $cache
      * @param string        $version
+     * @param HttpClient    $httpClient
      */
-    public function __construct($host, $institution, DoctrineCache $cache = null, $version = '4.9')
+    public function __construct($host, $institution, DoctrineCache $cache = null, $version = '4.9', HttpClient $httpClient = null)
     {
         $this->_host = $host;
         $this->_institution = $institution;
@@ -36,7 +45,13 @@ class PrimoServices extends Container
             $this->_cache = new Cache($cache);
         }
 
+        $this->_httpClient = $httpClient ?: HttpClientDiscovery::find();
+
         parent::__construct();
+
+        $this['message_factory'] = function () {
+            return MessageFactoryDiscovery::find();
+        };
 
         $this['pnx_translator'] = function () use ($version) {
             return new PNXTranslator($version);
@@ -187,8 +202,9 @@ class PrimoServices extends Container
 
     protected function _send($action, $query_string)
     {
-        $client = new Client();
-        $request = $client->get($this->url($action, $query_string));
-        return json_decode($request->send()->getBody());
+        $request = $this['message_factory']->createRequest('GET', $this->url($action, $query_string));
+        $response = $this->_httpClient->sendRequest($request);
+
+        return json_decode($response->getBody());
     }
 }

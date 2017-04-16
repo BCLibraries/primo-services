@@ -21,7 +21,8 @@
                 }
             ],
             "require": {
-                    "bclibraries/primo-services" : "~2.0"
+                    "bclibraries/primo-services" : "~2.0",
+                    "php-http/guzzle6-adapter": "~1.1"
             }
         }
     
@@ -40,7 +41,10 @@
          $host = 'primo2.staging.hosted.exlibrisgroup.com'; //Your Primo host.
          $inst = 'BCL'; // Your Primo institution code.
          $primo = new PrimoServices($host, $inst);
-   
+
+Note: If you would like to use another HTTP client library than Guzzle, feel free
+to swap it with any [HTTPlug](http://httplug.io/) compatible library.
+
 ## Use
 
 ### Brief search

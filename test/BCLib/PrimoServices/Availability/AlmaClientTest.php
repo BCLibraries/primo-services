@@ -4,6 +4,7 @@
 namespace BCLib\PrimoServices\Availability;
 
 use BCLib\PrimoServices\BibRecord;
+use Http\Mock\Client as MockClient;
 
 class AlmaClientTest extends \PHPUnit_Framework_TestCase
 {
@@ -12,8 +13,8 @@ class AlmaClientTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $guzzle_mock = $this->getMock('Guzzle\Http\Client');
-        $this->client = new AlmaClient($guzzle_mock, 'http://library.example.edu', 'EXLIB');
+        $httpMock = new MockClient();
+        $this->client = new AlmaClient($httpMock, 'http://library.example.edu', 'EXLIB');
     }
 
     public function testParseSingleSimpleRecordWorks()
