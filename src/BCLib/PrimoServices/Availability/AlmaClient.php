@@ -39,7 +39,12 @@ class AlmaClient implements AvailabilityClient
     public function __construct(HttpClient $client = null, $alma_host, $library, MessageFactory $messageFactory = null)
     {
         $this->client = $client ?: HttpClientDiscovery::find();
-        $this->alma_host = $alma_host;
+
+        if (strpos($alma_host, 'http://') === 0 || strpos($alma_host, 'https://') === 0) {
+            $this->alma_host = $alma_host;
+        } else {
+            $this->alma_host = 'http://' . $alma_host;
+        }
         $this->library = $library;
         $this->messageFactory = $messageFactory ?: MessageFactoryDiscovery::find();
 
@@ -99,7 +104,7 @@ class AlmaClient implements AvailabilityClient
                 'library' => $this->library
             ]
         );
-        return "http://{$this->alma_host}/view/publish_avail?$query";
+        return "{$this->alma_host}/view/publish_avail?$query";
     }
 
     /**

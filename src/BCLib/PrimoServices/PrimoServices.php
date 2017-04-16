@@ -37,7 +37,12 @@ class PrimoServices extends Container
      */
     public function __construct($host, $institution, DoctrineCache $cache = null, $version = '4.9', HttpClient $httpClient = null)
     {
-        $this->_host = $host;
+        if (strpos($host, 'http://') === 0 || strpos($host, 'https://') === 0) {
+            $this->_host = $host;
+        } else {
+            $this->_host = 'http://' . $host;
+        }
+
         $this->_institution = $institution;
         if (null === $cache) {
             $this->_cache = new NullCache();
@@ -197,7 +202,7 @@ class PrimoServices extends Container
      * @return string
      */
     public function url($action, $query_string) {
-        return "http://{$this->_host}/PrimoWebServices/xservice/search/$action?json=true&$query_string";
+        return "{$this->_host}/PrimoWebServices/xservice/search/$action?json=true&$query_string";
     }
 
     protected function _send($action, $query_string)
