@@ -21,7 +21,7 @@
                 }
             ],
             "require": {
-                    "bclibraries/primo-services" : "~0.5"
+                    "bclibraries/primo-services" : "~2.0"
             }
         }
     
