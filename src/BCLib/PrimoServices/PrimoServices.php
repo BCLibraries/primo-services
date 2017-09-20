@@ -19,15 +19,25 @@ class PrimoServices extends Container
      * @var string
      */
     private $_version;
+    /**
+     * @var array
+     */
+    private $ignore_errors;
 
     /**
      * @param string        $host
      * @param string        $institution
      * @param DoctrineCache $cache
      * @param string        $version
+     * @param array         $ignore_errors
      */
-    public function __construct($host, $institution, DoctrineCache $cache = null, $version = '4.9')
-    {
+    public function __construct(
+        $host,
+        $institution,
+        DoctrineCache $cache = null,
+        $version = '4.9',
+        array $ignore_errors = []
+    ) {
         $this->_host = $host;
         $this->_institution = $institution;
         if (null === $cache) {
@@ -42,7 +52,7 @@ class PrimoServices extends Container
             return new PNXTranslator($version);
         };
 
-        $this['facet_translator'] = function () use ($version)  {
+        $this['facet_translator'] = function () use ($version) {
             return new FacetTranslator($version);
         };
 
@@ -62,6 +72,12 @@ class PrimoServices extends Container
             return new DeepLink($host, $institution);
         };
         $this->_version = $version;
+
+        if (empty($ignore_errors)) {
+            $ignore_errors = ['search.message.ui.expansion.pc', 'search.error.wildcards.toomanyclauses'];
+        }
+
+        $this->ignore_errors = $ignore_errors;
     }
 
     /**
@@ -101,13 +117,8 @@ class PrimoServices extends Container
 
         $result = $json->{$sear . 'SEGMENTS'}->{$sear . 'JAGROOT'}->{$sear . 'RESULT'};
 
-       if (isset($result->{$sear . 'ERROR'}) && $result->{$sear . 'ERROR'}->{$sear . '@CODE'} !== 'search.message.ui.expansion.pc') {
-            if (strpos($result->{$sear . 'ERROR'}->{$sear . '@CODE'}, 'search.message.ui.expansion') === false) {
-                throw new PrimoException(
-                    $result->{$sear . 'ERROR'}->{'@MESSAGE'}, $result->{$sear . 'ERROR'}->{'@CODE'}
-                );
-            }
-        }
+
+        $this->checkErrors($sear, $result);
 
         $docset = $result->{$sear . 'DOCSET'};
         $facetlist = $result->{$sear . 'FACETLIST'};
@@ -181,7 +192,8 @@ class PrimoServices extends Container
      *
      * @return string
      */
-    public function url($action, $query_string) {
+    public function url($action, $query_string)
+    {
         return "http://{$this->_host}/PrimoWebServices/xservice/search/$action?json=true&$query_string";
     }
 
@@ -190,5 +202,28 @@ class PrimoServices extends Container
         $client = new Client();
         $request = $client->get($this->url($action, $query_string));
         return json_decode($request->send()->getBody());
+    }
+
+    /**
+     * @param $sear
+     * @param $result
+     * @return void
+     * @throws \BCLib\PrimoServices\PrimoException
+     */
+    private function checkErrors($sear, $result)
+    {
+        if (!isset($result->{$sear . 'ERROR'})) {
+            return;
+        }
+        if (in_array(
+            $result->{$sear . 'ERROR'}->{$sear . '@CODE'},
+            $this->ignore_errors,
+            true
+        )) {
+            return;
+        }
+
+        $message = $result->{$sear . 'ERROR'}->{$sear . '@CODE'} . " : " . $result->{$sear . 'ERROR'}->{$sear . '@MESSAGE'};
+        throw new PrimoException($message);
     }
 }
