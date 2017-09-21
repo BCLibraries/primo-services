@@ -74,7 +74,11 @@ class PrimoServices extends Container
         $this->_version = $version;
 
         if (empty($ignore_errors)) {
-            $ignore_errors = ['search.message.ui.expansion.pc', 'search.error.wildcards.toomanyclauses'];
+            $ignore_errors = [
+                'search.message.ui.expansion.pc',
+                'search.message.ui.expansion',
+                'search.error.wildcards.toomanyclauses'
+            ];
         }
 
         $this->ignore_errors = $ignore_errors;
