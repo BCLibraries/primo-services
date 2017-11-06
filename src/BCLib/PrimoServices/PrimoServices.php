@@ -201,6 +201,14 @@ class PrimoServices extends Container
         return "http://{$this->_host}/PrimoWebServices/xservice/search/$action?json=true&$query_string";
     }
 
+    public function getHost() {
+        return $this->_host;
+    }
+
+    public function getInstitution() {
+        return $this->_institution;
+    }
+
     protected function _send($action, $query_string)
     {
         $client = new Client();
