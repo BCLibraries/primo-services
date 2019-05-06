@@ -31,7 +31,12 @@ class AlmaClient implements AvailabilityClient
     public function __construct(Client $client, $alma_host, $library)
     {
         $this->client = $client;
-        $this->alma_host = $alma_host;
+
+        if (strpos($alma_host, 'http://') === 0 || strpos($alma_host, 'https://') === 0) {
+            $this->alma_host = $alma_host;
+        } else {
+            $this->alma_host = 'http://' . $alma_host;
+        }
         $this->library = $library;
 
         $this->ava_map = [
@@ -90,7 +95,7 @@ class AlmaClient implements AvailabilityClient
                 'library' => $this->library
             ]
         );
-        return "http://{$this->alma_host}/view/publish_avail?$query";
+        return "{$this->alma_host}/view/publish_avail?$query";
     }
 
     /**
