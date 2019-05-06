@@ -77,7 +77,9 @@ class PrimoServices extends Container
             $ignore_errors = [
                 'search.message.ui.expansion.pc',
                 'search.message.ui.expansion',
-                'search.error.wildcards.toomanyclauses'
+                'search.error.wildcards.toomanyclauses',
+                'controlled.vocabulary',
+                'controlled.voc.synonym',
             ];
         }
 
