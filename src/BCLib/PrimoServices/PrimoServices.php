@@ -3,10 +3,10 @@
 namespace BCLib\PrimoServices;
 
 use Doctrine\Common\Cache\Cache as DoctrineCache;
-use Http\Client\HttpClient;
-use Http\Discovery\HttpClientDiscovery;
-use Http\Discovery\MessageFactoryDiscovery;
+use Http\Factory\Discovery\HttpClient;
+use Http\Factory\Discovery\HttpFactory;
 use Pimple\Container;
+use Psr\Http\Client\ClientInterface as HttpClientInterface;
 
 class PrimoServices extends Container
 {
@@ -33,9 +33,17 @@ class PrimoServices extends Container
      * @param string        $institution
      * @param DoctrineCache $cache
      * @param string        $version
-     * @param HttpClient    $httpClient
+     * @param HttpClientInterface    $httpClient
+     * @param RequestFactoryInterface $requestFactory
      */
-    public function __construct($host, $institution, DoctrineCache $cache = null, $version = '4.9', HttpClient $httpClient = null)
+    public function __construct(
+        $host,
+        $institution,
+        DoctrineCache $cache = null,
+        $version = '4.9',
+        HttpClientInterface $httpClient = null,
+        RequestFactoryInterface $requestFactory = null
+    )
     {
         if (strpos($host, 'http://') === 0 || strpos($host, 'https://') === 0) {
             $this->_host = $host;
@@ -50,13 +58,11 @@ class PrimoServices extends Container
             $this->_cache = new Cache($cache);
         }
 
-        $this->_httpClient = $httpClient ?: HttpClientDiscovery::find();
+        $this->_httpClient = $httpClient ?: HttpClient::client();
 
         parent::__construct();
 
-        $this['message_factory'] = function () {
-            return MessageFactoryDiscovery::find();
-        };
+        $this['request_factory'] = $requestFactory ?: HttpFactory::requestFactory();
 
         $this['pnx_translator'] = function () use ($version) {
             return new PNXTranslator($version);
@@ -207,7 +213,7 @@ class PrimoServices extends Container
 
     protected function _send($action, $query_string)
     {
-        $request = $this['message_factory']->createRequest('GET', $this->url($action, $query_string));
+        $request = $this['request_factory']->createRequest('GET', $this->url($action, $query_string));
         $response = $this->_httpClient->sendRequest($request);
 
         return json_decode($response->getBody());
