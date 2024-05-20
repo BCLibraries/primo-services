@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> Archived May 2024. No longer used or open for changes.
+
 `primo-services` are a PHP interface to Primo's X-Service Web services. It currently supports the *brief search* and *full view* services. It can also create Deep Links to Primo searches.
 
 ## Installation
